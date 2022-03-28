@@ -18,6 +18,6 @@ class ProfileController extends Controller
     {
         auth()->user()->update($request->validated());
 
-        return redirect()->back();
+        return redirect()->back()->with('success', 'Your profile updated successfully!');
     }
 }

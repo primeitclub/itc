@@ -80,5 +80,6 @@
             </div>
         </form>
     </div>
+    <x-notification />
 
 </x-admin.app>
