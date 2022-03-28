@@ -163,7 +163,7 @@
                                     <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Profile</a>
+                            <a href="{{ route('admin.profile') }}" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Profile</a>
                         </li>
                         <li class="relative text-gray-200 hover:text-white focus-within:text-white">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
