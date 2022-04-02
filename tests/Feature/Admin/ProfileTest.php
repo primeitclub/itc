@@ -18,7 +18,7 @@ class ProfileTest extends TestCase
             ->get(route('admin.profile'));
 
         $response->assertSuccessful();
-        $response->assertViewIs('admin.user.profile');
+        $response->assertViewIs('admin.users.profile');
     }
 
     public function test_name_is_required()

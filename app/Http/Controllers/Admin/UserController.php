@@ -12,13 +12,13 @@ class UserController extends Controller
     public function index()
     {
         $users = User::latest()->paginate(10);
-        return view('admin.user.index', compact('users'));
+        return view('admin.users.index', compact('users'));
     }
 
     public function create()
     {
         $user = new User();
-        return view('admin.user.create', compact('user'));
+        return view('admin.users.create', compact('user'));
     }
 
     public function store(StoreUserRequest $request)
@@ -30,7 +30,7 @@ class UserController extends Controller
 
     public function edit(User $user)
     {
-        return view('admin.user.edit', compact('user'));
+        return view('admin.users.edit', compact('user'));
     }
 
     public function update(UpdateUserRequest $request, User $user)
