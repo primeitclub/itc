@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Admin\Blog;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class UpdateBlogCategoryRequest extends FormRequest
 {
@@ -13,7 +14,7 @@ class UpdateBlogCategoryRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +25,8 @@ class UpdateBlogCategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => ['required', Rule::unique('blog_categories', 'title')->ignore($this->blog_category)],
+            'slug' => ['required', Rule::unique('blog_categories', 'slug')->ignore($this->blog_category)],
         ];
     }
 }
