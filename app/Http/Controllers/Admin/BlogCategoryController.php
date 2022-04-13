@@ -44,6 +44,10 @@ class BlogCategoryController extends Controller
 
     public function destroy(BlogCategory $blogCategory)
     {
+        if ($blogCategory->id === config('defaults.default_blog_category_id')) {
+            return redirect()->back()->with('error', 'You can not delete default category!');
+        }
+
         $blogCategory->delete();
 
         return redirect()->back()->with('success', 'Blog category deleted successfully!');
