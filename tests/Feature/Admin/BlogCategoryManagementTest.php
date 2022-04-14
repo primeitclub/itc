@@ -148,20 +148,49 @@ class BlogCategoryManagementTest extends TestCase
         $this->assertEquals('new-title', $blogCategory->slug);
     }
 
+    public function test_can_not_delete_default_blog_category()
+    {
+        $admin = User::factory()->create();
+
+        $this->actingAs($admin)
+            ->post(route('admin.blog-categories.store'), [
+                'title' => 'Uncategorized',
+                'slug' => 'uncategorized'
+            ]);
+
+        $blogCategory = BlogCategory::where('id', 1)->first();
+
+        $response = $this->actingAs($admin)
+            ->delete(route('admin.blog-categories.destroy', $blogCategory));
+
+        $response->assertSessionHas([
+            'error' => 'You can not delete default category!'
+        ]);
+
+        $this->assertCount(1, BlogCategory::all());
+    }
+
     public function test_can_delete_blog_category()
     {
-        $this->withoutExceptionHandling();
         $admin = User::factory()->create();
+
+        $this->actingAs($admin)
+            ->post(route('admin.blog-categories.store'), [
+                'title' => 'Uncategorized',
+                'slug' => 'uncategorized'
+            ]);
 
         $this->actingAs($admin)
             ->post(route('admin.blog-categories.store'), $this->data());
 
-        $blogCategory = BlogCategory::where('id', 1)->first();
+        $this->assertCount(2, BlogCategory::all());
+
+        $blogCategory = BlogCategory::where('id', 2)->first();
 
         $this->actingAs($admin)
             ->delete(route('admin.blog-categories.destroy', $blogCategory));
 
-        $this->assertCount(0, BlogCategory::all());
+        $this->assertCount(1, BlogCategory::all());
     }
 
     protected function data()
