@@ -27,6 +27,7 @@ class UpdateBlogRequest extends FormRequest
         return [
             'title' => ['required'],
             'slug' => ['required', Rule::unique('blogs', 'slug')->ignore($this->blog)],
+            'blog_category_id' => ['required'],
             'excerpt' => ['required'],
             'body' => ['required'],
             'thumbnail' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],

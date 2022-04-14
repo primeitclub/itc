@@ -18,6 +18,16 @@
                             <x-form.error name="slug" />
                         </x-form.group>
 
+                        <x-form.group label="Blog Category" for="blog_category_id">
+                            <select name="blog_category_id" id="blog_category_id" class="@error('blog_category_id') border-red-600 @enderror w-full p-2 border border-gray-300 rounded form-input">
+                                <option value="" selected disabled>Select Category</option>
+                                @foreach($blogCategories as $blogCategory)
+                                <option value="{{ $blogCategory->id }}" {{old('blog_category_id' == $blogCategory->id ? 'selected':'')}}>{{ $blogCategory->title }}</option>
+                                @endforeach
+                            </select>
+                            <x-form.error name="blog_category_id" />
+                        </x-form.group>
+
                         <x-form.group label="Excerpt" for="excerpt">
                             <x-form.textarea name="excerpt">{{ old('excerpt') ?? $blog->excerpt }}</x-form.textarea>
                             <x-form.error name="excerpt" />

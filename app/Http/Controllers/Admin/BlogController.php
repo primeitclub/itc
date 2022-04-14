@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\Blog\StoreBlogRequest;
 use App\Http\Requests\Admin\Blog\UpdateBlogRequest;
 use App\Models\Blog;
+use App\Models\BlogCategory;
 use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
@@ -21,7 +22,9 @@ class BlogController extends Controller
     {
         $blog = new Blog();
 
-        return view('admin.blogs.create', compact('blog'));
+        $blogCategories = BlogCategory::all();
+
+        return view('admin.blogs.create', compact('blog', 'blogCategories'));
     }
 
     public function store(StoreBlogRequest $request)
@@ -35,7 +38,9 @@ class BlogController extends Controller
 
     public function edit(Blog $blog)
     {
-        return view('admin.blogs.edit', compact('blog'));
+        $blogCategories = BlogCategory::all();
+
+        return view('admin.blogs.edit', compact('blog', 'blogCategories'));
     }
 
     public function update(UpdateBlogRequest $request, Blog $blog)

@@ -25,7 +25,7 @@
                             </td>
 
                             <td class="px-4 py-3 text-sm">
-                                2
+                                {{ $blogCategory->blogs->count() }}
                             </td>
 
                             <td class="px-4 py-3">

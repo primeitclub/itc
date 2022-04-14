@@ -26,6 +26,7 @@ class StoreBlogRequest extends FormRequest
         return [
             'title' => ['required'],
             'slug' => ['required', 'unique:blogs'],
+            'blog_category_id' => ['required'],
             'excerpt' => ['required'],
             'body' => ['required'],
             'thumbnail' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],

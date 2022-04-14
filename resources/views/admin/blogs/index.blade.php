@@ -26,8 +26,8 @@
                                 <p class="font-semibold text-md">{{ $blog->title }}</p>
                             </td>
 
-                            <td class="px-4 font-bold py-3 text-xs uppercase">
-                                Uncategorized
+                            <td class="px-4 font-bold py-3 text-xs text-gray-600 uppercase">
+                                {{ $blog->blogCategory->title }}
                             </td>
 
                             <td class="px-4 py-3 text-sm">
