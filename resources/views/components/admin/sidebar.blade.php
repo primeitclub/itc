@@ -62,12 +62,12 @@
                                     </li>
 
                                     <li>
-                                        <a href="#" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">All
+                                        <a href="{{ route('admin.blogs.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">All
                                             Blogs</a>
                                     </li>
 
                                     <li>
-                                        <a href="#" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">Add
+                                        <a href="{{ route('admin.blogs.create') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">Add
                                             Blog</a>
                                     </li>
                                 </ul>
