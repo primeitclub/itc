@@ -3,11 +3,7 @@
         <div class="flex justify-between ">
             <h1 class="text-xl font-bold text-gray-900 uppercase">Blog Categories</h1>
 
-            <span class="inline-flex rounded-md shadow-sm">
-                <a href="{{ route('admin.blog-categories.create') }}" class="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition duration-150 ease-in-out border border-gray-200">
-                    Add Category
-                </a>
-            </span>
+            <x-button.link link="{{ route('admin.blog-categories.create') }}">Add new Category</x-button.link>
         </div>
 
         <div class="w-full overflow-hidden rounded-lg shadow-xs">
