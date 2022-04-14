@@ -1,6 +1,6 @@
 <x-admin.app title="User | Edit">
     <div class="mt-6 space-y-6">
-        <h1 class="text-2xl font-semibold text-gray-900">Update User</h1>
+        <h1 class="text-xl font-bold text-gray-900 uppercase">Update User</h1>
 
         <form method="POST" action="{{ route('admin.users.update',$user->id) }}">
             @csrf
@@ -8,82 +8,38 @@
             @method('PATCH')
 
             <div class="space-y-6">
-                <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                    <label for="username" class="block text-sm font-medium text-gray-700 leading-5 sm:mt-px sm:pt-2">
-                        Name
-                    </label>
-                    <div class="mt-1 sm:mt-0 sm:col-span-2">
-                        <div class="flex max-w-lg rounded-md shadow-sm">
-                            <input id="username" name="name" type="text" class="@error('name') border-red-500 @enderror flex-1 block w-full form-input rounded-md transition duration-150 ease-in-out border border-gray-200 sm:text-sm sm:leading-5" value="{{ $user->name }}" />
-                        </div>
+                <div class="w-full p-4 bg-white rounded-lg">
+                    <div class="p-4 space-y-6">
+                        <x-form.group label="Name" for="name">
+                            <x-form.input type="text" id="name" name="name" value="{{ old('name') ?? $user->name }}" />
+                            <x-form.error name="name" />
+                        </x-form.group>
 
-                        @error('name') <div class="mt-1 text-sm text-red-500">{{ $message }}</div> @enderror
+                        <x-form.group label="Is Super" for="is_super">
+                            <input type="hidden" name="is_super" value="0">
+                            <input id="is_super" name="is_super" type="checkbox" value="1" {{ $user->is_super ? 'checked' :'' }} class=" checked:bg-blue-500 rounded-md" />
+                        </x-form.group>
+
+                        <x-form.group label="Email" for="email">
+                            <x-form.input type="text" id="email" name="email" value="{{ old('email') ?? $user->email }}" />
+                            <x-form.error name="email" />
+                        </x-form.group>
+
+                        <x-form.group label="Password" for="password">
+                            <x-form.input type="password" id="password" name="password" />
+                            <x-form.error name="password" />
+                        </x-form.group>
+
+                        <x-form.group label="Confirm Password" for="password_confirmation">
+                            <x-form.input type="password" id="password_confirmation" name="password_confirmation" />
+                            <x-form.error name="password_confirmation" />
+                        </x-form.group>
                     </div>
                 </div>
+                <div class="flex items-center justify-end space-x-3">
+                    <x-button.secondary link="{{ route('admin.users.index') }}">Cancel</x-button.secondary>
 
-                <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                    <div class="flex items-center space-x-4 ">
-                        <input type="hidden" name="is_super" value="0">
-                        <input id="is_super" name="is_super" type="checkbox" value="1" {{ $user->is_super ? 'checked' :'' }} class=" checked:bg-blue-500 rounded-md" />
-                        <span class="text-sm font-medium text-gray-700 leading-5 ">Is Super</span>
-                    </div>
-                </div>
-
-                <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                    <label for="email" class="block text-sm font-medium text-gray-700 leading-5 sm:mt-px sm:pt-2">
-                        Email
-                    </label>
-
-                    <div class="mt-1 sm:mt-0 sm:col-span-2">
-                        <div class="flex max-w-lg rounded-md shadow-sm">
-                            <input id="email" name="email" type="email" class="@error('email') border-red-500 @enderror flex-1  block w-full form-input rounded-md transition duration-150 ease-in-out border border-gray-200 sm:text-sm sm:leading-5" value="{{ $user->email }}" />
-                        </div>
-
-                        @error('email') <div class="mt-1 text-sm text-red-500">{{ $message }}</div> @enderror
-                    </div>
-                </div>
-
-                <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                    <label for="password" class="block text-sm font-medium text-gray-700 leading-5 sm:mt-px sm:pt-2">
-                        Password
-                    </label>
-
-                    <div class="mt-1 sm:mt-0 sm:col-span-2">
-                        <div class="flex max-w-lg rounded-md shadow-sm">
-                            <input id="password" name="password" type="password" class="@error('password') border-red-500 @enderror flex-1 block w-full form-input rounded-md transition duration-150 ease-in-out border border-gray-200 sm:text-sm sm:leading-5" />
-                        </div>
-
-                        @error('password') <div class="mt-1 text-sm text-red-500">{{ $message }}</div> @enderror
-                    </div>
-                </div>
-
-                <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-                    <label for="password_confirmation" class="block text-sm font-medium text-gray-700 leading-5 sm:mt-px sm:pt-2">
-                        Confirm Password
-                    </label>
-
-                    <div class="mt-1 sm:mt-0 sm:col-span-2">
-                        <div class="flex max-w-lg rounded-md shadow-sm">
-                            <input id="password_confirmation" name="password_confirmation" type="password" class="@error('password_confirmation') border-red-500 @enderror flex-1 block w-full form-input rounded-md transition duration-150 ease-in-out border border-gray-200 sm:text-sm sm:leading-5" />
-                        </div>
-
-                        @error('password_confirmation') <div class="mt-1 text-sm text-red-500">{{ $message }}</div> @enderror
-                    </div>
-                </div>
-
-                <div class="pt-5 mt-8 border-t border-gray-200">
-                    <div class="flex items-center justify-end space-x-3">
-                        <span class="inline-flex rounded-md shadow-sm">
-                            <a href="{{ route('admin.users.index') }}" class="px-4 py-2 text-sm font-medium text-gray-700 border border-gray-200 border-gray-300 rounded-md leading-5 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800 transition duration-150 ease-in-out">
-                                Cancel
-                            </a>
-                        </span>
-                        <span class="inline-flex rounded-md shadow-sm">
-                            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition duration-150 ease-in-out border border-gray-200">
-                                Update
-                            </button>
-                        </span>
-                    </div>
+                    <x-button.primary type="submit">Update</x-button.primary>
                 </div>
 
             </div>
