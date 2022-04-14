@@ -36,10 +36,17 @@ return [
             'throw' => false,
         ],
 
+        'thumbnails' => [
+            'driver' => 'local',
+            'root' => storage_path('app/thumbnails'),
+            'url' => env('APP_URL') . '/thumbnails',
+            'visibility' => 'public',
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'url' => env('APP_URL') . '/storage',
             'visibility' => 'public',
             'throw' => false,
         ],
@@ -70,7 +77,7 @@ return [
     */
 
     'links' => [
-        public_path('storage') => storage_path('app/public'),
+        public_path('thumbnails') => storage_path('app/thumbnails'),
     ],
 
 ];

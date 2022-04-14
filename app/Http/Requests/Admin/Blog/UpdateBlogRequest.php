@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Admin\Blog;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class UpdateBlogRequest extends FormRequest
 {
@@ -13,7 +14,7 @@ class UpdateBlogRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +25,13 @@ class UpdateBlogRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => ['required'],
+            'slug' => ['required', Rule::unique('blogs', 'slug')->ignore($this->blog)],
+            'excerpt' => ['required'],
+            'body' => ['required'],
+            'thumbnail' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],
+            'author' => ['required'],
+            'published_at' => ['nullable', 'date_format:Y-m-d']
         ];
     }
 }
