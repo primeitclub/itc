@@ -78,8 +78,10 @@ class BlogController extends Controller
 
     public function deleteThumbnail($thumbnail)
     {
-        if (Storage::disk('thumbnails')->exists($thumbnail)) {
-            Storage::disk('thumbnails')->delete($thumbnail);
+        if (!is_null($thumbnail)) {
+            if (Storage::disk('thumbnails')->exists($thumbnail)) {
+                Storage::disk('thumbnails')->delete($thumbnail);
+            }
         }
     }
 }
