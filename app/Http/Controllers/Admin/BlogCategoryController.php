@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\Blog\StoreBlogCategoryRequest;
 use App\Http\Requests\Admin\Blog\UpdateBlogCategoryRequest;
+use App\Models\Blog;
 use App\Models\BlogCategory;
 
 class BlogCategoryController extends Controller
@@ -44,6 +45,11 @@ class BlogCategoryController extends Controller
 
     public function destroy(BlogCategory $blogCategory)
     {
+        Blog::where('blog_category_id', $blogCategory->id)
+            ->update([
+                'blog_category_id' => config('defaults.default_blog_category_id')
+            ]);
+
         if ($blogCategory->id === config('defaults.default_blog_category_id')) {
             return redirect()->back()->with('error', 'You can not delete default category!');
         }
