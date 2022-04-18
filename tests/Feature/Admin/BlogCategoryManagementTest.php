@@ -2,8 +2,11 @@
 
 namespace Tests\Feature\Admin;
 
+use App\Models\Blog;
 use App\Models\BlogCategory;
 use App\Models\User;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
@@ -191,6 +194,26 @@ class BlogCategoryManagementTest extends TestCase
             ->delete(route('admin.blog-categories.destroy', $blogCategory));
 
         $this->assertCount(1, BlogCategory::all());
+    }
+
+    public function test_category_has_many_blogs_relationship()
+    {
+
+        $blogCategory = BlogCategory::factory()->create();
+
+        $blog = Blog::factory()->create([
+            'blog_category_id' => $blogCategory->id
+        ]);
+
+        $this->assertEquals($blogCategory->id, $blog->blog_category_id);
+
+        $this->assertEquals(1, $blogCategory->blogs->count());
+
+        $this->assertInstanceOf(HasMany::class, $blogCategory->blogs());
+
+        $this->assertInstanceOf(Collection::class, $blogCategory->blogs);
+
+        $this->assertInstanceOf(Blog::class, $blogCategory->blogs->random());
     }
 
     protected function data()
