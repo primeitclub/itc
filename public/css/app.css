@@ -849,6 +849,14 @@ select {
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-l {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.rounded-r {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
 .border-4 {
   border-width: 4px;
 }
@@ -866,6 +874,9 @@ select {
 }
 .border-l {
   border-left-width: 1px;
+}
+.border-r-0 {
+  border-right-width: 0px;
 }
 .border-dashed {
   border-style: dashed;

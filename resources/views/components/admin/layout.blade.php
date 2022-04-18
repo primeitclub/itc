@@ -17,11 +17,15 @@
     <!-- Alpine -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
+    @stack('styles')
+
 </head>
 
 <body class="antialiased bg-gray-200" style="font-family: Open Sans, sans-serif;">
 
     {{ $slot }}
+
+    @stack('scripts')
 
 </body>
 
