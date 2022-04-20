@@ -30,13 +30,14 @@
                             <x-form.error name="blog_category_id" />
                         </x-form.group>
 
+
                         <x-form.group label="Excerpt" for="excerpt">
-                            <x-form.textarea name="excerpt">{{ old('excerpt') ?? $blog->excerpt }}</x-form.textarea>
+                            <x-form.ckeditor name="excerpt">{{ old('excerpt') ?? $blog->excerpt }}</x-form.ckeditor>
                             <x-form.error name="excerpt" />
                         </x-form.group>
 
                         <x-form.group label="Body" for="body">
-                            <x-form.textarea name="body">{{ old('excerpt') ?? $blog->excerpt }}</x-form.textarea>
+                            <x-form.ckeditor name="body">{{ old('body') ?? $blog->body }}</x-form.ckeditor>
                             <x-form.error name="body" />
                         </x-form.group>
 
