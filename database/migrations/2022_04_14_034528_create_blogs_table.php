@@ -22,7 +22,7 @@ return new class extends Migration
             $table->text('body');
             $table->string('thumbnail')->nullable();
             $table->string('author');
-            $table->timestamp('published_at');
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
     }
