@@ -17,6 +17,9 @@
     <!-- Alpine -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
+    <!-- alpinejs-slug -->
+    <script src="https://unpkg.com/alpinejs-slug@1.x.x/dist/slug.min.js"></script>
+
     @stack('styles')
 
 </head>

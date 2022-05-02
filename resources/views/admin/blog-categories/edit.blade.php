@@ -9,14 +9,14 @@
 
             <div class="space-y-6">
                 <div class="w-full p-4 bg-white rounded-lg">
-                    <div class="p-4 space-y-6">
+                    <div class="p-4 space-y-6" x-data="{ title:'{{ $blogCategory->title }}' }">
                         <x-form.group label="Category Title" for="title">
-                            <x-form.input type="text" id="title" name="title" value="{{ old('title') ?? $blogCategory->title }}" />
+                            <x-form.input x-model="title" type="text" id="title" name="title" value="{{ old('title') ?? $blogCategory->title }}" />
                             <x-form.error name="title" />
                         </x-form.group>
 
                         <x-form.group label="Slug" for="slug">
-                            <x-form.input type="text" id="slug" name="slug" value="{{ old('slug') ?? $blogCategory->slug }}" />
+                            <x-form.input x-slug="title" type="text" id="slug" name="slug" value="{{ old('slug') ?? $blogCategory->slug }}" />
                             <x-form.error name="slug" />
                         </x-form.group>
 
