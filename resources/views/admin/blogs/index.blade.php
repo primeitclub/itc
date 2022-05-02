@@ -35,10 +35,7 @@
                             </td>
 
                             <td class="px-4 py-3 text-xs">
-                                2022-04-14 |
-                                <span class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full ">
-                                    Published
-                                </span>
+                                {{ $blog->dateFormatted() }} | {!! $blog->publicationStatus() !!}
                             </td>
 
                             <td class="px-4 py-3">
