@@ -1,4 +1,4 @@
-<x-admin.app title="Blog | Categories | Create">
+<x-admin.app title="Blog Categories | Create">
     <div class="mt-8 space-y-6">
         <h1 class="text-xl font-bold text-gray-900 uppercase">Add new Category</h1>
 

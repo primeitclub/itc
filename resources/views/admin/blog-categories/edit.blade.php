@@ -1,4 +1,4 @@
-<x-admin.app title="Blog | Categories | Edit">
+<x-admin.app title="Blog Categories | Edit">
     <div class="mt-8 space-y-6">
         <h1 class="text-xl font-bold text-gray-900 uppercase">Edit Category</h1>
 

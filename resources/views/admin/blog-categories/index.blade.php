@@ -1,4 +1,4 @@
-<x-admin.app title="Blog | Categories">
+<x-admin.app title="Blog Categories">
     <div class="mt-8 space-y-6">
         <div class="flex justify-between ">
             <h1 class="text-xl font-bold text-gray-900 uppercase">Blog Categories</h1>
