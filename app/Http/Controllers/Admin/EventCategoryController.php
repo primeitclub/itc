@@ -45,6 +45,10 @@ class EventCategoryController extends Controller
 
     public function destroy(EventCategory $eventCategory)
     {
+        if ($eventCategory->id === config('defaults.default_event_category_id')) {
+            return redirect()->back()->with('error', 'You can not delete default category!');
+        }
+
         $eventCategory->delete();
 
         return redirect()->back()->with('success', 'Event category deleted successfully!');
