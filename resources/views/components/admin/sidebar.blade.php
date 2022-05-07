@@ -94,7 +94,7 @@
                             <div class="pt-2 pl-4">
                                 <ul class="flex flex-col pl-2 text-gray-200 border-l border-gray-300 space-y-2" x-show="open" x-cloak @click.outside="open = false">
                                     <li>
-                                        <a href="#" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">Category
+                                        <a href="{{ route('admin.event-categories.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">Category
                                         </a>
                                     </li>
                                     <li>
