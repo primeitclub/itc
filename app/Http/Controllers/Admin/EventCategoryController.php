@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Admin\Events\StoreEventCategoryRequest;
-use App\Http\Requests\Admin\Events\UpdateEventCategoryRequest;
+use App\Http\Requests\Admin\Event\StoreEventCategoryRequest;
+use App\Http\Requests\Admin\Event\UpdateEventCategoryRequest;
 use App\Models\EventCategory;
 use Illuminate\Http\Request;
 

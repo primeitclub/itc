@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Admin\Events;
+namespace App\Http\Requests\Admin\Event;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rule;
 
-class UpdateEventCategoryRequest extends FormRequest
+class StoreEventCategoryRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -26,7 +25,7 @@ class UpdateEventCategoryRequest extends FormRequest
     {
         return [
             'title' => ['required'],
-            'slug' => ['required', Rule::unique('event_categories', 'slug')->ignore($this->event_category)],
+            'slug' => ['required', 'unique:event_categories']
         ];
     }
 }
