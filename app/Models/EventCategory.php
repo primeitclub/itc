@@ -13,4 +13,9 @@ class EventCategory extends Model
         'title',
         'slug'
     ];
+
+    public function events()
+    {
+        return $this->hasMany(Event::class);
+    }
 }

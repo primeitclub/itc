@@ -15,6 +15,14 @@ return new class extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('slug')->unique();
+            $table->foreignId('event_category_id')->constrained()->cascadeOnDelete();
+            $table->string('thumbnail')->nullable();
+            $table->text('description');
+            $table->string('venue');
+            $table->string('venue_address');
+            $table->dateTime('event_date');
             $table->timestamps();
         });
     }

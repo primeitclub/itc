@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Admin\Event;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
 
 class UpdateEventRequest extends FormRequest
 {
@@ -13,7 +14,7 @@ class UpdateEventRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +25,14 @@ class UpdateEventRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => ['required'],
+            'slug' => ['required', Rule::unique('events', 'slug')->ignore($this->event)],
+            'event_category_id' => ['required'],
+            'thumbnail' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],
+            'description' => ['required'],
+            'venue' => ['required'],
+            'venue_address' => ['required'],
+            'event_date' => ['required']
         ];
     }
 }
