@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\Event\StoreEventCategoryRequest;
 use App\Http\Requests\Admin\Event\UpdateEventCategoryRequest;
+use App\Models\Event;
 use App\Models\EventCategory;
 use Illuminate\Http\Request;
 
@@ -45,6 +46,11 @@ class EventCategoryController extends Controller
 
     public function destroy(EventCategory $eventCategory)
     {
+        Event::where('event_category_id', $eventCategory->id)
+            ->update([
+                'event_category_id' => config('defaults.default_event_category_id')
+            ]);
+
         if ($eventCategory->id === config('defaults.default_event_category_id')) {
             return redirect()->back()->with('error', 'You can not delete default category!');
         }
