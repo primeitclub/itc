@@ -37,11 +37,11 @@
                             </td>
 
                             <td class="px-4 py-3 text-xs">
-                                03 June, 2022
+                                {{ $event->event_date }}
                             </td>
 
                             <td class="px-4 py-3 text-sm">
-                                09:30 AM
+                                {{ $event->event_time }}
                             </td>
 
                             <td class="px-4 py-3 text-sm">
