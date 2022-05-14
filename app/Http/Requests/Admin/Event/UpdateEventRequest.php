@@ -32,7 +32,8 @@ class UpdateEventRequest extends FormRequest
             'description' => ['required'],
             'venue' => ['required'],
             'venue_address' => ['required'],
-            'event_date' => ['required']
+            'event_date' => ['required'],
+            'event_time' => ['required']
         ];
     }
 }

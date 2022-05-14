@@ -18,12 +18,12 @@ class Event extends Model
         'description',
         'venue',
         'venue_address',
-        'event_date'
+        'event_date',
+        'event_time',
     ];
 
     public function eventCategory()
     {
         return $this->belongsTo(EventCategory::class);
     }
-
 }
