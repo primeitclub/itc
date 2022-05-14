@@ -49,7 +49,7 @@
                         </x-form.group>
 
                         <x-form.group label="Published At" for="published_at">
-                            <x-form.date name="published_at" id="published_at" value="{{ old('published_at') ?? $blog->published_at }}" />
+                            <x-form.datepicker name="published_at" id="published_at" value="{{ old('published_at') ?? $blog->published_at }}" />
                             <x-form.error name="published_at" />
                         </x-form.group>
 

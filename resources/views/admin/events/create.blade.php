@@ -49,7 +49,7 @@
                         </x-form.group>
 
                         <x-form.group label="Event Date" for="event_date">
-                            <x-form.date name="event_date" id="event_date" value="{{ old('event_date') ?? $event->event_date }}" />
+                            <x-form.datepicker name="event_date" id="event_date" value="{{ old('event_date') ?? $event->event_date }}" />
                             <x-form.error name="event_date" />
                         </x-form.group>
 
