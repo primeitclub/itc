@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\EventCategoryController;
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\ProfileController;
+use App\Http\Controllers\Admin\SpeakerController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -36,5 +37,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
         Route::resource('event-categories', EventCategoryController::class);
         Route::resource('events', EventController::class);
+        Route::resource('speakers', SpeakerController::class);
     });
 });
