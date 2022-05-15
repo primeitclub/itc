@@ -45,7 +45,7 @@
                             </td>
 
                             <td class="px-4 py-3 text-sm">
-                                Up Coming
+                                {!! $event->eventStatus() !!}
                             </td>
 
                             <td class="px-4 py-3">

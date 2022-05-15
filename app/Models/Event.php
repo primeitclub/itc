@@ -41,4 +41,15 @@ class Event extends Model
             get: fn ($value) => Carbon::parse($value)->format('H:i A'),
         );
     }
+
+    public function eventStatus()
+    {
+        $eventDate = Carbon::parse($this->event_date);
+
+        if ($eventDate && ($eventDate->isFuture())) {
+            return  '<span class="px-2 py-1 text-xs font-semibold leading-tight text-blue-700 uppercase bg-blue-100 rounded-full ">Upcoming</span>';
+        }
+
+        return  '<span class="px-2 py-1 text-xs font-semibold leading-tight text-green-700 uppercase bg-green-100 rounded-full ">Completed</span>';
+    }
 }
