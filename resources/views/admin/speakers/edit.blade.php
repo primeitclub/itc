@@ -2,7 +2,7 @@
     <div class="mt-8 space-y-6">
         <h1 class="text-xl font-bold text-gray-900 uppercase">Edit Speaker</h1>
 
-        <form method="POST" action="{{ route('admin.speakers.update',$speaker) }}">
+        <form method="POST" action="{{ route('admin.speakers.update',$speaker) }}" enctype="multipart/form-data">
             @csrf
 
             @method('PATCH')

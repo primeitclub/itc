@@ -2,7 +2,7 @@
     <div class="mt-8 space-y-6">
         <h1 class="text-xl font-bold text-gray-900 uppercase">Add new Speaker</h1>
 
-        <form method="POST" action="{{ route('admin.speakers.store') }}">
+        <form method="POST" action="{{ route('admin.speakers.store') }}" enctype="multipart/form-data">
             @csrf
 
             <div class="space-y-6">

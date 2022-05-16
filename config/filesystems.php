@@ -43,6 +43,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'speakers' => [
+            'driver' => 'local',
+            'root' => storage_path('app/speakers'),
+            'url' => env('APP_URL') . '/speakers',
+            'visibility' => 'public',
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
@@ -78,6 +85,7 @@ return [
 
     'links' => [
         public_path('thumbnails') => storage_path('app/thumbnails'),
+        public_path('speakers') => storage_path('app/speakers'),
     ],
 
 ];
