@@ -13,7 +13,7 @@ class StoreSpeakerRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,12 @@ class StoreSpeakerRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => ['required'],
+            'image' => ['nullable', 'image', 'mimes:jpg,jpeg,png'],
+            'description' => ['required'],
+            'facebook' => ['nullable', 'url'],
+            'twitter' => ['nullable', 'url'],
+            'linkedin' => ['nullable', 'url']
         ];
     }
 }

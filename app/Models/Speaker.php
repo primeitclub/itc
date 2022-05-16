@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Speaker extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'image',
+        'description',
+        'facebook',
+        'twitter',
+        'linkedin'
+    ];
 }
