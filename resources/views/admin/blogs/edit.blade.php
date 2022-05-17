@@ -24,7 +24,7 @@
                             <select name="blog_category_id" id="blog_category_id" class="@error('blog_category_id') border-red-600 @enderror w-full p-2 border border-gray-300 rounded form-input">
                                 <option value="" selected disabled>Select Category</option>
                                 @foreach($blogCategories as $blogCategory)
-                                <option value="{{ $blogCategory->id }}" {{ $blog->blogCategory->id === $blogCategory->id ? 'selected':'' }}> {{ $blogCategory->title }}</option>
+                                <option value="{{ $blogCategory->id }}" {{ $blog->blogCategory->id === $blogCategory->id ? 'selected' : '' }}> {{ $blogCategory->title }}</option>
                                 @endforeach
                             </select>
                             <x-form.error name="blog_category_id" />
@@ -52,7 +52,7 @@
                         </x-form.group>
 
                         <x-form.group label="Published At" for="published_at">
-                            <x-form.date name="published_at" id="published_at" value="{{ old('published_at') ?? $blog->published_at }}" />
+                            <x-form.datepicker name="published_at" id="published_at" value="{{ old('published_at') ?? $blog->published_at }}" />
                             <x-form.error name="published_at" />
                         </x-form.group>
 

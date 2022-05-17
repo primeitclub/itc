@@ -24,7 +24,7 @@
                             <select name="event_category_id" id="event_category_id" class="@error('event_category_id') border-red-600 @enderror w-full p-2 border border-gray-300 rounded form-input">
                                 <option value="" selected disabled>Select Category</option>
                                 @foreach($eventCategories as $eventCategory)
-                                <option value="{{ $eventCategory->id }}" {{old('event_category_id' == $eventCategory->id ? 'selected':'')}}>{{ $eventCategory->title }}</option>
+                                <option value="{{ $eventCategory->id }}" {{ $event->eventCategory->id == $eventCategory->id ? 'selected' : '' }}>{{ $eventCategory->title }}</option>
                                 @endforeach
                             </select>
                             <x-form.error name="event_category_id" />
