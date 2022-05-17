@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('speakers', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('event_id')->constrained()->cascadeOnDelete();
             $table->string('name');
             $table->string('image')->nullable();
             $table->text('description');

@@ -33,7 +33,15 @@
                             </td>
 
                             <td class="px-4 py-3 text-sm">
-                                John Doe
+                                @if($event->speakers->count() <= 0)
+                                    No Speakers
+                                @else
+                                    @foreach($event->speakers as $speaker)
+
+                                    {{ $speaker->name }}, <br>
+
+                                    @endforeach
+                                @endif
                             </td>
 
                             <td class="px-4 py-3 text-xs">

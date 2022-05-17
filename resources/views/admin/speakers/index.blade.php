@@ -25,7 +25,7 @@
                             </td>
 
                             <td class="px-4 py-3 text-sm">
-                                New Event
+                                {{ $speaker->event->title }}
                             </td>
 
                             <td class="px-4 py-3">

@@ -28,6 +28,11 @@ class Event extends Model
         return $this->belongsTo(EventCategory::class);
     }
 
+    public function speakers()
+    {
+        return $this->hasMany(Speaker::class);
+    }
+
     public function EventDate(): Attribute
     {
         return new Attribute(

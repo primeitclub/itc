@@ -25,6 +25,7 @@ class UpdateSpeakerRequest extends FormRequest
     {
         return [
             'name' => ['required'],
+            'event_id' => ['required'],
             'image' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],
             'description' => ['required'],
             'facebook' => ['nullable', 'url'],

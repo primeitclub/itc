@@ -8,6 +8,17 @@
             <div class="space-y-6">
                 <div class="w-full p-4 bg-white rounded-lg">
                     <div class="p-4 space-y-6">
+
+                        <x-form.group label="Event" for="event_id">
+                            <select name="event_id" id="event_id" class="@error('event_id') border-red-600 @enderror w-full p-2 border border-gray-300 rounded form-input">
+                                <option value="" selected disabled>Select Event</option>
+                                @foreach($events as $event)
+                                <option value="{{ $event->id }}" {{old('event_id' == $event->id ? 'selected':'')}}>{{ $event->title }}</option>
+                                @endforeach
+                            </select>
+                            <x-form.error name="event_id" />
+                        </x-form.group>
+
                         <x-form.group label="Name" for="name">
                             <x-form.input type="text" id="name" name="name" value="{{ old('name') ?? $speaker->name }}" />
                             <x-form.error name="name" />

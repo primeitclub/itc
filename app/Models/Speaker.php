@@ -10,6 +10,7 @@ class Speaker extends Model
     use HasFactory;
 
     protected $fillable = [
+        'event_id',
         'name',
         'image',
         'description',
@@ -17,4 +18,9 @@ class Speaker extends Model
         'twitter',
         'linkedin'
     ];
+
+    public function event()
+    {
+        return $this->belongsTo(Event::class);
+    }
 }

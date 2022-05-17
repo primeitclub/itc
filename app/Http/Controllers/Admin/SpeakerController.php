@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\Event\StoreSpeakerRequest;
 use App\Http\Requests\Admin\Event\UpdateSpeakerRequest;
+use App\Models\Event;
 use App\Models\Speaker;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -22,7 +23,9 @@ class SpeakerController extends Controller
     {
         $speaker = new Speaker();
 
-        return view('admin.speakers.create', compact('speaker'));
+        $events = Event::orderBy('title')->get();
+
+        return view('admin.speakers.create', compact('speaker', 'events'));
     }
 
     public function store(StoreSpeakerRequest $request)
@@ -36,7 +39,9 @@ class SpeakerController extends Controller
 
     public function edit(Speaker $speaker)
     {
-        return view('admin.speakers.edit', compact('speaker'));
+        $events = Event::orderBy('title')->get();
+
+        return view('admin.speakers.edit', compact('speaker','events'));
     }
 
     public function update(UpdateSpeakerRequest $request, Speaker $speaker)
