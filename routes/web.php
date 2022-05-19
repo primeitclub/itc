@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\EventCategoryController;
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\MemberController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SpeakerController;
 use App\Http\Controllers\Admin\UserController;
@@ -38,5 +39,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::resource('event-categories', EventCategoryController::class);
         Route::resource('events', EventController::class);
         Route::resource('speakers', SpeakerController::class);
+
+        Route::resource('members', MemberController::class);
     });
 });
