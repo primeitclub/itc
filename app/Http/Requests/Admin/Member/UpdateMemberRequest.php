@@ -13,7 +13,7 @@ class UpdateMemberRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,15 @@ class UpdateMemberRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => ['required'],
+            'image' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],
+            'batch' => ['required', 'date'],
+            'type' => ['required'],
+            'designation' => ['sometimes'],
+            'email' => ['required', 'email'],
+            'facebook' => ['required', 'url'],
+            'linkedin' => ['nullable', 'url'],
+            'testimonial' => ['sometimes'],
         ];
     }
 }

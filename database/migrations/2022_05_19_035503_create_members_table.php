@@ -15,6 +15,15 @@ return new class extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('image')->nullable();
+            $table->date('batch');
+            $table->string('type');
+            $table->string('designation')->nullable();
+            $table->string('email');
+            $table->string('facebook');
+            $table->string('linkedin')->nullable();
+            $table->text('testimonial')->nullable();
             $table->timestamps();
         });
     }

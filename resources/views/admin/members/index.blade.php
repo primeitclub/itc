@@ -1,9 +1,9 @@
-<x-admin.app title="Blogs">
+<x-admin.app title="Members">
     <div class="mt-8 space-y-6">
         <div class="flex justify-between ">
-            <h1 class="text-xl font-bold text-gray-900 uppercase">All Blogs</h1>
+            <h1 class="text-xl font-bold text-gray-900 uppercase">All Members</h1>
 
-            <x-button.link link="{{ route('admin.blogs.create') }}"> Add new Blog </x-button.link>
+            <x-button.link link="{{ route('admin.members.create') }}"> Add new Member </x-button.link>
         </div>
 
         <div class="w-full overflow-hidden rounded-lg shadow-xs">
@@ -11,41 +11,46 @@
                 <table class="w-full whitespace-no-wrap">
                     <thead>
                         <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b bg-gray-50 ">
-                            <th class="px-4 py-3">Title</th>
-                            <th class="px-4 py-3">Category</th>
-                            <th class="px-4 py-3">Author</th>
-                            <th class="px-4 py-3">Date</th>
+                            <th class="px-4 py-3">Name</th>
+                            <th class="px-4 py-3">Email</th>
+                            <th class="px-4 py-3">Type</th>
+                            <th class="px-4 py-3">Designation</th>
+                            <th class="px-4 py-3">Batch</th>
                             <th class="px-4 py-3">Actions</th>
                         </tr>
                     </thead>
 
                     <tbody class="bg-white divide-y ">
-                        @foreach($blogs as $blog)
+                        @foreach($members as $member)
                         <tr class="text-gray-700 ">
                             <td class="px-4 py-3">
-                                <p class="font-semibold text-md">{{ $blog->title }}</p>
+                                <p class="font-semibold text-md">{{ $member->name }}</p>
                             </td>
 
                             <td class="px-4 font-bold py-3 text-xs text-gray-600 uppercase">
-                                {{ $blog->blogCategory->title }}
+                                {{ $member->email }}
                             </td>
 
                             <td class="px-4 py-3 text-sm">
-                                {{ $blog->author }}
+                                {{ $member->type }}
                             </td>
 
                             <td class="px-4 py-3 text-xs">
-                                {{ $blog->dateFormatted() }} | {!! $blog->publicationStatus() !!}
+                                {{ $member->designation }}
+                            </td>
+
+                            <td class="px-4 py-3 text-xs">
+                                {{ $member->batch }}
                             </td>
 
                             <td class="px-4 py-3">
                                 <div class="flex items-center text-sm space-x-4">
-                                    <a href="{{ route('admin.blogs.edit',$blog->id) }}" class="flex items-center justify-between px-2 py-2 text-sm font-medium text-green-500 rounded-lg leading-5 focus:outline-none focus:shadow-outline-gray" aria-label="Edit"> <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                                    <a href="{{ route('admin.members.edit',$member->id) }}" class="flex items-center justify-between px-2 py-2 text-sm font-medium text-green-500 rounded-lg leading-5 focus:outline-none focus:shadow-outline-gray" aria-label="Edit"> <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                                             <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"></path>
                                         </svg>
                                     </a>
 
-                                    <form action="{{ route('admin.blogs.destroy',$blog->id) }}" method="POST">
+                                    <form action="{{ route('admin.members.destroy',$member->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
 
@@ -63,7 +68,7 @@
                     </tbody>
                 </table>
                 <div>
-                    {{ $blogs->links() }}
+                    {{ $members->links() }}
                 </div>
             </div>
         </div>
