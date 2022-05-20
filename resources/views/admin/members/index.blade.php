@@ -27,19 +27,23 @@
                                 <p class="font-semibold text-md">{{ $member->name }}</p>
                             </td>
 
-                            <td class="px-4 font-bold py-3 text-xs text-gray-600 uppercase">
+                            <td class="px-4 font-bold py-3 text-xs text-gray-600">
                                 {{ $member->email }}
                             </td>
 
-                            <td class="px-4 py-3 text-sm">
+                            <td class="px-4 py-3 text-sm uppercase">
                                 {{ $member->type }}
                             </td>
 
-                            <td class="px-4 py-3 text-xs">
-                                {{ $member->designation }}
+                            <td class="px-4 py-3 text-xs uppercase font-semibold ">
+                                @if($member->designation)
+                                    {{ $member->designation }}
+                                @else
+                                    -
+                                @endif
                             </td>
 
-                            <td class="px-4 py-3 text-xs">
+                            <td class="px-4 py-3 text-sm font-bold">
                                 {{ $member->batch }}
                             </td>
 

@@ -20,16 +20,21 @@
                         </x-form.group>
 
                         <div class="flex justify-between">
+
                             <x-form.group label="Batch" for="batch">
-                                <x-form.input type="text" id="batch" name="batch" value="{{ old('batch') ?? $member->batch }}" />
+                                <x-form.input type="date" id="batch" name="batch" value="{{ old('batch') ?? $member->batch }}" />
                                 <x-form.error name="batch" />
                             </x-form.group>
 
-                            <x-form.group label="Type" for="type">
-                                <x-form.input type="text" id="type" name="type" value="{{ old('type') ?? $member->type }}" />
+                            <x-form.group label="Member Type" for="type">
+                                <select name="type" id="type" class="@error('type') border-red-600 @enderror w-64 p-2 border border-gray-300 rounded form-input">
+                                    <option value="" selected disabled>Member Type</option>
+                                    @foreach($member->typeOptions() as $typeOptionKey => $typeOptionValue )
+                                    <option value="{{ $typeOptionKey }}" {{ old('type') == $typeOptionKey ? 'selected' : '' }}>{{ $typeOptionValue }}</option>
+                                    @endforeach
+                                </select>
                                 <x-form.error name="type" />
                             </x-form.group>
-
 
                             <x-form.group label="Designation" for="designation">
                                 <x-form.input type="text" id="designation" name="designation" value="{{ old('designation') ?? $member->designation }}" />

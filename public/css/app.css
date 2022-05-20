@@ -751,14 +751,14 @@ select {
 .w-5 {
   width: 1.25rem;
 }
+.w-64 {
+  width: 16rem;
+}
 .w-0 {
   width: 0px;
 }
 .w-auto {
   width: auto;
-}
-.w-64 {
-  width: 16rem;
 }
 .max-w-sm {
   max-width: 24rem;
