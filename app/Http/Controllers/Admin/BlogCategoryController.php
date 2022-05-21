@@ -12,7 +12,7 @@ class BlogCategoryController extends Controller
 {
     public function index()
     {
-        $blogCategories = BlogCategory::latest()->paginate(10);
+        $blogCategories = BlogCategory::with('blogs')->latest()->paginate(10);
 
         return view('admin.blog-categories.index', compact('blogCategories'));
     }

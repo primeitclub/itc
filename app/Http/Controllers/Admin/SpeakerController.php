@@ -14,7 +14,7 @@ class SpeakerController extends Controller
 {
     public function index()
     {
-        $speakers = Speaker::latest()->paginate(10);
+        $speakers = Speaker::with('event')->latest()->paginate(10);
 
         return view('admin.speakers.index', compact('speakers'));
     }
@@ -41,7 +41,7 @@ class SpeakerController extends Controller
     {
         $events = Event::orderBy('title')->get();
 
-        return view('admin.speakers.edit', compact('speaker','events'));
+        return view('admin.speakers.edit', compact('speaker', 'events'));
     }
 
     public function update(UpdateSpeakerRequest $request, Speaker $speaker)
