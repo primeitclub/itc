@@ -44,7 +44,7 @@
                             </td>
 
                             <td class="px-4 py-3 text-sm font-bold">
-                                {{ $member->batch }}
+                                {{ $member->memberBatch() }}
                             </td>
 
                             <td class="px-4 py-3">
