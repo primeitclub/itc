@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AlbumController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\BlogCategoryController;
 use App\Http\Controllers\Admin\BlogController;
@@ -41,5 +42,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::resource('speakers', SpeakerController::class);
 
         Route::resource('members', MemberController::class);
+
+        Route::resource('albums', AlbumController::class);
     });
 });
