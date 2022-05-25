@@ -21,7 +21,7 @@
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 8.25H19"></path>
                                 </svg>
                             </div>
-                            <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Dashboard</a>
+                            <a href="{{ route('admin.home') }}" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Dashboard</a>
                         </li>
 
                         <li class="relative text-gray-200 hover:text-white focus-within:text-white">
