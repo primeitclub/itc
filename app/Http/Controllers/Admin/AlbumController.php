@@ -52,6 +52,11 @@ class AlbumController extends Controller
         return redirect()->route('admin.albums.index')->with('success', 'Album updated successfully!');
     }
 
+    public function show(Album $album)
+    {
+        return view('admin.albums.show',compact('album'));
+    }
+
     public function destroy(Album $album)
     {
         $album->delete();
