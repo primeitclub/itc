@@ -20,4 +20,8 @@ class Album extends Model
     public function thumbnailURL(){
         return  Storage::disk('albums')->url($this->thumbnail);
     }
+
+    public function images(){
+        return $this->hasMany(Image::class);
+    }
 }

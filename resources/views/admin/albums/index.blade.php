@@ -24,8 +24,8 @@
 
                             <div class="flex justify-between">
 
-                                <x-button.link link="">
-                                    Add Images
+                                <x-button.link link="{{ route('admin.albums.show',$album->id) }}">
+                                    Manage Images
                                 </x-button.link>
 
                                 <div class="flex items-center text-sm space-x-4">

@@ -64,6 +64,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'images' => [
+            'driver' => 'local',
+            'root' => storage_path('app/images'),
+            'url' => env('APP_URL') . '/images',
+            'visibility' => 'public',
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
@@ -102,6 +109,7 @@ return [
         public_path('speakers') => storage_path('app/speakers'),
         public_path('members') => storage_path('app/members'),
         public_path('albums') => storage_path('app/albums'),
+        public_path('images') => storage_path('app/images'),
     ],
 
 ];

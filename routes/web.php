@@ -7,6 +7,7 @@ use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\EventCategoryController;
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\ImageController;
 use App\Http\Controllers\Admin\MemberController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SpeakerController;
@@ -44,5 +45,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::resource('members', MemberController::class);
 
         Route::resource('albums', AlbumController::class);
+
+        Route::post('/images/store',[ImageController::class,'store'])->name('images.store');
     });
 });
