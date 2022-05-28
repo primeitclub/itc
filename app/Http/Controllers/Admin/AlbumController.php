@@ -66,10 +66,10 @@ class AlbumController extends Controller
         return redirect()->back()->with('success', 'Album deleted successfully!');
     }
 
-    private function storeThumbnail($request, $blog)
+    private function storeThumbnail($request, $album)
     {
         if ($request->has('thumbnail')) {
-            $blog->update([
+            $album->update([
                 'thumbnail' => $request->thumbnail->store('/', 'albums')
             ]);
         }
