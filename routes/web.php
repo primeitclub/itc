@@ -47,5 +47,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::resource('albums', AlbumController::class);
 
         Route::post('/images/store',[ImageController::class,'store'])->name('images.store');
+        Route::delete('/images/destroy/{image}',[ImageController::class,'destroy'])->name('images.destroy');
     });
 });

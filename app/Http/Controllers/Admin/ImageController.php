@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Image;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ImageController extends Controller
 {
@@ -23,5 +24,15 @@ class ImageController extends Controller
         }
 
         return redirect()->back()->with('success','Images uploaded successfully!');
+    }
+
+      public function destroy(Image $image){
+        if (Storage::disk('images')->exists($image->image)) {
+            Storage::disk('images')->delete($image->image);
+        }
+
+        $image->delete();
+
+        return redirect()->back()->with('success','Image deleted successfully!');
     }
 }
