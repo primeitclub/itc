@@ -22,7 +22,7 @@
 
                             <p class="mb-3 font-normal text-gray-700">{!! $album->description !!}</p>
 
-                            <div class="flex justify-between">
+                            <div class="mt-4 flex justify-between">
 
                                 <x-button.link link="{{ route('admin.albums.show',$album->id) }}">
                                     Manage Images

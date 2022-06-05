@@ -20,9 +20,9 @@
                             <x-form.error name="slug" />
                         </x-form.group>
 
-                        <x-form.group label="Description" for="descriptin">
-                            <x-form.ckeditor name="descriptin">{{ $album->descriptin }}</x-form.ckeditor>
-                            <x-form.error name="descriptin" />
+                        <x-form.group label="Description" for="description">
+                            <x-form.ckeditor name="description">{{ $album->description }}</x-form.ckeditor>
+                            <x-form.error name="description" />
                         </x-form.group>
 
                         <x-form.group label="Thumbnail" for="thumbnail">
