@@ -21,11 +21,9 @@ class SpeakerController extends Controller
 
     public function create()
     {
-        $speaker = new Speaker();
-
         $events = Event::orderBy('title')->get();
 
-        return view('admin.speakers.create', compact('speaker', 'events'));
+        return view('admin.speakers.create', compact('events'));
     }
 
     public function store(StoreSpeakerRequest $request)

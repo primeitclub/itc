@@ -22,7 +22,7 @@ class MemberController extends Controller
     {
         $member = new Member();
 
-        return view('admin.members.create', compact('member'));
+        return view('admin.members.create',compact('member'));
     }
 
     public function store(StoreMemberRequest $request)

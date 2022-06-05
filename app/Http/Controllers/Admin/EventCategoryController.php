@@ -20,9 +20,7 @@ class EventCategoryController extends Controller
 
     public function create()
     {
-        $eventCategory = new EventCategory();
-
-        return view('admin.event-categories.create', compact('eventCategory'));
+        return view('admin.event-categories.create');
     }
 
     public function store(StoreEventCategoryRequest $request)

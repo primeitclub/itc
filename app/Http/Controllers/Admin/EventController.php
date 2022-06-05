@@ -21,11 +21,9 @@ class EventController extends Controller
 
     public function create()
     {
-        $event = new Event();
-
         $eventCategories = EventCategory::all();
 
-        return view('admin.events.create', compact('event', 'eventCategories'));
+        return view('admin.events.create', compact('eventCategories'));
     }
 
     public function store(StoreEventRequest $request)
