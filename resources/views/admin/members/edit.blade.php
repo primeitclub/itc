@@ -17,7 +17,7 @@
                         </x-form.group>
 
                         <x-form.group label="Image" for="image">
-                            <input type="file" id="image" name="image" class="@error('image') border-red-600 @enderror">
+                            <input type="file" id="image" name="image" accept="image/*" class="@error('image') border-red-600 @enderror">
                             <x-form.error name="image" />
                         </x-form.group>
 

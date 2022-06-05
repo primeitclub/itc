@@ -26,7 +26,7 @@
                         </x-form.group>
 
                         <x-form.group label="Thumbnail" for="thumbnail">
-                            <input type="file" id="thumbnail" name="thumbnail" class="@error('thumbnail') border-red-600 @enderror">
+                            <input type="file" id="thumbnail" name="thumbnail" accept="image/*" class="@error('thumbnail') border-red-600 @enderror">
                             <x-form.error name="thumbnail" />
                         </x-form.group>
 
