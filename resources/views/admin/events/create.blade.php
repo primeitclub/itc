@@ -7,14 +7,14 @@
 
             <div class="space-y-6">
                 <div class="w-full p-4 bg-white rounded-lg">
-                    <div class="p-4 space-y-6" x-data="{ title:'' }">
+                    <div class="p-4 space-y-6" x-data="{ title:'{{ old('title') }}' }">
                         <x-form.group label="Title" for="title">
-                            <x-form.input x-model="title" type="text" id="title" name="title" value="{{ old('title') ?? $event->title }}" />
+                            <x-form.input x-model="title" type="text" id="title" name="title" value="{{ old('title') }}" />
                             <x-form.error name="title" />
                         </x-form.group>
 
                         <x-form.group label="Slug" for="slug">
-                            <x-form.input x-slug="title" type="text" id="slug" name="slug" value="{{ old('slug') ?? $event->slug }}" />
+                            <x-form.input x-slug="title" type="text" id="slug" name="slug" value="{{ old('slug') }}" />
                             <x-form.error name="slug" />
                         </x-form.group>
 
@@ -29,7 +29,7 @@
                         </x-form.group>
 
                         <x-form.group label="Description" for="description">
-                            <x-form.ckeditor name="description">{{ old('description') ?? $event->description }}</x-form.ckeditor>
+                            <x-form.ckeditor name="description">{{ old('description') }}</x-form.ckeditor>
                             <x-form.error name="description" />
                         </x-form.group>
 
@@ -39,22 +39,22 @@
                         </x-form.group>
 
                         <x-form.group label="Venue" for="venue">
-                            <x-form.input type="text" id="venue" name="venue" value="{{ old('venue') ?? $event->venue }}" />
+                            <x-form.input type="text" id="venue" name="venue" value="{{ old('venue') }}" />
                             <x-form.error name="venue" />
                         </x-form.group>
 
                         <x-form.group label="Venue Address" for="venue_address">
-                            <x-form.input type="text" id="venue_address" name="venue_address" value="{{ old('venue_address') ?? $event->venue_address}}" />
+                            <x-form.input type="text" id="venue_address" name="venue_address" value="{{ old('venue_address') }}" />
                             <x-form.error name="venue_address" />
                         </x-form.group>
 
                         <x-form.group label="Event Date" for="event_date">
-                            <x-form.datepicker name="event_date" id="event_date" value="{{ old('event_date') ?? $event->event_date }}" />
+                            <x-form.datepicker name="event_date" id="event_date" value="{{ old('event_date') }}" />
                             <x-form.error name="event_date" />
                         </x-form.group>
 
                         <x-form.group label="Start at" for="event_time">
-                            <x-form.timepicker name="event_time" id="event_time" value="{{ old('event_time') ?? $event->event_time }}" />
+                            <x-form.timepicker name="event_time" id="event_time" value="{{ old('event_time') }}" />
                             <x-form.error name="event_time" />
                         </x-form.group>
 

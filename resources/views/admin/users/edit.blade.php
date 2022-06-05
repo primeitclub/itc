@@ -11,7 +11,7 @@
                 <div class="w-full p-4 bg-white rounded-lg">
                     <div class="p-4 space-y-6">
                         <x-form.group label="Name" for="name">
-                            <x-form.input type="text" id="name" name="name" value="{{ old('name') ?? $user->name }}" />
+                            <x-form.input type="text" id="name" name="name" value="{{ $user->name }}" />
                             <x-form.error name="name" />
                         </x-form.group>
 
@@ -21,7 +21,7 @@
                         </x-form.group>
 
                         <x-form.group label="Email" for="email">
-                            <x-form.input type="text" id="email" name="email" value="{{ old('email') ?? $user->email }}" />
+                            <x-form.input type="text" id="email" name="email" value="{{ $user->email }}" />
                             <x-form.error name="email" />
                         </x-form.group>
 

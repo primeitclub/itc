@@ -7,7 +7,7 @@
 
             <div class="space-y-6">
                 <div class="w-full p-4 bg-white rounded-lg">
-                    <div class="p-4 space-y-6" x-data="{ title:'' }">
+                    <div class="p-4 space-y-6" x-data="{ title:'{{ old('title') }}' }">
                         <x-form.group label="Title" for="title">
                             <x-form.input x-model="title" type="text" id="title" name="title" value="{{ old('title') }}" />
                             <x-form.error name="title" />

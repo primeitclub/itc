@@ -22,7 +22,7 @@
                         </x-form.group>
 
                         <x-form.group label="Name" for="name">
-                            <x-form.input type="text" id="name" name="name" value="{{ old('name') ?? $speaker->name }}" />
+                            <x-form.input type="text" id="name" name="name" value="{{ $speaker->name }}" />
                             <x-form.error name="name" />
                         </x-form.group>
 
@@ -32,22 +32,22 @@
                         </x-form.group>
 
                         <x-form.group label="Description" for="description">
-                            <x-form.ckeditor name="description">{{ old('description') ?? $speaker->description }}</x-form.ckeditor>
+                            <x-form.ckeditor name="description">{{ $speaker->description }}</x-form.ckeditor>
                             <x-form.error name="description" />
                         </x-form.group>
 
                         <x-form.group label="Facebook" for="facebook">
-                            <x-form.input-link type="text" id="facebook" name="facebook" value="{{ old('facebook') ?? $speaker->facebook }}" placeholder="www.facebook.com/username" />
+                            <x-form.input-link type="text" id="facebook" name="facebook" value="{{ $speaker->facebook }}" placeholder="www.facebook.com/username" />
                             <x-form.error name="facebook" />
                         </x-form.group>
 
                         <x-form.group label="Twitter" for="twitter">
-                            <x-form.input-link type="text" id="twitter" name="twitter" value="{{ old('twitter') ?? $speaker->twitter }}" placeholder="www.twitter.com/username" />
+                            <x-form.input-link type="text" id="twitter" name="twitter" value="{{ $speaker->twitter }}" placeholder="www.twitter.com/username" />
                             <x-form.error name="twitter" />
                         </x-form.group>
 
                         <x-form.group label="Linkedin" for="linkedin">
-                            <x-form.input-link type="text" id="linkedin" name="linkedin" value="{{ old('linkedin') ?? $speaker->linkedin }}" placeholder="www.linkedin.com/in/username" />
+                            <x-form.input-link type="text" id="linkedin" name="linkedin" value="{{ $speaker->linkedin }}" placeholder="www.linkedin.com/in/username" />
                             <x-form.error name="linkedin" />
                         </x-form.group>
 
