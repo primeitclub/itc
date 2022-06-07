@@ -12,7 +12,7 @@
                         </svg>
                     </div>
                     <div class="text-right">
-                        <p class="text-2xl">{{ $admins->count() }}</p>
+                        <p class="text-2xl">{{ $admins }}</p>
                         <p>Admin Users</p>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                         </svg>
                     </div>
                     <div class="text-right">
-                        <p class="text-2xl">{{ $blogs->count() }}</p>
+                        <p class="text-2xl">{{ $blogs }}</p>
                         <p>Blog Posts</p>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                         </svg>
                     </div>
                     <div class="text-right">
-                        <p class="text-2xl">{{ $events->count() }}</p>
+                        <p class="text-2xl">{{ $events }}</p>
                         <p>Events</p>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                         </svg>
                     </div>
                     <div class="text-right">
-                        <p class="text-2xl">{{ $members->count() }}</p>
+                        <p class="text-2xl">{{ $members }}</p>
                         <p>Club Members</p>
                     </div>
                 </div>

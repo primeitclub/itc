@@ -13,13 +13,13 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $admins = User::all();
+        $admins = User::all()->count();
 
-        $blogs = Blog::all();
+        $blogs = Blog::all()->count();
 
-        $events = Event::all();
+        $events = Event::all()->count();
 
-        $members = Member::all();
+        $members = Member::all()->count();
 
         return view('admin.home',compact('admins','blogs','events','members'));
     }
