@@ -32,6 +32,7 @@ class UpdateEventRequest extends FormRequest
             'description' => ['required'],
             'venue' => ['required'],
             'venue_address' => ['required'],
+            'registration_link' => ['nullable', 'url'],
             'event_date' => ['required'],
             'event_time' => ['required']
         ];

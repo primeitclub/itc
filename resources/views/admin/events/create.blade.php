@@ -48,6 +48,11 @@
                             <x-form.error name="venue_address" />
                         </x-form.group>
 
+                        <x-form.group label="Registration link" for="registration_link">
+                            <x-form.input-link type="text" id="registration_link" name="registration_link" value="{{ old('registration_link') }}" placeholder="docs.google.com/forms/googleformlink" />
+                            <x-form.error name="registration_link" />
+                        </x-form.group>
+
                         <x-form.group label="Event Date" for="event_date">
                             <x-form.datepicker name="event_date" id="event_date" value="{{ old('event_date') }}" />
                             <x-form.error name="event_date" />
