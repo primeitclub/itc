@@ -29,12 +29,20 @@
                             </x-form.group>
 
 
-                            <x-form.group label="Author" for="author">
+                            <x-form.group label="Author's Name" for="author">
                                 <x-form.input type="text" id="author" name="author" value="{{ old('author') }}" />
                                 <x-form.error name="author" />
                             </x-form.group>
 
+                            <x-form.group label="Author's Facebook" for="author_facebook">
+                                <x-form.input-link type="text" id="author_facebook" name="author_facebook" value="{{ old('author_facebook') }}" placeholder="www.facebook.com/username" />
+                                <x-form.error name="author_facebook" />
+                            </x-form.group>
 
+                            <x-form.group label="Author's Linkedin" for="author_linkedin">
+                                <x-form.input-link type="text" id="author_linkedin" name="author_linkedin" value="{{ old('author_linkedin') }}" placeholder="www.linkedin.com/in/username" />
+                                <x-form.error name="author_linkedin" />
+                            </x-form.group>
                         </div>
                     </div>
                 </div>

@@ -17,6 +17,8 @@ class Blog extends Model
         'body',
         'thumbnail',
         'author',
+        'author_facebook',
+        'author_linkedin',
         'published_at'
     ];
 

@@ -32,6 +32,8 @@ class UpdateBlogRequest extends FormRequest
             'body' => ['required'],
             'thumbnail' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],
             'author' => ['required'],
+            'author_facebook' => ['nullable','url'],
+            'author_linkedin' => ['nullable','url'],
             'published_at' => ['nullable', 'date_format:Y-m-d']
         ];
     }

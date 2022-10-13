@@ -22,6 +22,8 @@ return new class extends Migration
             $table->text('body');
             $table->string('thumbnail')->nullable();
             $table->string('author');
+            $table->string('author_facebook');
+            $table->string('author_linkedin');
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
