@@ -10,7 +10,7 @@
                     <div class="p-4 space-y-6">
 
                         <x-form.group label="Name" for="name">
-                            <x-form.input type="text" id="name" name="name" value="{{ old('name') }}" />
+                            <x-form.input type="text" id="name" name="name" value="{{ old('name') }}" placeholder="John Doe"/>
                             <x-form.error name="name" />
                         </x-form.group>
 
@@ -37,14 +37,14 @@
                             </x-form.group>
 
                             <x-form.group label="Designation" for="designation">
-                                <x-form.input type="text" id="designation" name="designation" value="{{ old('designation') }}" />
+                                <x-form.input type="text" id="designation" name="designation" value="{{ old('designation') }}" placeholder="President"/>
                                 <x-form.error name="designation" />
                             </x-form.group>
 
                         </div>
 
                         <x-form.group label="Email" for="email">
-                            <x-form.input type="email" id="email" name="email" value="{{ old('email') }}" />
+                            <x-form.input type="email" id="email" name="email" value="{{ old('email') }}"  placeholder="johndoe@email.com" />
                             <x-form.error name="email" />
                         </x-form.group>
 
@@ -56,6 +56,16 @@
                         <x-form.group label="Linkedin" for="linkedin">
                             <x-form.input-link type="text" id="linkedin" name="linkedin" value="{{ old('linkedin') }}" placeholder="www.linkedin.com/in/username" />
                             <x-form.error name="linkedin" />
+                        </x-form.group>
+
+                        <x-form.group label="Github" for="github">
+                            <x-form.input-link type="text" id="github" name="github" value="{{ old('github') }}" placeholder="www.github.com/in/username" />
+                            <x-form.error name="github" />
+                        </x-form.group>
+
+                        <x-form.group label="Instagram" for="instagram">
+                            <x-form.input-link type="text" id="instagram" name="instagram" value="{{ old('instagram') }}" placeholder="www.instagram.com/in/username" />
+                            <x-form.error name="instagram" />
                         </x-form.group>
 
                         <x-form.group label="Testimonial" for="testimonial">

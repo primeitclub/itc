@@ -19,6 +19,8 @@ class Member extends Model
         'email',
         'facebook',
         'linkedin',
+        'github',
+        'instagram',
         'testimonial'
     ];
 
@@ -30,7 +32,8 @@ class Member extends Model
         ];
     }
 
-    public function memberBatch(){
+    public function memberBatch()
+    {
         return Carbon::parse($this->batch)->format('Y');
     }
 }

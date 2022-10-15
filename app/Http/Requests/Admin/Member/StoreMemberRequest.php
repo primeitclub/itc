@@ -32,6 +32,8 @@ class StoreMemberRequest extends FormRequest
             'email' => ['required', 'email'],
             'facebook' => ['required', 'url'],
             'linkedin' => ['nullable', 'url'],
+            'github' => ['nullable', 'url'],
+            'instagram' => ['nullable', 'url'],
             'testimonial' => ['sometimes'],
         ];
     }

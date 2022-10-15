@@ -23,6 +23,8 @@ return new class extends Migration
             $table->string('email');
             $table->string('facebook');
             $table->string('linkedin')->nullable();
+            $table->string('github')->nullable();
+            $table->string('instagram')->nullable();
             $table->text('testimonial')->nullable();
             $table->timestamps();
         });
