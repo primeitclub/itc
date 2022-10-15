@@ -8,6 +8,10 @@
 
         <div class="w-full overflow-hidden rounded-lg shadow-xs">
             <div class="w-full overflow-x-auto space-y-4">
+                @if(!$users->count())
+                <div class="w-full bg-red-500 p-4 text-white">No records found!</div>
+                @else
+
                 <table class="w-full whitespace-no-wrap">
                     <thead>
                         <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b bg-gray-50 ">
@@ -63,6 +67,7 @@
                 <div>
                     {{ $users->links() }}
                 </div>
+                @endif
             </div>
         </div>
     </div>

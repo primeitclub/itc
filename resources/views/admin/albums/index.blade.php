@@ -8,6 +8,10 @@
 
         <div class="w-full overflow-hidden rounded-lg shadow-xs">
             <div class="w-full overflow-x-auto space-y-4">
+                @if(!$albums->count())
+                <div class="w-full bg-red-500 p-4 text-white">No records found!</div>
+                @else
+
                 <div class="container grid grid-cols-2 gap-4 mx-auto">
 
                     @foreach($albums as $album)
@@ -64,7 +68,7 @@
                 <div>
                     {{ $albums->links() }}
                 </div>
-
+                @endif
             </div>
         </div>
     </div>
