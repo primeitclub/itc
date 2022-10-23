@@ -29,7 +29,7 @@ Fork the repository and clone it (or download the zip file and extract it)
 
 Example :
 
-    git clone https://github.com/iambasanta/itc.git
+    git clone https://github.com:{username}/itc.git
 
 Change directory to the project directory
 
