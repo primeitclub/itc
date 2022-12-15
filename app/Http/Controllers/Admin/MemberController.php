@@ -63,10 +63,10 @@ class MemberController extends Controller
         return redirect()->route('admin.members.index')->with('success', 'Member deleted successfully!');
     }
 
-    public function storeImage($request, $speaker)
+    public function storeImage($request, $member)
     {
         if ($request->has('image')) {
-            $speaker->update([
+            $member>update([
                 'image' => $request->image->store('/', 'members')
             ]);
         }
