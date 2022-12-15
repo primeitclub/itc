@@ -13,7 +13,7 @@ class StoreAlumniTestimonialRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,13 @@ class StoreAlumniTestimonialRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => ['required'],
+            'image' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],
+            'designation' => ['sometimes'],
+            'facebook' => ['required', 'url'],
+            'linkedin' => ['nullable', 'url'],
+            'instagram' => ['nullable', 'url'],
+            'testimonial' => ['required'],
         ];
     }
 }

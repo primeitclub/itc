@@ -71,6 +71,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'alumnus' => [
+            'driver' => 'local',
+            'root' => storage_path('app/alumnus'),
+            'url' => env('APP_URL') . '/alumnus',
+            'visibility' => 'public',
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),

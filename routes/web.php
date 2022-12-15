@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AlbumController;
+use App\Http\Controllers\Admin\AlumniTestimonialController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\BlogCategoryController;
 use App\Http\Controllers\Admin\BlogController;
@@ -41,6 +42,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::resource('event-categories', EventCategoryController::class);
         Route::resource('events', EventController::class);
         Route::resource('speakers', SpeakerController::class);
+
+        Route::resource('alumni-testimonials', AlumniTestimonialController::class);
 
         Route::resource('members', MemberController::class);
 
