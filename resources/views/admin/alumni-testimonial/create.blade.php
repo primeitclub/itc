@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="flex items-center justify-end space-x-3">
-                    <x-button.secondary link="{{ route('admin.members.index') }}">Cancel</x-button.secondary>
+                    <x-button.secondary link="{{ route('admin.alumni-testimonials.index') }}">Cancel</x-button.secondary>
 
                     <x-button.primary type="submit">Create</x-button.primary>
                 </div>
