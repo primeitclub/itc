@@ -181,6 +181,38 @@
                             </div>
                         </li>
 
+                        <!-- Meerchandise -->
+                        <li x-data="{ open:false }">
+                            <div class="relative flex justify-between text-gray-200 hover:text-white focus-within:text-white" @click="open=!open">
+                                <div class="flex items-center w-full">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+                                        <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-5 h-5 stroke-current">
+                                          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                                        </svg>
+                                    </div>
+                                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Merchandise</a>
+                                </div>
+                                <button class="absolute right-0 flex items-center p-1" tabindex="-1">
+                                    <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.25 10.75L12 14.25L8.75 10.75"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="pt-2 pl-4">
+                                <ul class="flex flex-col pl-2 text-gray-200 border-l border-gray-300 space-y-2" x-show="open" x-cloak @click.outside="open = false">
+                                    <li>
+                                        <a href="{{ route('admin.merchandise.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">All
+                                            Merchandise
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('admin.merchandise.create') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">Add
+                                            Merchandise
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
 
                         <!-- Gallery -->
                         <li class="relative text-gray-200 hover:text-white focus-within:text-white">

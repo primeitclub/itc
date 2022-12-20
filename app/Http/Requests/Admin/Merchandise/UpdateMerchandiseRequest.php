@@ -13,7 +13,7 @@ class UpdateMerchandiseRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,11 @@ class UpdateMerchandiseRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            "title" => ["required"],
+            "image" => ["sometimes", "image", "mimes:jpg,jpeg,png"],
+            "price" => ["required"],
+            "description" => ["required"],
+            "form_link" => ["required", "url"],
         ];
     }
 }

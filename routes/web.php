@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\ImageController;
 use App\Http\Controllers\Admin\MemberController;
+use App\Http\Controllers\Admin\MerchandiseController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SpeakerController;
 use App\Http\Controllers\Admin\UserController;
@@ -46,6 +47,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::resource('alumni-testimonials', AlumniTestimonialController::class);
 
         Route::resource('members', MemberController::class);
+
+        Route::resource('merchandise', MerchandiseController::class);
 
         Route::resource('albums', AlbumController::class);
 

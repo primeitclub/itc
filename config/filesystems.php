@@ -78,6 +78,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'merchandise' => [
+            'driver' => 'local',
+            'root' => storage_path('app/merchandise'),
+            'url' => env('APP_URL') . '/merchandise',
+            'visibility' => 'public',
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
@@ -118,6 +125,7 @@ return [
         public_path('albums') => storage_path('app/albums'),
         public_path('images') => storage_path('app/images'),
         public_path('alumnus') => storage_path('app/alumnus'),
+        public_path('merchandise') => storage_path('app/merchandise'),
     ],
 
 ];
