@@ -12,18 +12,19 @@ Here are some of the things you can do to help.
 
 ### Contribute as a developer
 
- - Read [Local Installation Guide](#local-installation-guide) to set up the local development environment.
-
+-   Read [Local Installation Guide](#local-installation-guide) to set up the local development environment.
 
 ### Used frameworks:
-- [Laravel](https://laravel.com/)
-- [tailwindcss](https://tailwindcss.com/)
-- [Alpine.js](https://alpinejs.dev/)
+
+-   [Laravel](https://laravel.com/)
+-   [tailwindcss](https://tailwindcss.com/)
+-   [Alpine.js](https://alpinejs.dev/)
 
 ### Local Installation Guide
 
 Please check the official Laravel installation guide for server requirements before you start.
--  [Official Documentation](https://laravel.com/docs/9.x)
+
+-   [Official Documentation](https://laravel.com/docs/9.x)
 
 Fork the repository and clone it (or download the zip file and extract it)
 
@@ -64,6 +65,12 @@ Run the database migrations (**Set the database connection in .env before migrat
 Seed the database (OPTIONAL)
 
     php artisan db:seed
+
+Seeds `User`,`Blog Category` and `Event Category`
+
+| Email           | Password |
+| --------------- | -------- |
+| super@admin.com | password |
 
 Start the local development server
 
