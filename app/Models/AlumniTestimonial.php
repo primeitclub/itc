@@ -20,4 +20,11 @@ class AlumniTestimonial extends Model
         'testimonial'
     ];
 
+    public function imageUrl(){
+        return $this->image ?
+            Storage::disk("alumnus")->url($this->image)
+            : 
+            "";
+    }
+
 }

@@ -17,6 +17,7 @@
                         <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b bg-gray-50 ">
                             <th class="px-4 py-3">Name</th>
                             <th class="px-4 py-3">Designation</th>
+                            <th class="px-4 py-3">Testimonial</th>
                             <th class="px-4 py-3">Actions</th>
                         </tr>
                     </thead>
@@ -25,7 +26,10 @@
                         @foreach($alumniTestimonials as $alumniTestimonial)
                         <tr class="text-gray-700 ">
                             <td class="px-4 py-3">
-                                <p class="px-2 font-semibold text-md">{{ $alumniTestimonial->name }}</p>
+                                <div scope="row" class="flex items-center space-x-4 text-gray-900 whitespace-nowrap">
+                                    <img class="w-12 h-12 rounded-full" src="{{ $alumniTestimonial->imageUrl() }}" alt="image">
+                                    <p class="font-semibold text-base">{{ $alumniTestimonial->name }}</p>
+                                </div>
                             </td>
 
                             <td class="px-4 py-3 text-xs uppercase font-semibold ">
@@ -34,6 +38,12 @@
                                 @else
                                     -
                                 @endif
+                            </td>
+
+                            <td class="px-4 py-3">
+                                <div class="max-w-sm">
+                                    {!! $alumniTestimonial->testimonial !!}
+                                </div>
                             </td>
 
                             <td class="px-4 py-3">
