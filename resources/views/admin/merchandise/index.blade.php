@@ -15,7 +15,9 @@
                 <table class="w-full whitespace-no-wrap">
                     <thead>
                         <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b bg-gray-50 ">
+                            <th class="px-4 py-3">Image</th>
                             <th class="px-4 py-3">Title</th>
+                            <th class="px-4 py-3">Description</th>
                             <th class="px-4 py-3">Price</th>
                             <th class="px-4 py-3">Actions</th>
                         </tr>
@@ -25,11 +27,19 @@
                         @foreach($merchandises as $merchandise)
                         <tr class="text-gray-700 ">
                             <td class="px-4 py-3">
+                                <img class="h-24 w-24 rounded-sm" src="{{ $merchandise->imageUrl() }}" alt="image" /> 
+                            </td>
+
+                            <td class="px-4 py-3">
                                 <p class="px-2 font-semibold text-md">{{ $merchandise->title }}</p>
                             </td>
 
-                            <td class="px-4 py-3 text-xs uppercase font-semibold ">
-                                {{ $merchandise->price }}
+                            <td class="px-4 py-3 text-base ">
+                                {!! $merchandise->description !!}
+                            </td>
+
+                            <td class="px-4 py-3 text-xs font-semibold ">
+                                Rs {{ $merchandise->price }}
                             </td>
 
                             <td class="px-4 py-3">

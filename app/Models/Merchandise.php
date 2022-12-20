@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Merchandise extends Model
 {
@@ -16,5 +17,12 @@ class Merchandise extends Model
         "description",
         "form_link"
     ];
+
+    public function imageUrl(){
+        return $this->image ?
+            Storage::disk("merchandise")->url($this->image)
+            : 
+            "";
+    }
 
 }
