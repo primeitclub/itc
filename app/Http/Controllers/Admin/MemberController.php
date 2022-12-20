@@ -66,7 +66,7 @@ class MemberController extends Controller
     public function storeImage($request, $member)
     {
         if ($request->has('image')) {
-            $member>update([
+            $member->update([
                 'image' => $request->image->store('/', 'members')
             ]);
         }

@@ -28,7 +28,10 @@
                         @foreach($members as $member)
                         <tr class="text-gray-700 ">
                             <td class="px-4 py-3">
-                                <p class="font-semibold text-md">{{ $member->name }}</p>
+                                <div scope="row" class="flex items-center space-x-4 text-gray-900 whitespace-nowrap">
+                                    <img class="w-12 h-12 rounded-full" src="{{ $member->imageUrl() }}" alt="member image">
+                                    <p class="font-semibold text-base">{{ $member->name }}</p>
+                                </div>
                             </td>
 
                             <td class="px-4 font-bold py-3 text-xs text-gray-600">
