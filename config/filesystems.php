@@ -117,6 +117,7 @@ return [
         public_path('members') => storage_path('app/members'),
         public_path('albums') => storage_path('app/albums'),
         public_path('images') => storage_path('app/images'),
+        public_path('alumnus') => storage_path('app/alumnus'),
     ],
 
 ];
