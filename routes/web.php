@@ -39,6 +39,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
         Route::resource('blog-categories', BlogCategoryController::class);
         Route::resource('blogs', BlogController::class);
+        Route::post('/blogs/store',[BlogController::class,'image_upload'])->name('blogs.images.store');
 
         Route::resource('event-categories', EventCategoryController::class);
         Route::resource('events', EventController::class);

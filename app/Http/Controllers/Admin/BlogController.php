@@ -7,6 +7,7 @@ use App\Http\Requests\Admin\Blog\StoreBlogRequest;
 use App\Http\Requests\Admin\Blog\UpdateBlogRequest;
 use App\Models\Blog;
 use App\Models\BlogCategory;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
@@ -54,6 +55,24 @@ class BlogController extends Controller
         }
 
         return redirect()->route('admin.blogs.index')->with('success', 'Blog updated successfully!');
+    }
+
+    public function image_upload(Request $request){
+        if($request->hasFile('upload')){
+            $originalName = $request->file('upload')->getClientOriginalName();
+            $fileName = pathinfo($originalName, PATHINFO_FILENAME);
+            $extension = $request->file('upload')->getClientOriginalExtension();
+            $fileName = $fileName.'_'.time().'.'.$extension;
+            $request->file('upload')->move(public_path('blog-images'), $fileName);
+
+            $url = asset('blog-images/'.$fileName);
+
+            return response()->json([
+                'filename' => $fileName,
+                'uploaded' => 1,
+                'url' => $url
+            ]);
+        }
     }
 
     public function destroy(Blog $blog)

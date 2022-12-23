@@ -7,7 +7,12 @@
 <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
 <script>
     ClassicEditor
-        .create(document.querySelector(`#{{$name}}`))
+        .create(document.querySelector(`#{{$name}}`),{
+            ckfinder:{
+                uploadUrl: "{{ route('admin.blogs.images.store',['_token'=> csrf_token()]) }}"
+            }
+        })
+
         .catch(error => {
             console.error(error);
         });
