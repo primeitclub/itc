@@ -40,6 +40,10 @@ class UserController extends Controller
 
     public function destroy(User $user)
     {
+        if($user->id === config('defaults.default_admin_user_id')){
+            return redirect()->back()->with('error', 'You can not delete default admin user!');
+        }
+
         $user->delete();
 
         return redirect()->back()->with('success', 'User deleted successfully!');
