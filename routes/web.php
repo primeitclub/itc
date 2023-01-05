@@ -35,7 +35,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
             Route::patch('/profile', 'update')->name('profile.update');
         });
 
-        Route::resource('users', UserController::class);
+        Route::resource('users', UserController::class)->middleware(['can:super-admin']);
 
         Route::resource('blog-categories', BlogCategoryController::class);
         Route::resource('blogs', BlogController::class);

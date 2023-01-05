@@ -24,6 +24,7 @@
                             <a href="{{ route('admin.home') }}" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Dashboard</a>
                         </li>
 
+                        @can("super-admin")
                         <li class="relative text-gray-200 hover:text-white focus-within:text-white">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
                                 <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,6 +35,7 @@
                             <a href="{{ route('admin.users.index') }}" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Admin
                                 Users</a>
                         </li>
+                        @endcan
 
                         <!-- Alumni Testimonials -->
                         <li x-data="{ open:false }">
