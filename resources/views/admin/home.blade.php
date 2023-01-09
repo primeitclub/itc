@@ -4,6 +4,7 @@
 
         <div class="mt-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                @can("super-admin")
                 <div class="bg-white shadow-sm rounded-md flex items-center justify-between p-3 text-gray-700 font-medium group">
                     <div class="flex justify-center items-center w-14 h-14 bg-blue-50 rounded-full transition-all duration-300 transform group-hover:rotate-12">
                         <svg class="w-8 h-8 stroke-current text-blue-500 transform transition-transform duration-500 ease-in-out" viewBox="0 0 24 24" fill="none" >
@@ -16,6 +17,7 @@
                         <p class="text-gray-500">Admin Users</p>
                     </div>
                 </div>
+                @endcan
 
                 <div class="bg-white shadow-sm rounded-md flex items-center justify-between p-3 text-gray-700 font-medium group">
                     <div class="flex justify-center items-center w-14 h-14 bg-blue-50 rounded-full transition-all duration-300 transform group-hover:rotate-12">
@@ -50,6 +52,30 @@
                     <div class="text-right">
                         <p class="text-2xl">{{ $members }}</p>
                         <p class="text-gray-500">Club Members</p>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-sm rounded-md flex items-center justify-between p-3 text-gray-700 font-medium group">
+                    <div class="flex justify-center items-center w-14 h-14 bg-blue-50 rounded-full transition-all duration-300 transform group-hover:rotate-12">
+                        <svg class="w-8 h-8 stroke-current text-blue-500 transform transition-transform duration-500 ease-in-out" viewBox="0 0 24 24" fill="none" >
+                            <path d="M4 16L8.58579 11.4142C9.36683 10.6332 10.6332 10.6332 11.4142 11.4142L16 16M14 14L15.5858 12.4142C16.3668 11.6332 17.6332 11.6332 18.4142 12.4142L20 14M14 8H14.01M6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-2xl">{{ $albums }}</p>
+                        <p class="text-gray-500">Albums</p>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-sm rounded-md flex items-center justify-between p-3 text-gray-700 font-medium group">
+                    <div class="flex justify-center items-center w-14 h-14 bg-blue-50 rounded-full transition-all duration-300 transform group-hover:rotate-12">
+                        <svg class="w-8 h-8 stroke-current text-blue-500 transform transition-transform duration-500 ease-in-out" viewBox="0 0 24 24" fill="none" >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                        </svg>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-2xl">{{ $merchandise }}</p>
+                        <p class="text-gray-500">Merchandise</p>
                     </div>
                 </div>
             </div>
