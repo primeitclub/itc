@@ -76,7 +76,7 @@ Start the local development server
 
     php artisan serve
 
-Now you can visit
+Now you can visit:
 
 -   http://localhost:8000 (visitor)
 -   http://localhost:8000/admin (admin)
