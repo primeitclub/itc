@@ -28,7 +28,7 @@ Please check the official Laravel installation guide for server requirements bef
 
 Fork the repository and clone it (or download the zip file and extract it)
 
-Example :
+Example : (replace `username` with your github username)
 
     git clone https://github.com:{username}/itc.git
 
