@@ -7,13 +7,14 @@ use App\Http\Controllers\Admin\BlogCategoryController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\EventCategoryController;
 use App\Http\Controllers\Admin\EventController;
-use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\HomeController as AdminHomeController;
 use App\Http\Controllers\Admin\ImageController;
 use App\Http\Controllers\Admin\MemberController;
 use App\Http\Controllers\Admin\MerchandiseController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SpeakerController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -26,7 +27,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     });
 
     Route::group(['middleware' => 'auth'], function () {
-        Route::get('/', [HomeController::class, 'index'])->name('home');
+        Route::get('/', [AdminHomeController::class, 'index'])->name('home');
 
         Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
@@ -57,3 +58,5 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::delete('/images/destroy/{image}',[ImageController::class,'destroy'])->name('images.destroy');
     });
 });
+
+Route::get('/',[HomeController::class,'index']);
