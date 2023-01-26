@@ -12,7 +12,7 @@ Here are some of the things you can do to help.
 
 ### Contribute as a developer
 
--   Read [Local Installation Guide](#local-installation-guide) to set up the local development environment.
+-   Read [Local Installation Guide](#local-installation-guide) to set up the local development environment OR use [laravel sail](https://laravel.com/docs/9.x/sail#main-content).
 
 ### Used frameworks:
 
