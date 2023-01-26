@@ -12,7 +12,7 @@ Here are some of the things you can do to help.
 
 ### Contribute as a developer
 
--   Read [Local Installation Guide](#local-installation-guide) to set up the local development environment OR use [laravel sail](https://laravel.com/docs/9.x/sail#main-content).
+-   Read [Local Installation Guide](#local-installation-guide) to set up the local development environment
 
 ### Used frameworks:
 
@@ -25,6 +25,8 @@ Here are some of the things you can do to help.
 Please check the official Laravel installation guide for server requirements before you start.
 
 -   [Official Documentation](https://laravel.com/docs/9.x)
+
+-   [laravel sail](https://laravel.com/docs/9.x/sail#main-content).
 
 Fork the repository and clone it (or download the zip file and extract it)
 
