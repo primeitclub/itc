@@ -46,17 +46,12 @@
               </div>
             </div>
             <div class="hidden space-x-8 md:flex md:ml-10">
-              <a href="#" class="text-base font-medium text-white hover:text-gray-300">Blogs</a>
-
-              <a href="#" class="text-base font-medium text-white hover:text-gray-300">Events</a>
-
-              <a href="#" class="text-base font-medium text-white hover:text-gray-300">Members</a>
-
-              <a href="#" class="text-base font-medium text-white hover:text-gray-300">Gallery</a>
-
-              <a href="#" class="text-base font-medium text-white hover:text-gray-300">About Us</a>
-
-              <a href="#" class="text-base font-medium text-white hover:text-gray-300">Merch</a>
+              <a href="#" class="text-base font-medium text-gray-200 hover:text-white">Blogs</a>
+              <a href="#" class="text-base font-medium text-gray-200 hover:text-white">Events</a>
+              <a href="#" class="text-base font-medium text-gray-200 hover:text-white">Members</a>
+              <a href="#" class="text-base font-medium text-gray-200 hover:text-white">About Us</a>
+              <a href="#" class="text-base font-medium text-gray-200 hover:text-white">Gallery</a>
+              <a href="#" class="text-base font-medium text-gray-200 hover:text-white">Merch</a>
             </div>
           </nav>
         </div>
