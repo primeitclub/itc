@@ -13,6 +13,7 @@
 
   <!-- Tailwind UI -->
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+  <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
 
   <!-- Alpine -->
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -26,7 +27,7 @@
   <div class="bg-white">
     <div class="relative overflow-hidden">
       <header class="relative" x-data="{ open: false }" x-init="init()">
-        <div class="bg-blue-500 pt-6">
+        <div class="bg-rgradient-blue p-6">
           <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
             <div class="flex items-center flex-1">
               <div class="flex items-center justify-between w-full md:w-auto">
@@ -35,7 +36,7 @@
                   <img class="h-8 w-auto sm:h-10" src="{{ asset('logo/logo.png') }}" alt="club's logo" />
                 </a>
                 <div class="-mr-2 flex items-center md:hidden">
-                  <button x-on:click="open = true" type="button" class="bg-blue-500 rounded-md p-2 inline-flex items-center justify-center text-gray-200 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" @click="toggle" @mousedown="if (open) $event.preventDefault()" aria-expanded="false" :aria-expanded="open.toString()">
+                  <button x-on:click="open = true" type="button" class=" rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white" @click="toggle" @mousedown="if (open) $event.preventDefault()" aria-expanded="false" :aria-expanded="open.toString()">
                     <span class="sr-only">Open main menu</span>
                     <svg class="h-6 w-6" x-description="Heroicon name: outline/menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -95,9 +96,9 @@
       </header>
 
       <main>
-        <div class="pt-10 bg-blue-500 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
+        <div class="pt-10 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
           <div class="mx-auto max-w-7xl lg:px-8">
-            <!-- main content goes here -->
+            <!-- main section lives here -->
           </div>
         </div>
 
@@ -127,7 +128,7 @@
             </div>
           </div>
 
-          <div class="lg:mb-3 lg:flex">
+          <div class="lg:mb-3 lg:flex lg:mt-8">
             <div class="mb-10 lg:mr-auto lg:mb-0 lg:w-2/5">
               <div class="mb-3 flex justify-center lg:block">
                 <svg width="177" height="79" viewBox="0 0 177 79" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -149,36 +150,42 @@
               <p class="mx-auto mb-8 max-w-sm font-medium leading-loose text-white lg:mx-0 lg:max-w-full"> Prime IT Club is a student-run club working towards the goal of bridging the gap between academia and industry.</p>
 
               <div class="mx-auto mb-8 flex w-42 items-center justify-between gap-x-2 lg:mx-0 lg:w-28">
-                <a href="" aria-label="" target="_blank" rel="noreferrer" class="flex-center h-12 w-12 flex-shrink-0 text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                  </svg>
-                </a>
-                <a href="" aria-label="" target="_blank" rel="noreferrer" class="flex-center h-12 w-12 flex-shrink-0 text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                  </svg>
-                </a>
-                <a href="" aria-label="" target="_blank" rel="noreferrer" class="flex-center h-12 w-12 flex-shrink-0 text-white">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                    <rect x="2" y="9" width="4" height="12" />
-                    <circle cx="4" cy="4" r="2" />
-                  </svg>
-                </a>
+                <div class="px-2 py-2 bg-blue-300/10 hover:bg-blue-300/15 rounded-md">
+                  <a href="https://www.facebook.com/primeitclub" aria-label="" class="flex-center h-12 w-12 flex-shrink-0 text-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="px-2 py-2 bg-blue-300/10 hover:bg-blue-300/15 rounded-md">
+                  <a href="https://www.instagram.com/prime_itclub/" aria-label="" class="flex-center h-12 w-12 flex-shrink-0 text-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="px-2 py-2 bg-blue-300/10 hover:bg-blue-300/15 rounded-md">
+                  <a href="https://www.linkedin.com/company/prime-it-club/" aria-label="" class="flex-center h-12 w-12 flex-shrink-0 text-gray-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                      <rect x="2" y="9" width="4" height="12" />
+                      <circle cx="4" cy="4" r="2" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="md:mb-6 lg:w-1/6">
               <h5 class="mb-2 font-bold uppercase text-white lg:mb-6 lg:font-semibold">Quick Links</h5>
               <ul class="inline-bulleted-list mx-auto mb-8 w-3/4 leading-loose lg:mx-0 lg:mb-0">
-                <li><a class="transition-all text-white" href=""> Gallery </a></li>
-                <li><a class="transition-all text-white" href=""> Members </a></li>
-                <li><a class="transition-all text-white" href=""> About Us </a></li>
-                <li><a class="transition-all text-white" href=""> Creative Hub </a></li>
-                <li><a class="transition-all text-white" href=""> Prime College </a></li>
-                <li><a class="transition-all text-white" href=""> Privacy </a></li>
+                <li><a class="transition-all text-gray-200 hover:text-white" href=""> Gallery </a></li>
+                <li><a class="transition-all text-gray-200 hover:text-white" href=""> Members </a></li>
+                <li><a class="transition-all text-gray-200 hover:text-white" href=""> About Us </a></li>
+                <li><a class="transition-all text-gray-200 hover:text-white" href=""> Creative Hub </a></li>
+                <li><a class="transition-all text-gray-200 hover:text-white" href=""> Prime College </a></li>
+                <li><a class="transition-all text-gray-200 hover:text-white" href=""> Privacy </a></li>
               </ul>
             </div>
             <div class="md:mb-6 lg:w-1/6">
