@@ -1,11 +1,11 @@
 <x-frontend.app title="Home">
-    
+
     <section class="mt-10 sm:py-20">
         <div class="container mx-auto">
             <div class="sm:mx-12 lg:mx-24">
                 <div class="about_main flex justify-between mb:flex-col lg:flex-row">
                     <div class="about_content lg:w-[45%] ">
-                        
+
                         <div class="about_header flex justify-evenly tracking-widest">
                             <div class="header pop_bold">
                                 <span class="primary font-semibold">We're a dynamic team of</span>
@@ -40,7 +40,7 @@
     </section>
     <!-- About section ends -->
 
-    <!-- event starts -->
+    <!-- Event section starts -->
 
     <section class="pt-24 sm:py-20">
         <div class="container mx-auto">
@@ -64,7 +64,7 @@
                                     </figure>
                                 </div>
 
-                                <div class="event_card_contens p-7">
+                                <div class="event_card_contens p-7 ">
                                     <h3 class="primary poppins text-2xl font-semibold">
                                         {{ $events->title }}
                                     </h3>
@@ -101,4 +101,188 @@
                     </div>
                 </div>
     </section>
+    <!-- Event section ends -->
+
+    <!-- Blog section starts-->
+
+    <section class="pt-24 sm:py-20">
+        <div class="container mx-auto">
+            <div class="sm:mx-12 lg:mx-24">
+                <center>
+                    <h2 class="poppins primary text-4.1xl font-semibold">
+                        Featured Blog
+                    </h2>
+                    <p class="home_text text-xl">
+                        Check out our Blogs
+                    </p>
+                </center>
+                <div class="pt-24">
+                    <article
+                        class="rounded-xl border border-black border-opacity-0 bg-white transition-colors duration-300 ">
+                        <div class="py-6 px-5">
+                            <div>
+                                <img src="{{ asset('blog-images/groot_1671793404.png') }}" alt="Blog Post illustration"
+                                    class="rounded-xl h-96" />
+                            </div>
+
+                            <div class="mt-8 flex flex-col justify-between">
+                                <header>
+                                    <div class="space-x-2">
+                                        <a href="#"
+                                            class="rounded-full border border-red-300 px-3 py-1 text-xs font-semibold uppercase text-red-300"
+                                            style="font-size: 10px">Updates</a>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <h1 class="text-3xl">
+                                            This is a big title and it will look great on two or even
+                                            three lines. Wooohoo!
+                                        </h1>
+
+                                        <span class="mt-2 block text-xs text-gray-400">
+                                            Published <time>1 day ago</time>
+                                        </span>
+                                    </div>
+                                </header>
+
+                                <div class="mt-4 text-sm">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                        do eiusmod tempor incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+
+                                    <p class="mt-4">
+                                        Duis aute irure dolor in reprehenderit in voluptate velit
+                                        esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                </div>
+
+                                <footer class="mt-8 flex items-center justify-between">
+                                    <div class="ml-3">
+                                        <h5 class="font-bold">Lary Laracore</h5>
+                                        <h6>Mascot at Laracasts</h6>
+                                    </div>
+
+                                    <div>
+                                        <a href="#"
+                                            class="rounded-full bg-gray-200 py-2 px-8 text-xs font-semibold transition-colors duration-300 hover:bg-gray-300">Read
+                                            More</a>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section ends -->
+
+    <!-- meet our team -->
+    <section class="py-36">
+        <div class="container mx-auto">
+            <div class="sm:mx-12 lg:mx-24">
+                <div class="main_div">
+                    <center class="header">
+                        <h2 class="primary font-semibold mb:text-3xl sm:text-4xl">
+                            Meet Our Team
+                        </h2>
+                        <p class="home_text text-xl">Get to Know our team members</p>
+                    </center>
+                </div>
+            </div>
+
+            <div class="swiper mySwiper1 mt-16">
+                <div class="swiper-wrapper gap-8 lg:ml-40">
+
+                    @foreach ($members as $member)
+                        <div class="swiper-slide team_card rounded-3xl py-4">
+                            <div class="team_image py-8">
+                                <figure class="">
+                                    <img class="rounded-full" src="{{ asset('image/ellipse3.jpg') }}" alt="" />
+                                </figure>
+                            </div>
+                            <div class="team_detail py-4">
+                                <h3 class="home_text primary text-2xl font-medium">
+                                    {{ $member->name }}
+                                </h3>
+                                <p class="poppins">{{ $member->designation }}</p>
+                                <p class="poppins py-6 font-medium">
+                                    {!! $member->testimonial !!}
+                                </p>
+                            </div>
+                            <div class="team_socials">
+                                <div class="mx-auto flex w-[40%] justify-around">
+                                    <a href="#"><i class="ri-facebook-circle-fill ri-2x"></i></a>
+                                    <a href="#"><i class="ri-instagram-line ri-2x"></i></a>
+                                    <a href="#"><i class="ri-linkedin-box-fill ri-2x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </section>
+    <!-- meet our team ends -->
+
+    <!-- testimonials starts -->
+
+    <section class="py-24">
+        <div class="container mx-auto">
+            <div class="sm:mx-12 lg:mx-24">
+                <center class="header">
+                    <h2 class="primary font-semibold mb:text-3xl sm:text-4xl">
+                        Testimonial
+                    </h2>
+                    <p class="home_text text-xl">Hear what our members have to say</p>
+                </center>
+            </div>
+
+            <div class="swiper mySwiper2 mt-16">
+                <div class="swiper-wrapper test lg:ml-48">
+                    <div class="testimonials_card swiper-slide relative rounded-3xl py-4">
+                        <div class="testimonial_image pt-14 pb-4">
+                            <figure class="">
+                                <img class="rounded-full" src="{{asset('image/ellipse3.jpg')}}" alt="" />
+                            </figure>
+                        </div>
+                        <div class="team_detail py-4">
+                            <p class="poppins px-6 text-center font-medium">
+                                They always provided me with the assistance that I required
+                                for my overall development and to improve my technical
+                                knowledge. I will always be grateful to them for providing me
+                                a platform of practical learning and preparing me for the
+                                industry. !
+                            </p>
+                            <h3 class="primary home_text pt-6 text-2xl font-medium">
+                                Rikesh Sherpa
+                            </h3>
+                            <p class="poppins">Executive Member</p>
+                        </div>
+                        <div class="team_socials">
+                            <div class="mx-auto flex w-[20%] justify-around">
+                                <a href="#"><i class="ri-facebook-circle-fill ri-2x"></i></a>
+                                <a href="#"><i class="ri-instagram-line ri-2x"></i></a>
+                                <a href="#"><i class="ri-linkedin-box-fill ri-2x"></i></a>
+                            </div>
+                        </div>
+
+                        <figure class="quote_img absolute top-36 left-12 opacity-100">
+                            <img src="{{asset('image/quote_ico.svg')}}" alt="" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonials ends -->
+
+
 </x-frontend.app>
