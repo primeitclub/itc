@@ -38,7 +38,7 @@
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Blog</a>
                         </li>
                         <li class="poppins">
-                            <a href="/pages/members.html"
+                            <a href="{{ URL('members')}}"
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Members</a>
                         </li>
                         <li class="poppins">
