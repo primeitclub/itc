@@ -1,7 +1,7 @@
 <!-- navbar starts -->
 <header class=" mx-auto nav_wraper">
     <div class="container mx-auto">
-        <nav class="border-gray-200 py-2.5 rounded lg:mx-24 sm:mx-2 mb:-mx-4 header ">
+        <nav class="border-gray-200 py-2.5   rounded lg:mx-24 sm:mx-2 mb:-mx-4 header ">
             <div class=" flex flex-wrap justify-between items-center ">
                 <a href="#" class="flex items-center">
                     <img src="blog-images/prime_logo.svg" class="mr-3 " alt="Flowbite Logo">
@@ -21,7 +21,7 @@
                     <ul
                         class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 menu3">
                         <li class="poppins">
-                            <a href="#"
+                            <a href="{{ URL('/')}}"
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300">Home</a>
                         </li>
                         <li class="poppins">
@@ -42,8 +42,8 @@
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Members</a>
                         </li>
                         <li class="poppins">
-                            <a href="/pages/merch.html"
-                                class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Mearch</a>
+                            <a href="{{ URL('merch')}}"
+                                class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Merch</a>
                         </li>
                         <li class="poppins">
                             <a href="pages/gallery.html"
