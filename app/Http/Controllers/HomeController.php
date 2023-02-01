@@ -5,7 +5,6 @@ use App\Models\Event;
 use App\Models\AlumniTestimonial;
 use App\Models\Member;
 use App\Models\Blog;
-use Illuminate\Support\Str;
 
 use Illuminate\Http\Request;
 
