@@ -32,7 +32,7 @@
                                         </li>
                                     </ol>
                                     <li class="home_text pt-4 w-1/3">
-                                        <p class="bg-green-200 px-6 rounded-lg" >Available</p>
+                                        <p class="bg-blue-700 text-white px-6 rounded-lg" >Available</p>
                                    </li>
                                 </div>
                                 <p class="home_text py-4 text-base font-light leading-6">

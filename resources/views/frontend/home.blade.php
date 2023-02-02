@@ -109,7 +109,7 @@
         <div class="container mx-auto">
             <div class="sm:mx-12 lg:mx-24">
                 <center>
-                    <h2 class="poppins primary text-4.1xl font-semibold">
+                    <h2 class="poppins primary text-4.1xl font-bold">
                         Featured Blog
                     </h2>
                     <p class="home_text text-xl">
@@ -183,7 +183,7 @@
             <div class="sm:mx-12 lg:mx-24">
                 <div class="main_div">
                     <center class="header">
-                        <h2 class="primary font-semibold mb:text-3xl sm:text-4xl">
+                        <h2 class="primary font-bold mb:text-3xl sm:text-4xl">
                             Meet Our Team
                         </h2>
                         <p class="home_text text-xl">Get to Know our team members</p>
@@ -232,7 +232,7 @@
         <div class="container mx-auto">
             <div class="sm:mx-12 lg:mx-24">
                 <center class="header">
-                    <h2 class="primary font-semibold mb:text-3xl sm:text-4xl">
+                    <h2 class="primary font-bold mb:text-3xl sm:text-4xl">
                         Testimonial
                     </h2>
                     <p class="home_text text-xl">Hear what our members have to say</p>

@@ -15,6 +15,7 @@ use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SpeakerController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutusController;
 use App\Http\Controllers\EventFrontController;
 use App\Http\Controllers\MembersController;
 use App\Http\Controllers\MerchController;
@@ -66,6 +67,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 });
 
 Route::get('/',[HomeController::class,'index'])->name('home');
+Route::get('/about',[AboutusController::class,'index'])->name('about');
 Route::get('/events',[EventFrontController::class,'index'])->name('events');
 Route::get('/members',[MembersController::class,'index'])->name('members');
 Route::get('/merch',[MerchController::class,'index'])->name('merch');
