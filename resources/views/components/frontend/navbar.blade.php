@@ -1,7 +1,7 @@
 <!-- navbar starts -->
 <header class=" mx-auto nav_wraper">
     <div class="container mx-auto">
-        <nav class="border-gray-200 py-2.5   rounded lg:mx-24 sm:mx-2 mb:-mx-4 header ">
+        <nav class="border-gray-200 py-2.5   rounded lg:mx-24 sm:mx-2 mb:-mx-4" id="navbar">
             <div class=" flex flex-wrap justify-between items-center ">
                 <a href="#" class="flex items-center">
                     <img src="blog-images/prime_logo.svg" class="mr-3 " alt="Flowbite Logo">
@@ -34,7 +34,7 @@
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Events</a>
                         </li>
                         <li class="poppins">
-                            <a href="pages/blogs.html"
+                            <a href="{{ URL('blog')}}"
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Blog</a>
                         </li>
                         <li class="poppins">
@@ -96,3 +96,9 @@
     </div>
 </section>
 
+<script>
+window.addEventListener('scroll',()=>{
+    var header = document.querySelector("navbar");
+    header.classList.toggle("sticky top-0",window.scrollY > 0)
+})
+</script>
