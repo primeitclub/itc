@@ -116,67 +116,62 @@
                         Check out our Blogs
                     </p>
                 </center>
-                <div class="pt-24">
-                    <article
-                        class="rounded-xl border border-black border-opacity-0 bg-white transition-colors duration-300 ">
-                        <div class="py-6 px-5">
-                            <div>
-                                <img src="{{ asset('blog-images/groot_1671793404.png') }}" alt="Blog Post illustration"
-                                    class="rounded-xl h-96" />
-                            </div>
 
-                            <div class="mt-8 flex flex-col justify-between">
-                                <header>
-                                    <div class="space-x-2">
-                                        <a href="#"
-                                            class="rounded-full border border-red-300 px-3 py-1 text-xs font-semibold uppercase text-red-300"
-                                            style="font-size: 10px">Updates</a>
+                <div class="grid  sm:grid-cols-2 gap-8">
+                    <div>
+                        <div class="hidden ld:block sm:block pt-24">
+                            <div class="relative py-6 px-5">
+                                <div class="relative  h-96 w-full border-4 rounded-r-lg border-purple-700 ">
+                                    <div class=" absolute mt-5 top-4 -left-6">
+                                        <img src="{{ asset('image/blog.jpg') }}"
+                                            alt="Blog Post illustration" class="rounded-r-lg h-96" />
                                     </div>
-
-                                    <div class="mt-4">
-                                        <h1 class="text-3xl">
-                                            This is a big title and it will look great on two or even
-                                            three lines. Wooohoo!
-                                        </h1>
-
-                                        <span class="mt-2 block text-xs text-gray-400">
-                                            Published <time>1 day ago</time>
-                                        </span>
-                                    </div>
-                                </header>
-
-                                <div class="mt-4 text-sm">
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut labore et dolore magna
-                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </p>
-
-                                    <p class="mt-4">
-                                        Duis aute irure dolor in reprehenderit in voluptate velit
-                                        esse cillum dolore eu fugiat nulla pariatur.
-                                    </p>
                                 </div>
-
-                                <footer class="mt-8 flex items-center justify-between">
-                                    <div class="ml-3">
-                                        <h5 class="font-bold">Lary Laracore</h5>
-                                        <h6>Mascot at Laracasts</h6>
-                                    </div>
-
-                                    <div>
-                                        <a href="#"
-                                            class="rounded-full bg-gray-200 py-2 px-8 text-xs font-semibold transition-colors duration-300 hover:bg-gray-300">Read
-                                            More</a>
-                                    </div>
-                                </footer>
                             </div>
                         </div>
-                    </article>
-                </div>
+                    </div>
+                    <div>
+                        <div class=" mt-44 flex flex-col justify-between">
+                            <header>
+                                <div class="text-blue-800  font-bold  mt-4">
+                                    <h1 class="text-3xl">
+                                        This is a big title and it will look great on two or even
+                                        three lines. Wooohoo!
+                                    </h1>
 
+                                    <span class="mt-2 block text-xs text-gray-400">
+                                        Published <time>1 day ago</time>
+                                    </span>
+                                </div>
+                            </header>
+
+                            <div class="mt-4 text-sm">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                    do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+
+                                <p class="mt-4">
+                                    Duis aute irure dolor in reprehenderit in voluptate velit
+                                    esse cillum dolore eu fugiat nulla pariatur.
+                                </p>
+                            </div>
+
+                            <footer class="mt-8 mb-8 flex items-center justify-between">
+
+                                <div>
+                                    <a href="#"
+                                        class="rounded-full bg-white-100 py-4 px-8 text-xs font-semibold transition-colors duration-300 border border-purple-700 text-black-700 hover:bg-purple-700 hover:text-white">Read
+                                        More</a>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -249,7 +244,7 @@
                     <div class="testimonials_card swiper-slide relative rounded-3xl py-4">
                         <div class="testimonial_image pt-14 pb-4">
                             <figure class="">
-                                <img class="rounded-full" src="{{asset('image/ellipse3.jpg')}}" alt="" />
+                                <img class="rounded-full" src="{{ asset('image/ellipse3.jpg') }}" alt="" />
                             </figure>
                         </div>
                         <div class="team_detail py-4">
@@ -274,7 +269,7 @@
                         </div>
 
                         <figure class="quote_img absolute top-36 left-12 opacity-100">
-                            <img src="{{asset('image/quote_ico.svg')}}" alt="" />
+                            <img src="{{ asset('image/quote_ico.svg') }}" alt="" />
                         </figure>
                     </div>
                 </div>

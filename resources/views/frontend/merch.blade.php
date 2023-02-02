@@ -28,12 +28,12 @@
                                 <div class="event_detail list-none">
                                     <ol>
                                         <li class="home_text pt-4">
-                                            <i class="ri-xl ri-money-dollar-circle-line pr-6"></i>{{$merchandies->price}}
-                                        </li>
-                                        <li class="home_text pt-4">
-                                            <i class="ri-xl ri-map-pin-line pr-6"></i> 15% off
+                                            <i class="ri-xl ri-money-dollar-circle-line pr-6"></i>{{$merchandies->price}}</p>
                                         </li>
                                     </ol>
+                                    <li class="home_text pt-4 w-1/3">
+                                        <p class="bg-green-200 px-6 rounded-lg" >Available</p>
+                                   </li>
                                 </div>
                                 <p class="home_text py-4 text-base font-light leading-6">
                                     {!! $merchandies->description !!}
