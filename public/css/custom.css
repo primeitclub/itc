@@ -454,3 +454,10 @@ width: 331px !important;
       display: none;
     }
   } */
+
+  .card:hover .front {
+    transform: translateY(-100%);
+  }
+  .card:hover .back {
+    transform: translateY(0);
+  }

@@ -330,7 +330,7 @@
             </div>
         </section>
         <!-- Image part -->
-        <div class="w-fit">
+        <div class="container w-full ">
             <img src="{{asset('image/teamillustration1.png')}}" alt="" />
         </div>
         <!-- Image Part Ends -->
