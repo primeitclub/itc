@@ -20,6 +20,7 @@ use App\Http\Controllers\BlogPageController;
 use App\Http\Controllers\EventFrontController;
 use App\Http\Controllers\MembersController;
 use App\Http\Controllers\MerchController;
+use App\Http\Controllers\GalleryController;
 
 
 
@@ -73,5 +74,7 @@ Route::get('/blog',[BlogPageController::class,'index'])->name('blog');
 Route::get('/events',[EventFrontController::class,'index'])->name('events');
 Route::get('/members',[MembersController::class,'index'])->name('members');
 Route::get('/merch',[MerchController::class,'index'])->name('merch');
+Route::get('/gallery',[GalleryController::class,'index'])->name('gallery');
+
 
 

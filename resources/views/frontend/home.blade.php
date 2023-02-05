@@ -123,51 +123,44 @@
                             <div class="relative py-6 px-5">
                                 <div class="relative  h-96 w-full border-4 rounded-r-lg border-purple-700 ">
                                     <div class=" absolute mt-5 top-4 -left-6">
-                                        <img src="{{ asset('image/blog.jpg') }}"
-                                            alt="Blog Post illustration" class="rounded-r-lg h-96" />
+                                        <img src="{{ asset('image/blog.jpg') }}" alt="Blog Post illustration"
+                                            class="rounded-r-lg h-96" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div class=" mt-44 flex flex-col justify-between">
-                            <header>
-                                <div class="text-blue-800  font-bold  mt-4">
-                                    <h1 class="text-3xl">
-                                        This is a big title and it will look great on two or even
-                                        three lines. Wooohoo!
-                                    </h1>
+                    <div class="w-full md:w-3/4 lg:w-1/2 mx-auto mt-44">
+                        <header class="text-center md:text-left mt-4">
+                            <h1 class="text-3xl text-blue-800 font-bold">
+                                This is a big title and it will look great on two or even three lines. Wooohoo!
+                            </h1>
 
-                                    <span class="mt-2 block text-xs text-gray-400">
-                                        Published <time>1 day ago</time>
-                                    </span>
-                                </div>
-                            </header>
+                            <span class="block text-xs text-gray-400 mt-2">
+                                Published <time>1 day ago</time>
+                            </span>
+                        </header>
 
-                            <div class="mt-4 text-sm">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna
-                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
+                        <div class="mt-4 text-sm">
+                            <p class="text-base md:text-sm">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
 
-                                <p class="mt-4">
-                                    Duis aute irure dolor in reprehenderit in voluptate velit
-                                    esse cillum dolore eu fugiat nulla pariatur.
-                                </p>
-                            </div>
-
-                            <footer class="mt-8 mb-8 flex items-center justify-between">
-
-                                <div>
-                                    <a href="#"
-                                        class="rounded-full bg-white-100 py-4 px-8 text-xs font-semibold transition-colors duration-300 border border-purple-700 text-black-700 hover:bg-purple-700 hover:text-white">Read
-                                        More</a>
-                                </div>
-                            </footer>
+                            <p class="mt-4 text-base md:text-sm">
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur.
+                            </p>
                         </div>
+
+                        <footer class="mt-8 mb-8 flex items-center justify-between">
+                            <div>
+                                <a href="#"
+                                    class="bg-white-100 py-4 px-8 text-xs font-semibold transition-colors duration-300 border border-purple-700 text-black-700 rounded-full hover:bg-purple-700 hover:text-white">Read
+                                    More</a>
+                            </div>
+                        </footer>
                     </div>
                 </div>
             </div>
