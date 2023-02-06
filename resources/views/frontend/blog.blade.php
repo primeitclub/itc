@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="w-full md:w-3/4 lg:w-1/2 mx-auto mt-44">
-                        <header class="text-center md:text-left mt-4">
+                        <header class="mt-4">
                             <h1 class="text-3xl text-blue-800 font-bold">
                                 This is a big title and it will look great on two or even three lines. Wooohoo!
                             </h1>
@@ -94,14 +94,14 @@
                                     <p class="home_text py-4 text-base font-light leading-6">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum id pariatur
                                         nam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                                        nobis libero deleniti vel amet vero debitis!
+                                        nobis libero deleniti vel amet vero debitis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem vitae assumenda dignissimos Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus vel doloremque facilis?
                                     </p>
                                 </div>
+                                <button
+                                    class="text-sm text-gray-400">
+                                    Read more
+                                </button>
                                 <hr class="py-2" />
-                                {{-- <button
-                                        class="bg_primary home_text w-full rounded-3xl px-20 py-2 text-xl text-white hover:bg-blue-900">
-                                        Register Now
-                                    </button> --}}
                                 <div class="grid grid-cols-2">
                                     <p class="home_text py-2 text-sm leading-5">
                                         Pranab
