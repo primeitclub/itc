@@ -9,7 +9,7 @@ class BlogPageController extends Controller
 {   
     public function index(){
         $featuredBlog = Blog::latest()->get();
-        $blogs = Blog::published()->get();
+        $blogs = Blog::with('blogCategory')->published()->get();
         return view('frontend.blog', compact('blogs','featuredBlog'));
     }
 }
