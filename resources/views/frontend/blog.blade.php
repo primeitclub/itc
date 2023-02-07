@@ -17,7 +17,7 @@
                             <div class="relative py-6 px-5">
                                 <div class="relative  h-96 w-full border-4 rounded-r-lg border-purple-700 ">
                                     <div class=" absolute mt-5 top-4 -left-6">
-                                        <img src="{{ asset('image/blog.jpg') }}" alt="Blog Post illustration"
+                                        <img src="{{ asset('image/blog.jpg') }}" alt="Blog Thumbnail"
                                             class="rounded-r-lg h-96" />
                                     </div>
                                 </div>
@@ -76,25 +76,22 @@
                 </center>
                 <div class="event_wraper pt-24">
                     <div class="gid-cols-1 events grid gap-10 lg:grid-cols-3">
-                        @foreach ($Blog as $blogs)
-                        @endforeach
+                        @foreach ($blogs as $blog)
                         <div class="event_card mt-8 rounded-xl bg-white sm:w-auto">
                             <div class="img">
                                 <figure>
-                                    <img class="w-[100%] rounded-t-xl" src="blog-images/EventImage.jpg"
+                                    <img class="w-[100%] rounded-t-xl" src="{{ $blog->imageUrl() }}"
                                         alt="" />
                                 </figure>
                             </div>
 
                             <div class="event_card_contens p-7 ">
                                 <h3 class="primary poppins text-2xl font-semibold">
-                                    {{ $blogs->title }}
+                                    {{ $blog->title }}
                                 </h3>
                                 <div class="h-48 overflow-hidden">
                                     <p class="home_text py-4 text-base font-light leading-6">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum id pariatur
-                                        nam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                                        nobis libero deleniti vel amet vero debitis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem vitae assumenda dignissimos Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus vel doloremque facilis?
+                                        {!! $blog->body !!}
                                     </p>
                                 </div>
                                 <button
@@ -104,14 +101,15 @@
                                 <hr class="py-2" />
                                 <div class="grid grid-cols-2">
                                     <p class="home_text py-2 text-sm leading-5">
-                                        Pranab
+                                        {{ $blog->author }}
                                     </p>
                                     <p class="home_text py-2 text-sm leading-5">
-                                        Published 12 days ago
+                                        {{ $blog->formattedPublishedAt() }}
                                     </p>
                                 </div>
                             </div>
                         </div>
+                        @endforeach
 
                     </div>
                 </div>

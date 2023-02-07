@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Blog extends Model
 {
@@ -44,4 +46,20 @@ class Blog extends Model
             return  '<span class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full ">Published</span>';
         }
     }
+
+    public function scopePublished($query) {
+        return $query->where('published_at', '<=', Carbon::now());
+    }
+
+    public function imageUrl() {
+        return $this->image ? 
+            Storage::disk('thumbnails')->url($this->thumbnail)
+            : 
+            "";
+    }
+
+    public function formattedPublishedAt(){
+            return Carbon::parse($this->published_at)->diffForHumans();
+    }
+
 }

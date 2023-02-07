@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 class BlogPageController extends Controller
 {   
     public function index(){
-        $Featuredblog = Blog::latest()->get();
-        $Blog = Blog::all();
-        return view('frontend.blog', compact('Blog','Featuredblog'));
+        $featuredBlog = Blog::latest()->get();
+        $blogs = Blog::published()->get();
+        return view('frontend.blog', compact('blogs','featuredBlog'));
     }
 }
