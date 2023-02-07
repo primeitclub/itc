@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 class EventPageController extends Controller
 {
     public function index() {
-        $event = Event::latest()->take(6)->get();
-        return view('frontend.events', compact('event'));
+        $upcomingEvents = Event::upcoming()->latest()->get();
+        $completedEvents = Event::completed()->latest()->take(6)->get();
+        return view('frontend.events', compact('upcomingEvents','completedEvents'));
     }
 }
