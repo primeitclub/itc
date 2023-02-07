@@ -21,32 +21,32 @@
                     <ul
                         class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 menu3">
                         <li class="poppins">
-                            <a href="{{ URL('/')}}"
+                            <a href="{{ route('home') }}"
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300">Home</a>
                         </li>
                         <li class="poppins">
-                            <a href="{{ URL('about')}}"
+                            <a href="{{ route('about') }}"
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">About
                                 Us</a>
                         </li>
                         <li class="poppins">
-                            <a href="{{ URL('events')}}"
+                            <a href="{{ route('events') }}"
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Events</a>
                         </li>
                         <li class="poppins">
-                            <a href="{{ URL('blog')}}"
+                            <a href="{{ route('blogs') }}"
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Blog</a>
                         </li>
                         <li class="poppins">
-                            <a href="{{ URL('members')}}"
+                            <a href="{{ route('members') }}"
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Members</a>
                         </li>
                         <li class="poppins">
-                            <a href="{{ URL('merch')}}"
+                            <a href="{{ route('merchandise') }}"
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Merch</a>
                         </li>
                         <li class="poppins">
-                            <a href="{{URL('gallery')}}"
+                            <a href="{{ route('gallery') }}"
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Gallery</a>
                         </li>
 

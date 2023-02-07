@@ -7,20 +7,20 @@ use App\Http\Controllers\Admin\BlogCategoryController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\EventCategoryController;
 use App\Http\Controllers\Admin\EventController;
-use App\Http\Controllers\Admin\HomeController as AdminHomeController;
+use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\ImageController;
 use App\Http\Controllers\Admin\MemberController;
 use App\Http\Controllers\Admin\MerchandiseController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SpeakerController;
 use App\Http\Controllers\Admin\UserController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\AboutusController;
+use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\AboutusPageController;
 use App\Http\Controllers\BlogPageController;
-use App\Http\Controllers\EventFrontController;
-use App\Http\Controllers\MembersController;
-use App\Http\Controllers\MerchController;
-use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\EventPageController;
+use App\Http\Controllers\MembersPageController;
+use App\Http\Controllers\MerchandisePageController;
+use App\Http\Controllers\GalleryPageController;
 
 
 
@@ -36,7 +36,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     });
 
     Route::group(['middleware' => 'auth'], function () {
-        Route::get('/', [AdminHomeController::class, 'index'])->name('home');
+        Route::get('/', [HomeController::class, 'index'])->name('home');
 
         Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
@@ -68,13 +68,13 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     });
 });
 
-Route::get('/',[HomeController::class,'index'])->name('home');
-Route::get('/about',[AboutusController::class,'index'])->name('about');
-Route::get('/blog',[BlogPageController::class,'index'])->name('blog');
-Route::get('/events',[EventFrontController::class,'index'])->name('events');
-Route::get('/members',[MembersController::class,'index'])->name('members');
-Route::get('/merch',[MerchController::class,'index'])->name('merch');
-Route::get('/gallery',[GalleryController::class,'index'])->name('gallery');
+Route::get('/',[HomePageController::class,'index'])->name('home');
+Route::get('/aboutus',[AboutusPageController::class,'index'])->name('about');
+Route::get('/blogs',[BlogPageController::class,'index'])->name('blogs');
+Route::get('/events',[EventPageController::class,'index'])->name('events');
+Route::get('/members',[MembersPageController::class,'index'])->name('members');
+Route::get('/merchandise',[MerchandisePageController::class,'index'])->name('merchandise');
+Route::get('/gallery',[GalleryPageController::class,'index'])->name('gallery');
 
 
 

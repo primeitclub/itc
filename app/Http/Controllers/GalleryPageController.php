@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Album;
 use Illuminate\Http\Request;
 
-class GalleryController extends Controller
+class GalleryPageController extends Controller
 {
     public function index(){
         $Albums = Album::all();

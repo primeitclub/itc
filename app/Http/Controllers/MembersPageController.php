@@ -6,7 +6,7 @@ use App\Models\Member;
 
 use Illuminate\Http\Request;
 
-class MembersController extends Controller
+class MembersPageController extends Controller
 {
     public function index() {
         $Exemembers = Member::where('type','Executive')->get();

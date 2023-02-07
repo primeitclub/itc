@@ -5,7 +5,7 @@ use App\Models\Merchandise;
 
 use Illuminate\Http\Request;
 
-class MerchController extends Controller
+class MerchandisePageController extends Controller
 {
     public function index() {
         $Merch = Merchandise::all();
