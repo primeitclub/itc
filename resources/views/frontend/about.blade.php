@@ -124,12 +124,9 @@
                                     Manages club finances
                                 </p>
                             </div>
-                            <div>
-                                <img class="sm:block md:hidden " src="/pages/images/social-media 1.svg"
-                                    alt="" />
-                            </div>
+                            
                         </div>
-                        <div class="flex">
+                        <div class="container flex">
                             <p class="gray text-lg max-w-2xl py-8 pr-20 leading-7">
                                 Kento ipsum dolor sit amet, consectetur adipiscing elit. Cras
                                 vel sodales ante. Morbi id rutrum felis. Ut mauris lorem,
@@ -140,9 +137,9 @@
                                 ante. Morbi id rutrum felis. Ut mauris lorem, fermentum eu
                                 metus ut, vehicula sollicitudin diam.
                             </p>
-                            <div>
-                                <img class="mb-16 pl-20 ml-64 sm:hidden md:block lg:block"
-                                    src="/pages/images/social-media 1.svg" alt="" />
+                            <div class="flex items-center justify-center w-full mb-10">
+                                <img class="sm:block hidden " src="{{asset('image/social-media1.svg')}}"
+                                    alt="" />
                             </div>
                         </div>
                     </div>
@@ -260,7 +257,7 @@
                 <div class="active inline-block hidden w-full rounded-l-lg bg-gray-100 p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                     id="finance" role="tabpanel" aria-labelledby="finance-tab">
                     <div id="finance"
-                        class="sans border-b-20 border-b-primary  mt-8 space-x-8 rounded-2xl border bg-white shadow-md hover:bg-gray-300">
+                        class="sans border-b-20 border-b-primary mt-8 space-x-8 rounded-2xl border bg-white shadow-md hover:bg-gray-300">
                         <div class="flex">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Finance</span>
@@ -330,8 +327,8 @@
             </div>
         </section>
         <!-- Image part -->
-        <div class="container w-full ">
-            <img src="{{asset('image/teamillustration1.png')}}" alt="" />
+        <div class="flex items-center justify-center w-full">
+            <img src="{{asset('image/teamillustration1.png')}}" alt="" class="w-auto h-auto max-w-full" />
         </div>
         <!-- Image Part Ends -->
 

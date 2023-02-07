@@ -11,4 +11,10 @@ class GalleryPageController extends Controller
         $Albums = Album::all();
         return view('frontend.gallery', compact('Albums'));
     }
+    public function images(string $slug)
+    {
+        $gallery = Album::where('slug', $slug)->first();
+        return $gallery ? view('frontend.gallery', compact('gallery')) : redirect()->back();
+    }
+    
 }

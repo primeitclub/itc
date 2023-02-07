@@ -76,6 +76,8 @@ Route::get('/events',[EventPageController::class,'index'])->name('events');
 Route::get('/members',[MembersPageController::class,'index'])->name('members');
 Route::get('/merchandise',[MerchandisePageController::class,'index'])->name('merchandise');
 Route::get('/gallery',[GalleryPageController::class,'index'])->name('gallery');
+Route::get('/gallery/{slug}',[GalleryPageController::class,'images'])->name('images');
+
 
 
 

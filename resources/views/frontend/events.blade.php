@@ -44,7 +44,7 @@
                                             </li>
                                         </ol>
                                     </div>
-                                    <div class="h-24 overflow-hidden ">
+                                    <div class="h-40 overflow-hidden ">
                                         <p class=" home_text py-4 text-base font-light leading-6">
                                             {!! $completedEvent->description !!}
                                         </p>

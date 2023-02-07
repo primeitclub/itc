@@ -1,4 +1,4 @@
-<x-frontend.app title="Gallery">
+<x-frontend.app title="Albums">
     <section class="pt-24 sm:py-20">
         <div class="container mx-auto">
             <div class="sm:mx-12 lg:mx-24">
