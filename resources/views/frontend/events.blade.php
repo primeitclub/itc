@@ -44,9 +44,11 @@
                                             </li>
                                         </ol>
                                     </div>
-                                    <p class="home_text py-4 text-base font-light leading-6">
-                                        {!! $completedEvent->description !!}
-                                    </p>
+                                    <div class="h-24 overflow-hidden ">
+                                        <p class=" home_text py-4 text-base font-light leading-6">
+                                            {!! $completedEvent->description !!}
+                                        </p>
+                                    </div>
                                     <hr class="py-2" />
                                     <button
                                         class="bg_primary home_text w-full rounded-3xl px-20 py-2 text-xl text-white hover:bg-blue-900">

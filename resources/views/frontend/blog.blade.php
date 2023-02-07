@@ -94,10 +94,12 @@
                                         {!! $blog->body !!}
                                     </p>
                                 </div>
+                                <a href="{{ url('blogs/' . $blog->slug) }}">
                                 <button
                                     class="text-sm text-gray-400">
                                     Read more
                                 </button>
+                                </a>
                                 <hr class="py-2" />
                                 <div class="grid grid-cols-2">
                                     <p class="home_text py-2 text-sm leading-5">

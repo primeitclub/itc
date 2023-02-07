@@ -12,4 +12,12 @@ class BlogPageController extends Controller
         $blogs = Blog::with('blogCategory')->published()->get();
         return view('frontend.blog', compact('blogs','featuredBlog'));
     }
+
+    public function pages(string $slug)
+    {
+        $article = Blog::where('slug', $slug)->first();
+        return $article ? view('frontend.article', compact('article')) : redirect()->back();
+    }
+    
+
 }

@@ -775,6 +775,9 @@ select {
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
+.m-44 {
+  margin: 11rem;
+}
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -832,6 +835,15 @@ select {
 .mr-8 {
   margin-right: 2rem;
 }
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mr-2 {
+  margin-right: 0.5rem;
+}
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -855,12 +867,6 @@ select {
 }
 .mb-20 {
   margin-bottom: 5rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 .mt-1 {
   margin-top: 0.25rem;
@@ -904,6 +910,9 @@ select {
 .h-12 {
   height: 3rem;
 }
+.h-auto {
+  height: auto;
+}
 .h-96 {
   height: 24rem;
 }
@@ -918,9 +927,6 @@ select {
 }
 .h-196 {
   height: 760px;
-}
-.h-auto {
-  height: auto;
 }
 .h-screen {
   height: 100vh;
@@ -957,6 +963,9 @@ select {
 }
 .w-12 {
   width: 3rem;
+}
+.w-1\/2 {
+  width: 50%;
 }
 .w-\[100\%\] {
   width: 100%;
@@ -1361,6 +1370,10 @@ select {
 .stroke-current {
   stroke: currentColor;
 }
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
 .p-3 {
   padding: 0.75rem;
 }
@@ -1370,11 +1383,14 @@ select {
 .p-4 {
   padding: 1rem;
 }
-.p-7 {
-  padding: 1.75rem;
-}
 .p-10 {
   padding: 2.5rem;
+}
+.p-8 {
+  padding: 2rem;
+}
+.p-7 {
+  padding: 1.75rem;
 }
 .p-5 {
   padding: 1.25rem;
@@ -1478,6 +1494,9 @@ select {
 }
 .pb-3 {
   padding-bottom: 0.75rem;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 .pt-24 {
   padding-top: 6rem;
@@ -2261,6 +2280,10 @@ select {
     height: 8rem;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:w-3\/4 {
     width: 75%;
   }
@@ -2409,6 +2432,10 @@ select {
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:w-\[45\%\] {
