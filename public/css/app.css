@@ -760,6 +760,9 @@ select {
 .z-0 {
   z-index: 0;
 }
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -775,8 +778,8 @@ select {
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
-.m-44 {
-  margin: 11rem;
+.m-4 {
+  margin: 1rem;
 }
 .mx-6 {
   margin-left: 1.5rem;
@@ -835,15 +838,6 @@ select {
 .mr-8 {
   margin-right: 2rem;
 }
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-.mr-2 {
-  margin-right: 0.5rem;
-}
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -867,6 +861,12 @@ select {
 }
 .mb-20 {
   margin-bottom: 5rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 .mt-1 {
   margin-top: 0.25rem;
@@ -924,6 +924,9 @@ select {
 }
 .h-full {
   height: 100%;
+}
+.h-1\/2 {
+  height: 50%;
 }
 .h-196 {
   height: 760px;
@@ -1586,13 +1589,13 @@ select {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
 .text-4\.1xl {
   font-size: 40px;
   line-height: 44.8px;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .text-3xl {
   font-size: 1.875rem;
@@ -2258,6 +2261,10 @@ select {
 }
 @media (min-width: 768px) {
 
+  .md\:m-44 {
+    margin: 11rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
   }
@@ -2368,6 +2375,10 @@ select {
 
   .lg\:top-20 {
     top: 5rem;
+  }
+
+  .lg\:m-44 {
+    margin: 11rem;
   }
 
   .lg\:mx-24 {

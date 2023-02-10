@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href=" {{ asset('logo/favicon.ico') }}">
 
-    <title> Prime IT Club @isset($title)
-            | {{ $title }}
-        @endisset
-    </title>
+    <title> Prime IT Club @isset($title) | {{ $title }} @endisset </title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
