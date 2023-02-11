@@ -12,7 +12,7 @@
                 <div class="flex items-center justify-center overflow-hidden relative  col-span-3 h-full  ">
                     <div
                         class=" absolute top-0 left-0 w-full h-full bg-gray-900 text-white flex items-center justify-center transform duration-700">
-                        <p><img src="{{ asset('image/blog.jpg') }}" class="w-full"></p>
+                        <p><img src="{{ asset('/image/blog.jpg') }}" class="w-full"></p>
                     </div>
                 </div>
                 <img src="{{ asset('image/blog.jpg') }}" class="w-full">

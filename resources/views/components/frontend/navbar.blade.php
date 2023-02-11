@@ -4,7 +4,7 @@
         <nav class="border-gray-200 py-2.5   rounded lg:mx-24 sm:mx-2 mb:-mx-4" id="navbar">
             <div class=" flex flex-wrap justify-between items-center ">
                 <a href="#" class="flex items-center">
-                    <img src="blog-images/prime_logo.svg" class="mr-3 " alt="Flowbite Logo">
+                    <img src="/blog-images/prime_logo.svg" class="mr-3 " alt="Flowbite Logo">
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button"
                     class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -38,7 +38,7 @@
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Blog</a>
                         </li>
                         <li class="poppins">
-                            <a href="{{ route('members') }}"
+                            <a href="{{ route('member') }}"
                                 class="block py-8 pr-4 text-base lg:mx-2 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-blue-300 ">Members</a>
                         </li>
                         <li class="poppins">

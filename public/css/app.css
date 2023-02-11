@@ -925,9 +925,6 @@ select {
 .h-full {
   height: 100%;
 }
-.h-1\/2 {
-  height: 50%;
-}
 .h-196 {
   height: 760px;
 }
@@ -1066,6 +1063,9 @@ select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+.grid-flow-col {
+  grid-auto-flow: column;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1642,14 +1642,14 @@ select {
 .leading-tight {
   line-height: 1.25;
 }
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
 .tracking-widest {
   letter-spacing: 0.1em;
 }
 .tracking-tight {
   letter-spacing: -0.025em;
-}
-.tracking-wide {
-  letter-spacing: 0.025em;
 }
 .tracking-loose {
   letter-spacing: 0.24em;

@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Layout extends Component
+class FrontLayout extends Component
 {
     /**
      * Create a new component instance.

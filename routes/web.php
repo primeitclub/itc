@@ -73,7 +73,7 @@ Route::get('/aboutus',[AboutusPageController::class,'index'])->name('about');
 Route::get('/blogs',[BlogPageController::class,'index'])->name('blogs');
 Route::get('/blogs/{slug}',[BlogPageController::class,'pages'])->name('pages');
 Route::get('/events',[EventPageController::class,'index'])->name('events');
-Route::get('/members',[MembersPageController::class,'index'])->name('members');
+Route::get('/member',[MembersPageController::class,'index'])->name('member');
 Route::get('/merchandise',[MerchandisePageController::class,'index'])->name('merchandise');
 Route::get('/gallery',[GalleryPageController::class,'index'])->name('gallery');
 Route::get('/gallery/{slug}',[GalleryPageController::class,'images'])->name('images');
