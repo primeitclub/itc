@@ -69,7 +69,7 @@ class Event extends Model
     }
 
     public function imageUrl() {
-        return $this->image ? 
+        return $this->thumbnail ? 
             Storage::disk('thumbnails')->url($this->thumbnail)
             : 
             "";

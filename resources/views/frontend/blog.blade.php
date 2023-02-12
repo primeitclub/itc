@@ -80,7 +80,7 @@
                         <div class="event_card mt-8 rounded-xl bg-white sm:w-auto">
                             <div class="img">
                                 <figure>
-                                    <img class="w-[100%] rounded-t-xl" src="{{ asset('/storage/app/thumbnails/'. $blog->thumbnail) }}"
+                                    <img class="w-[100%] rounded-t-xl" src="{{ $blog->imageUrl() }}"
                                         alt=""/>
                                 </figure>
                             </div>
