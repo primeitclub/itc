@@ -122,18 +122,17 @@
 
                 <div class="grid  sm:grid-cols-2 gap-8">
                     <div>
-                        <div class="hidden ld:block sm:block pt-24">
+                        <div class="hidden lg:block pt-24">
                             <div class="relative py-6 px-5">
-                                <div class="relative  h-96 w-full border-4 rounded-r-lg border-purple-700 ">
-                                    <div class=" absolute mt-5 top-4 -left-6">
-                                        <img src="{{ asset('image/blog.jpg') }}" alt="Blog Post illustration"
-                                            class="rounded-r-lg h-96" />
+                                <div class="relative h-96 w-full border-4 rounded-r-lg border-purple-700">
+                                    <div class="absolute mt-5 top-4 -left-6">
+                                        <img src="{{ asset('image/blog.jpg') }}" alt="Blog Post illustration" class="rounded-r-lg h-96" />
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>                        
                     </div>
-                    <div class="w-full md:w-3/4 lg:w-1/2 mx-auto mt-44">
+                    <div class="w-full  lg:w-1/2 mx-auto mt-44">
                         <header class="mt-4">
                             <h1 class="text-3xl text-blue-800 font-bold">
                                 This is a big title and it will look great on two or even three lines. Wooohoo!

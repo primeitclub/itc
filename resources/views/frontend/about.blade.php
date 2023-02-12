@@ -101,9 +101,10 @@
                             Human Resources
                         </button>
                     </li>
-                    <li role="presentation">
+                    <li class="active inline-block w-1/5 rounded-l-lg bg-gray-100 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
+                        role="presentation">
                         <button
-                            class="inline-block w-1/5 rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
+                            class="inline-block rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
                             id="finance-tab" data-tabs-target="#finance" type="button" role="tab"
                             aria-controls="finance" aria-selected="false">
                             Finance
@@ -116,7 +117,7 @@
                 <div class="active inline-block hidden w-full rounded-l-lg bg-gray-100 p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                     id="marketing" role="tabpanel" aria-labelledby="marketing-tab">
                     <div id="marketing"
-                        class="sans border border-b-36 border-b-primary mt-8 space-x-8 rounded-2xl  bg-white shadow-md hover:bg-gray-300">
+                        class="sans  border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl  bg-white shadow-md hover:bg-gray-300">
                         <div class="flex flex-col-2">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Marketing</span>
@@ -124,10 +125,10 @@
                                     Manages club finances
                                 </p>
                             </div>
-                            
+
                         </div>
-                        <div class="container flex">
-                            <p class="gray text-lg max-w-2xl py-8 pr-20 leading-7">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
+                            <p class="gray text-lg leading-7 sm:pr-4">
                                 Kento ipsum dolor sit amet, consectetur adipiscing elit. Cras
                                 vel sodales ante. Morbi id rutrum felis. Ut mauris lorem,
                                 fermentum eu metus ut, vehicula sollicitudin diam. Donec
@@ -137,9 +138,9 @@
                                 ante. Morbi id rutrum felis. Ut mauris lorem, fermentum eu
                                 metus ut, vehicula sollicitudin diam.
                             </p>
-                            <div class="flex items-center justify-center w-full mb-10">
-                                <img class="sm:block hidden " src="{{asset('image/social-media1.svg')}}"
-                                    alt="" />
+                            <div class="">
+                                <img class="sm:block md:block hidden w-full h-80 "
+                                    src="{{ asset('departments/Mobile_Marketing-pana.svg') }}" alt="" />
                             </div>
                         </div>
                     </div>
@@ -149,7 +150,7 @@
                 <div class="hiddeninline-block active w-full rounded-l-lg bg-gray-100 p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                     id="event" role="tabpanel" aria-labelledby="event-tab">
                     <div id="marketing"
-                        class="sans border-b-20 border-b-primary  mt-8 space-x-8 rounded-2xl border bg-white shadow-md hover:bg-gray-300">
+                        class="sans border-b-8 border-b-primary  mt-8 space-x-8 rounded-2xl  bg-white shadow-md hover:bg-gray-300">
                         <div class="flex">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Event Management</span>
@@ -158,12 +159,11 @@
                                 </p>
                             </div>
                             <div>
-                                <img class="sm:block md:hidden " src="/pages/images/social-media 1.svg"
-                                    alt="" />
+                                <img class=" " src="/pages/images/social-media 1.svg" alt="" />
                             </div>
                         </div>
-                        <div class="flex">
-                            <p class="gray text-lg max-w-2xl py-8 pr-20 leading-7">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
+                            <p class="gray text-lg leading-7 sm:pr-4">
                                 Kento ipsum dolor sit amet, consectetur adipiscing elit. Cras
                                 vel sodales ante. Morbi id rutrum felis. Ut mauris lorem,
                                 fermentum eu metus ut, vehicula sollicitudin diam. Donec
@@ -173,11 +173,12 @@
                                 ante. Morbi id rutrum felis. Ut mauris lorem, fermentum eu
                                 metus ut, vehicula sollicitudin diam.
                             </p>
-                            <div>
-                                <img class="mb-16 pl-20 ml-64 sm:hidden md:block lg:block"
-                                    src="/pages/images/social-media 1.svg" alt="" />
+                            <div class="">
+                                <img class="sm:block md:block hidden w-full h-80 "
+                                    src="{{ asset('departments/event_management.svg') }}" alt="" />
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <!-- Event Management tabs content ends -->
@@ -185,7 +186,7 @@
                 <div class="active inline-block hidden w-full rounded-l-lg bg-gray-100 p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                     id="external" role="tabpanel" aria-labelledby="external-tab">
                     <div id="marketing"
-                        class="sans border-b-20 border-b-primary  mt-8 space-x-8 rounded-2xl border bg-white shadow-md hover:bg-gray-300">
+                        class="sans border-b-8 border-b-primary  mt-8 space-x-8 rounded-2xl  bg-white shadow-md hover:bg-gray-300">
                         <div class="flex">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">External Relationship</span>
@@ -198,8 +199,8 @@
                                     alt="" />
                             </div>
                         </div>
-                        <div class="flex">
-                            <p class="gray text-lg max-w-2xl py-8 pr-20 leading-7">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
+                            <p class="gray text-lg leading-7 sm:pr-4">
                                 Kento ipsum dolor sit amet, consectetur adipiscing elit. Cras
                                 vel sodales ante. Morbi id rutrum felis. Ut mauris lorem,
                                 fermentum eu metus ut, vehicula sollicitudin diam. Donec
@@ -209,9 +210,9 @@
                                 ante. Morbi id rutrum felis. Ut mauris lorem, fermentum eu
                                 metus ut, vehicula sollicitudin diam.
                             </p>
-                            <div>
-                                <img class="mb-16 pl-20 ml-64 sm:hidden md:block lg:block"
-                                    src="/pages/images/social-media 1.svg" alt="" />
+                            <div class="">
+                                <img class="sm:block md:block hidden w-full h-80 "
+                                    src="{{ asset('departments/external_relationship.svg') }}" alt="" />
                             </div>
                         </div>
                     </div>
@@ -221,7 +222,7 @@
                 <div class="active inline-block hidden w-full rounded-l-lg bg-gray-100 p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                     id="human" role="tabpanel" aria-labelledby="human-tab">
                     <div id="marketing"
-                        class="sans border-b-20 border-b-primary mt-8 space-x-8 rounded-2xl border bg-white shadow-md hover:bg-gray-300">
+                        class="sans border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl  bg-white shadow-md hover:bg-gray-300">
                         <div class="flex">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Human Resourcese</span>
@@ -234,8 +235,8 @@
                                     src="/pages/images/social-media 1.svg" alt="" />
                             </div>
                         </div>
-                        <div class="flex">
-                            <p class="gray text-lg max-w-2xl py-8 pr-20 leading-7">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
+                            <p class="gray text-lg leading-7 sm:pr-4">
                                 Kento ipsum dolor sit amet, consectetur adipiscing elit. Cras
                                 vel sodales ante. Morbi id rutrum felis. Ut mauris lorem,
                                 fermentum eu metus ut, vehicula sollicitudin diam. Donec
@@ -245,9 +246,9 @@
                                 ante. Morbi id rutrum felis. Ut mauris lorem, fermentum eu
                                 metus ut, vehicula sollicitudin diam.
                             </p>
-                            <div>
-                                <img class="mb-16 pl-20 ml-64 sm:hidden md:block lg:block"
-                                    src="/pages/images/social-media 1.svg" alt="" />
+                            <div class="">
+                                <img class="sm:block md:block hidden w-full h-80 "
+                                    src="{{ asset('departments/HR.svg') }}" alt="" />
                             </div>
                         </div>
                     </div>
@@ -257,7 +258,7 @@
                 <div class="active inline-block hidden w-full rounded-l-lg bg-gray-100 p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                     id="finance" role="tabpanel" aria-labelledby="finance-tab">
                     <div id="finance"
-                        class="sans border-b-20 border-b-primary mt-8 space-x-8 rounded-2xl border bg-white shadow-md hover:bg-gray-300">
+                        class="sans border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl bg-white shadow-md hover:bg-gray-300">
                         <div class="flex">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Finance</span>
@@ -270,8 +271,8 @@
                                     src="/pages/images/social-media 1.svg" alt="" />
                             </div>
                         </div>
-                        <div class="flex">
-                            <p class="gray text-lg max-w-2xl py-8 pr-20 leading-7">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
+                            <p class="gray text-lg leading-7 sm:pr-4">
                                 Kento ipsum dolor sit amet, consectetur adipiscing elit. Cras
                                 vel sodales ante. Morbi id rutrum felis. Ut mauris lorem,
                                 fermentum eu metus ut, vehicula sollicitudin diam. Donec
@@ -281,9 +282,9 @@
                                 ante. Morbi id rutrum felis. Ut mauris lorem, fermentum eu
                                 metus ut, vehicula sollicitudin diam.
                             </p>
-                            <div>
-                                <img class="mb-16 pl-20 ml-64 sm:hidden md:block lg:block"
-                                    src="/pages/images/social-media 1.svg" alt="" />
+                            <div class="">
+                                <img class="sm:block md:block hidden w-full h-80 "
+                                    src="{{ asset('departments/finance.svg') }}" alt="" />
                             </div>
                         </div>
                     </div>
@@ -328,7 +329,7 @@
         </section>
         <!-- Image part -->
         <div class="flex items-center justify-center w-full">
-            <img src="{{asset('image/teamillustration1.png')}}" alt="" class="w-auto h-auto max-w-full" />
+            <img src="{{ asset('image/teamillustration1.png') }}" alt="" class="w-auto h-auto max-w-full" />
         </div>
         <!-- Image Part Ends -->
 

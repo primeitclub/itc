@@ -81,7 +81,7 @@
                             <div class="img">
                                 <figure>
                                     <img class="w-[100%] rounded-t-xl" src="{{ asset('/storage/app/thumbnails/'. $blog->thumbnail) }}"
-                                        alt="{{ asset('/storage/app/thumbnails/'. $blog->thumbnail) }}" />
+                                        alt=""/>
                                 </figure>
                             </div>
 
