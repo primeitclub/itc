@@ -1,7 +1,7 @@
 <x-frontend.app title="About us">
     <!-- about us starts -->
     <!-- who are we and tesko image -->
-    <div class="my-8 mb:mx-8 lg:mx-24">
+    <div class="max-w-7xl my-8 mx-auto lg:mx-24">
         <section>
             <!-- Flex Container -->
             <div class="container mx-auto mt-10 flex flex-col items-center lg:flex-row">
@@ -26,7 +26,7 @@
                 </div>
                 <!-- Image -->
                 <div class="sm:w-3/4 lg:w-1/2">
-                    <img src="{{ asset('image/blog.jpg') }}" />
+                    <img src="{{ asset('club-images/club-bonding-v1.jpg') }}" />
                 </div>
             </div>
 
@@ -35,7 +35,7 @@
             <div class="space y-0 container mx-auto mt-10 flex flex-col-reverse items-center lg:flex-row lg:space-y-0">
                 <!-- Image -->
                 <div class="sm:w-3/4 lg:w-1/2">
-                    <img src="{{ asset('image/blog.jpg') }}" />
+                    <img src="{{ asset('club-images/club-bonding-v2.jpg') }}" />
                 </div>
                 <!-- right item -->
                 <div class="mb-10 flex flex-col space-y-10 lg:ml-8 lg:pl-12">
@@ -58,7 +58,7 @@
         <section>
             <div class="poppins mt-20 mb-16 text-center">
                 <span class="primary text-4xl font-semibold">Departments</span>
-                <p class="home_text lg:text-l font-normal sm:text-sm">
+                <p class="mt-4 text-xl text-gray-700 font-normal">
                     Learn About Our 5 Departments
                 </p>
             </div>
@@ -66,7 +66,7 @@
                 class="mb-4 divide-x divide-gray-200 rounded-lg border-b border-gray-200  text-center text-sm font-medium text-gray-500 shadow dark:border-gray-700">
                 <ul class="hidden divide-x divide-gray-200 rounded-lg text-center text-sm font-medium text-gray-500 shadow dark:divide-gray-700 dark:text-gray-400 sm:flex"
                     id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
-                    <li class="active inline-block w-1/5 rounded-l-lg bg-gray-100 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
+                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                         role="presentation">
                         <button class="inline-block rounded-t-lg border-b-2 p-2" id="profile-tab"
                             data-tabs-target="#marketing" type="button" role="tab" aria-controls="marketing"
@@ -74,7 +74,7 @@
                             Marketing
                         </button>
                     </li>
-                    <li class="active inline-block w-1/5 rounded-l-lg bg-gray-100 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
+                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                         role="presentation">
                         <button
                             class="inline-block rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
@@ -83,7 +83,7 @@
                             Event Management
                         </button>
                     </li>
-                    <li class="active inline-block w-1/5 rounded-l-lg bg-gray-100 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
+                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                         role="presentation">
                         <button
                             class="inline-block rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
@@ -92,7 +92,7 @@
                             External Relationship
                         </button>
                     </li>
-                    <li class="active inline-block w-1/5 rounded-l-lg bg-gray-100 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
+                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                         role="presentation">
                         <button
                             class="inline-block rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
@@ -101,7 +101,7 @@
                             Human Resources
                         </button>
                     </li>
-                    <li class="active inline-block w-1/5 rounded-l-lg bg-gray-100 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
+                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                         role="presentation">
                         <button
                             class="inline-block rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
@@ -114,10 +114,10 @@
             </div>
             <!-- Marketing tabs content starts -->
             <div id="myTabContent" class="w-full">
-                <div class="active inline-block hidden w-full rounded-l-lg bg-gray-100 p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
+                <div class="active inline-block hidden w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                     id="marketing" role="tabpanel" aria-labelledby="marketing-tab">
                     <div id="marketing"
-                        class="sans  border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl  bg-white shadow-md hover:bg-gray-300">
+                        class="sans  border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl  bg-white shadow-md ">
                         <div class="flex flex-col-2">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Marketing</span>
@@ -147,10 +147,10 @@
                 </div>
                 <!-- Marketing tabs content ends -->
                 <!-- Event Management tabs content starts -->
-                <div class="hiddeninline-block active w-full rounded-l-lg bg-gray-100 p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
+                <div class="hiddeninline-block active w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                     id="event" role="tabpanel" aria-labelledby="event-tab">
                     <div id="marketing"
-                        class="sans border-b-8 border-b-primary  mt-8 space-x-8 rounded-2xl  bg-white shadow-md hover:bg-gray-300">
+                        class="sans border-b-8 border-b-primary  mt-8 space-x-8 rounded-2xl  bg-white shadow-md ">
                         <div class="flex">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Event Management</span>
@@ -183,10 +183,10 @@
                 </div>
                 <!-- Event Management tabs content ends -->
                 <!-- External Relationship tabs content starts -->
-                <div class="active inline-block hidden w-full rounded-l-lg bg-gray-100 p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
+                <div class="active inline-block hidden w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                     id="external" role="tabpanel" aria-labelledby="external-tab">
                     <div id="marketing"
-                        class="sans border-b-8 border-b-primary  mt-8 space-x-8 rounded-2xl  bg-white shadow-md hover:bg-gray-300">
+                        class="sans border-b-8 border-b-primary  mt-8 space-x-8 rounded-2xl  bg-white shadow-md ">
                         <div class="flex">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">External Relationship</span>
@@ -219,10 +219,10 @@
                 </div>
                 <!-- External relationship tabs content ends -->
                 <!-- Human Resources tabs content starts -->
-                <div class="active inline-block hidden w-full rounded-l-lg bg-gray-100 p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
+                <div class="active inline-block hidden w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                     id="human" role="tabpanel" aria-labelledby="human-tab">
                     <div id="marketing"
-                        class="sans border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl  bg-white shadow-md hover:bg-gray-300">
+                        class="sans border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl  bg-white shadow-md ">
                         <div class="flex">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Human Resourcese</span>
@@ -255,10 +255,10 @@
                 </div>
                 <!-- Human Resources tabs content ends -->
                 <!-- Finance tabs content starts -->
-                <div class="active inline-block hidden w-full rounded-l-lg bg-gray-100 p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
+                <div class="active inline-block hidden w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
                     id="finance" role="tabpanel" aria-labelledby="finance-tab">
                     <div id="finance"
-                        class="sans border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl bg-white shadow-md hover:bg-gray-300">
+                        class="sans border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl bg-white shadow-md ">
                         <div class="flex">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Finance</span>
