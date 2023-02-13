@@ -1,4 +1,4 @@
-<x-frontend.app title="Blog">
+<x-frontend.app title="Blogs">
     <section class="pt-24 sm:py-20">
         <div class="container mx-auto">
             <div class="sm:mx-12 lg:mx-24">
