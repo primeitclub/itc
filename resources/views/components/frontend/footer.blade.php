@@ -36,10 +36,10 @@
                     <div class="px-5">
                         <h1 class="text-xl py-4 font-semibold">Quick Links</h1>
                         <ul class="text-gray-300">
-                            <li class="pb-3"><a href="#" class="hover:text-black">Gallery</a></li>
-                            <li class="pb-3"><a href="#" class="hover:text-black">Members</a></li>
-                            <li class="pb-3"><a href="#" class="hover:text-black">Events</a></li>
-                            <li class="pb-3"><a href="#" class="hover:text-black">Blogs</a></li>
+                            <li class="pb-3"><a href="{{ route('gallery') }}" class="hover:text-gray-100">Gallery</a></li>
+                            <li class="pb-3"><a href="{{ route('members') }}" class="hover:text-gray-100">Members</a></li>
+                            <li class="pb-3"><a href="{{ route('events') }}" class="hover:text-gray-100">Events</a></li>
+                            <li class="pb-3"><a href="{{ route('blogs') }}" class="hover:text-gray-100">Blog</a></li>
                         </ul>
                     </div>
 
