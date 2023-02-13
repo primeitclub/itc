@@ -11,19 +11,15 @@
                         Who are <span class="primary">we</span>?
                     </h1>
                     <p class="sans max-w-lg text-left leading-7 lg:mr-20">
-                        <span class="primary font-medium">Prime IT Club</span>
+                       <span class="primary font-medium">Prime IT Club</span>
                         <span class="gray">
-                            one of the student-run clubs at Prime College. It is run by a group of creative and
-                            tech-enthusiastic
-                            students. With our objectives in mind, we organize a wide array of sessions, workshops,
-                            training programs,
-                            and competitions. Since our establishment in 2004, we’ve been and are still constantly on
-                            the lookout for
-                            opportunities to help students in any and every way possible. Everything we set out to do is
-                            an effort to
-                            point students on the right path for their future.</span>
+                            Prime IT Club is one of the clubs formed by students at Prime College. 
+                            It is managed by a group of tech-savvy and creative college students. 
+                            We organise a range of conferences, workshops, training sessions, and contests with our aims in mind.
+                            Since its establishment in 2004, it has looked for opportunities to help students in any manner we can, and we still do so today.
+                            Its every action is an effort to nudge them in the right direction.
+                        </span>
                     </p>
-                    The Prime IT Club is one of the clubs formed by students at Prime College. It is managed by a group of tech-savvy and creative college students. We organise a range of conferences, workshops, training sessions, and contests with our aims in mind. Since its establishment in 2004, it has looked for opportunities to help students in any manner we can, and we still do so today. Its every action is an effort to nudge them in the right direction.
 
                 </div>
                 <!-- Image -->
@@ -60,7 +56,7 @@
         <section>
             <div class="poppins mt-20 mb-16 text-center">
                 <span class="primary text-4xl font-semibold">Departments</span>
-                <p class="mt-4 text-xl text-gray-700 font-normal">
+                <p class="mt-4 text-lg text-gray-700 font-normal">
                     Learn About Our 5 Departments
                 </p>
             </div>
@@ -109,7 +105,10 @@
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
                             <p class="gray text-lg leading-7 sm:pr-4">
-                            Prime IT Club's Marketing Department plans and executes marketing campaigns. It manages all marketing initiatives for club-hosted events. It manages and controls all of the Club's social media accounts and coordinates the work of the general marketing and creative teams. In addition, it performs data analysis to evaluate the success of their marketing campaigns and generate fresh ideas for boosting club marketing and exposure.
+                                Prime IT Club's Marketing Department plans and executes marketing campaigns.
+                                It manages all marketing initiatives for club-hosted events.
+                                It manages and controls all of the Club's social media accounts and coordinates the work of the general marketing and creative teams.
+                                In addition, it performs data analysis to evaluate the success of their marketing campaigns and generate fresh ideas for boosting club marketing and exposure.
 
                             </p>
                             <div class="">
@@ -135,7 +134,10 @@
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
                             <p class="gray text-lg leading-7 sm:pr-4">
-                            Prime IT Club's Event Management Department is in charge of an event's overall coordination, planning, design, promotion, and profitability. It takes the initiative and proposes event ideas and manages the entire event, assigns tasks, speaker and organises the technological requirements. Additionally, they obtain participant feedback and use it to improve subsequent events. In order to establish the annual event budgets and discuss cost feasibility prior to starting events, they also collaborate with the Finance and Accounts Department.
+                            Prime IT Club's Event Management Department is in charge of an event's overall coordination, planning, design, promotion, and profitability.
+                            It takes the initiative and proposes event ideas and manages the entire event, assigns tasks, speaker and organises the technological requirements.
+                            Additionally, they obtain participant feedback and use it to improve subsequent events.
+                            In order to establish the annual event budgets and discuss cost feasibility prior to starting events, they also collaborate with the Finance and Accounts Department.
 
                             </p>
                             <div class="">
@@ -153,7 +155,7 @@
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Public Relationship</span>
                                 <p class="gray lg:text-l font-normal">
-                                    Manages club finances
+                                    Manages club's public relationships
                                 </p>
                             </div>
                             <div>
@@ -162,7 +164,11 @@
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
                             <p class="gray text-lg leading-7 sm:pr-4">
-                            Prime IT Club’s Public Relations Department is in charge of establishing and upholding ties with other clubs and companies. To avoid any potential conflicts between exam and event dates, it meets with faculty members in order to negotiate scheduling and logistics. It plans CSR activities and sessions for Prime Global School (+2). To promote the club's activities, it collaborates closely with CSC and the club advisor. It also aids in connecting clubs with possible sponsors for major annual events.
+                                Prime IT Club’s Public Relations Department is in charge of establishing and upholding ties with other clubs and companies.
+                                To avoid any potential conflicts between exam and event dates, it meets with faculty members in order to negotiate scheduling and logistics.
+                                It plans CSR activities and sessions for Prime Global School (+2).
+                                To promote the club's activities, it collaborates closely with CSC and the club advisor.
+                                It also aids in connecting clubs with possible sponsors for major annual events.
 
                             </p>
                             <div class="">
@@ -179,7 +185,7 @@
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Human Resourcese</span>
                                 <p class="gray lg:text-l font-normal">
-                                    Manages club finances
+                                    Manages human resources in the club
                                 </p>
                             </div>
                             <div>
@@ -188,7 +194,11 @@
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
                             <p class="gray text-lg leading-7 sm:pr-4">
-                            Prime IT Club's Human Resources department is in charge of overseeing the organization's recruitment, interviewing, and selection processes. To optimize the talents of Club members, it coordinates and collaborates with them. It serves as a liaison between the General Members and the Club's management staff and is in charge of organizing alumni get-togethers and team-bonding activities to improve bonds among club members. Knowledge-sharing workshops are held as part of the club's efforts to promote learning. Additionally, it is responsible for overseeing and constructively resolving internal issues.
+                                Prime IT Club's Human Resources department is in charge of overseeing the organization's recruitment, interviewing, and selection processes.
+                                To optimize the talents of Club members, it coordinates and collaborates with them.
+                                It serves as a liaison between the General Members and the Club's management staff and is in charge of organizing alumni get-togethers and team-bonding activities to improve bonds among club members.
+                                Knowledge-sharing workshops are held as part of the club's efforts to promote learning.
+                                Additionally, it is responsible for overseeing and constructively resolving internal issues.
 
                             </p>
                             <div class="">
@@ -214,8 +224,12 @@
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
                             <p class="gray text-lg leading-7 sm:pr-4">
-                            Prime IT Club's Finance Department ensures that every transaction is transparent by keeping track of all transactions and financial happenings. It takes care of financial needs and works with college administration. It collaborates with the Event Management department to create the annual event budgets and assess whether events will be financially feasible. It plans fundraising events in collaboration with other clubs, and other departments. All the steps taken to handle changes in the organization's assets, liabilities, and other items' values are documented and presented to the board at the end of each fiscal year. This department is in charge of creating memos for resources and logistics as well as managing inventory.
-
+                                Prime IT Club's Finance Department ensures that every transaction is transparent by keeping track of all transactions and financial happenings.
+                                It takes care of financial needs and works with college administration.
+                                It collaborates with the Event Management department to create the annual event budgets and assess whether events will be financially feasible.
+                                It plans fundraising events in collaboration with other clubs, and other departments.
+                                All the steps taken to handle changes in the organization's assets, liabilities, and other items' values are documented and presented to the board at the end of each fiscal year.
+                                This department is in charge of creating memos for resources and logistics as well as managing inventory.
                             </p>
                             <div class="">
                                 <img class="sm:block md:block hidden w-full h-80 " src="{{ asset('departments/finance.svg') }}" alt="" />
@@ -232,7 +246,7 @@
         <section>
             <div class="poppins pt-20 text-center">
                 <span class="primary text-4xl font-semibold">Why join us?</span>
-                <p class="sans lg:text-l font-normal sm:text-sm">
+                <p class="mt-4 text-lg text-gray-700 font-normal">
                     How this will benefit you
                 </p>
             </div>
@@ -321,7 +335,6 @@
                                 <p class="faq_content py-3 sm:text-sm lg:text-base">
                                     There are 5 departments in the clubs.
                                     Marketing, Human Resources, Event Management, Finance and Account, and Public Relation.
-
                                 </p>
                             </div>
                         </div>
@@ -332,9 +345,14 @@
                             </h3>
                             <div class="faq_body w-full border border-b-black">
                                 <p class="faq_content py-3 sm:text-sm lg:text-base">
-                                    Working in a club, organization, company, or project is about teamwork and coordination. Joining the Prime IT Club has several benefits. By participating in club activities, you can indirectly expand your network with club alumni and professionals in various fields. Additionally, the club provides opportunities to learn and exchange skills. Besides improving your teamwork and networking skills, this club also helps to boost your confidence. Prime it Club offers active learning opportunities providing members with a platform for personal and professional growth. It develops leadership qualities in students bridging the gap between academia and industry. It also provides students with in-depth knowledge of IT job prospects in Nepal.
-
-
+                                    Working in a club, organization, company, or project is about teamwork and coordination. 
+                                    Joining the Prime IT Club has several benefits.
+                                    By participating in club activities, you can indirectly expand your network with club alumni and professionals in various fields.
+                                    Additionally, the club provides opportunities to learn and exchange skills.
+                                    Besides improving your teamwork and networking skills, this club also helps to boost your confidence.
+                                    Prime it Club offers active learning opportunities providing members with a platform for personal and professional growth.
+                                    It develops leadership qualities in students bridging the gap between academia and industry.
+                                    It also provides students with in-depth knowledge of IT job prospects in Nepal.
                                 </p>
                             </div>
                         </div>
