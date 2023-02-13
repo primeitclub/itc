@@ -1,4 +1,4 @@
-<x-frontend.app title="About us">
+<x-frontend.app title="About Us">
     <!-- about us starts -->
     <!-- who are we and tesko image -->
     <div class="max-w-7xl my-8 mx-auto lg:mx-24">
@@ -62,7 +62,7 @@
             </div>
 
             <div class="mb-4 rounded-lg border-b border-gray-200  text-center text-sm font-medium text-gray-500 shadow dark:border-gray-700">
-                <ul class="hidden rounded-lg text-center text-sm font-medium text-gray-500 shadow dark:divide-gray-700 dark:text-gray-400 sm:flex" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                <ul class="hidden rounded-lg text-center text-sm font-semibold text-gray-500 shadow dark:divide-gray-700 dark:text-gray-400 sm:flex" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                     <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white" role="presentation">
                         <button class="inline-block rounded-t-lg border-b-2 p-2" id="profile-tab" data-tabs-target="#marketing" type="button" role="tab" aria-controls="marketing" aria-selected="false">
                             Marketing
@@ -96,7 +96,7 @@
                     <div id="marketing" class="sans  border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl  bg-white shadow-md ">
                         <div class="flex flex-col-2">
                             <div class="py-8 pl-8 pr-20">
-                                <span class="primary text-4xl font-semibold">Marketing</span>
+                                <span class="primary text-4xl font-semibold" >Marketing</span>
                                 <p class="gray lg:text-l font-normal">
                                     Manages club marketing and contents
                                 </p>
@@ -254,14 +254,14 @@
             <div class="sans space y-0 container mx-auto flex flex-col items-center lg:mt-16 lg:mb-24 lg:flex-row lg:divide-x-2 lg:divide-solid lg:divide-gray-200">
                 <!-- left item -->
                 <div class="lg:w-1/2">
-                    <p class="mr-8 hidden max-w-lg text-4xl font-bold sm:text-center sm:text-xl lg:block lg:text-left">
+                    <p class="mr-8 hidden text-left max-w-lg text-4xl font-bold sm:text-xl lg:block lg:text-left">
                         The moment you take responsibility is the moment you gain the
                         power to change.
                     </p>
                 </div>
                 <!-- Right item -->
                 <div>
-                    <p class="my-8 max-w-lg font-normal sm:text-sm lg:mt-0 lg:ml-20 lg:text-base">
+                    <p class="my-8 max-w-lg font-normal text-gray-700 leading-6 sm:text-base lg:mt-0 lg:ml-20 lg:text-base">
                         Working in a club, organization, company, or in a project is all
                         about teamwork and coordination. Being a part of Prime IT Club
                         comes with a number of perks and you’ll be exposed to many

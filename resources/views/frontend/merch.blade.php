@@ -1,4 +1,4 @@
-<x-frontend.app title="Merch">
+<x-frontend.app title="Merchandise">
     <!-- merch content starts -->
     <section class="pt-24 sm:py-20">
         <div class="container mx-auto">

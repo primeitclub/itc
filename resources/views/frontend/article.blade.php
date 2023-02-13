@@ -1,4 +1,4 @@
-<x-frontend.app title="Article">
+<x-frontend.app title="Blog">
     <!-- articles page starts -->
     <section class="container lg:m-44 md:m-44  font-poppins">
         <div class="flex flex-col h-auto w-full mx-auto sm:block hidden pb-10">

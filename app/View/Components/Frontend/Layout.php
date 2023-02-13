@@ -1,22 +1,20 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Frontend;
 
 use Illuminate\View\Component;
 
-class FrontLayout extends Component
+class Layout extends Component
 {
+    public $title;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public $title;
-    
     public function __construct($title)
     {
-        //
-        $this->title = $title;
+        return $this->title = $title;
     }
 
     /**

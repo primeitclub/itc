@@ -19,7 +19,6 @@
         <script src="{{ asset('/js/custom.js') }}"></script>
         <script src="{{ asset('/js/app.js') }}"></script>
 
-
         <!-- Alpine -->
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
@@ -33,7 +32,7 @@
         <!-- Navbar font -->
         <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-        @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Poppins:wght@300&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400,500,700&family=Poppins:wght@300&display=swap");
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
         </style>
 
