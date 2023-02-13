@@ -44,4 +44,12 @@ class Member extends Model
             : 
             "";
     }
+
+    public function scopeExecutiveMember($query) {
+        return $query->where('type','Executive');
+    }
+
+    public function scopeGeneralMember($query) {
+        return $query->where('type','General');
+    }
 }

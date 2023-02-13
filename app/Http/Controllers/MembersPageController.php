@@ -9,8 +9,8 @@ use Illuminate\Http\Request;
 class MembersPageController extends Controller
 {
     public function index() {
-        $Exemembers = Member::where('type','Executive')->get();
-        $Generalmembers = Member::where('type', 'General')->get();
-        return view('frontend.member', compact('Exemembers','Generalmembers'));
+        $executiveMembers = Member::executiveMember()->get();
+        $generalMembers = Member::generalMember()->get();
+        return view('frontend.members', compact('executiveMembers','generalMembers'));
     }
 }
