@@ -23,6 +23,8 @@
                             an effort to
                             point students on the right path for their future.</span>
                     </p>
+                    The Prime IT Club is one of the clubs formed by students at Prime College. It is managed by a group of tech-savvy and creative college students. We organise a range of conferences, workshops, training sessions, and contests with our aims in mind. Since its establishment in 2004, it has looked for opportunities to help students in any manner we can, and we still do so today. Its every action is an effort to nudge them in the right direction.
+
                 </div>
                 <!-- Image -->
                 <div class="sm:w-3/4 lg:w-1/2">
@@ -62,51 +64,31 @@
                     Learn About Our 5 Departments
                 </p>
             </div>
-            <div
-                class="mb-4 divide-x divide-gray-200 rounded-lg border-b border-gray-200  text-center text-sm font-medium text-gray-500 shadow dark:border-gray-700">
-                <ul class="hidden divide-x divide-gray-200 rounded-lg text-center text-sm font-medium text-gray-500 shadow dark:divide-gray-700 dark:text-gray-400 sm:flex"
-                    id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
-                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
-                        role="presentation">
-                        <button class="inline-block rounded-t-lg border-b-2 p-2" id="profile-tab"
-                            data-tabs-target="#marketing" type="button" role="tab" aria-controls="marketing"
-                            aria-selected="false">
+
+            <div class="mb-4 rounded-lg border-b border-gray-200  text-center text-sm font-medium text-gray-500 shadow dark:border-gray-700">
+                <ul class="hidden rounded-lg text-center text-sm font-medium text-gray-500 shadow dark:divide-gray-700 dark:text-gray-400 sm:flex" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white" role="presentation">
+                        <button class="inline-block rounded-t-lg border-b-2 p-2" id="profile-tab" data-tabs-target="#marketing" type="button" role="tab" aria-controls="marketing" aria-selected="false">
                             Marketing
                         </button>
                     </li>
-                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
-                        role="presentation">
-                        <button
-                            class="inline-block rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
-                            id="event-tab" data-tabs-target="#event" type="button" role="tab" aria-controls="event"
-                            aria-selected="false">
+                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white" role="presentation">
+                        <button class="inline-block rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300" id="event-tab" data-tabs-target="#event" type="button" role="tab" aria-controls="event" aria-selected="false">
                             Event Management
                         </button>
                     </li>
-                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
-                        role="presentation">
-                        <button
-                            class="inline-block rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
-                            id="external-tab" data-tabs-target="#external" type="button" role="tab"
-                            aria-controls="external" aria-selected="false">
+                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white" role="presentation">
+                        <button class="inline-block rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300" id="external-tab" data-tabs-target="#external" type="button" role="tab" aria-controls="external" aria-selected="false">
                             External Relationship
                         </button>
                     </li>
-                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
-                        role="presentation">
-                        <button
-                            class="inline-block rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
-                            id="human-tab" data-tabs-target="#human" type="button" role="tab" aria-controls="human"
-                            aria-selected="false">
+                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white" role="presentation">
+                        <button class="inline-block rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300" id="human-tab" data-tabs-target="#human" type="button" role="tab" aria-controls="human" aria-selected="false">
                             Human Resources
                         </button>
                     </li>
-                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
-                        role="presentation">
-                        <button
-                            class="inline-block rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300"
-                            id="finance-tab" data-tabs-target="#finance" type="button" role="tab"
-                            aria-controls="finance" aria-selected="false">
+                    <li class="active inline-block w-1/5 rounded-l-lg text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white" role="presentation">
+                        <button class="inline-block rounded-t-lg border-b-2 border-transparent p-2 hover:border-gray-300 hover:text-gray-600 dark:hover:text-gray-300" id="finance-tab" data-tabs-target="#finance" type="button" role="tab" aria-controls="finance" aria-selected="false">
                             Finance
                         </button>
                     </li>
@@ -114,48 +96,37 @@
             </div>
             <!-- Marketing tabs content starts -->
             <div id="myTabContent" class="w-full">
-                <div class="active inline-block hidden w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
-                    id="marketing" role="tabpanel" aria-labelledby="marketing-tab">
-                    <div id="marketing"
-                        class="sans  border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl  bg-white shadow-md ">
+                <div class="active inline-block hidden w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white" id="marketing" role="tabpanel" aria-labelledby="marketing-tab">
+                    <div id="marketing" class="sans  border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl  bg-white shadow-md ">
                         <div class="flex flex-col-2">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Marketing</span>
                                 <p class="gray lg:text-l font-normal">
-                                    Manages club finances
+                                    Manages club marketing and contents
                                 </p>
                             </div>
 
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
                             <p class="gray text-lg leading-7 sm:pr-4">
-                                Kento ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                                vel sodales ante. Morbi id rutrum felis. Ut mauris lorem,
-                                fermentum eu metus ut, vehicula sollicitudin diam. Donec
-                                sollicitudin pellentesque neque quis rhoncus. Donec sem lorem,
-                                tristique in viverra eget, sagittis ac purus. Lorem ipsum
-                                dolor sit amet, consectetur adipiscing elit. Cras vel sodales
-                                ante. Morbi id rutrum felis. Ut mauris lorem, fermentum eu
-                                metus ut, vehicula sollicitudin diam.
+                            Prime IT Club's Marketing Department plans and executes marketing campaigns. It manages all marketing initiatives for club-hosted events. It manages and controls all of the Club's social media accounts and coordinates the work of the general marketing and creative teams. In addition, it performs data analysis to evaluate the success of their marketing campaigns and generate fresh ideas for boosting club marketing and exposure.
+
                             </p>
                             <div class="">
-                                <img class="sm:block md:block hidden w-full h-80 "
-                                    src="{{ asset('departments/Mobile_Marketing-pana.svg') }}" alt="" />
+                                <img class="sm:block md:block hidden w-full h-80 " src="{{ asset('departments/Mobile_Marketing-pana.svg') }}" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Marketing tabs content ends -->
                 <!-- Event Management tabs content starts -->
-                <div class="hiddeninline-block active w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
-                    id="event" role="tabpanel" aria-labelledby="event-tab">
-                    <div id="marketing"
-                        class="sans border-b-8 border-b-primary  mt-8 space-x-8 rounded-2xl  bg-white shadow-md ">
+                <div class="hiddeninline-block active w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white" id="event" role="tabpanel" aria-labelledby="event-tab">
+                    <div id="marketing" class="sans border-b-8 border-b-primary  mt-8 space-x-8 rounded-2xl  bg-white shadow-md ">
                         <div class="flex">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Event Management</span>
                                 <p class="gray lg:text-l font-normal">
-                                    Manages club finances
+                                    Manages club events
                                 </p>
                             </div>
                             <div>
@@ -164,18 +135,11 @@
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
                             <p class="gray text-lg leading-7 sm:pr-4">
-                                Kento ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                                vel sodales ante. Morbi id rutrum felis. Ut mauris lorem,
-                                fermentum eu metus ut, vehicula sollicitudin diam. Donec
-                                sollicitudin pellentesque neque quis rhoncus. Donec sem lorem,
-                                tristique in viverra eget, sagittis ac purus. Lorem ipsum
-                                dolor sit amet, consectetur adipiscing elit. Cras vel sodales
-                                ante. Morbi id rutrum felis. Ut mauris lorem, fermentum eu
-                                metus ut, vehicula sollicitudin diam.
+                            Prime IT Club's Event Management Department is in charge of an event's overall coordination, planning, design, promotion, and profitability. It takes the initiative and proposes event ideas and manages the entire event, assigns tasks, speaker and organises the technological requirements. Additionally, they obtain participant feedback and use it to improve subsequent events. In order to establish the annual event budgets and discuss cost feasibility prior to starting events, they also collaborate with the Finance and Accounts Department.
+
                             </p>
                             <div class="">
-                                <img class="sm:block md:block hidden w-full h-80 "
-                                    src="{{ asset('departments/event_management.svg') }}" alt="" />
+                                <img class="sm:block md:block hidden w-full h-80 " src="{{ asset('departments/event_management.svg') }}" alt="" />
                             </div>
                         </div>
 
@@ -183,46 +147,34 @@
                 </div>
                 <!-- Event Management tabs content ends -->
                 <!-- External Relationship tabs content starts -->
-                <div class="active inline-block hidden w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
-                    id="external" role="tabpanel" aria-labelledby="external-tab">
-                    <div id="marketing"
-                        class="sans border-b-8 border-b-primary  mt-8 space-x-8 rounded-2xl  bg-white shadow-md ">
+                <div class="active inline-block hidden w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white" id="external" role="tabpanel" aria-labelledby="external-tab">
+                    <div id="marketing" class="sans border-b-8 border-b-primary  mt-8 space-x-8 rounded-2xl  bg-white shadow-md ">
                         <div class="flex">
                             <div class="py-8 pl-8 pr-20">
-                                <span class="primary text-4xl font-semibold">External Relationship</span>
+                                <span class="primary text-4xl font-semibold">Public Relationship</span>
                                 <p class="gray lg:text-l font-normal">
                                     Manages club finances
                                 </p>
                             </div>
                             <div>
-                                <img class="sm:block md:hidden " src="/pages/images/social-media 1.svg"
-                                    alt="" />
+                                <img class="sm:block md:hidden " src="/pages/images/social-media 1.svg" alt="" />
                             </div>
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
                             <p class="gray text-lg leading-7 sm:pr-4">
-                                Kento ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                                vel sodales ante. Morbi id rutrum felis. Ut mauris lorem,
-                                fermentum eu metus ut, vehicula sollicitudin diam. Donec
-                                sollicitudin pellentesque neque quis rhoncus. Donec sem lorem,
-                                tristique in viverra eget, sagittis ac purus. Lorem ipsum
-                                dolor sit amet, consectetur adipiscing elit. Cras vel sodales
-                                ante. Morbi id rutrum felis. Ut mauris lorem, fermentum eu
-                                metus ut, vehicula sollicitudin diam.
+                            Prime IT Club’s Public Relations Department is in charge of establishing and upholding ties with other clubs and companies. To avoid any potential conflicts between exam and event dates, it meets with faculty members in order to negotiate scheduling and logistics. It plans CSR activities and sessions for Prime Global School (+2). To promote the club's activities, it collaborates closely with CSC and the club advisor. It also aids in connecting clubs with possible sponsors for major annual events.
+
                             </p>
                             <div class="">
-                                <img class="sm:block md:block hidden w-full h-80 "
-                                    src="{{ asset('departments/external_relationship.svg') }}" alt="" />
+                                <img class="sm:block md:block hidden w-full h-80 " src="{{ asset('departments/external_relationship.svg') }}" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- External relationship tabs content ends -->
                 <!-- Human Resources tabs content starts -->
-                <div class="active inline-block hidden w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
-                    id="human" role="tabpanel" aria-labelledby="human-tab">
-                    <div id="marketing"
-                        class="sans border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl  bg-white shadow-md ">
+                <div class="active inline-block hidden w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white" id="human" role="tabpanel" aria-labelledby="human-tab">
+                    <div id="marketing" class="sans border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl  bg-white shadow-md ">
                         <div class="flex">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Human Resourcese</span>
@@ -231,34 +183,24 @@
                                 </p>
                             </div>
                             <div>
-                                <img class="my-4 ml-12 h-12 w-12 sm:block md:hidden"
-                                    src="/pages/images/social-media 1.svg" alt="" />
+                                <img class="my-4 ml-12 h-12 w-12 sm:block md:hidden" src="/pages/images/social-media 1.svg" alt="" />
                             </div>
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
                             <p class="gray text-lg leading-7 sm:pr-4">
-                                Kento ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                                vel sodales ante. Morbi id rutrum felis. Ut mauris lorem,
-                                fermentum eu metus ut, vehicula sollicitudin diam. Donec
-                                sollicitudin pellentesque neque quis rhoncus. Donec sem lorem,
-                                tristique in viverra eget, sagittis ac purus. Lorem ipsum
-                                dolor sit amet, consectetur adipiscing elit. Cras vel sodales
-                                ante. Morbi id rutrum felis. Ut mauris lorem, fermentum eu
-                                metus ut, vehicula sollicitudin diam.
+                            Prime IT Club's Human Resources department is in charge of overseeing the organization's recruitment, interviewing, and selection processes. To optimize the talents of Club members, it coordinates and collaborates with them. It serves as a liaison between the General Members and the Club's management staff and is in charge of organizing alumni get-togethers and team-bonding activities to improve bonds among club members. Knowledge-sharing workshops are held as part of the club's efforts to promote learning. Additionally, it is responsible for overseeing and constructively resolving internal issues.
+
                             </p>
                             <div class="">
-                                <img class="sm:block md:block hidden w-full h-80 "
-                                    src="{{ asset('departments/HR.svg') }}" alt="" />
+                                <img class="sm:block md:block hidden w-full h-80 " src="{{ asset('departments/HR.svg') }}" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- Human Resources tabs content ends -->
                 <!-- Finance tabs content starts -->
-                <div class="active inline-block hidden w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white"
-                    id="finance" role="tabpanel" aria-labelledby="finance-tab">
-                    <div id="finance"
-                        class="sans border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl bg-white shadow-md ">
+                <div class="active inline-block hidden w-full rounded-l-lg p-4 text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-700 dark:text-white" id="finance" role="tabpanel" aria-labelledby="finance-tab">
+                    <div id="finance" class="sans border-b-8 border-b-primary mt-8 space-x-8 rounded-2xl bg-white shadow-md ">
                         <div class="flex">
                             <div class="py-8 pl-8 pr-20">
                                 <span class="primary text-4xl font-semibold">Finance</span>
@@ -267,24 +209,16 @@
                                 </p>
                             </div>
                             <div>
-                                <img class="my-4 ml-12 h-12 w-12 sm:block md:hidden"
-                                    src="/pages/images/social-media 1.svg" alt="" />
+                                <img class="my-4 ml-12 h-12 w-12 sm:block md:hidden" src="/pages/images/social-media 1.svg" alt="" />
                             </div>
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 mb-6 gap-24 overflow-hidden h-96">
                             <p class="gray text-lg leading-7 sm:pr-4">
-                                Kento ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                                vel sodales ante. Morbi id rutrum felis. Ut mauris lorem,
-                                fermentum eu metus ut, vehicula sollicitudin diam. Donec
-                                sollicitudin pellentesque neque quis rhoncus. Donec sem lorem,
-                                tristique in viverra eget, sagittis ac purus. Lorem ipsum
-                                dolor sit amet, consectetur adipiscing elit. Cras vel sodales
-                                ante. Morbi id rutrum felis. Ut mauris lorem, fermentum eu
-                                metus ut, vehicula sollicitudin diam.
+                            Prime IT Club's Finance Department ensures that every transaction is transparent by keeping track of all transactions and financial happenings. It takes care of financial needs and works with college administration. It collaborates with the Event Management department to create the annual event budgets and assess whether events will be financially feasible. It plans fundraising events in collaboration with other clubs, and other departments. All the steps taken to handle changes in the organization's assets, liabilities, and other items' values are documented and presented to the board at the end of each fiscal year. This department is in charge of creating memos for resources and logistics as well as managing inventory.
+
                             </p>
                             <div class="">
-                                <img class="sm:block md:block hidden w-full h-80 "
-                                    src="{{ asset('departments/finance.svg') }}" alt="" />
+                                <img class="sm:block md:block hidden w-full h-80 " src="{{ asset('departments/finance.svg') }}" alt="" />
                             </div>
                         </div>
                     </div>
@@ -303,8 +237,7 @@
                 </p>
             </div>
             <!-- Flex Container -->
-            <div
-                class="sans space y-0 container mx-auto flex flex-col items-center lg:mt-16 lg:mb-24 lg:flex-row lg:divide-x-2 lg:divide-solid lg:divide-gray-200">
+            <div class="sans space y-0 container mx-auto flex flex-col items-center lg:mt-16 lg:mb-24 lg:flex-row lg:divide-x-2 lg:divide-solid lg:divide-gray-200">
                 <!-- left item -->
                 <div class="lg:w-1/2">
                     <p class="mr-8 hidden max-w-lg text-4xl font-bold sm:text-center sm:text-xl lg:block lg:text-left">
@@ -346,70 +279,62 @@
                     <div class="poppins font-medium">
                         <div class="pb-2">
                             <p class="faq_header py-2 sm:text-sm lg:text-xl">
-                                Why do I need a website?
+                                What does Prime IT club do?
                             </p>
                             <div class="faq_body w-full border border-b-black">
                                 <p class="faq_content pb-3 lg:text-lg">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Dolorem aperiam omnis quos dolore eligendi ut inventore quia
-                                    saepe facere earum.
+                                    Prime IT Club is a student-run club working towards the goal of bridging the gap between academia and industry. Provide students with a thorough knowledge of the prospect of IT jobs in Nepal
+
                                 </p>
                             </div>
                         </div>
 
                         <div class="pb-2">
                             <h3 class="faq_header py-2 sm:text-sm lg:text-xl">
-                                How long does it take to build a website
+                                How can I join the Prime It club?
                             </h3>
                             <div class="faq_body w-full border border-b-black">
                                 <p class="faq_content py-3 sm:text-sm lg:text-base">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Incidunt distinctio eveniet quam perspiciatis nesciunt,
-                                    nihil esse consequatur fugit iusto? Blanditiis laudantium
-                                    voluptatem vitae ea tenetur rem pariatur obcaecati velit
-                                    iste?
+                                    New general members will be recruited annually, once the club orientation has been officially organized. All the candidates for general membership should be interviewed and distributed among the internal departments after the selection.
+
                                 </p>
                             </div>
                         </div>
 
                         <div class="pb-2">
                             <h3 class="faq_header py-2 sm:text-sm lg:text-xl">
-                                Why do we need website for our company
+                                How can I become an Executive member?
                             </h3>
                             <div class="faq_body w-full border border-b-black">
                                 <p class="faq_content py-3 sm:text-sm lg:text-base">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Ratione facere nemo dolorum iure sapiente pariatur nobis?
-                                    Voluptates quos reprehenderit iusto at voluptate esse qui
-                                    tempora harum, deserunt a doloremque sint.
+                                    All of the general members who have more than 1 year of experience in the club are eligible to apply for executive membership.
+
                                 </p>
                             </div>
                         </div>
 
                         <div class="pb-2">
                             <h3 class="faq_header py-2 sm:text-sm lg:text-xl">
-                                Is there a need for physical meeting before my project begins?
+                                How many departments are there in the clubs?
                             </h3>
                             <div class="faq_body w-full border border-b-black">
                                 <p class="faq_content py-3 sm:text-sm lg:text-base">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Ratione facere nemo dolorum iure sapiente pariatur nobis?
-                                    Voluptates quos reprehenderit iusto at voluptate esse qui
-                                    tempora harum, deserunt a doloremque sint.
+                                    There are 5 departments in the clubs.
+                                    Marketing, Human Resources, Event Management, Finance and Account, and Public Relation.
+
                                 </p>
                             </div>
                         </div>
 
                         <div class="ques pb-2">
                             <h3 class="faq_header py-2 sm:text-sm lg:text-xl">
-                                Do I need to buy domain or hosting for my website?
+                                Why join us?
                             </h3>
                             <div class="faq_body w-full border border-b-black">
                                 <p class="faq_content py-3 sm:text-sm lg:text-base">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Ratione facere nemo dolorum iure sapiente pariatur nobis?
-                                    Voluptates quos reprehenderit iusto at voluptate esse qui
-                                    tempora harum, deserunt a doloremque sint.
+                                    Working in a club, organization, company, or project is about teamwork and coordination. Joining the Prime IT Club has several benefits. By participating in club activities, you can indirectly expand your network with club alumni and professionals in various fields. Additionally, the club provides opportunities to learn and exchange skills. Besides improving your teamwork and networking skills, this club also helps to boost your confidence. Prime it Club offers active learning opportunities providing members with a platform for personal and professional growth. It develops leadership qualities in students bridging the gap between academia and industry. It also provides students with in-depth knowledge of IT job prospects in Nepal.
+
+
                                 </p>
                             </div>
                         </div>
