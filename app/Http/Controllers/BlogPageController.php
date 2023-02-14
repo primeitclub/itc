@@ -8,16 +8,14 @@ use Illuminate\Http\Request;
 class BlogPageController extends Controller
 {   
     public function index(){
-        $featuredBlog = Blog::latest()->get();
+        $featuredBlog = Blog::latest()->first();
         $blogs = Blog::with('blogCategory')->published()->get();
-        return view('frontend.blogs', compact('blogs','featuredBlog'));
+        return view('frontend.blogs.index', compact('blogs','featuredBlog'));
     }
 
-    public function pages(string $slug)
+    public function show(Blog $blog)
     {
-        $article = Blog::where('slug', $slug)->first();
-        return $article ? view('frontend.article', compact('article')) : redirect()->back();
+        return view('frontend.blogs.show', compact('blog'));
     }
-    
 
 }

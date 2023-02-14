@@ -13,50 +13,41 @@
 
                 <div class="grid  sm:grid-cols-2 gap-8">
                     <div>
-                        <div class="hidden ld:block sm:block pt-24">
+                        <div class="hidden lg:block pt-24">
                             <div class="relative py-6 px-5">
-                                <div class="relative  h-96 w-full border-4 rounded-r-lg border-purple-700 ">
-                                    <div class=" absolute mt-5 top-4 -left-6">
-                                        <img src="{{ asset('image/blog.jpg') }}" alt="Blog Thumbnail"
-                                            class="rounded-r-lg h-96" />
+                                <div class="relative h-96 w-full border-4 rounded-r-2xl border-blue-800">
+                                    <div class="absolute mt-4 top-4 -left-10">
+                                        <img src="{{ $featuredBlog->thumbnailUrl() }}" alt="Blog's thumbnail" class="rounded-r-2xl rounded-b-2xl h-ih w-iw" />
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>                        
                     </div>
-                    <div class="w-full md:w-3/4 lg:w-1/2 mx-auto mt-44">
+                    <div class="w-full  lg:w-1/2 mx-auto mt-44">
                         <header class="mt-4">
                             <h1 class="text-3xl text-blue-800 font-bold">
-                                This is a big title and it will look great on two or even three lines. Wooohoo!
+                                {{ $featuredBlog->title }}
                             </h1>
 
                             <span class="block text-xs text-gray-400 mt-2">
-                                Published <time>1 day ago</time>
+                                Published <time>{{ $featuredBlog->formattedPublishedAt() }}</time>
                             </span>
                         </header>
 
                         <div class="mt-4 text-sm">
                             <p class="text-base md:text-sm">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-
-                            <p class="mt-4 text-base md:text-sm">
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur.
+                                {!! $featuredBlog->excerpt !!}
                             </p>
                         </div>
 
                         <footer class="mt-8 mb-8 flex items-center justify-between">
                             <div>
-                                <a href="#"
-                                    class="bg-white-100 py-4 px-8 text-xs font-semibold transition-colors duration-300 border border-purple-700 text-black-700 rounded-full hover:bg-purple-700 hover:text-white">Read
+                                <a href="{{ route('blogs.show', $featuredBlog->slug) }}"
+                                    class="bg-white-100 py-4 px-8 text-xs font-semibold transition-colors duration-300 border border-blue-800 text-black-700 rounded-full hover:bg-blue-800 hover:text-white">Read
                                     More</a>
                             </div>
                         </footer>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -80,25 +71,25 @@
                         <div class="event_card mt-8 rounded-xl bg-white sm:w-auto">
                             <div class="img">
                                 <figure>
-                                    <img class="w-[100%] rounded-t-xl" src="{{ $blog->imageUrl() }}"
+                                    <img class="w-[100%] rounded-t-xl" src="{{ $blog->thumbnailUrl() }}"
                                         alt=""/>
                                 </figure>
                             </div>
 
                             <div class="event_card_contens p-7 ">
                                 <h3 class="primary poppins text-2xl font-semibold">
-                                    {{ $blog->title }}
+                                    <a href="{{ route('blogs.show', $blog->slug) }}"> {{ $blog->title }} </a>
                                 </h3>
                                 <div class="h-48 overflow-hidden">
                                     <p class="home_text py-4 text-base font-light leading-6">
                                         {!! $blog->body !!}
                                     </p>
                                 </div>
-                                <a href="{{ url('blogs/' . $blog->slug) }}">
-                                <button
-                                    class="text-sm text-gray-400">
-                                    Read more
-                                </button>
+                                <a href="{{ route('blogs.show', $blog->slug) }}">
+                                    <button
+                                        class="text-sm text-gray-400">
+                                        Read more
+                                    </button>
                                 </a>
                                 <hr class="py-2" />
                                 <div class="grid grid-cols-2">
@@ -116,6 +107,5 @@
                     </div>
                 </div>
     </section>
-    <!-- Event section ends -->
 
 </x-frontend.app>
