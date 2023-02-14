@@ -51,7 +51,7 @@ class Blog extends Model
         return $query->where('published_at', '<=', Carbon::now());
     }
 
-    public function imageUrl() {
+    public function thumbnailUrl() {
         return $this->thumbnail ? 
             Storage::disk('thumbnails')->url($this->thumbnail)
             : 

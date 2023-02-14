@@ -68,7 +68,7 @@ class Event extends Model
         return $query->where('event_date', '>=', Carbon::now());
     }
 
-    public function imageUrl() {
+    public function thumbnailUrl() {
         return $this->thumbnail ? 
             Storage::disk('thumbnails')->url($this->thumbnail)
             : 
