@@ -14,6 +14,7 @@ use App\Http\Controllers\Admin\MerchandiseController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SpeakerController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\HomePageController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -57,3 +58,5 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::delete('/images/destroy/{image}',[ImageController::class,'destroy'])->name('images.destroy');
     });
 });
+
+Route::get('/', [HomePageController::class, 'index'])->name('home');
