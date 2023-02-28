@@ -1,1 +1,2 @@
-<!-- Home page -->
+<x-frontend.app title="Home">
+</x-frontend.app>
