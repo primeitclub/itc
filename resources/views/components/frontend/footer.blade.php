@@ -1,7 +1,8 @@
 <!-- footer section starts -->
 <footer>
-    <div class="footer px-10 text-gray-200">
-        <div class="max-w-7xl mx-auto">
+    <div class="footer px-10 text-gray-200 ">
+    <img  class="relative" style="left: 48%" src="{{asset('image/mic.png')}}"/>
+        <div class=" max-w-7xl mx-auto"> 
             <div class="footer-1 grid  gap-2">
                 <div class="footer-up-text grid grid-rows-2 mb:pt-6">
                     <div class="poppins text-center font-normal mb:text-base lg:text-2xl lg:pt-5 pb-0">
@@ -20,6 +21,7 @@
                     </form>
                 </div>
                 <div class="footer-content grid gap-2 row-span-2 lg:w-auto">
+
                     <div class="px-5">
                         <img src="{{asset('image/Prime_IT_club_white.svg')}}" alt=""><br>
                         <div class="mb:hidden lg:block lg:w-auto  lg:pr-6">
@@ -78,5 +80,5 @@
 <script src="/assets/js/app.js"></script>
 <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.4.2/dist/alpine.js"></script>
 <script></script>
