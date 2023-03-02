@@ -23,18 +23,14 @@
 
                                 <div class="event_card_contens p-7">
                                     <h3 class="primary poppins text-2xl font-semibold">
-                                        {{ $merchandies->name }}
+                                        {{ $merchandies->title }}
                                     </h3>
                                     <div class="event_detail list-none">
                                         <ol>
-                                            <li class="home_text pt-4">
-                                                <i
-                                                    class="ri-xl ri-money-dollar-circle-line pr-6"></i>{{ $merchandies->price }}
+                                            <li class="home_text pt-4  flex">
+                                                <p class="text-2xl "> Rs. {{ $merchandies->price }}
                                                 </p>
-                                            </li>
-                                            <li class="home_text pt-4 w-1/3">
-                                                <p
-                                                    class="flex items-center justify-center bg-blue-700 text-white px-6 text-sm rounded-lg">
+                                                <p class="text-gray-500 text-sm ml-auto">
                                                     Available</p>
                                             </li>
 
