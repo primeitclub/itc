@@ -1,7 +1,7 @@
 <!-- footer section starts -->
 <footer>
     <div class="footer px-10 text-gray-200 ">
-    <img  class="relative" style="left: 48%" src="{{asset('image/mic.png')}}"/>
+    <img  class="relative" style="left:40%" src="{{asset('image/mic.png')}}"/>
         <div class=" max-w-7xl mx-auto"> 
             <div class="footer-1 grid  gap-2">
                 <div class="footer-up-text grid grid-rows-2 mb:pt-6">

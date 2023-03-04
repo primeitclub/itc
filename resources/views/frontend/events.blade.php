@@ -10,14 +10,14 @@
                         Check out some of our workshops and sessions
                     </p>
                 </center>
-                <div class="event_wraper pt-24">
+                <div class="event_wraper pt-24 mb-44">
                     <div class="gid-cols-1 events grid gap-10 lg:grid-cols-3">
                         @foreach ($completedEvents as $completedEvent)
                             <div class="event_card mt-8 rounded-xl bg-white sm:w-auto">
                                 <div class="img">
                                     <figure>
-                                        <img class="w-[100%] rounded-t-xl" src="{{ $completedEvent->imageUrl() }}"
-                                            alt="" />
+                                        {{-- <img class="w-[100%] rounded-t-xl" src="{{ $completedEvent->imageUrl() }}"
+                                            alt="" /> --}}
                                     </figure>
                                 </div>
 
@@ -59,6 +59,67 @@
                         @endforeach
                     </div>
                 </div>
+                <center>
+                    <h2 class="poppins primary text-4.1xl font-semibold">
+                        Past Events
+                    </h2>
+                    <p class="home_text text-xl">
+                        Check out some of our workshops and sessions
+                    </p>
+                </center>
+                <div class="w-full grid grid-cols-9 px-2 pt-24">
+                    <div class="col-span-4 w-full h-full ">
+                        <div class="flex relative w-full h-24 bg-white primary rounded-lg p-4 md:pl-4 shadow-lg">
+                            <div>
+                                <h1 class="text-primary poppins text-xl font-bold py-2">Blockchain is the future</h1>
+                                <p class="text-black sm:text-sm text-xs">Lorem ipsum </p>
+                            </div>
+                            <div class="absolute right-0 m-4 rounded-full bg_primary text-white w-6 h-6 text-center">
+                                <b>></b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+                        <div class="h-full w-1 bg_primary"></div>
+                        <div class="absolute w-8 h-8 rounded-full bg_primary z-10 text-white text-center"></div>
+                    </div>
+                    <div class="col-span-4 w-full h-full"></div>
+
+                    <div class="col-span-4 w-full h-full"></div>
+                    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+                        <div class="h-full w-1 bg_primary"></div>
+                        <div class="absolute w-8 h-8 rounded-full bg_primary z-10 text-white text-center"></div>
+                    </div>
+                    <div class="col-span-4 w-full h-full ">
+                        <div class="flex relative w-full h-24 bg-white primary rounded-lg p-4 md:pl-4 shadow-lg">
+                            <div>
+                                <h1 class="text-primary poppins text-xl font-bold py-2">Blockchain is the future</h1>
+                                <p class="text-black sm:text-sm text-xs">Lorem ipsum </p>
+                            </div>
+                            <div class="absolute right-0 m-4 rounded-full bg_primary text-white w-6 h-6 text-center">
+                                <b>></b>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-span-4 w-full h-full ">
+                        <div class="flex relative w-full h-24 bg-white primary rounded-lg p-4 md:pl-4 shadow-lg">
+                            <div>
+                                <h1 class="text-primary poppins text-xl font-bold py-2">Blockchain is the future</h1>
+                                <p class="text-black sm:text-sm text-xs">Lorem ipsum </p>
+                            </div>
+                            <div class="absolute right-0 m-4 rounded-full bg_primary text-white w-6 h-6 text-center">
+                                <b>></b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+                        <div class="h-full w-1 bg_primary"></div>
+                        <div class="absolute w-8 h-8 rounded-full bg_primary z-10 text-white text-center"></div>
+                    </div>
+                    <div class="col-span-4 w-full h-full"></div>
+                </div>
+
     </section>
     <!-- Event section ends -->
 

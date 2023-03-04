@@ -28,7 +28,7 @@
                                     <div class="event_detail list-none">
                                         <ol>
                                             <li class="home_text pt-4  flex">
-                                                <p class="text-2xl "> Rs. {{ $merchandies->price }}
+                                                <p class=" poppins text-2xl font-semibold"> Rs. {{ $merchandies->price }}
                                                 </p>
                                                 <p class="text-gray-500 text-sm ml-auto">
                                                     Available</p>
