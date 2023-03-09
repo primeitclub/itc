@@ -15,12 +15,9 @@
                         <p><img src="{{ asset('/image/blog.jpg') }}" class="w-full"></p>
                     </div>
                 </div>
-                <img src="{{ asset('image/blog.jpg') }}" class="w-full">
-                <img src="{{ asset('image/blog.jpg') }}" class="w-full">
-                <img src="{{ asset('image/blog.jpg') }}" class="w-full">
-                <img src="{{ asset('image/blog.jpg') }}" class="w-full">
-                <img src="{{ asset('image/blog.jpg') }}" class="w-full">
-                <img src="{{ asset('image/blog.jpg') }}" class="w-full">
+                @foreach($gallery as $galleryImage)
+                <img src="{{ asset("/images/". $galleryImage->image) }}" class="w-full">
+                @endforeach
             </div>
     </section>
 

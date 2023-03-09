@@ -39,7 +39,7 @@
                         <h1 class="text-xl py-4 font-semibold">Quick Links</h1>
                         <ul class="text-gray-300">
                             <li class="pb-3"><a href="{{ route('gallery') }}" class="hover:text-gray-100">Gallery</a></li>
-                            <li class="pb-3"><a href="{{ route('members') }}" class="hover:text-gray-100">Members</a></li>
+                            <li class="pb-3"><a href="{{ route('member') }}" class="hover:text-gray-100">Members</a></li>
                             <li class="pb-3"><a href="{{ route('events') }}" class="hover:text-gray-100">Events</a></li>
                             <li class="pb-3"><a href="{{ route('blogs') }}" class="hover:text-gray-100">Blog</a></li>
                         </ul>
@@ -75,10 +75,5 @@
 
 <!-- footer section end -->
 
-<!-- flowbite java script -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script src="/assets/js/app.js"></script>
-<script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.4.2/dist/alpine.js"></script>
+
 <script></script>

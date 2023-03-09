@@ -2,7 +2,7 @@
     <!-- articles page starts -->
     <section class="container lg:m-44 md:m-44  font-poppins">
         <div class="flex flex-col h-auto w-full mx-auto sm:block hidden pb-10">
-            <img src="{{ $blog->thumbnailUrl() }}" alt="Blog Thumbnail" class="rounded-lg h-96 object-center lg:w-full md:w-full w-1/2" />
+            <img src="{{ asset('/thumbnails/'. $blog->thumbnail) }}" alt="Blog Thumbnail" class="rounded-lg h-96 object-center lg:w-full md:w-full w-1/2" />
         </div>
         <div class="text-4xl m-4 font-bold">
             <h1 class="primary font-poppins">{{ $blog->title }}</h1>

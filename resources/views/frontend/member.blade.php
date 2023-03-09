@@ -70,12 +70,14 @@
             <div class="grid place-items-center gap-2 mb:grid-cols-2 mb:gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 <!--columns1 -->
                 @foreach($executiveMembers as $executiveMember)
+
                 <div class="flex w-52 flex-col items-center rounded-3xl p-3">
                     <div class="circle items-end pb-5">
                         <div class="outercircle mb:h-28 mb:w-28 sm:h-32 sm:w-32 md:h-36 md:w-36 lg:h-40 lg:w-40">
                             <div
-                                class="innercircle circle-in mb:h-24 mb:w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
-                                <img src="{{ $executiveMember->imageUrl() }}" alt="image" />
+                                class="innercircle circle-in mb:h-28 mb:w-28 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
+                                <img src="{{ asset('/members/' . $executiveMember->image) }}" alt="{{ asset('storage/members/' . $executiveMember->image) }}">
+
                             </div>
                         </div>
                     </div>
@@ -127,7 +129,7 @@
                             <div class="outercircle mb:h-28 mb:w-28 sm:h-32 sm:w-32 md:h-36 md:w-36 lg:h-40 lg:w-40">
                                 <div
                                     class="innercircle circle-in mb:h-24 mb:w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 lg:h-36 lg:w-36">
-                                    <img src="{{ $generalMember-imageUrl() }}" alt="{{ $generalMember->name }}">
+                                    <img src="{{ $generalMember->imageUrl() }}" alt="{{ $generalMember->name }}">
                                 </div>
                             </div>
                         </div>

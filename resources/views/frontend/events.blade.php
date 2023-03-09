@@ -44,8 +44,8 @@
                                             </li>
                                         </ol>
                                     </div>
-                                    <div class="h-40 overflow-hidden ">
-                                        <p class=" home_text py-4 text-base font-light leading-6">
+                                    <div class="h-40 descriptions poppins text-md">
+                                        <p class="text home_text py-4 text-base font-light leading-6">
                                             {!! $completedEvent->description !!}
                                         </p>
                                     </div>
@@ -67,14 +67,50 @@
                         Check out some of our workshops and sessions
                     </p>
                 </center>
-                <div class="w-full grid grid-cols-9 px-2 pt-24">
+                <div class="max-w-7xl mx-auto w-full grid grid-cols-9 px-2 pt-24">
+                    
                     <div class="col-span-4 w-full h-full ">
-                        <div class="flex relative w-full h-24 bg-white primary rounded-lg p-4 md:pl-4 shadow-lg">
+                        <div class="flex relative w-full h-24 bg-white primary rounded-xl p-4 md:pl-4 shadow-xl">
                             <div>
-                                <h1 class="text-primary poppins text-xl font-bold py-2">Blockchain is the future</h1>
+                                <h1 class="text-primary poppins text-2xl font-bold py-2">Blockchain is the future</h1>
                                 <p class="text-black sm:text-sm text-xs">Lorem ipsum </p>
                             </div>
-                            <div class="absolute right-0 m-4 rounded-full bg_primary text-white w-6 h-6 text-center">
+                            <div class="absolute right-0 m-4 rounded-full bg_primary text-white text-2xl w-8 h-8 text-center">
+                                <b>></b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+                        <div class="h-full w-1 bg_primary"></div>
+                        <div class="absolute w-8 h-8 rounded-full bg_primary z-10 text-white text-center"></div>
+                    </div>
+                    <div class="col-span-4 w-full h-full flex items-center text-xl poppins "></div>
+                    
+                    <div class="col-span-4 w-full h-full"></div>
+                    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
+                        <div class="h-full w-1 bg_primary"></div>
+                        <div class="absolute w-8 h-8 rounded-full bg_primary z-10 text-white text-center"></div>
+                    </div>
+                    
+                    <div class="col-span-4 w-full h-full ">
+                        <div class="flex relative w-full h-24 bg-white primary rounded-xl p-4 md:pl-4 shadow-xl">
+                            <div>
+                                <h1 class="text-primary poppins text-2xl font-bold py-2">Blockchain is the future</h1>
+                                <p class="text-black sm:text-sm text-xs">Lorem ipsum </p>
+                            </div>
+                            <div class="absolute right-0 m-4 rounded-full bg_primary text-white text-2xl w-8 h-8 text-center">
+                                <b>></b>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-span-4 w-full h-full ">
+                        <div class="flex relative w-full h-24 bg-white primary rounded-xl p-4 md:pl-4 shadow-xl">
+                            <div>
+                                <h1 class="text-primary poppins text-2xl font-bold py-2">Blockchain is the future</h1>
+                                <p class="text-black sm:text-sm text-xs">Lorem ipsum </p>
+                            </div>
+                            <div class="absolute right-0 m-4 rounded-full bg_primary text-2xl text-white w-8 h-8 text-center">
                                 <b>></b>
                             </div>
                         </div>
@@ -85,39 +121,6 @@
                     </div>
                     <div class="col-span-4 w-full h-full"></div>
 
-                    <div class="col-span-4 w-full h-full"></div>
-                    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
-                        <div class="h-full w-1 bg_primary"></div>
-                        <div class="absolute w-8 h-8 rounded-full bg_primary z-10 text-white text-center"></div>
-                    </div>
-                    <div class="col-span-4 w-full h-full ">
-                        <div class="flex relative w-full h-24 bg-white primary rounded-lg p-4 md:pl-4 shadow-lg">
-                            <div>
-                                <h1 class="text-primary poppins text-xl font-bold py-2">Blockchain is the future</h1>
-                                <p class="text-black sm:text-sm text-xs">Lorem ipsum </p>
-                            </div>
-                            <div class="absolute right-0 m-4 rounded-full bg_primary text-white w-6 h-6 text-center">
-                                <b>></b>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-span-4 w-full h-full ">
-                        <div class="flex relative w-full h-24 bg-white primary rounded-lg p-4 md:pl-4 shadow-lg">
-                            <div>
-                                <h1 class="text-primary poppins text-xl font-bold py-2">Blockchain is the future</h1>
-                                <p class="text-black sm:text-sm text-xs">Lorem ipsum </p>
-                            </div>
-                            <div class="absolute right-0 m-4 rounded-full bg_primary text-white w-6 h-6 text-center">
-                                <b>></b>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
-                        <div class="h-full w-1 bg_primary"></div>
-                        <div class="absolute w-8 h-8 rounded-full bg_primary z-10 text-white text-center"></div>
-                    </div>
-                    <div class="col-span-4 w-full h-full"></div>
                 </div>
 
     </section>

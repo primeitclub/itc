@@ -17,7 +17,7 @@
                             <div class="relative py-6 px-5">
                                 <div class="relative h-96 w-full border-4 rounded-r-2xl border-blue-800">
                                     <div class="absolute mt-4 top-4 -left-10">
-                                        <img src="{{ $featuredBlog->thumbnailUrl() }}" alt="Blog's thumbnail" class="rounded-r-2xl rounded-b-2xl h-ih w-iw" />
+                                        <img src="{{ asset('/thumbnails/'. $featuredBlog->thumbnail) }}" alt="Blog's thumbnail" class="rounded-r-2xl rounded-b-2xl h-ih w-iw" />
                                     </div>
                                 </div>
                             </div>
@@ -71,7 +71,7 @@
                         <div class="event_card mt-8 rounded-xl bg-white sm:w-auto">
                             <div class="img">
                                 <figure>
-                                    <img class="w-[100%] rounded-t-xl" src="{{ $blog->thumbnailUrl() }}"
+                                    <img class="w-[100%] h-64 rounded-t-xl" src="{{ asset('/thumbnails/'. $blog->thumbnail) }}"
                                         alt=""/>
                                 </figure>
                             </div>
