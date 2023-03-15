@@ -769,6 +769,9 @@ select {
 .col-span-3 {
   grid-column: span 3 / span 3;
 }
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
 .col-start-1 {
   grid-column-start: 1;
 }
@@ -786,6 +789,9 @@ select {
 }
 .m-4 {
   margin: 1rem;
+}
+.m-24 {
+  margin: 6rem;
 }
 .mx-6 {
   margin-left: 1.5rem;
@@ -886,6 +892,12 @@ select {
 .ml-3 {
   margin-left: 0.75rem;
 }
+.mt-40 {
+  margin-top: 10rem;
+}
+.mb-40 {
+  margin-bottom: 10rem;
+}
 .block {
   display: block;
 }
@@ -964,9 +976,6 @@ select {
 .h-6 {
   height: 1.5rem;
 }
-.h-64 {
-  height: 16rem;
-}
 .h-48 {
   height: 12rem;
 }
@@ -1044,9 +1053,6 @@ select {
 }
 .w-6 {
   width: 1.5rem;
-}
-.w-1\/2 {
-  width: 50%;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -1426,19 +1432,12 @@ select {
 .via-transparent {
   --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to, rgb(0 0 0 / 0));
 }
-.to-black {
-  --tw-gradient-to: #000;
-}
 .stroke-current {
   stroke: currentColor;
 }
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-.object-center {
-  -o-object-position: center;
-     object-position: center;
 }
 .p-3 {
   padding: 0.75rem;
@@ -1466,6 +1465,9 @@ select {
 }
 .p-8 {
   padding: 2rem;
+}
+.p-6 {
+  padding: 1.5rem;
 }
 .px-6 {
   padding-left: 1.5rem;
@@ -2001,25 +2003,6 @@ select {
   --tw-rotate: 12deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.group:hover .group-hover\:rotate-3 {
-  --tw-rotate: 3deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.group:hover .group-hover\:scale-125 {
-  --tw-scale-x: 1.25;
-  --tw-scale-y: 1.25;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.group:hover .group-hover\:from-black\/70 {
-  --tw-gradient-from: rgb(0 0 0 / 0.7);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
-}
-.group:hover .group-hover\:via-black\/60 {
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(0 0 0 / 0.6), var(--tw-gradient-to, rgb(0 0 0 / 0));
-}
-.group:hover .group-hover\:to-black\/70 {
-  --tw-gradient-to: rgb(0 0 0 / 0.7);
-}
 @media (prefers-color-scheme: dark) {
 
   .dark\:divide-gray-700 > :not([hidden]) ~ :not([hidden]) {
@@ -2066,11 +2049,6 @@ select {
 
   .mb\:top-8 {
     top: 2rem;
-  }
-
-  .mb\:-mx-4 {
-    margin-left: -1rem;
-    margin-right: -1rem;
   }
 
   .mb\:mt-8 {
@@ -2137,6 +2115,11 @@ select {
     padding-top: 13rem;
   }
 
+  .mb\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .mb\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2171,11 +2154,6 @@ select {
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .sm\:mx-2 {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
   }
 
   .sm\:mt-20 {
@@ -2250,6 +2228,10 @@ select {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .sm\:items-start {
     align-items: flex-start;
   }
@@ -2321,6 +2303,11 @@ select {
     line-height: 1.25rem;
   }
 
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2351,10 +2338,6 @@ select {
   }
 }
 @media (min-width: 768px) {
-
-  .md\:m-44 {
-    margin: 11rem;
-  }
 
   .md\:mt-0 {
     margin-top: 0px;
@@ -2400,16 +2383,16 @@ select {
     width: auto;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
   .md\:flex-shrink-0 {
     flex-shrink: 0;
   }
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -2466,10 +2449,6 @@ select {
 
   .lg\:top-20 {
     top: 5rem;
-  }
-
-  .lg\:m-44 {
-    margin: 11rem;
   }
 
   .lg\:mx-24 {
@@ -2566,16 +2545,16 @@ select {
     width: auto;
   }
 
-  .lg\:w-full {
-    width: 100%;
-  }
-
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:flex-row {

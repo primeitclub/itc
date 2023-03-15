@@ -1,6 +1,6 @@
 <header class=" mx-auto nav_wraper">
     <div class="container mx-auto">
-        <nav class="border-gray-200 py-2.5   rounded lg:mx-24 sm:mx-2 mb:-mx-4" id="navbar">
+        <nav class="border-gray-200 py-2.5   rounded " id="navbar">
             <div class=" flex flex-wrap justify-between items-center ">
                 <a href="#" class="flex items-center">
                     <img src="/blog-images/prime_logo.svg" class="mr-3 " alt="Flowbite Logo">
@@ -78,7 +78,7 @@
         <!--Waves end-->
 
         <div class="container mx-auto w-full">
-            <div class="sm:mx-12 lg:mx-24">
+            <div class="">
                 <div class="absolute mb:top-8 lg:top-20">
                     <div class="home_content">
                         <span class="home_text text-white mb:text-lg lg:text-5xl">PRIME</span>

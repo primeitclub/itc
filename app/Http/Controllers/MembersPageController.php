@@ -11,6 +11,6 @@ class MembersPageController extends Controller
     public function index() {
         $executiveMembers = Member::executiveMember()->get();
         $generalMembers = Member::generalMember()->get();
-        return view('frontend.members', compact('executiveMembers','generalMembers'));
+        return view('frontend.member', compact('executiveMembers','generalMembers'));
     }
 }

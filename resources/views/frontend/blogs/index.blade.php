@@ -1,7 +1,7 @@
 <x-frontend.app title="Blogs">
     <section class="pt-24 sm:py-20">
         <div class="container mx-auto">
-            <div class="sm:mx-12 lg:mx-24">
+            <div class="">
                 <center>
                     <h2 class="poppins primary text-4.1xl font-bold">
                         Featured Blog
@@ -56,7 +56,7 @@
 
     <section class="pt-24 sm:py-20">
         <div class="container mx-auto">
-            <div class="sm:mx-12 lg:mx-24">
+            <div class="">
                 <center>
                     <h2 class="poppins primary text-4.1xl font-semibold">
                         All Articles
@@ -68,10 +68,10 @@
                 <div class="event_wraper pt-24">
                     <div class="gid-cols-1 events grid gap-10 lg:grid-cols-3">
                         @foreach ($blogs as $blog)
-                        <div class="event_card mt-8 rounded-xl bg-white sm:w-auto">
+                        <div class="event_card  mt-8 rounded-xl bg-white sm:w-auto">
                             <div class="img">
                                 <figure>
-                                    <img class="w-[100%] h-64 rounded-t-xl" src="{{ asset('/thumbnails/'. $blog->thumbnail) }}"
+                                    <img class="w-[100%] h-96 rounded-t-xl" src="{{ asset('/thumbnails/'. $blog->thumbnail) }}"
                                         alt=""/>
                                 </figure>
                             </div>

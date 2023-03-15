@@ -2,14 +2,14 @@
 
     <section class="mt-10 sm:py-20">
         <div class="container mx-auto">
-            <div class="sm:mx-12 lg:mx-24">
+            <div class="">
                 <div class="about_main flex justify-between mb:flex-col lg:flex-row">
                     <div class="about_content lg:w-[45%] ">
 
                         <div class="about_header flex justify-evenly tracking-widest">
                             <div class="header pop_bold">
-                                <span class="primary font-semibold">We're a dynamic team of</span>
-                                <h2 class="py-4 font-extrabold mb:text-3xl sm:text-4xl">
+                                <span class="primary text-sm font-semibold">We're a dynamic team of</span>
+                                <h2 class="py-4 font-extrabold mb:text-4xl sm:text-5xl">
                                     Innovative, <span class="primary">Tech</span> Enthusiastic
                                     People
                                 </h2>
@@ -44,7 +44,7 @@
 
     <section class="pt-24 sm:py-20">
         <div class="container mx-auto">
-            <div class="sm:mx-12 lg:mx-24">
+            <div class="">
                 <center>
                     <h2 class="poppins primary text-4.1xl font-semibold">
                         Featured Events
@@ -54,7 +54,7 @@
                     </p>
                 </center>
                 <div class="event_wraper pt-24">
-                    <div class="gid-cols-1 events grid gap-10 lg:grid-cols-3">
+                    <div class="gid-cols-1 events grid gap-10 lg:grid-cols-2">
                         @foreach ($events as $event)
                             <div class="event_card mt-8 rounded-xl bg-white sm:w-auto">
                                 <div class="img">
@@ -112,7 +112,7 @@
 
     <section class="pt-24 sm:py-20">
         <div class="container mx-auto">
-            <div class="sm:mx-12 lg:mx-24">
+            <div class="">
                 <center>
                     <h2 class="poppins primary text-4.1xl font-bold">
                         Featured Blog
@@ -128,7 +128,7 @@
                             <div class="relative py-6 px-5">
                                 <div class="relative h-96 w-full border-4 rounded-r-2xl border-blue-800">
                                     <div class="absolute mt-4 top-4 -left-10">
-                                        <img src="{{ $featuredBlog->thumbnailUrl() }}" alt="Blog's thumbnail" class="rounded-r-2xl rounded-b-2xl h-ih w-iw" />
+                                        <img src="{{ asset('/thumbnails/'. $featuredBlog->thumbnail) }}" alt="Blog's thumbnail" class="rounded-r-2xl rounded-b-2xl h-ih w-iw" />
                                     </div>
                                 </div>
                             </div>
@@ -170,7 +170,7 @@
     <!-- meet our team -->
     <section class="py-36">
         <div class="container mx-auto">
-            <div class="sm:mx-12 lg:mx-24">
+            <div class="">
                 <div class="main_div">
                     <center class="header">
                         <h2 class="primary font-bold mb:text-3xl sm:text-4xl">
@@ -220,7 +220,7 @@
 
     <section class="py-24">
         <div class="container mx-auto">
-            <div class="sm:mx-12 lg:mx-24">
+            <div class="">
                 <center class="header">
                     <h2 class="primary font-bold mb:text-3xl sm:text-4xl">
                         Testimonial
@@ -266,6 +266,8 @@
     </section>
 
     <!-- testimonials ends -->
-
-
+    @push('scripts')
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    @endpush
 </x-frontend.app>
+
