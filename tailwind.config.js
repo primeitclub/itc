@@ -254,8 +254,7 @@ module.exports = {
             150: "1.5",
             200: "2",
         },
-        container: {
-        },
+        container: {},
         content: {
             none: "none",
         },
@@ -412,6 +411,7 @@ module.exports = {
                 '"Courier New"',
                 "monospace",
             ],
+            dmsans: ['"DM Sans"'],
         },
         fontSize: {
             xs: ["0.75rem", { lineHeight: "1rem" }],

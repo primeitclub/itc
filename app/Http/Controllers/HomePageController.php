@@ -11,10 +11,10 @@ use Illuminate\Http\Request;
 class HomePageController extends Controller
 {
     public function index() {
-        $events = Event::latest()->first();
+        $event = Event::latest()->first();
         $featuredBlog = Blog::latest()->first();
         $executiveMembers = Member::executiveMember()->get();
         $testimonials = AlumniTestimonial::all();
-        return view('frontend.home', compact('events','featuredBlog','executiveMembers','testimonials'));
+        return view('frontend.home', compact('event','featuredBlog','executiveMembers','testimonials'));
     }
 }

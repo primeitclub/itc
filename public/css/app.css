@@ -955,14 +955,14 @@ select {
 .h-48 {
   height: 12rem;
 }
-.h-196 {
-  height: 760px;
-}
 .h-iw {
   height: 622px;
 }
 .h-ih {
   height: 382px;
+}
+.h-196 {
+  height: 760px;
 }
 .h-24 {
   height: 6rem;
@@ -1580,14 +1580,14 @@ select {
 .pb-10 {
   padding-bottom: 2.5rem;
 }
+.pb-4 {
+  padding-bottom: 1rem;
+}
 .pr-4 {
   padding-right: 1rem;
 }
 .pt-14 {
   padding-top: 3.5rem;
-}
-.pb-4 {
-  padding-bottom: 1rem;
 }
 .pt-6 {
   padding-top: 1.5rem;
@@ -1636,6 +1636,9 @@ select {
 }
 .text-right {
   text-align: right;
+}
+.font-dmsans {
+  font-family: "DM Sans";
 }
 .text-2xl {
   font-size: 1.5rem;
@@ -1758,13 +1761,13 @@ select {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.text-blue-800 {
-  --tw-text-opacity: 1;
-  color: rgb(30 64 175 / var(--tw-text-opacity));
-}
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+.text-blue-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 .text-green-700 {
   --tw-text-opacity: 1;
