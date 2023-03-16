@@ -1179,6 +1179,10 @@ select {
   --tw-border-opacity: 1;
   border-color: rgb(18 58 188 / var(--tw-border-opacity));
 }
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
 .border-b-\[\#123ABC\] {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(18 58 188 / var(--tw-border-opacity));
@@ -1243,6 +1247,12 @@ select {
 }
 .bg-gray-300\/60 {
   background-color: rgb(209 213 219 / 0.6);
+}
+.bg-white\/80 {
+  background-color: rgb(255 255 255 / 0.8);
+}
+.bg-white\/90 {
+  background-color: rgb(255 255 255 / 0.9);
 }
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
@@ -1563,6 +1573,10 @@ select {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-black {
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 .outline {
   outline-style: solid;

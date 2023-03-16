@@ -1,29 +1,31 @@
-<header x-data="{ isOpen : false }" >
-    <div class="fixed bg-primary py-6 inset-x-0 z-10">
-        <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
-            <div class="flex items-center flex-1">
-                <div class="flex items-center justify-between w-full md:w-auto">
-                    <a href="{{ route('home') }}">
-                        <img class="h-10 lg:h-12 w-auto" src="{{ asset('logo/logo.png') }}" alt="club's logo" />
-                    </a>
-                    <div class="-mr-2 flex items-center md:hidden">
-                        <button x-on:click="isOpen = true" type="button" class="text-gray-300">
-                            <svg class="h-6 w-6" x-description="Heroicon name: outline/menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg>
-                        </button>
+<header x-data="{ isOpen : false, isScrolled : false }" >
+    <div @scroll.window="window.pageYOffset > 50 ? isScrolled = true : isScrolled = false">
+        <div x-cloak class="fixed inset-x-0 z-10" :class="isScrolled ? 'py-4 border-b border-gray-100 bg-white/80 backdrop-blur shadow-md' : 'bg-primary py-6'">
+            <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
+                <div class="flex items-center flex-1">
+                    <div class="flex items-center justify-between w-full md:w-auto">
+                        <a href="{{ route('home') }}">
+                            <img class="h-10 lg:h-12 w-auto" src="{{ asset('logo/logo.png') }}" alt="club's logo" />
+                        </a>
+                        <div class="-mr-2 flex items-center md:hidden">
+                            <button x-on:click="isOpen = true" type="button" :class="isScrolled ? 'text-gray-900' : 'text-gray-300'">
+                                <svg class="h-6 w-6" x-description="Heroicon name: outline/menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="hidden space-x-8 md:flex md:ml-10">
-                <a href="#" class="text-base leading-6 font-medium text-gray-100 hover:text-white ">Blogs</a>
-                <a href="#" class="text-base leading-6 font-medium text-gray-100 hover:text-white ">Events</a>
-                <a href="#" class="text-base leading-6 font-medium text-gray-100 hover:text-white ">Members</a>
-                <a href="#" class="text-base leading-6 font-medium text-gray-100 hover:text-white ">Gallery</a>
-                <a href="#" class="text-base leading-6 font-medium text-gray-100 hover:text-white ">About Us</a>
-                <a href="#" class="text-base leading-6 font-medium text-gray-100 hover:text-white ">Merch</a>
-            </div>
-        </nav>
+                <div class="hidden space-x-8 md:flex md:ml-10">
+                    <a href="#" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Blogs</a>
+                    <a href="#" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Events</a>
+                    <a href="#" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Members</a>
+                    <a href="#" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Gallery</a>
+                    <a href="#" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">About Us</a>
+                    <a href="#" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Merch</a>
+                </div>
+            </nav>
+        </div>
     </div>
 
     <!-- <div x-show="isOpen" x-cloak class="fixed inset-0 z-0 bg-gray-300/60 backdrop-blur"></div> -->
@@ -37,7 +39,7 @@
         x-transition:leave-start="opacity-100 scale-100"
         x-transition:leave-end="opacity-0 scale-95"
         x-description="Mobile menu, show/hide based on menu isOpen state."
-        class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top md:hidden"
+        class="fixed z-10 top-0 inset-x-0 p-2 transition transform origin-top md:hidden"
     >
         <div class="rounded-xl shadow-sm bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
             <div class="px-5 pt-4 flex items-center justify-between">

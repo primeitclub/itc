@@ -246,11 +246,11 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="mt-24 mb-24 max-w-7xl mx-auto px-4 sm:px-6">
+    <section class="mt-24 mb-24 max-w-7xl mx-auto px-4 sm:px-6 ">
         <h1 class="text-center text-4xl text-primary font-bold">Testimonial</h1>
         <p class="text-center text-xl text-greish">Hear what our members have to say</p>
-        <div class="flex space-x-6">
-            <article class="relative mt-10 lg:w-[50%] mx-auto bg-white border-b-8 border-b-primary rounded-3xl px-8 py-6 shadow-sm hover:shadow-md">
+        <div class="flex space-x-6 ">
+            <article class="relative mt-10 lg:w-[50%] mx-auto bg-white border-b-8 border-b-primary rounded-3xl px-8 py-6 shadow-sm hover:shadow-md -z-10">
                 <div class="mt-6 w-fit mx-auto">
                     <img src="https://api.lorem.space/image/face?w=120&h=120&hash=bart89fe" class="rounded-full w-36 h-36 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary">
                 </div>
