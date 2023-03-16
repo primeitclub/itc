@@ -1,7 +1,7 @@
 <x-frontend.app title="About Us">
     <!-- about us starts -->
     <!-- who are we and tesko image -->
-    <div class="max-w-7xl my-8 mx-auto lg:mx-24">
+    <div class=" my-8 mx-auto lg:mx-24">
         <section>
             <!-- Flex Container -->
             <div class="container mx-auto mt-10 flex flex-col items-center lg:flex-row">
@@ -53,7 +53,7 @@
         </section>
         <!--End-->
         <!-- Tab section -->
-        <section>
+        <section class="container mx-auto">
             <div class="poppins mt-20 mb-16 text-center">
                 <span class="primary text-4xl font-semibold">Departments</span>
                 <p class="mt-4 text-lg text-gray-700 font-normal">

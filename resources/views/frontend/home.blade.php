@@ -19,7 +19,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="line-height: 30px" class="home_text about_paragrph pt-4 text-xl">
+                        <div style="line-height: 30px" class=" about_paragrph pt-4 text-xl">
+                            Prime IT club is a student-managed club at Prime led by creative
+                            and tech enthusiastic students. Established in 2004, the club
+                            organizes different workshops, seminars, training programs,
+                            etc.the club organizes different workshops <br /><br /><br />
                             Prime IT club is a student-managed club at Prime led by creative
                             and tech enthusiastic students. Established in 2004, the club
                             organizes different workshops, seminars, training programs,
@@ -49,60 +53,59 @@
                     <h2 class="poppins primary text-4.1xl font-semibold">
                         Featured Events
                     </h2>
-                    <p class="home_text text-xl">
+                    <p class=" text-xl">
                         Check out some of our workshops and sessions
                     </p>
                 </center>
-                <div class="event_wraper pt-24">
+                <div class=" pt-24 font-poppins">
                     <div class="gid-cols-1 events grid gap-10 lg:grid-cols-2">
-                        @foreach ($events as $event)
-                            <div class="event_card mt-8 rounded-xl bg-white sm:w-auto">
-                                <div class="img">
-                                    <figure>
-                                        <img class="w-[100%] rounded-t-xl" src="{{ $event->thumbnailUrl() }}"
-                                            alt="" />
-                                    </figure>
-                                </div>
-
-                                <div class="event_card_contens p-7 ">
-                                    <h3 class="primary poppins text-2xl font-semibold">
-                                        {{ $event->title }}
-                                    </h3>
-                                    @foreach($event->speakers as $speaker)
-                                    <p class="home_text py-2 text-sm leading-5">
-                                        {{ $speaker->name }}
-                                    </p>
-                                    @endforeach
-                                    <div class="event_detail list-none">
-                                        <ol>
-                                            <li class="home_text pt-4">
-                                                <i class="ri-xl ri-map-pin-line pr-6"></i>
-                                                {{ $event->venue }}
-                                            </li>
-                                            <li class="home_text pt-4">
-                                                <i class="ri-xl ri-calendar-line pr-6"></i>
-                                                {{ $event->event_date }}
-                                            </li>
-                                            <li class="home_text pt-4">
-                                                <i class="ri-xl ri-money-dollar-circle-line pr-6"></i>
-                                                $200
-                                            </li>
-                                        </ol>
-                                    </div>
-                                    <div class="h-40 overflow-hidden ">
-                                        <p class=" home_text py-4 text-base font-light leading-6">
-                                            {!! $event->description !!}
-                                        </p>
-                                    </div>
-                                    
-                                    <hr class="py-2" />
-                                    <button
-                                        class="bg_primary home_text w-full rounded-3xl px-20 py-2 text-xl text-white hover:bg-blue-900">
-                                        Register Now
-                                    </button>
-                                </div>
+                        <div class="event_card_contens p-7 ">
+                            <h3 class="primary poppins text-5xl ">
+                                {{ $events->title }}
+                            </h3>
+                            @foreach ($events->speakers as $speaker)
+                                <p class=" py-2 text-xl leading-5">
+                                    Speaker: {{ $speaker->name }}
+                                </p>
+                            @endforeach
+                            <div class="h-48 pt-4 pb-4 overflow-hidden">
+                            <p class="text-lg leading-5">
+                                {!! $events->description !!}
+                            </p>
                             </div>
-                        @endforeach
+                            
+                            <div class="pt-4 pb-4 event_detail list-none  ">
+                                <ol>
+                                    <li class=" pt-4 flex items-center">
+                                        <i class="ri-xl ri-map-pin-line pr-4 text-gray-600 text-lg"></i>
+                                        <p class="text-xl ">{{ $events->venue }}</p>
+                                    </li>
+                                    <li class=" pt-4 flex items-center">
+                                        <i class="ri-xl ri-calendar-line pr-4 text-gray-600"></i>
+                                        <p class="text-xl">{{ $events->event_date }}<p>
+                                    </li>
+                                    <li class=" pt-4 flex items-center">
+                                        <i class="ri-xl ri-money-dollar-circle-line pr-4 text-gray-600"></i>
+                                        <p class="text-xl">$200</p>
+                                    </li>
+                                </ol>
+                            </div>
+                           
+
+                            <hr class="py-2" />
+                            <button
+                                class="bg_primary  w-full rounded-full px-20 py-4 text-xl text-white hover:bg-blue-900">
+                                Register Now
+                            </button>
+                        </div>
+
+                        <div class="img flex justify-center">
+                            <figure>
+                                <img class="w-auto h-iw  rounded-xl "
+                                    src="{{ asset('/thumbnails/' . $events->thumbnail) }}"
+                                    alt="{{ asset('/thumbnails/' . $events->thumbnail) }}" />
+                            </figure>
+                        </div>
                     </div>
                 </div>
     </section>
@@ -117,7 +120,7 @@
                     <h2 class="poppins primary text-4.1xl font-bold">
                         Featured Blog
                     </h2>
-                    <p class="home_text text-xl">
+                    <p class=" text-xl">
                         Check out our Blogs
                     </p>
                 </center>
@@ -128,11 +131,12 @@
                             <div class="relative py-6 px-5">
                                 <div class="relative h-96 w-full border-4 rounded-r-2xl border-blue-800">
                                     <div class="absolute mt-4 top-4 -left-10">
-                                        <img src="{{ asset('/thumbnails/'. $featuredBlog->thumbnail) }}" alt="Blog's thumbnail" class="rounded-r-2xl rounded-b-2xl h-ih w-iw" />
+                                        <img src="{{ asset('/thumbnails/' . $featuredBlog->thumbnail) }}"
+                                            alt="Blog's thumbnail" class="rounded-r-2xl rounded-b-2xl h-ih w-iw" />
                                     </div>
                                 </div>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                     <div class="w-full  lg:w-1/2 mx-auto mt-44">
                         <header class="mt-4">
@@ -176,7 +180,7 @@
                         <h2 class="primary font-bold mb:text-3xl sm:text-4xl">
                             Meet Our Team
                         </h2>
-                        <p class="home_text text-xl">Get to Know our team members</p>
+                        <p class=" text-xl">Get to Know our team members</p>
                     </center>
                 </div>
             </div>
@@ -188,11 +192,12 @@
                         <div class="swiper-slide team_card rounded-3xl py-4">
                             <div class="team_image py-8">
                                 <figure class="">
-                                    <img class="rounded-full" src="{{ $executiveMember->imageUrl() }}" alt="" />
+                                    <img class="rounded-full" src="{{ $executiveMember->imageUrl() }}"
+                                        alt="" />
                                 </figure>
                             </div>
                             <div class="team_detail py-4">
-                                <h3 class="home_text primary text-2xl font-medium">
+                                <h3 class=" primary text-2xl font-medium">
                                     {{ $executiveMember->name }}
                                 </h3>
                                 <p class="poppins">{{ $executiveMember->designation }}</p>
@@ -202,9 +207,12 @@
                             </div>
                             <div class="team_socials">
                                 <div class="mx-auto flex w-[40%] justify-around">
-                                    <a href="{{ $executiveMember->facebook }}"><i class="ri-facebook-circle-fill ri-2x"></i></a>
-                                    <a href="{{ $executiveMember->instagram }}"><i class="ri-instagram-line ri-2x"></i></a>
-                                    <a href="{{ $executiveMember->linkdin }}"><i class="ri-linkedin-box-fill ri-2x"></i></a>
+                                    <a href="{{ $executiveMember->facebook }}"><i
+                                            class="ri-facebook-circle-fill ri-2x"></i></a>
+                                    <a href="{{ $executiveMember->instagram }}"><i
+                                            class="ri-instagram-line ri-2x"></i></a>
+                                    <a href="{{ $executiveMember->linkdin }}"><i
+                                            class="ri-linkedin-box-fill ri-2x"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -225,40 +233,42 @@
                     <h2 class="primary font-bold mb:text-3xl sm:text-4xl">
                         Testimonial
                     </h2>
-                    <p class="home_text text-xl">Hear what our members have to say</p>
+                    <p class=" text-xl">Hear what our members have to say</p>
                 </center>
             </div>
 
             <div class="swiper mySwiper2 mt-16">
                 <div class="swiper-wrapper test lg:ml-48">
-                    @foreach($testimonials as $attestant)
-                    <div class="testimonials_card swiper-slide relative rounded-3xl py-4">
-                        <div class="testimonial_image pt-14 pb-4">
-                            <figure class="">
-                                <img class="rounded-full" src="{{ $attestant->imageUrl()  }}" alt="" />
+                    @foreach ($testimonials as $attestant)
+                        <div class="testimonials_card swiper-slide relative rounded-3xl py-4">
+                            <div class="testimonial_image pt-14 pb-4">
+                                <figure class="">
+                                    <img class="rounded-full" src="{{ $attestant->imageUrl() }}" alt="" />
+                                </figure>
+                            </div>
+                            <div class="team_detail py-4">
+                                <p class="poppins px-6 text-center font-medium">
+                                    {!! $attestant->description !!}
+                                </p>
+                                <h3 class="primary  pt-6 text-2xl font-medium">
+                                    {{ $attestant->name }}
+                                </h3>
+                                <p class="poppins">{{ $attestant->designation }}</p>
+                            </div>
+                            <div class="team_socials">
+                                <div class="mx-auto flex w-[20%] justify-around">
+                                    <a href="{{ $attestant->facebook }}"><i
+                                            class="ri-facebook-circle-fill ri-2x"></i></a>
+                                    <a href="{{ $attestant->instagram }}"><i class="ri-instagram-line ri-2x"></i></a>
+                                    <a href="{{ $attestant->facebook }}"><i
+                                            class="ri-linkedin-box-fill ri-2x"></i></a>
+                                </div>
+                            </div>
+
+                            <figure class="quote_img absolute top-36 left-12 opacity-100">
+                                <img src="{{ asset('image/quote_ico.svg') }}" alt="" />
                             </figure>
                         </div>
-                        <div class="team_detail py-4">
-                            <p class="poppins px-6 text-center font-medium">
-                                {!! $attestant->description !!}
-                            </p>
-                            <h3 class="primary home_text pt-6 text-2xl font-medium">
-                                {{ $attestant->name }}
-                            </h3>
-                            <p class="poppins">{{ $attestant->designation }}</p>
-                        </div>
-                        <div class="team_socials">
-                            <div class="mx-auto flex w-[20%] justify-around">
-                                <a href="{{ $attestant->facebook }}"><i class="ri-facebook-circle-fill ri-2x"></i></a>
-                                <a href="{{ $attestant->instagram }}"><i class="ri-instagram-line ri-2x"></i></a>
-                                <a href="{{ $attestant->facebook }}"><i class="ri-linkedin-box-fill ri-2x"></i></a>
-                            </div>
-                        </div>
-
-                        <figure class="quote_img absolute top-36 left-12 opacity-100">
-                            <img src="{{ asset('image/quote_ico.svg') }}" alt="" />
-                        </figure>
-                    </div>
                     @endforeach
                 </div>
             </div>
@@ -270,4 +280,3 @@
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     @endpush
 </x-frontend.app>
-

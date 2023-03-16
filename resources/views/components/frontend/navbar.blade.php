@@ -86,7 +86,7 @@
                             IT CLUB
                         </h1>
                         <p class="home_text my-8 pt-4 font-normal tracking-loose text-white lg:text-3xl">
-                            "Processing Our Future"
+                            "Processing Future"
                         </p>
                     </div>
                 </div>

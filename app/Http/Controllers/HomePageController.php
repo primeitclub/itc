@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 class HomePageController extends Controller
 {
     public function index() {
-        $events = Event::latest()->take(3)->get();
+        $events = Event::latest()->first();
         $featuredBlog = Blog::latest()->first();
         $executiveMembers = Member::executiveMember()->get();
         $testimonials = AlumniTestimonial::all();

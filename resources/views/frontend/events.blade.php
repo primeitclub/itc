@@ -1,7 +1,7 @@
 <x-frontend.app title="Events">
     <section class="pt-24 sm:py-20">
         <div class="container mx-auto">
-            <div class="sm:mx-12 lg:mx-24">
+            <div class="">
                 <center>
                     <h2 class="poppins primary text-4.1xl font-semibold">
                         Featured Events
@@ -67,59 +67,60 @@
                         Check out some of our workshops and sessions
                     </p>
                 </center>
-                <div class="max-w-7xl mx-auto w-full grid grid-cols-9 px-2 pt-24">
-                    
-                    <div class="col-span-4 w-full h-full ">
-                        <div class="flex relative w-full h-24 bg-white primary rounded-xl p-4 md:pl-4 shadow-xl">
-                            <div>
-                                <h1 class="text-primary poppins text-2xl font-bold py-2">Blockchain is the future</h1>
-                                <p class="text-black sm:text-sm text-xs">Lorem ipsum </p>
-                            </div>
-                            <div class="absolute right-0 m-4 rounded-full bg_primary text-white text-2xl w-8 h-8 text-center">
-                                <b>></b>
-                            </div>
+                <div class=" mx-auto w-full p-8 pt-24 ">
+                    <div class="flex justify-center gap-4 pb-10">
+                        <h1 class="primary text-3xl px-3 font-bold">Year:</h1>
+                        <div class="dropdown-menu">
+                            <select>
+                                <option value=""><button>2022</button></option>
+                                <br />
+                                <option value=""><button>2021</button></option>
+                                <br />
+                                <option value=""><button>2020</button></option>
+                                <br />
+                                <option value=""><button>2019</button></option>
+                                <br />
+                                <option value=""><button>2018</button></option>
+                                <br />
+                            </select>
+                        </div>
+                        <h1 class="primary text-3xl px-3 font-bold">Month:</h1>
+                        <div class="dropdown-menu">
+                            <select>
+                                <option value=""><button>2022</button></option>
+                                <br />
+                                <option value=""><button>2021</button></option>
+                                <br />
+                                <option value=""><button>2020</button></option>
+                                <br />
+                                <option value=""><button>2019</button></option>
+                                <br />
+                                <option value=""><button>2018</button></option>
+                                <br />
+                            </select>
                         </div>
                     </div>
-                    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
-                        <div class="h-full w-1 bg_primary"></div>
-                        <div class="absolute w-8 h-8 rounded-full bg_primary z-10 text-white text-center"></div>
-                    </div>
-                    <div class="col-span-4 w-full h-full flex items-center text-xl poppins "></div>
-                    
-                    <div class="col-span-4 w-full h-full"></div>
-                    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
-                        <div class="h-full w-1 bg_primary"></div>
-                        <div class="absolute w-8 h-8 rounded-full bg_primary z-10 text-white text-center"></div>
-                    </div>
-                    
-                    <div class="col-span-4 w-full h-full ">
-                        <div class="flex relative w-full h-24 bg-white primary rounded-xl p-4 md:pl-4 shadow-xl">
-                            <div>
-                                <h1 class="text-primary poppins text-2xl font-bold py-2">Blockchain is the future</h1>
-                                <p class="text-black sm:text-sm text-xs">Lorem ipsum </p>
+                    <div class=" w-full h-full ">
+                        @foreach ($completedEvents as $completedEvent)
+                            <div class="flex relative w-full h-56 bg-white primary rounded-xl  shadow-xl mb-24">
+                                <div class="grid grid-cols-3">
+                                    <div>
+                                        <img src="{{ asset('/thumbnails/' . $completedEvent->thumbnail) }}"
+                                            class="object-fill h-auto w-auto ">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-primary poppins text-2xl font-bold py-2">Blockchain is the
+                                            future</h1>
+                                        <p class="text-black sm:text-sm text-xs">Lorem ipsum </p>
+                                    </div>
+                                    <div
+                                        class="absolute right-0 m-4 rounded-full bg_primary text-white text-2xl w-8 h-8 text-center">
+                                        <b>></b>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="absolute right-0 m-4 rounded-full bg_primary text-white text-2xl w-8 h-8 text-center">
-                                <b>></b>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
-                    
-                    <div class="col-span-4 w-full h-full ">
-                        <div class="flex relative w-full h-24 bg-white primary rounded-xl p-4 md:pl-4 shadow-xl">
-                            <div>
-                                <h1 class="text-primary poppins text-2xl font-bold py-2">Blockchain is the future</h1>
-                                <p class="text-black sm:text-sm text-xs">Lorem ipsum </p>
-                            </div>
-                            <div class="absolute right-0 m-4 rounded-full bg_primary text-2xl text-white w-8 h-8 text-center">
-                                <b>></b>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative col-span-1 w-full h-full flex justify-center items-center">
-                        <div class="h-full w-1 bg_primary"></div>
-                        <div class="absolute w-8 h-8 rounded-full bg_primary z-10 text-white text-center"></div>
-                    </div>
-                    <div class="col-span-4 w-full h-full"></div>
 
                 </div>
 
