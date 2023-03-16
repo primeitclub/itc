@@ -21,7 +21,7 @@
 
     </head>
 
-    <body class="antialiased" style="font-family: Poppins, sans-serif;">
+    <body class="antialiased bg-gradient-white font-poppins" >
 
         {{ $slot }}
 
