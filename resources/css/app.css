@@ -4,3 +4,7 @@
 }
 @tailwind components;
 @tailwind utilities;
+
+.button {
+    @apply bg-primary transition duration-300 hover:bg-primary-light;
+}

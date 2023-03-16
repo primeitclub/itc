@@ -1,5 +1,5 @@
 <header x-data="{ isOpen : false }" >
-    <div class="fixed bg-primary py-6 inset-x-0">
+    <div class="fixed bg-primary py-6 inset-x-0 z-10">
         <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
             <div class="flex items-center flex-1">
                 <div class="flex items-center justify-between w-full md:w-auto">
@@ -37,7 +37,7 @@
         x-transition:leave-start="opacity-100 scale-100"
         x-transition:leave-end="opacity-0 scale-95"
         x-description="Mobile menu, show/hide based on menu isOpen state."
-        class="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden"
+        class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top md:hidden"
     >
         <div class="rounded-xl shadow-sm bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
             <div class="px-5 pt-4 flex items-center justify-between">
