@@ -67,7 +67,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
 Route::get('/', [HomePageController::class, 'index'])->name('home');
 Route::get('/about', [AboutPageController::class, 'index'])->name('about');
-Route::get('/member', [MembersPageController::class, 'index'])->name('members');
+Route::get('/club-members', [MembersPageController::class, 'index'])->name('members');
 Route::get('/blogs', [BlogPageController::class, 'index'])->name('blogs');
 Route::get('/events', [EventPageController::class, 'index'])->name('events');
 Route::get('/gallery', [GalleryPageController::class, 'index'])->name('gallery');

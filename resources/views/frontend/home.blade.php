@@ -142,7 +142,7 @@
     <!-- view more -->
     <div class="mx-auto max-w-xs mt-10">
         <div class="flex items-center justify-center cursor-pointer">
-            <a class="flex space-x-4 text-greish items-center font-medium hover:text-gray-800" href="">view more
+            <a class="flex space-x-4 text-greish items-center font-medium hover:text-gray-800" href="{{ route('events') }}">view more
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
@@ -200,7 +200,7 @@
     <!-- view more -->
     <div class="mx-auto max-w-xs mt-10">
         <div class="flex items-center justify-center cursor-pointer">
-            <a class="flex space-x-4 text-greish items-center font-medium hover:text-gray-800" href="">view more
+            <a class="flex space-x-4 text-greish items-center font-medium hover:text-gray-800" href="{{ route('blogs') }}">view more
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>

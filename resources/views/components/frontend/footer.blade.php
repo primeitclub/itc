@@ -71,10 +71,10 @@
             <div class="md:mb-6 lg:w-1/6">
                 <h5 class="mb-2 font-bold uppercase text-white lg:mb-6 lg:font-semibold">Quick Links</h5>
                 <ul class="inline-bulleted-list mx-auto mb-8 w-3/4 leading-loose lg:mx-0 lg:mb-0">
-                    <li><a class="text-gray-100 hover:text-white transition duration-300 " href=""> Blogs </a></li>
-                    <li><a class="text-gray-100 hover:text-white transition duration-300 " href=""> Events </a></li>
-                    <li><a class="text-gray-100 hover:text-white transition duration-300 " href=""> Members </a></li>
-                    <li><a class="text-gray-100 hover:text-white transition duration-300 " href=""> Gallery </a></li>
+                    <li><a class="text-gray-100 hover:text-white transition duration-300 " href="{{ route('blogs') }}"> Blogs </a></li>
+                    <li><a class="text-gray-100 hover:text-white transition duration-300 " href="{{ route('events') }}"> Events </a></li>
+                    <li><a class="text-gray-100 hover:text-white transition duration-300 " href="{{ route('members') }}"> Members </a></li>
+                    <li><a class="text-gray-100 hover:text-white transition duration-300 " href="{{ route('gallery') }}"> Gallery </a></li>
                     <li><a class="text-gray-100 hover:text-white transition duration-300 " href="https://www.facebook.com/primecreativehub"> Creative Hub </a></li>
                 </ul>
             </div>
