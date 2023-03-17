@@ -55,3 +55,15 @@
         display: none;
     }
 }
+
+.swiper-pagination-bullet {
+    height: 12px !important;
+    width: 12px !important;
+    background-color: #123abc !important;
+    border-color: #123abc !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #123abc !important;
+    border-color: #123abc !important;
+}
