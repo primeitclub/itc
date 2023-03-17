@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutPageController;
 use App\Http\Controllers\Admin\AlbumController;
 use App\Http\Controllers\Admin\AlumniTestimonialController;
 use App\Http\Controllers\Admin\Auth\LoginController;
@@ -14,7 +15,12 @@ use App\Http\Controllers\Admin\MerchandiseController;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SpeakerController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\BlogPageController;
+use App\Http\Controllers\EventPageController;
+use App\Http\Controllers\GalleryPageController;
 use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\MembersPageController;
+use App\Http\Controllers\MerchandisePageController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -60,3 +66,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 });
 
 Route::get('/', [HomePageController::class, 'index'])->name('home');
+Route::get('/about', [AboutPageController::class, 'index'])->name('about');
+Route::get('/member', [MembersPageController::class, 'index'])->name('members');
+Route::get('/blogs', [BlogPageController::class, 'index'])->name('blogs');
+Route::get('/events', [EventPageController::class, 'index'])->name('events');
+Route::get('/gallery', [GalleryPageController::class, 'index'])->name('gallery');
+Route::get('/merch', [MerchandisePageController::class, 'index'])->name('merchandise');
