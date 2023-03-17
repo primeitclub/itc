@@ -29,7 +29,7 @@
     </div>
 
     <!-- <div x-show="isOpen" x-cloak class="fixed inset-0 z-0 bg-gray-300/60 backdrop-blur"></div> -->
-    <div x-show="isOpen" x-cloak class="fixed inset-0 backdrop-blur transition-opacity opacity-100"></div>
+    <div x-show="isOpen" x-cloak class="fixed z-10 inset-0 backdrop-blur transition-opacity opacity-100"></div>
 
     <div x-show="isOpen" x-cloak @click.away="isOpen = false"
         x-transition:enter="duration-150 ease-out"
