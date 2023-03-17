@@ -18,7 +18,7 @@
                 </div>
                 <div class="hidden space-x-8 md:flex md:ml-10">
                     <a href="{{ route('blogs.index') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Blogs</a>
-                    <a href="{{ route('events') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Events</a>
+                    <a href="{{ route('events.index') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Events</a>
                     <a href="{{ route('members') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Members</a>
                     <a href="{{ route('gallery') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Gallery</a>
                     <a href="{{ route('about') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">About Us</a>
@@ -57,7 +57,7 @@
             <div class="pt-5 pb-6">
                 <div class="px-2 text-base font-medium text-gray-700">
                     <a href="{{ route('blogs.index') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Blogs</a>
-                    <a href="{{ route('events') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Events</a>
+                    <a href="{{ route('events.index') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Events</a>
                     <a href="{{ route('members') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Members</a>
                     <a href="{{ route('gallery') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Gallery</a>
                     <a href="{{ route('about') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">About Us</a>

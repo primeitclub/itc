@@ -7,7 +7,7 @@
     <!-- merch content starts -->
     <section class="pt-24 sm:py-20">
         <div class="container mx-auto">
-            <div class="sm:mx-12 lg:mx-24">
+            <div class="sm:mx-12 lg:mx-24 mb-4">
                 <center>
                     <h2 class=" text-primary text-5xl font-semibold">
                         Featured Items
@@ -19,7 +19,6 @@
 
                 <div class="p-4 ">
                     <div class="gid-cols-1  grid gap-12 lg:grid-cols-3">
-
                         <div class="mt-8 rounded-xl bg-white w-full sm:w-auto drop-shadow-xl">
                             <div class="img">
                                 <figure>

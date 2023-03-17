@@ -5,7 +5,7 @@
         </div>
     </x-frontend.wave>
 
-    <section class=" pt-24 sm:py-20">
+    <section class="pt-24 sm:py-20">
         <div class="container mx-auto">
             <div class="sm:mx-12 lg:mx-24">
                 <center>
