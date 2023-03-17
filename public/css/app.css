@@ -830,8 +830,16 @@ select {
 .ml-auto {
   margin-left: auto;
 }
+<<<<<<< HEAD
 .ml-4 {
   margin-left: 1rem;
+=======
+.mr-8 {
+  margin-right: 2rem;
+}
+.ml-6 {
+  margin-left: 1.5rem;
+>>>>>>> f6f0a9d (WIP about us page)
 }
 .block {
   display: block;
@@ -914,6 +922,9 @@ select {
 .h-60 {
   height: 15rem;
 }
+.h-80 {
+  height: 20rem;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -976,6 +987,9 @@ select {
 .w-\[100\%\] {
   width: 100%;
 }
+.w-2\/4 {
+  width: 50%;
+}
 .max-w-sm {
   max-width: 24rem;
 }
@@ -990,6 +1004,9 @@ select {
 }
 .max-w-xs {
   max-width: 20rem;
+}
+.max-w-full {
+  max-width: 100%;
 }
 .flex-1 {
   flex: 1 1 0%;
@@ -1138,6 +1155,14 @@ select {
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
+<<<<<<< HEAD
+=======
+.divide-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(2px * var(--tw-divide-x-reverse));
+  border-left-width: calc(2px * calc(1 - var(--tw-divide-x-reverse)));
+}
+>>>>>>> f6f0a9d (WIP about us page)
 .divide-solid > :not([hidden]) ~ :not([hidden]) {
   border-style: solid;
 }
@@ -1504,6 +1529,12 @@ select {
 .pb-2 {
   padding-bottom: 0.5rem;
 }
+.pt-6 {
+  padding-top: 1.5rem;
+}
+.pr-12 {
+  padding-right: 3rem;
+}
 .text-left {
   text-align: left;
 }
@@ -1555,6 +1586,10 @@ select {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .font-semibold {
   font-weight: 600;
 }
@@ -1597,8 +1632,13 @@ select {
 .leading-3 {
   line-height: .75rem;
 }
+<<<<<<< HEAD
 .tracking-normal {
   letter-spacing: 0em;
+=======
+.leading-7 {
+  line-height: 1.75rem;
+>>>>>>> f6f0a9d (WIP about us page)
 }
 .tracking-tight {
   letter-spacing: -0.025em;
@@ -1608,6 +1648,9 @@ select {
 }
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+.tracking-normal {
+  letter-spacing: 0em;
 }
 .text-gray-900 {
   --tw-text-opacity: 1;
@@ -1919,6 +1962,11 @@ select {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.hover\:text-primary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(18 58 188 / var(--tw-text-opacity));
+}
+
 .hover\:opacity-100:hover {
   opacity: 1;
 }
@@ -2025,6 +2073,21 @@ select {
     margin-left: 2.5rem;
   }
 
+<<<<<<< HEAD
+=======
+  .sm\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .sm\:mt-24 {
+    margin-top: 6rem;
+  }
+
+  .sm\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+>>>>>>> f6f0a9d (WIP about us page)
   .sm\:block {
     display: block;
   }
@@ -2051,6 +2114,14 @@ select {
 
   .sm\:w-auto {
     width: auto;
+  }
+
+  .sm\:w-3\/4 {
+    width: 75%;
+  }
+
+  .sm\:w-2\/4 {
+    width: 50%;
   }
 
   .sm\:max-w-md {
@@ -2136,6 +2207,16 @@ select {
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .sm\:leading-5 {
@@ -2320,6 +2401,18 @@ select {
     margin-top: 7rem;
   }
 
+  .lg\:mt-16 {
+    margin-top: 4rem;
+  }
+
+  .lg\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .lg\:ml-20 {
+    margin-left: 5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2455,6 +2548,16 @@ select {
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .lg\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .lg\:font-semibold {
