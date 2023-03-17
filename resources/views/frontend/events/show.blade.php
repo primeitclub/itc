@@ -56,7 +56,7 @@
                     <div
                         class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 lg:w-[65%] w-full h-60 bg-white  rounded-lg  shadow-xl mt-6 border-b-8 border-b-primary  mb-4">
                         <div class="flex justify-center items-center mt-10 ml-4 hidden lg:block md:block">
-                            <img src="{{ asset('blog-images/venom_1671793074.jpg') }}" class="w-full h-78 rounded-lg" />
+                            <img src="{{ asset('blog-images/venom_1671793074.jpg') }}" class="w-full h-40 rounded-lg" />
                         </div>
                         <div class="p-10 text-primary lg:col-span-2 md:col-span-2 ">
                             Pranab Raj KC
