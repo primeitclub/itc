@@ -1,8 +1,7 @@
 <x-frontend.app title="Blogs">
     <x-frontend.wave>
         <div class="">
-            <h1 class="font-semibold text-white text-5xl lg:text-9xl">Blogs</h1>
-      
+            <h1 class="font-semibold text-white text-5xl lg:text-9xl">Blogs</h1>s
         </div>
     </x-frontend.wave>
 
@@ -10,7 +9,7 @@
         <div class="container mx-auto">
             <div class="">
                 <center>
-                    <h2 class=" text-primary text-4xl font-semibold">
+                    <h2 class=" text-primary text-5xl font-semibold">
                         All Articles
                     </h2>
                     <p class=" text-xl">
@@ -40,7 +39,7 @@
                                         </p>
                                     </div>
                                     <a href="{{ route('blogs.show', $blog->slug) }}">
-                                        <button class="text-sm text-gray-400">
+                                        <button class="text-sm text-gray-500 pt-4 pb-4">
                                             Read more
                                         </button>
                                     </a>
@@ -50,7 +49,7 @@
                                             {{ $blog->author }}
                                         </p>
                                         <p class="flex justify-center py-2 text-sm leading-5">
-                                            2023, Sept 25
+                                            {{ $blog->published_at }}
                                         </p>
                                     </div>
                                 </div>
