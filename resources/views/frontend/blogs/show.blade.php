@@ -7,7 +7,7 @@
     </x-frontend.wave>
     <!-- articles page starts -->
     <section class="container mx-auto font-poppins">
-        <div class="mt-40 mb-40 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="mt-40 mb-40 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10">
             <div class="col-span-2">
                 <div class="flex flex-col h-auto w-full mx-auto sm:block hidden pb-10">
                     <img src="{{ asset('blog-images/groot_1671793404.png') }}" alt="Blog Thumbnail"
@@ -22,13 +22,13 @@
                 <hr style="border-top: 1px solid black">
                 <div class="mt-24">
                     <p class="font-poppins text-primary font-semibold m-4 bold text-2xl">Published By : </p>
-                    <div class="m-4 text-sm font-semibold">
+                    <div class="m-4 text-sm font-medium">
                         <p class="">{{ $blog->author }}</p>
                         <p>{{ $blog->published_at }}</p>
                     </div>
                 </div>
             </div>
-            <div class="">
+            <div class="p-4">
                 <div class="flex pb-6">
                     <h1 class="text-4xl font-poppins ">Recent Post </h1>
                 </div>

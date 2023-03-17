@@ -1,13 +1,13 @@
 <x-frontend.app title="Blogs">
     <x-frontend.wave>
         <div class="">
-            <h1 class="font-semibold text-white text-5xl lg:text-9xl">Blogs</h1>s
+            <h1 class="font-semibold text-white text-5xl lg:text-9xl">Blogs</h1>
         </div>
     </x-frontend.wave>
 
     <section class=" pt-24 sm:py-20">
         <div class="container mx-auto">
-            <div class="">
+            <div class="sm:mx-12 lg:mx-24">
                 <center>
                     <h2 class=" text-primary text-5xl font-semibold">
                         All Articles
@@ -24,7 +24,7 @@
                             <div class=" mt-8 rounded-xl bg-white w-full  sm:w-auto drop-shadow-xl">
                                 <div class="img">
                                     <figure>
-                                        <img class="w-[100%] h-80 rounded-t-xl"
+                                        <img class="w-[100%] h-64 rounded-t-xl"
                                             src="{{ asset('blog-images/groot_1671793404.png') }}" alt="" />
                                     </figure>
                                 </div>
