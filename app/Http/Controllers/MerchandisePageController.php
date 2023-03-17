@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 class MerchandisePageController extends Controller
 {
     public function index() {
-        return view('frontend.merchandise');
+        return view('frontend.merchandise.index');
+    }
+    public function show() {
+        return view('frontend.merchandise.show');
     }
 }

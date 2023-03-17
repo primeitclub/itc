@@ -12,16 +12,16 @@
                     <h2 class=" text-primary text-5xl font-semibold">
                         All Articles
                     </h2>
-                    <p class=" text-xl">
+                    <p class=" text-xl pt-4">
                         Browse our collection
                     </p>
                     
                 </center>
                   
-                <div class=" pt-24">
+                <div class=" p-4">
                     <div class="gid-cols-1 events grid gap-12 lg:grid-cols-3">
                         @foreach ($blogs as $blog)
-                            <div class=" mt-8 rounded-xl bg-white w-96 sm:w-auto drop-shadow-xl">
+                            <div class=" mt-8 rounded-xl bg-white w-full  sm:w-auto drop-shadow-xl">
                                 <div class="img">
                                     <figure>
                                         <img class="w-[100%] h-80 rounded-t-xl"

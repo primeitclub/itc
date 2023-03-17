@@ -72,4 +72,6 @@ Route::get('/blogs', [BlogPageController::class, 'index'])->name('blogs.index');
 Route::get('/blogs/{slug}', [BlogPageController::class, 'show'])->name('blogs.show');
 Route::get('/events', [EventPageController::class, 'index'])->name('events');
 Route::get('/gallery', [GalleryPageController::class, 'index'])->name('gallery');
-Route::get('/merch', [MerchandisePageController::class, 'index'])->name('merchandise');
+Route::get('/merch', [MerchandisePageController::class, 'index'])->name('merchandise.index');
+Route::get('/merch/{slug}', [MerchandisePageController::class, 'show'])->name('merchandise.show');
+

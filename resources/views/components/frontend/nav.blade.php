@@ -22,7 +22,7 @@
                     <a href="{{ route('members') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Members</a>
                     <a href="{{ route('gallery') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Gallery</a>
                     <a href="{{ route('about') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">About Us</a>
-                    <a href="{{ route('merchandise') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Merch</a>
+                    <a href="{{ route('merchandise.index') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Merch</a>
                 </div>
             </nav>
         </div>
@@ -61,7 +61,7 @@
                     <a href="{{ route('members') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Members</a>
                     <a href="{{ route('gallery') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Gallery</a>
                     <a href="{{ route('about') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">About Us</a>
-                    <a href="{{ route('merchandise') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Merch</a>
+                    <a href="{{ route('merchandise.index') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Merch</a>
                 </div>
             </div>
         </div>
