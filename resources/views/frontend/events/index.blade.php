@@ -17,7 +17,7 @@
                     </p>
                 </center>
 
-                <div class="p-4">
+                <div class="p-4 mt-8">
                     <div class="gid-cols-1  grid gap-12 lg:grid-cols-3">
                         <div class="rounded-xl bg-white sm:w-auto drop-shadow-xl">
                             <div class="img">
