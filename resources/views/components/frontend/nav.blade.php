@@ -17,6 +17,7 @@
                     </div>
                 </div>
                 <div class="hidden space-x-8 md:flex md:ml-10">
+                    <a href="{{ route('home') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Home</a>
                     <a href="{{ route('blogs.index') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Blogs</a>
                     <a href="{{ route('events.index') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Events</a>
                     <a href="{{ route('members') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Members</a>
@@ -56,6 +57,7 @@
             </div>
             <div class="pt-5 pb-6">
                 <div class="px-2 text-base font-medium text-gray-700">
+                    <a href="{{ route('home') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Home</a>
                     <a href="{{ route('blogs.index') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Blogs</a>
                     <a href="{{ route('events.index') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Events</a>
                     <a href="{{ route('members') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Members</a>
