@@ -274,11 +274,11 @@
                             </select>
                         </div>
                     </div>
-                    <div class=" w-full h-64 bg-white  rounded-lg  shadow-xl mb-24">
-                        {{-- <div class="grid grid-cols-3">
-                            <div class="flex justify-center items-center">
+                    <div class=" w-full h-64 bg-white rounded-lg  shadow-xl mb-24">
+                        <div class="grid grid-cols-3">
+                            <div class="">
                                 <img src="{{ asset('/blog-images/venom_1671793074.jpg') }}"
-                                    class="object-cover h-auto w-auto ">
+                                    class="h-full w-full ">
                             </div>
                             <div class="flex justify-center items-center"> 
                                 <h1 class="text-primary poppins text-2xl font-bold py-2">Blockchain is the
@@ -290,7 +290,7 @@
                                 <p><b>15th</b><br>
                                 <b>Jan</b></p>
                             </div>
-                        </div> --}}
+                        </div>
                     </div>
 
                 </div>
