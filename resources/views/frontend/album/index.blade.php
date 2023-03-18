@@ -23,10 +23,10 @@
                             src="{{ asset('/blog-images/venom_1671793074.jpg') }}" alt="" />
                     </div>
                     <div
-                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary group-hover:from-primary/70 group-hover:via-primary/60 group-hover:to-primary/70">
+                        class="absolute inset-0 group-hover:bg-gradient-to-b from-transparent via-transparent to-primary ">
                     </div>
                     <div
-                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-700 group-hover:translate-y-0">
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-700 group-hover:translate-y-28">
                         <h1 class="text-3xl font-semibold leading-6 text-white ">Skill IT</h1>
                     </div>
                 </div>
@@ -37,10 +37,10 @@
                             src="{{ asset('/blog-images/venom_1671793074.jpg') }}" alt="" />
                     </div>
                     <div
-                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary group-hover:from-primary/70 group-hover:via-primary/60 group-hover:to-primary/70">
+                        class="absolute inset-0 group-hover:bg-gradient-to-b from-transparent via-transparent to-primary ">
                     </div>
                     <div
-                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-700 group-hover:translate-y-0">
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-700 group-hover:translate-y-28">
                         <h1 class="text-3xl font-semibold leading-6 text-white ">Skill IT</h1>
                     </div>
                 </div>
@@ -50,10 +50,10 @@
                             src="{{ asset('/blog-images/venom_1671793074.jpg') }}" alt="" />
                     </div>
                     <div
-                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary group-hover:from-primary/70 group-hover:via-primary/60 group-hover:to-primary/70">
+                        class="absolute inset-0 group-hover:bg-gradient-to-b from-transparent via-transparent to-primary ">
                     </div>
                     <div
-                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-700 group-hover:translate-y-0">
+                        class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-700 group-hover:translate-y-28">
                         <h1 class="text-3xl font-semibold leading-6 text-white ">Skill IT</h1>
                     </div>
                 </div>

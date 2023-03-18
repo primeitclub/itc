@@ -74,7 +74,7 @@
                     <li><a class="text-gray-100 hover:text-white transition duration-300 " href="{{ route('blogs.index') }}"> Blogs </a></li>
                     <li><a class="text-gray-100 hover:text-white transition duration-300 " href="{{ route('events.index') }}"> Events </a></li>
                     <li><a class="text-gray-100 hover:text-white transition duration-300 " href="{{ route('members') }}"> Members </a></li>
-                    <li><a class="text-gray-100 hover:text-white transition duration-300 " href="{{ route('gallery') }}"> Gallery </a></li>
+                    <li><a class="text-gray-100 hover:text-white transition duration-300 " href="{{ route('gallery.index') }}"> Gallery </a></li>
                     <li><a class="text-gray-100 hover:text-white transition duration-300 " href="https://www.facebook.com/primecreativehub"> Creative Hub </a></li>
                 </ul>
             </div>
