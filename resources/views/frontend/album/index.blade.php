@@ -1,7 +1,7 @@
 <x-frontend.app title="Gallery">
     <x-frontend.wave>
         <div class="">
-            <h1 class="font-semibold text-white text-5xl lg:text-9xl">Events</h1>
+            <h1 class="font-semibold text-white text-5xl lg:text-9xl">Albums</h1>
         </div>
     </x-frontend.wave>
     <section class="pt-24 sm:py-20">
@@ -16,7 +16,7 @@
                     </p>
                 </center>
             </div>
-            <div class="grid grid-cols-1 mt-24 gap-8 md:grid-cols-3 lg:grid-cols-3">
+            <div class="grid grid-cols-1 mt-24 gap-8 md:grid-cols-3 lg:grid-cols-3 p-2">
                 <div class="group relative cursor-pointer items-center overflow-hidden transition-shadow ">
                     <div class="h-96">
                         <img class="h-full w-full object-cover transition-transform duration-500 "
