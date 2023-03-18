@@ -50,11 +50,20 @@
         <div x-data="{ currentTab : 'event' }">
             <div class="mt-10 hidden sm:block">
                 <ul class="flex flex-row space-x-6 mx-auto justify-center items-center divide-x-2 divide-solid divide-gray-300">
-                    <li><button x-on:click="currentTab = 'event'" class="px-6 text-base text-greish font-semibold hover:text-primary">Event Management</button></li>
-                    <li><button x-on:click="currentTab = 'er'" class="px-6 text-base text-greish font-semibold hover:text-primary">External Relationship</button></li>
-                    <li><button x-on:click="currentTab = 'finance'" class="px-6 text-base text-greish font-semibold hover:text-primary">Finance</button></li>
-                    <li><button x-on:click="currentTab = 'hr'" class="px-6 text-base text-greish font-semibold hover:text-primary">Human Resources</button></li>
-                    <li><button x-on:click="currentTab = 'marketing'" class="px-6 text-base text-greish font-semibold hover:text-primary">Marketing</button></li>
+                    <li><button x-on:click="currentTab = 'event'" :class="currentTab == 'event' ? 'text-primary' : 'text-greish'" class="px-6 text-base font-semibold hover:text-primary">Event Management</button></li>
+                    <li><button x-on:click="currentTab = 'er'"  :class="currentTab == 'er' ? 'text-primary' : 'text-greish'" class="px-6 text-base font-semibold hover:text-primary">External Relationship</button></li>
+                    <li><button x-on:click="currentTab = 'finance'"  :class="currentTab == 'finance' ? 'text-primary' : 'text-greish'" class="px-6 text-base font-semibold hover:text-primary">Finance</button></li>
+                    <li><button x-on:click="currentTab = 'hr'"  :class="currentTab == 'hr' ? 'text-primary' : 'text-greish'" class="px-6 text-base font-semibold hover:text-primary">Human Resources</button></li>
+                    <li><button x-on:click="currentTab = 'marketing'"  :class="currentTab == 'marketing' ? 'text-primary' : 'text-greish'" class="px-6 text-base font-semibold hover:text-primary">Marketing</button></li>
+                </ul>
+            </div>
+            <div class="mt-10 sm:hidden">
+                <ul class="flex flex-row justify-center items-center divide-x-2 divide-solid divide-gray-300">
+                    <li><button x-on:click="currentTab = 'event'" :class="currentTab == 'event' ? 'text-primary' : 'text-greish'" class="px-3 text-xs font-semibold hover:text-primary">Events</button></li>
+                    <li><button x-on:click="currentTab = 'er'"  :class="currentTab == 'er' ? 'text-primary' : 'text-greish'" class="px-3 text-xs font-semibold hover:text-primary">ER</button></li>
+                    <li><button x-on:click="currentTab = 'finance'"  :class="currentTab == 'finance' ? 'text-primary' : 'text-greish'" class="px-3 text-xs font-semibold hover:text-primary">Finance</button></li>
+                    <li><button x-on:click="currentTab = 'hr'"  :class="currentTab == 'hr' ? 'text-primary' : 'text-greish'" class="px-3 text-xs font-semibold hover:text-primary">HR</button></li>
+                    <li><button x-on:click="currentTab = 'marketing'"  :class="currentTab == 'marketing' ? 'text-primary' : 'text-greish'" class="px-3 text-xs font-semibold hover:text-primary">Marketing</button></li>
                 </ul>
             </div>
             <!-- Department Details -->
