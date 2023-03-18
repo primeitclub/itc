@@ -243,7 +243,7 @@
                 </center>
                 <div class="container mx-auto w-full p-8 ">
                     <div class=" flex p-12 items-center justify-center gap-4 ">
-                        <h1 class="text-primary text-sm lg:text-3xl px-3 font-bold">Year:</h1>
+                        <h1 class="text-primary text-sm lg:text-3xl  font-bold">Year:</h1>
                         <div class="dropdown-menu">
                             <select>
                                 <option value=""><button>2022</button></option>
@@ -258,7 +258,7 @@
                                 <br />
                             </select>
                         </div>
-                        <h1 class="text-primary text-3xl px-3 font-bold">Month:</h1>
+                        <h1 class="text-primary text-sm lg:text-3xl  font-bold">Month:</h1>
                         <div class="dropdown-menu">
                             <select>
                                 <option value=""><button>2022</button></option>
