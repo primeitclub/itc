@@ -126,7 +126,7 @@
     <!-- view more -->
     <div class="mx-auto max-w-xs mt-10">
         <div class="flex items-center justify-center cursor-pointer">
-            <a class="flex space-x-4 text-greish items-center font-medium hover:text-gray-800" href="{{ route('events') }}">view more
+            <a class="flex space-x-4 text-greish items-center font-medium hover:text-gray-800" href="{{ route('events.index') }}">view more
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
@@ -197,7 +197,7 @@
        <img src="{{ asset('assets/banner.png') }}" class="w-full" > 
         <div x-data="{isHovered : false}" class="absolute border-4 border-white rounded-full">
             <button x-on:mouseover="isHovered = true" x-on:mouseleave="isHovered = false" class="flex justify-between items-center space-x-2 py-3 px-6 text-center text-white font-extrabold text-xl lg:text-6xl hover:pr-8 ease-out duration-150">
-                <a href="{{ route('merchandise') }}" class="uppercase">Check out our merch</a>
+                <a href="{{ route('merchandise.index') }}" class="uppercase">Check out our merch</a>
                 <svg x-show="isHovered" x-cloak xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="5" stroke="currentColor" class="w-12 h-12 text-white ease-in duration-300">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
