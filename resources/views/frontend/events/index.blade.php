@@ -389,7 +389,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:hidden block">
+                    <div class="lg:hidden block p-4">
                         <h1 class=" text-primary text-xl font-semibold p-6">15th Jan</h1>
                         <div class="w-full h-50 rounded-lg bg-white shadow-2xl mb-8">
                             <div class="flex flex-col justify-center p-8 md:p-8">
