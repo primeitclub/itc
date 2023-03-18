@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <h1 class="text-primary text-3xl pt-6">Summary: </h1>
-                    <div class="sm:text-xl  p-8 leading-4 tracking-wide font-light">
+                    <div class="sm:text-xl text-md p-8 leading-6 text-greish tracking-wide font-light">
 
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam natus aliquam ea tempora ut
                         dignissimos, nobis provident ab libero, veniam molestias neque unde amet. Porro voluptatibus
@@ -105,7 +105,7 @@
                         nostrum!
                     </div>
                     <h1 class="text-primary text-3xl pt-6">Conclusion: </h1>
-                    <div class="sm:text-xl text-md font-poppins p-8 leading-4 tracking-wider font-light">
+                    <div class="sm:text-xl text-md  p-8 leading-6 text-greish tracking-wider font-light">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam natus aliquam ea tempora ut
                         dignissimos, nobis provident ab libero, veniam molestias neque unde amet. Porro voluptatibus
                         sequi

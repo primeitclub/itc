@@ -234,7 +234,7 @@
                     </div>
                 </div>
                 <center>
-                    <h2 class="text-primary text-5xl font-semibold pt-10">
+                    <h2 class="text-primary text-5xl font-semibold mt-24">
                         Past Events
                     </h2>
                     <p class="home_text text-xl">
