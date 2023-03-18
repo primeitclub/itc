@@ -737,11 +737,11 @@ select {
 .z-0 {
   z-index: 0;
 }
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 .m-4 {
   margin: 1rem;
@@ -887,9 +887,6 @@ select {
 .h-36 {
   height: 9rem;
 }
-.h-full {
-  height: 100%;
-}
 .h-24 {
   height: 6rem;
 }
@@ -908,11 +905,17 @@ select {
 .h-40 {
   height: 10rem;
 }
+.h-full {
+  height: 100%;
+}
 .h-1\/2 {
   height: 50%;
 }
 .h-60 {
   height: 15rem;
+}
+.h-28 {
+  height: 7rem;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -976,6 +979,21 @@ select {
 .w-\[100\%\] {
   width: 100%;
 }
+.w-7 {
+  width: 1.75rem;
+}
+.w-\[40\%\] {
+  width: 40%;
+}
+.w-\[20\%\] {
+  width: 20%;
+}
+.w-3 {
+  width: 0.75rem;
+}
+.w-28 {
+  width: 7rem;
+}
 .max-w-sm {
   max-width: 24rem;
 }
@@ -1037,6 +1055,9 @@ select {
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 .flex-row {
   flex-direction: row;
 }
@@ -1048,6 +1069,9 @@ select {
 }
 .flex-wrap {
   flex-wrap: wrap;
+}
+.place-items-center {
+  place-items: center;
 }
 .content-center {
   align-content: center;
@@ -1345,14 +1369,14 @@ select {
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
 .bg-rgradient-blue {
   background-image: radial-gradient(56.49% 353.68% at 52.15% 46.49%, #3188EF 0%, #2B88DE 0.01%, #123ABC 100%);
 }
 .bg-gradient-white {
   background-image: linear-gradient(270deg, #EFF2FA 2.85%, #EFF2FA 2.86%, #F5F7FB 102.4%);
+}
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 .from-transparent {
   --tw-gradient-from: transparent;
@@ -1364,8 +1388,14 @@ select {
 .to-primary {
   --tw-gradient-to: #123ABC;
 }
+.fill-primary {
+  fill: #123ABC;
+}
 .stroke-current {
   stroke: currentColor;
+}
+.stroke-primary {
+  stroke: #123ABC;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -1431,10 +1461,6 @@ select {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-.px-9 {
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
-}
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1459,6 +1485,10 @@ select {
   padding-left: 5rem;
   padding-right: 5rem;
 }
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
 .py-0\.5 {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
@@ -1475,9 +1505,6 @@ select {
 }
 .pt-10 {
   padding-top: 2.5rem;
-}
-.pt-24 {
-  padding-top: 6rem;
 }
 .pt-5 {
   padding-top: 1.25rem;
@@ -1517,6 +1544,9 @@ select {
 }
 .pt-32 {
   padding-top: 8rem;
+}
+.pt-24 {
+  padding-top: 6rem;
 }
 .pb-10 {
   padding-bottom: 2.5rem;
@@ -1610,6 +1640,9 @@ select {
 }
 .leading-loose {
   line-height: 2;
+}
+.leading-4 {
+  line-height: 1rem;
 }
 .leading-3 {
   line-height: .75rem;
@@ -1788,11 +1821,6 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.transition-shadow {
-  transition-property: box-shadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
 .transition {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1805,6 +1833,11 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-shadow {
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1814,11 +1847,11 @@ select {
 .duration-150 {
   transition-duration: 150ms;
 }
-.duration-700 {
-  transition-duration: 700ms;
-}
 .duration-100 {
   transition-duration: 100ms;
+}
+.duration-700 {
+  transition-duration: 700ms;
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1886,6 +1919,22 @@ select {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:h-8:hover {
+  height: 2rem;
+}
+
+.hover\:h-7:hover {
+  height: 1.75rem;
+}
+
+.hover\:w-8:hover {
+  width: 2rem;
+}
+
+.hover\:w-7:hover {
+  width: 1.75rem;
+}
+
 .hover\:bg-blue-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
@@ -1913,6 +1962,14 @@ select {
 .hover\:bg-blue-900:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
+
+.hover\:fill-primary:hover {
+  fill: #123ABC;
+}
+
+.hover\:fill-primary-light:hover {
+  fill: #1D4ED8;
 }
 
 .hover\:pr-8:hover {
@@ -2047,14 +2104,14 @@ select {
     grid-column: span 3 / span 3;
   }
 
-  .sm\:mx-12 {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .sm\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   .sm\:ml-10 {
@@ -2083,6 +2140,10 @@ select {
 
   .sm\:block {
     display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
   }
 
   .sm\:grid {
@@ -2155,14 +2216,14 @@ select {
     padding-right: 1.5rem;
   }
 
-  .sm\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
   .sm\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .sm\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .sm\:pt-5 {
@@ -2273,16 +2334,16 @@ select {
     flex-shrink: 0;
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -2338,22 +2399,22 @@ select {
     top: 10rem;
   }
 
-  .lg\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
-
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
 
-  .lg\:mx-24 {
-    margin-left: 6rem;
-    margin-right: 6rem;
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .lg\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
 
   .lg\:mt-16 {
@@ -2416,6 +2477,10 @@ select {
     height: 3rem;
   }
 
+  .lg\:h-36 {
+    height: 9rem;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -2440,6 +2505,10 @@ select {
     width: 65%;
   }
 
+  .lg\:w-36 {
+    width: 9rem;
+  }
+
   .lg\:max-w-lg {
     max-width: 32rem;
   }
@@ -2458,6 +2527,10 @@ select {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
