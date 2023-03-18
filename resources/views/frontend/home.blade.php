@@ -43,12 +43,12 @@
     </section>
 
     <!-- Featured Events Section -->
-    <section class="mt-10 max-w-7xl mx-auto px-4 sm:px-6">
+    <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-4 sm:px-6">
         <h1 class="text-center text-4xl text-primary font-bold">Featured Events</h1>
         <p class="text-center text-xl text-greish">Check out our workshops and sessions</p>
         <article class="mt-8" >
             <div class="py-6 lg:flex lg:flex-row-reverse">
-                <div class="flex-1 md:ml-4">
+                <div class="flex-1 md:ml-4 lg:p-10">
                     <img src="{{ asset('club-images/club-bonding-v1.jpg') }}" alt="Blog Post thumbnail" class="rounded-sm" />
                 </div>
 
@@ -135,7 +135,7 @@
     </div>
 
     <!-- Featured Blog Section -->
-    <section class="mt-10 max-w-7xl mx-auto px-4 sm:px-6">
+    <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-4 sm:px-6">
         <h1 class="text-center text-4xl text-primary font-bold">Featured Blogs</h1>
         <p class="text-center text-xl text-greish">Browse some interesting reads</p>
         <article class="" >
@@ -151,7 +151,7 @@
                         </div>
                     </div>                        
                 </div>
-                <div class="mx-auto mt-10">
+                <div class="mx-auto md:mt-10">
                     <header class="mt-4">
                         <h1 class="text-3xl font-semibold text-primary">
                             Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
@@ -193,7 +193,7 @@
         </div>
     </div>
 
-    <section class="mt-10 w-full lg:h-96 overflow-hidden items-center flex justify-center">
+    <section class="mt-10 sm:mt-24  w-full lg:h-96 overflow-hidden items-center flex justify-center">
        <img src="{{ asset('assets/banner.png') }}" class="w-full" > 
         <div x-data="{isHovered : false}" class="absolute border-4 border-white rounded-full">
             <button x-on:mouseover="isHovered = true" x-on:mouseleave="isHovered = false" class="flex justify-between items-center space-x-2 py-3 px-6 text-center text-white font-extrabold text-xl lg:text-6xl hover:pr-8 ease-out duration-150">
@@ -207,7 +207,7 @@
     </section>
 
     <!-- Meet our team Section -->
-    <section class="mt-10 max-w-7xl mx-auto px-4 sm:px-6">
+    <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-4 sm:px-6">
         <h1 class="text-center text-4xl text-primary font-bold">Meet Our Team</h1>
         <p class="text-center text-xl text-greish">Get to know our team members</p>
         <div class="swiper teamSwiper">
@@ -498,7 +498,7 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="mt-24 mb-24 max-w-7xl mx-auto px-4 sm:px-6 ">
+    <section class="mt-10 sm:mt-24 mb-24 max-w-7xl mx-auto px-4 sm:px-6 ">
         <h1 class="text-center text-4xl text-primary font-bold">Testimonial</h1>
         <p class="text-center text-xl text-greish">Hear what our members have to say</p>
         <div class="swiper testimonialSwiper">

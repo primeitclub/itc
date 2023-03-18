@@ -2391,6 +2391,10 @@ select {
     border-color: rgb(229 231 235 / var(--tw-divide-opacity));
   }
 
+  .lg\:p-10 {
+    padding: 2.5rem;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
