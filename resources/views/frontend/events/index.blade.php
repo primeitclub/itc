@@ -22,7 +22,7 @@
                         <div class="rounded-xl bg-white sm:w-auto drop-shadow-xl">
                             <div class="img">
                                 <figure>
-                                    <img class="w-[100%] h-64 rounded-t-xl"
+                                    <img class="w-full h-64 rounded-t-xl"
                                         src="{{ asset('/blog-images/venom_1671793074.jpg') }}" alt="" />
                                 </figure>
                             </div>
@@ -65,7 +65,7 @@
                                     </div>
 
                                 </div>
-                                <div class="text-greish h-24 overflow-hidden">
+                                <div class="text-greish h-14 overflow-hidden">
                                     <p class="py-2 text-base font-light leading-6">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eligendi, labore
                                         officia molestiae illum, recusandae inventore placeat est quae reprehenderit
@@ -93,11 +93,11 @@
                         <div class="rounded-xl bg-white sm:w-auto drop-shadow-xl">
                             <div class="img">
                                 <figure>
-                                    <img class="w-[100%] h-64 rounded-t-xl"
+                                    <img class="w-full h-64 rounded-t-xl"
                                         src="{{ asset('/blog-images/venom_1671793074.jpg') }}" alt="" />
                                 </figure>
                             </div>
-                            <div class="event_card_contens p-7 ">
+                            <div class="p-8 ">
                                 <h3 class="text-primary poppins text-2xl font-semibold">
                                     Blockchain : the next big thing
                                 </h3>
@@ -136,7 +136,7 @@
                                     </div>
 
                                 </div>
-                                <div class="text-greish h-24 overflow-hidden">
+                                <div class="text-greish h-14 overflow-hidden">
                                     <p class="py-2 text-base font-light leading-6">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eligendi, labore
                                         officia molestiae illum, recusandae inventore placeat est quae reprehenderit
@@ -163,11 +163,11 @@
                         <div class="rounded-xl bg-white sm:w-auto drop-shadow-xl">
                             <div class="img">
                                 <figure>
-                                    <img class="w-[100%] h-64 rounded-t-xl"
+                                    <img class="w-full h-64 rounded-t-xl"
                                         src="{{ asset('/blog-images/venom_1671793074.jpg') }}" alt="" />
                                 </figure>
                             </div>
-                            <div class="event_card_contens p-7 ">
+                            <div class="p-8 ">
                                 <h3 class="text-primary poppins text-2xl font-semibold">
                                     Blockchain : the next big thing
                                 </h3>
@@ -206,7 +206,7 @@
                                     </div>
 
                                 </div>
-                                <div class="text-greish h-24 overflow-hidden">
+                                <div class="text-greish h-14 overflow-hidden">
                                     <p class="py-2 text-base font-light leading-6">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eligendi, labore
                                         officia molestiae illum, recusandae inventore placeat est quae reprehenderit
@@ -295,13 +295,14 @@
                                         <span class="font-medium text-lg text-greish pr-4">Free</span>
                                         <p class="py-0.5 px-6 text-white rounded-full text-sm bg-primary">Workshop</p>
                                     </div>
-                                    <div
-                                        class=" h-10  overflow-hidden  lg:col-span-3 ">
+                                    <div class=" h-10  overflow-hidden  lg:col-span-3 ">
                                         <p class="text-black sm:text-sm  leading-6 tracker-widest mt-4">Lorem ipsum
                                             dolor sit amet consectetur adipisicing elit. Dolore temporibus vel,
                                             accusantium
                                             ut explicabo maiores soluta harum quisquam modi quod corrupti commodi ullam
-                                            amet? Harum eaque iusto quis impedit similique vitae adipisci nemo eligendi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, nobis?
+                                            amet? Harum eaque iusto quis impedit similique vitae adipisci nemo
+                                            eligendi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat,
+                                            nobis?
                                         </p>
                                     </div>
                                     <a href="#">
@@ -332,13 +333,14 @@
                                         <span class="font-medium text-lg text-greish pr-4">Free</span>
                                         <p class="py-0.5 px-6 text-white rounded-full text-sm bg-primary">Workshop</p>
                                     </div>
-                                    <div
-                                        class=" h-10  overflow-hidden  lg:col-span-3 ">
+                                    <div class=" h-10  overflow-hidden  lg:col-span-3 ">
                                         <p class="text-black sm:text-sm  leading-6 tracker-widest mt-4">Lorem ipsum
                                             dolor sit amet consectetur adipisicing elit. Dolore temporibus vel,
                                             accusantium
                                             ut explicabo maiores soluta harum quisquam modi quod corrupti commodi ullam
-                                            amet? Harum eaque iusto quis impedit similique vitae adipisci nemo eligendi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, nobis?
+                                            amet? Harum eaque iusto quis impedit similique vitae adipisci nemo
+                                            eligendi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat,
+                                            nobis?
                                         </p>
                                     </div>
                                     <a href="#">
@@ -369,13 +371,14 @@
                                         <span class="font-medium text-lg text-greish pr-4">Free</span>
                                         <p class="py-0.5 px-6 text-white rounded-full text-sm bg-primary">Workshop</p>
                                     </div>
-                                    <div
-                                        class=" h-10  overflow-hidden  lg:col-span-3 ">
+                                    <div class=" h-10  overflow-hidden  lg:col-span-3 ">
                                         <p class="text-black sm:text-sm  leading-6 tracker-widest mt-4">Lorem ipsum
                                             dolor sit amet consectetur adipisicing elit. Dolore temporibus vel,
                                             accusantium
                                             ut explicabo maiores soluta harum quisquam modi quod corrupti commodi ullam
-                                            amet? Harum eaque iusto quis impedit similique vitae adipisci nemo eligendi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, nobis?
+                                            amet? Harum eaque iusto quis impedit similique vitae adipisci nemo
+                                            eligendi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat,
+                                            nobis?
                                         </p>
                                     </div>
                                     <a href="#">
