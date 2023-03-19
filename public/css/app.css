@@ -915,6 +915,9 @@ select {
 .h-40 {
   height: 10rem;
 }
+.h-48 {
+  height: 12rem;
+}
 .h-1\/2 {
   height: 50%;
 }
@@ -988,6 +991,9 @@ select {
 }
 .w-\[100\%\] {
   width: 100%;
+}
+.w-\[65\%\] {
+  width: 65%;
 }
 .w-\[80\%\] {
   width: 80%;
@@ -1566,6 +1572,9 @@ select {
 }
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+.pb-1 {
+  padding-bottom: 0.25rem;
 }
 .pt-8 {
   padding-top: 2rem;
