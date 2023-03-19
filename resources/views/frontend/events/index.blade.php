@@ -18,15 +18,15 @@
                 </center>
 
                 <div class="p-4 mt-8">
-                    <div class="gid-cols-1  grid gap-12 lg:grid-cols-3">
-                        <div class="rounded-xl bg-white sm:w-auto drop-shadow-xl">
+                    <div class="events gid-cols-1 p-4 grid gap-12 md:grid-cols-3">
+                        <div class="rounded-xl bg-white  drop-shadow-xl">
                             <div class="img">
                                 <figure>
-                                    <img class="w-full h-64 rounded-t-xl"
+                                    <img class="w-full h-70 rounded-t-xl"
                                         src="{{ asset('/blog-images/venom_1671793074.jpg') }}" alt="" />
                                 </figure>
                             </div>
-                            <div class="p-8 ">
+                            <div class="p-10">
                                 <h3 class="text-primary poppins text-2xl font-semibold">
                                     Blockchain : the next big thing
                                 </h3>
@@ -93,7 +93,7 @@
                         <div class="rounded-xl bg-white sm:w-auto drop-shadow-xl">
                             <div class="img">
                                 <figure>
-                                    <img class="w-full h-64 rounded-t-xl"
+                                    <img class="w-full h-70 rounded-t-xl"
                                         src="{{ asset('/blog-images/venom_1671793074.jpg') }}" alt="" />
                                 </figure>
                             </div>
@@ -163,7 +163,7 @@
                         <div class="rounded-xl bg-white sm:w-auto drop-shadow-xl">
                             <div class="img">
                                 <figure>
-                                    <img class="w-full h-64 rounded-t-xl"
+                                    <img class="w-full h-70 rounded-t-xl"
                                         src="{{ asset('/blog-images/venom_1671793074.jpg') }}" alt="" />
                                 </figure>
                             </div>
