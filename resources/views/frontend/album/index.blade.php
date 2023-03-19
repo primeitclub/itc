@@ -1,7 +1,7 @@
 <x-frontend.app title="Gallery">
     <x-frontend.wave>
-        <div class="">
-            <h1 class="font-semibold text-white text-5xl lg:text-9xl">Albums</h1>
+        <div class="mt-4">
+            <h1 class="font-bold text-white text-5xl lg:text-8xl">Albums</h1>
         </div>
     </x-frontend.wave>
     <section class="pt-24 sm:py-20">

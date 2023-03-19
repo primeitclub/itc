@@ -1,7 +1,7 @@
 <x-frontend.app title="Blogs">
     <x-frontend.wave>
-        <div class="">
-            <h1 class="font-semibold text-white text-5xl lg:text-9xl">Blogs</h1>
+        <div class="mt-4">
+            <h1 class="font-bold text-white text-5xl lg:text-8xl">Blogs</h1>
         </div>
     </x-frontend.wave>
 
