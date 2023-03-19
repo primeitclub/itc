@@ -26,6 +26,9 @@ module.exports = {
                 secondary: "#EE8C3B",
                 greish: "#374151",
             },
+            lineClamp: {
+                10: "10",
+            },
         },
     },
     plugins: [

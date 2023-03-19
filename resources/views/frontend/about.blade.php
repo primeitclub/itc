@@ -59,21 +59,21 @@
             </div>
             <div class="mt-10 sm:hidden">
                 <ul class="flex flex-row justify-center items-center divide-x-2 divide-solid divide-gray-300">
-                    <li><button x-on:click="currentTab = 'event'" :class="currentTab == 'event' ? 'text-primary' : 'text-greish'" class="px-3 text-xs font-semibold hover:text-primary">Events</button></li>
-                    <li><button x-on:click="currentTab = 'er'"  :class="currentTab == 'er' ? 'text-primary' : 'text-greish'" class="px-3 text-xs font-semibold hover:text-primary">ER</button></li>
-                    <li><button x-on:click="currentTab = 'finance'"  :class="currentTab == 'finance' ? 'text-primary' : 'text-greish'" class="px-3 text-xs font-semibold hover:text-primary">Finance</button></li>
-                    <li><button x-on:click="currentTab = 'hr'"  :class="currentTab == 'hr' ? 'text-primary' : 'text-greish'" class="px-3 text-xs font-semibold hover:text-primary">HR</button></li>
-                    <li><button x-on:click="currentTab = 'marketing'"  :class="currentTab == 'marketing' ? 'text-primary' : 'text-greish'" class="px-3 text-xs font-semibold hover:text-primary">Marketing</button></li>
+                    <li><button x-on:click="currentTab = 'event'" :class="currentTab == 'event' ? 'text-primary' : 'text-greish'" class="px-5 text-xs font-semibold hover:text-primary">Events</button></li>
+                    <li><button x-on:click="currentTab = 'er'"  :class="currentTab == 'er' ? 'text-primary' : 'text-greish'" class="px-5 text-xs font-semibold hover:text-primary">ER</button></li>
+                    <li><button x-on:click="currentTab = 'finance'"  :class="currentTab == 'finance' ? 'text-primary' : 'text-greish'" class="px-5 text-xs font-semibold hover:text-primary">Finance</button></li>
+                    <li><button x-on:click="currentTab = 'hr'"  :class="currentTab == 'hr' ? 'text-primary' : 'text-greish'" class="px-5 text-xs font-semibold hover:text-primary">HR</button></li>
+                    <li><button x-on:click="currentTab = 'marketing'"  :class="currentTab == 'marketing' ? 'text-primary' : 'text-greish'" class="px-5 text-xs font-semibold hover:text-primary">Marketing</button></li>
                 </ul>
             </div>
             <!-- Department Details -->
-            <article x-show="currentTab == 'event'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
+            <article x-data="{ readMore : false }" x-show="currentTab == 'event'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
                 <div class="mt-10 px-6 pt-6">
                     <h1 class="mt-6 text-3xl font-semibold text-primary">Event Management</h1>
                     <p class="text-base text-gray-500">Manages club's events</p>
                 </div>
                 <div class="px-6 py-6 flex space-x-6 justify-between">
-                    <p class="text-greish font-dm-sans text-lg sm:w-2/4 tracking-normal leading-7">
+                    <p class="text-greish font-dm-sans text-lg sm:w-2/4 tracking-normal leading-7 line-clamp-10 md:line-clamp-none" :class="readMore ? 'line-clamp-none' : ''">
                         Prime IT Club's Event Management Department is in charge of an event's overall coordination, planning, design, promotion, and profitability.
                         It takes the initiative and proposes event ideas and manages the entire event, assigns tasks, speaker and organises the technological requirements.
                         <br/>
@@ -85,15 +85,19 @@
                         <img src="{{ asset('departments/events.svg') }}" class="h-80 w-full" />
                     </div>
                 </div>
+                <div class="mb-4 md:hidden">
+                    <p x-on:click="readMore = true " x-show="!readMore" class="text-center text-gray-500 text-base">Read More</p>
+                    <p x-on:click="readMore = false " x-show="readMore" class="text-center text-gray-500 text-base">Read Less</p>
+                </div>
             </article>
 
-            <article x-show="currentTab == 'er'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
+            <article  x-data="{ readMore : false }" x-show="currentTab == 'er'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
                 <div class="mt-10 px-6 pt-6">
                     <h1 class="mt-6 text-3xl font-semibold text-primary">External Relationship</h1>
                     <p class="text-base text-gray-500">Manages club's public relationship</p>
                 </div>
                 <div class="px-6 py-6 flex space-x-6 justify-between">
-                    <p class="text-greish font-dm-sans text-lg sm:w-2/4 tracking-normal leading-7">
+                    <p class="text-greish font-dm-sans text-lg sm:w-2/4 tracking-normal leading-7 line-clamp-10 md:line-clamp-none" :class="readMore ? 'line-clamp-none' : ''">
                         Prime IT Club’s Public Relations Department is in charge of establishing and upholding ties with other clubs and companies.
                         To avoid any potential conflicts between exam and event dates, it meets with faculty members in order to negotiate scheduling and logistics.
                         <br/>
@@ -106,15 +110,19 @@
                         <img src="{{ asset('departments/er.svg') }}" class="h-80 w-full" />
                     </div>
                 </div>
+                <div class="mb-4 md:hidden">
+                    <p x-on:click="readMore = true " x-show="!readMore" class="text-center text-gray-500 text-base">Read More</p>
+                    <p x-on:click="readMore = false " x-show="readMore" class="text-center text-gray-500 text-base">Read Less</p>
+                </div>
             </article>
 
-            <article x-show="currentTab == 'finance'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
+            <article  x-data="{ readMore : false }" x-show="currentTab == 'finance'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
                 <div class="mt-10 px-6 pt-6">
                     <h1 class="mt-6 text-3xl font-semibold text-primary">Finance</h1>
                     <p class="text-base text-gray-500">Manages club's finances</p>
                 </div>
                 <div class="px-6 py-6 flex space-x-6 justify-between">
-                    <p class="text-greish font-dm-sans text-lg sm:w-2/4 tracking-normal leading-7">
+                    <p class="text-greish font-dm-sans text-lg sm:w-2/4 tracking-normal leading-7 line-clamp-10 md:line-clamp-none" :class="readMore ? 'line-clamp-none' : ''">
                         Prime IT Club's Finance Department ensures that every transaction is transparent by keeping track of all transactions and financial happenings.
                         It takes care of financial needs and works with college administration.
                         It collaborates with the Event Management department to create the annual event budgets and assess whether events will be financially feasible.
@@ -128,15 +136,19 @@
                         <img src="{{ asset('departments/finance.svg') }}" class="h-80 w-full" />
                     </div>
                 </div>
+                <div class="mb-4 md:hidden">
+                    <p x-on:click="readMore = true " x-show="!readMore" class="text-center text-gray-500 text-base">Read More</p>
+                    <p x-on:click="readMore = false " x-show="readMore" class="text-center text-gray-500 text-base">Read Less</p>
+                </div>
             </article>
 
-            <article x-show="currentTab == 'hr'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
+            <article  x-data="{ readMore : false }" x-show="currentTab == 'hr'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
                 <div class="mt-10 px-6 pt-6">
                     <h1 class="mt-6 text-3xl font-semibold text-primary">Human Resources</h1>
                     <p class="text-base text-gray-500">Manages human resources</p>
                 </div>
                 <div class="px-6 py-6 flex space-x-6 justify-between">
-                    <p class="text-greish font-dm-sans text-lg sm:w-2/4 tracking-normal leading-7">
+                    <p class="text-greish font-dm-sans text-lg sm:w-2/4 tracking-normal leading-7 line-clamp-10 md:line-clamp-none" :class="readMore ? 'line-clamp-none' : ''">
                         Prime IT Club's Human Resources department is in charge of overseeing the organization's recruitment, interviewing, and selection processes.
                         To optimize the talents of Club members, it coordinates and collaborates with them.
                         <br/>
@@ -149,15 +161,19 @@
                         <img src="{{ asset('departments/hr.svg') }}" class="h-80 w-full" />
                     </div>
                 </div>
+                <div class="mb-4 md:hidden">
+                    <p x-on:click="readMore = true " x-show="!readMore" class="text-center text-gray-500 text-base">Read More</p>
+                    <p x-on:click="readMore = false " x-show="readMore" class="text-center text-gray-500 text-base">Read Less</p>
+                </div>
             </article>
 
-            <article x-show="currentTab == 'marketing'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
+            <article  x-data="{ readMore : false }" x-show="currentTab == 'marketing'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
                 <div class="mt-10 px-6 pt-6">
                     <h1 class="mt-6 text-3xl font-semibold text-primary">Marketing</h1>
                     <p class="text-base text-gray-500">Manages club's marketing campaigns</p>
                 </div>
                 <div class="px-6 py-6 flex space-x-6 justify-between">
-                    <p class="text-greish font-dm-sans text-lg sm:w-2/4 tracking-normal leading-7">
+                    <p class="text-greish font-dm-sans text-lg sm:w-2/4 tracking-normal leading-7 line-clamp-10 md:line-clamp-none" :class="readMore ? 'line-clamp-none' : ''">
                         Prime IT Club's Marketing Department plans and executes marketing campaigns.
                         It manages all marketing initiatives for club-hosted events.
                         <br/>
@@ -168,6 +184,10 @@
                     <div class="hidden sm:block w-2/4">
                         <img src="{{ asset('departments/marketing.svg') }}" class="h-80 w-full" />
                     </div>
+                </div>
+                <div class="mb-4 md:hidden">
+                    <p x-on:click="readMore = true " x-show="!readMore" class="text-center text-gray-500 text-base">Read More</p>
+                    <p x-on:click="readMore = false " x-show="readMore" class="text-center text-gray-500 text-base">Read Less</p>
                 </div>
             </article>
         </div>
@@ -224,25 +244,25 @@
             </div>
 
             <div x-data="{isOpen:false}" class="pt-6">
-                <dt>
-                    <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                        <span class="text-base font-semibold leading-7">How can I join the Prime It club? </span>
-                        <span class="ml-6 flex h-7 items-center">
-                            <svg x-on:click="isOpen = true" x-show="!isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                            </svg>
-                            <svg x-on:click="isOpen = false" x-show="isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                            </svg>
-                        </span>
-                    </button>
-                </dt>
-                <dd x-show="isOpen" class="mt-2 pr-12" id="faq-0">
-                    <p class="text-base leading-7 text-greish">
-                        New general members will be recruited annually, once the club orientation has been officially organized. All the candidates for general membership should be interviewed and distributed among the internal departments after the selection.
-                    </p>
-                </dd>
-            </div>
+            <dt>
+                <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
+                    <span class="text-base font-semibold leading-7">How can I join the Prime It club? </span>
+                    <span class="ml-6 flex h-7 items-center">
+                        <svg x-on:click="isOpen = true" x-show="!isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                        </svg>
+                        <svg x-on:click="isOpen = false" x-show="isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                        </svg>
+                    </span>
+                </button>
+            </dt>
+            <dd x-show="isOpen" class="mt-2 pr-12" id="faq-0">
+                <p class="text-base leading-7 text-greish">
+                    New general members will be recruited annually, once the club orientation has been officially organized. All the candidates for general membership should be interviewed and distributed among the internal departments after the selection.
+                </p>
+            </dd>
+        </div>
 
             <div x-data="{isOpen:false}" class="pt-6">
                 <dt>
@@ -281,7 +301,7 @@
                 </dt>
                 <dd x-show="isOpen" class="mt-2 pr-12" id="faq-0">
                     <p class="text-base leading-7 text-greish">
-                    There are 5 departments in the clubs. Marketing, Human Resources, Event Management, Finance and Account, and Public Relation.
+                        There are 5 departments in the clubs. Marketing, Human Resources, Event Management, Finance and Account, and Public Relation.
                     </p>
                 </dd>
             </div>
