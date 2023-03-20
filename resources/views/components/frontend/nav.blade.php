@@ -1,13 +1,13 @@
 <header x-data="{ isOpen : false, isScrolled : false }" >
     <div @scroll.window="window.pageYOffset > 50 ? isScrolled = true : isScrolled = false">
         <div x-cloak class="fixed inset-x-0 z-10" :class="isScrolled ? 'py-4 border-b border-gray-100 bg-white/80 backdrop-blur shadow-md' : 'bg-primary py-6'">
-            <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
+            <nav class="max-w-7xl mx-auto flex items-center justify-between px-8 sm:px-6" aria-label="Global">
                 <div class="flex items-center flex-1">
                     <div class="flex items-center justify-between w-full md:w-auto">
                         <a href="{{ route('home') }}">
                             <img class="h-10 lg:h-12 w-auto" src="{{ asset('logo/logo.png') }}" alt="club's logo" />
                         </a>
-                        <div class="-mr-2 flex items-center md:hidden">
+                        <div class="flex items-center md:hidden">
                             <button x-on:click="isOpen = true" type="button" :class="isScrolled ? 'text-gray-900' : 'text-gray-300'">
                                 <svg class="h-6 w-6" x-description="Heroicon name: outline/menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -43,7 +43,7 @@
         class="fixed z-10 top-0 inset-x-0 p-2 transition transform origin-top md:hidden"
     >
         <div class="rounded-xl shadow-sm bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-            <div class="px-5 pt-4 flex items-center justify-between">
+            <div class="px-8 pt-6 flex items-center justify-between">
                 <div>
                     <img class="h-8 w-auto sm:h-10" src="{{ asset('logo/logo.png') }}" alt="club's logo" />
                 </div>
@@ -55,7 +55,7 @@
                     </button>
                 </div>
             </div>
-            <div class="pt-5 pb-6">
+            <div class="pt-6 pb-6">
                 <div class="px-2 text-base font-medium text-gray-700">
                     <a href="{{ route('home') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Home</a>
                     <a href="{{ route('blogs.index') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Blogs</a>

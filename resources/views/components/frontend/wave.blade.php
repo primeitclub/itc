@@ -1,5 +1,5 @@
 <section class="bg-primary">
-    <div class="max-w-7xl mx-auto px-4 pt-32 sm:px-6">
+    <div class="max-w-7xl mx-auto px-8 pt-32 sm:px-6">
         {{ $slot }}
     </div>
 

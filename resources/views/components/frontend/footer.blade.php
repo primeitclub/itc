@@ -1,5 +1,5 @@
 <footer class="bg-rgradient-blue">
-    <div class="max-w-7xl mx-auto pt-12 px-4 sm:px-6 lg:pt-16 lg:px-8">
+    <div class="max-w-7xl mx-auto pt-12 px-8 sm:px-6 lg:pt-16 lg:px-8">
         <div class="footer-section top pt-0 lg:pb-4">
             <div class="container">
                 <div class="mx-auto text-center md:w-4/5 lg:w-1/2">
@@ -70,7 +70,7 @@
             </div>
             <div class="md:mb-6 lg:w-1/6">
                 <h5 class="mb-2 font-bold uppercase text-white lg:mb-6 lg:font-semibold">Quick Links</h5>
-                <ul class="inline-bulleted-list mx-auto mb-8 w-3/4 leading-loose lg:mx-0 lg:mb-0">
+                <ul class="mb-8 w-3/4 leading-loose lg:mx-0 lg:mb-0">
                     <li><a class="text-gray-100 hover:text-white transition duration-300 " href="{{ route('blogs.index') }}"> Blogs </a></li>
                     <li><a class="text-gray-100 hover:text-white transition duration-300 " href="{{ route('events.index') }}"> Events </a></li>
                     <li><a class="text-gray-100 hover:text-white transition duration-300 " href="{{ route('members') }}"> Members </a></li>
@@ -80,7 +80,7 @@
             </div>
             <div class="md:mb-6 lg:max-w-7xl">
                 <h5 class="mb-2 font-bold uppercase text-white lg:mb-6 lg:font-semibold">Contacts</h5>
-                <ul class="mx-auto space-y-2 mb-8 w-3/4 leading-loose text-white lg:mx-0 lg:mb-0">
+                <ul class="space-y-2 mb-8 w-3/4 leading-loose text-white lg:mx-0 lg:mb-0">
                     <li class="flex space-x-4 items-center">
                         <svg class="flex-shrink-0" width="20" height="16" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20 5.108V13.25C20.0001 14.0801 19.6824 14.8788 19.1123 15.4822C18.5422 16.0856 17.7628 16.448 16.934 16.495L16.75 16.5H3.25C2.41986 16.5001 1.62117 16.1824 1.01777 15.6123C0.414367 15.0422 0.0519987 14.2628 0.00500011 13.434L0 13.25V5.108L9.652 10.164C9.75938 10.2202 9.87879 10.2496 10 10.2496C10.1212 10.2496 10.2406 10.2202 10.348 10.164L20 5.108ZM3.25 0.5H16.75C17.5556 0.499903 18.3325 0.798996 18.93 1.33927C19.5276 1.87954 19.9032 2.62248 19.984 3.424L10 8.654L0.016 3.424C0.0935234 2.65431 0.44305 1.93752 1.00175 1.40246C1.56045 0.867409 2.29168 0.549187 3.064 0.505L3.25 0.5H16.75H3.25Z" fill="white"/>

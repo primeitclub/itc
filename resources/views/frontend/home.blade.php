@@ -9,7 +9,7 @@
     </x-frontend.wave>
 
     <!-- Club's intro Section -->
-    <section class="max-w-7xl flex flex-col-reverse md:flex-row items-center mx-auto px-4 sm:px-6">
+    <section class="max-w-7xl flex flex-col-reverse md:flex-row items-center mx-auto px-8 sm:px-6">
         <!-- left -->
         <div class="mt-10 md:w-1/2">
             <span class="font-semibold text-base text-primary"> We're a dynamic team of </span>
@@ -43,7 +43,7 @@
     </section>
 
     <!-- Featured Events Section -->
-    <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-4 sm:px-6">
+    <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-8 sm:px-6">
         <h1 class="text-center text-4xl text-primary font-bold">Featured Events</h1>
         <p class="text-center text-xl text-greish">Check out our workshops and sessions</p>
         <article class="mt-8" >
@@ -135,7 +135,7 @@
     </div>
 
     <!-- Featured Blog Section -->
-    <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-4 sm:px-6">
+    <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-8 sm:px-6">
         <h1 class="text-center text-4xl text-primary font-bold">Featured Blogs</h1>
         <p class="text-center text-xl text-greish">Browse some interesting reads</p>
         <article class="" >
@@ -207,7 +207,7 @@
     </section>
 
     <!-- Meet our team Section -->
-    <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-4 sm:px-6">
+    <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-8 sm:px-6">
         <h1 class="text-center text-4xl text-primary font-bold">Meet Our Team</h1>
         <p class="text-center text-xl text-greish">Get to know our team members</p>
         <div class="swiper teamSwiper">
@@ -498,7 +498,7 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section class="mt-10 sm:mt-24 mb-24 max-w-7xl mx-auto px-4 sm:px-6 ">
+    <section class="mt-10 sm:mt-24 mb-24 max-w-7xl mx-auto px-8 sm:px-6 ">
         <h1 class="text-center text-4xl text-primary font-bold">Testimonial</h1>
         <p class="text-center text-xl text-greish">Hear what our members have to say</p>
         <div class="swiper testimonialSwiper">

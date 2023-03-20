@@ -7,7 +7,7 @@
     </x-frontend.wave>
 
     <!-- Executive Members Section -->
-    <section class="mt-24 mb-24 max-w-7xl text-center mx-auto px-4 sm:px-6 ">
+    <section class="mt-24 mb-24 max-w-7xl text-center mx-auto px-8 sm:px-6 ">
         <h1 class="text-center text-4xl text-primary font-bold">Executive Members</h1>
         <p class="text-center text-xl text-greish">The backbone of the club</p>
 
@@ -102,7 +102,7 @@
     </section>
 
     <!-- General Members Section -->
-    <section class="mt-24 mb-24 max-w-7xl mx-auto px-4 sm:px-6 ">
+    <section class="mt-24 mb-24 max-w-7xl mx-auto px-8 sm:px-6 ">
         <h1 class="text-center text-4xl text-primary font-bold">General Members</h1>
         <p class="text-center text-xl text-greish">The workforce of the club</p>
 
