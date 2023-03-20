@@ -318,7 +318,7 @@
                         <div class="flex justify-center items-center">
                             <div class="w-[65%] h-48 bg-white shadow-xl  mb-8 md:mb-24 grid grid-cols-4 mb-8">
                                 <div class="">
-                                    <img src="{{ asset('/blog-images/voidlinux_1671793344.png') }}"
+                                    <img src="{{ asset('/blog-images/venom_1671793074.jpg') }}"
                                         class="rounded-l-2xl h-48 w-full">
                                 </div>
                                 <div class="flex flex-col col-span-2  justify-center p-6 ">

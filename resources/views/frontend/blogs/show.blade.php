@@ -53,21 +53,21 @@
                 <hr style="border-top: 1px solid black">
                 <div class="p-4 flex">
                     <img src="{{ asset('blog-images/groot_1671793404.png') }}" class="h-24 w-34">
-                    <div class="p-4">
+                    <div class="pl-4">
                         <h1 class="font-semibold text-primary font-poppins ">{{ $blog->title }}</h1>
                         <p class=" text-xs">{{ $blog->published_at }}</p>
                     </div>
                 </div>
                 <div class="p-4 flex">
                     <img src="{{ asset('blog-images/groot_1671793404.png') }}" class="h-24 w-34">
-                    <div class="p-4">
+                    <div class="pl-4">
                         <h1 class="font-semibold  text-primary font-poppins ">{{ $blog->title }}</h1>
                         <p class=" text-xs">{{ $blog->published_at }}</p>
                     </div>
                 </div>
                 <div class="p-4 flex">
                     <img src="{{ asset('blog-images/groot_1671793404.png') }}" class="h-24 w-34">
-                    <div class="p-4">
+                    <div class="pl-4">
                         <h1 class="font-semibold text-primary font-poppins ">{{ $blog->title }}</h1>
                         <p class=" text-xs">{{ $blog->published_at }}</p>
                     </div>
