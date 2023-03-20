@@ -44,8 +44,8 @@
 
     <!-- Featured Events Section -->
     <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-8 sm:px-6">
-        <h1 class="text-center text-4xl text-primary font-bold">Featured Events</h1>
-        <p class="text-center text-xl text-greish">Check out our workshops and sessions</p>
+        <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Featured Events</h1>
+        <p class="text-center text-base sm:text-xl text-greish">Check out our workshops and sessions</p>
         <article class="mt-8" >
             <div class="py-6 lg:flex lg:flex-row-reverse">
                 <div class="flex-1 md:ml-4 lg:p-10">
@@ -126,8 +126,8 @@
     <!-- view more -->
     <div class="mx-auto max-w-xs mt-10">
         <div class="flex items-center justify-center cursor-pointer">
-            <a class="flex space-x-4 text-greish items-center font-medium hover:text-gray-800" href="{{ route('events.index') }}">view more
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+            <a class="flex space-x-4 text-greish items-center font-medium hover:text-gray-800" href="{{ route('events.index') }}">View more
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2 text-center">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
             </a>
@@ -136,8 +136,8 @@
 
     <!-- Featured Blog Section -->
     <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-8 sm:px-6">
-        <h1 class="text-center text-4xl text-primary font-bold">Featured Blogs</h1>
-        <p class="text-center text-xl text-greish">Browse some interesting reads</p>
+        <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Featured Blogs</h1>
+        <p class="text-center text-base sm:text-xl text-greish">Keep updated with latest reads</p>
         <article class="" >
             <div class="grid sm:grid-cols-2 gap-8">
                 <div>
@@ -186,7 +186,7 @@
     <div class="mx-auto max-w-xs mt-10">
         <div class="flex items-center justify-center cursor-pointer">
             <a class="flex space-x-4 text-greish items-center font-medium hover:text-gray-800" href="{{ route('blogs.index') }}">view more
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2 text-center">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
             </a>
@@ -208,8 +208,8 @@
 
     <!-- Meet our team Section -->
     <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-8 sm:px-6">
-        <h1 class="text-center text-4xl text-primary font-bold">Meet Our Team</h1>
-        <p class="text-center text-xl text-greish">Get to know our team members</p>
+        <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Meet Our Team</h1>
+        <p class="text-center text-base sm:text-xl text-greish">Get to know our team members</p>
         <div class="swiper teamSwiper">
             <div class="swiper-wrapper mt-10 flex space-x-4" >
 
@@ -499,8 +499,8 @@
 
     <!-- Testimonial Section -->
     <section class="mt-10 sm:mt-24 mb-24 max-w-7xl mx-auto px-8 sm:px-6 ">
-        <h1 class="text-center text-4xl text-primary font-bold">Testimonial</h1>
-        <p class="text-center text-xl text-greish">Hear what our members have to say</p>
+         <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Testimonial</h1>
+        <p class="text-center text-base sm:text-xl text-greish">Hear what our members have to say</p>
         <div class="swiper testimonialSwiper">
             <div class="swiper-wrapper flex space-x-6 ">
 
