@@ -19,14 +19,14 @@
 
                 <div class="p-4 ">
                     <div class="mt-8 rounded-xl bg-white w-full sm:w-auto drop-shadow-xl">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 p-8">
-
-                            <figure>
-                                <img class="h-full" src="{{ asset('/blog-images/venom_1671793074.jpg') }}"
-                                    alt="" />
-                            </figure>
-
-                            <div class="pl-8">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 p-8 ">
+            
+                                <figure class="pb-4">
+                                    <img class="h-full" src="{{ asset('/blog-images/venom_1671793074.jpg') }}"
+                                        alt="" />
+                                </figure>
+                            
+                            <div class="pl-8 ">
                                 <h3 class="text-primary poppins text-4xl font-semibold tracking-wide">
                                     Sweatshirt
                                 </h3>
@@ -50,7 +50,7 @@
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quos et
                                         exercitationem autem dolore assumenda corporis deserunt delectus, rerum
                                         quibusdam illo magnam a odio atque enim cumque impedit numquam architecto
-
+                                        
                                     </p>
                                 </div>
                                 <button
