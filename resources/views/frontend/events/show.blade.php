@@ -15,7 +15,7 @@
                 </div>
                 <div class=" m-4 font-semibold">
                     <h1 class="text-4xl text-primary font-poppins">
-                        Blockchain: Unlocking the future
+                        {{$report->title}}
                     </h1>
                     <div class="flex flex-col space-y-2 mt-4 text-xl p-4 gap-6">
                         <div class="flex space-x-4  ">
@@ -26,7 +26,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                             </svg>
-                            <span class="font-medium text-greish">Seminar Hall, 3rd Floor</span>
+                            <span class="font-medium text-greish">{{$report->venue_address}}</span>
                         </div>
 
                         <div class="flex space-x-4">
@@ -36,8 +36,8 @@
                                     d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
                             </svg>
                             <div class="flex flex-col">
-                                <span class="font-medium text-medium text-greish">Sept-25, 2022</span>
-                                <span class="text-xs text-greish">10:00 AM - 9:00PM</span>
+                                <span class="font-medium text-medium text-greish">{{$report->event_date}}</span>
+                                <span class="text-xs text-greish">{{$report->event_time}}</span>
                             </div>
                         </div>
 
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <h1 class="text-primary text-3xl pt-6">Summary: </h1>
-                    <div class="sm:text-xl text-md p-8 leading-6 text-greish tracking-wide font-light">
+                    <div class="lg:w-[65%] w-full sm:text-xl text-md p-8 leading-6 text-greish tracking-wide font-light">
 
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam natus aliquam ea tempora ut
                         dignissimos, nobis provident ab libero, veniam molestias neque unde amet. Porro voluptatibus
@@ -105,7 +105,7 @@
                         nostrum!
                     </div>
                     <h1 class="text-primary text-3xl pt-6">Conclusion: </h1>
-                    <div class="sm:text-xl text-md  p-8 leading-6 text-greish tracking-wider font-light">
+                    <div class="lg:w-[65%] w-full sm:text-xl text-md  p-8 leading-6 text-greish tracking-wider font-light">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam natus aliquam ea tempora ut
                         dignissimos, nobis provident ab libero, veniam molestias neque unde amet. Porro voluptatibus
                         sequi

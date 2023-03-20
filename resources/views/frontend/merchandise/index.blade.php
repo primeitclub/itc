@@ -19,7 +19,7 @@
 
                 <div class="p-4 ">
                     <div class="mt-8 rounded-xl bg-white w-full sm:w-auto drop-shadow-xl">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 p-8 ">
+                        <div class="grid grid-cols-1 md:grid-cols-2 p-8 ">
             
                                 <figure class="pb-4">
                                     <img class="h-full" src="{{ asset('/blog-images/venom_1671793074.jpg') }}"

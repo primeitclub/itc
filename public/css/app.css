@@ -1690,9 +1690,12 @@ select {
 .leading-4 {
   line-height: 1rem;
 }
+<<<<<<< Updated upstream
 .leading-8 {
   line-height: 2rem;
 }
+=======
+>>>>>>> Stashed changes
 .tracking-normal {
   letter-spacing: 0em;
 }

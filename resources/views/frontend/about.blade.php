@@ -12,6 +12,7 @@
                 Who are <span class="text-primary">We?</span>
             </h1>
             <p class="font-dm-sans mt-6 text-base leading-8 sm:text-xl text-greish">
+            <p class="font-dm-sans lg:max-w-lg mt-6 text-base  sm:text-xl text-greish">
                 <span class="text-primary text-xl">Prime IT Club</span> is one of the student-run clubs at Prime College.
                 It is run by a group of creative and tech-savvy students.
                 With our goal in mind, we organize a series of sessions, seminars, training programs and competitions.

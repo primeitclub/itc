@@ -4,17 +4,19 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Event;
+
 use Illuminate\Http\Request;
 
 
 class EventPageController extends Controller
 {
     public function index() {
-        $event = Event::latest()->first()->get();
-        return view('frontend.events.index',compact('event'));
+        $events = Event::all();
+        return view('frontend.events.index',compact('events'));
     }
     public function show($slug)
     {   
-        return view('frontend.events.show');
+        $report = Event::where('slug', $slug)->firstOrFail();
+        return view('frontend.events.show',compact('report'));
     }
 }

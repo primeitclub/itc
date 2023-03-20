@@ -22,6 +22,7 @@ class Event extends Model
         'registration_link',
         'event_date',
         'event_time',
+       
     ];
 
     public function eventCategory()

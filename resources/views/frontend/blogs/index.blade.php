@@ -24,8 +24,8 @@
                             <div class="mt-8 rounded-xl bg-white w-full  sm:w-auto drop-shadow-xl">
                                 <div class="img">
                                     <figure>
-                                        <img class="w-[100%] h-70 rounded-t-xl"
-                                            src="{{ asset('blog-images/groot_1671793404.png') }}" alt="" />
+                                        <img class="w-[100%] h-80 rounded-t-xl"
+                                            src="{{ asset('/thumbnails/'.$blog->thumbnail) }}" alt="" />
                                     </figure>
                                 </div>
 
