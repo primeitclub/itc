@@ -6,46 +6,43 @@
         </div>
     </x-frontend.wave>
 
-    <!-- General intro Section-->
-    <section class="max-w-7xl flex md:flex-row flex-col items-center mx-auto px-4 sm:px-6">
-        <div class="md:w-1/2">
-            <h1 class="font-semibold text-3xl sm:text-4xl mt-2 text-center">
+    <section class="max-w-7xl flex flex-col md:flex-row justify-center items-center mx-auto px-8 sm:px-6">
+        <div class="w-full md:w-1/2 md:mr-16">
+            <h1 class="font-semibold text-2xl sm:text-4xl mt-2 text-center md:text-left">
                 Who are <span class="text-primary">We?</span>
             </h1>
-            <p class="font-dm-sans lg:max-w-lg mt-6 text-base sm:text-xl text-greish">
+            <p class="font-dm-sans mt-6 text-base leading-8 sm:text-xl text-greish">
                 <span class="text-primary text-xl">Prime IT Club</span> is one of the student-run clubs at Prime College.
                 It is run by a group of creative and tech-savvy students.
                 With our goal in mind, we organize a series of sessions, seminars, training programs and competitions.
                 Since our founding in 2004, we have been and still are looking for opportunities to help students in any way possible and all we have set out is to strive to guide students in the right direction.
             </p>
         </div>
-
-        <div class="sm:w-3/4 lg:w-1/2 mt-6 rounded-md overflow-hidden">
-            <img src="{{ asset('club-images/club-bonding-v1.jpg') }}" />
+        <div class="w-full md:w-1/2 mt-6 rounded-md overflow-hidden">
+            <img src="{{ asset('club-images/club-bonding-v1.jpg') }}" class="w-full" />
         </div>
     </section>
 
-    <section class="mt-10 max-w-7xl flex md:flex-row-reverse flex-col items-center mx-auto px-4 sm:px-6">
-        <div class="md:w-1/2">
-            <h1 class="font-semibold text-3xl sm:text-4xl mt-2 text-center">
+    <section class="pt-10 max-w-7xl flex flex-col md:flex-row-reverse justify-center items-center mx-auto px-8 sm:px-6">
+        <div class="w-full md:w-1/2 md:ml-16">
+            <h1 class="font-semibold text-2xl sm:text-4xl mt-2 text-center md:text-left">
                 Our <span class="text-primary">Objective</span>
             </h1>
-            <p class="font-dm-sans lg:max-w-lg mt-6 text-base sm:text-xl text-greish sm:ml-10">
+            <p class="font-dm-sans mt-6 text-base leading-8 sm:text-xl text-greish">
                 The main objective of our club is to develop the IT skills amongst the students demanded in the current market.
                 For this, we organize different workshops, seminars, and training programs.
                 Some of our recent events/sessions include IT fundamentals, Cisco Networking, Cryptocurrency, Graphics designing, Programming, and Web designing.
             </p>
         </div>
-
-        <div class="sm:w-3/4 lg:w-1/2 mt-6 rounded-md overflow-hidden">
-            <img src="{{ asset('club-images/club-bonding-v1.jpg') }}" />
+        <div class="w-full md:w-1/2 mt-6 rounded-md overflow-hidden">
+            <img src="{{ asset('club-images/club-bonding-v2.jpg') }}" class="w-full" />
         </div>
     </section>
 
     <!-- Department Details Section -->
-    <section class="mt-24 mb-24 max-w-7xl mx-auto px-4 sm:px-6 ">
-        <h1 class="text-center text-4xl text-primary font-bold">Departments</h1>
-        <p class="text-center text-xl text-greish">Learn about our 5 departments</p>
+    <section class="mt-12 md:mt-24 max-w-7xl mx-auto px-8 sm:px-6">
+        <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Departments</h1>
+        <p class="text-center text-sm sm:text-xl text-greish">Learn about our 5 departments</p>
         <!-- Department Tabs -->
         <div x-data="{ currentTab : 'event' }">
             <div class="mt-10 hidden sm:block">
@@ -58,22 +55,22 @@
                 </ul>
             </div>
             <div class="mt-10 sm:hidden">
-                <ul class="flex flex-row justify-center items-center divide-x-2 divide-solid divide-gray-300">
-                    <li><button x-on:click="currentTab = 'event'" :class="currentTab == 'event' ? 'text-primary' : 'text-greish'" class="px-5 text-xs font-semibold hover:text-primary">Events</button></li>
-                    <li><button x-on:click="currentTab = 'er'"  :class="currentTab == 'er' ? 'text-primary' : 'text-greish'" class="px-5 text-xs font-semibold hover:text-primary">ER</button></li>
-                    <li><button x-on:click="currentTab = 'finance'"  :class="currentTab == 'finance' ? 'text-primary' : 'text-greish'" class="px-5 text-xs font-semibold hover:text-primary">Finance</button></li>
-                    <li><button x-on:click="currentTab = 'hr'"  :class="currentTab == 'hr' ? 'text-primary' : 'text-greish'" class="px-5 text-xs font-semibold hover:text-primary">HR</button></li>
-                    <li><button x-on:click="currentTab = 'marketing'"  :class="currentTab == 'marketing' ? 'text-primary' : 'text-greish'" class="px-5 text-xs font-semibold hover:text-primary">Marketing</button></li>
+                <ul class="flex flex-row mx-auto justify-center items-center divide-x-2 divide-solid divide-gray-300">
+                    <li><button x-on:click="currentTab = 'event'" :class="currentTab == 'event' ? 'text-primary' : 'text-greish'" class="px-4 text-xs font-semibold hover:text-primary">Events</button></li>
+                    <li><button x-on:click="currentTab = 'er'"  :class="currentTab == 'er' ? 'text-primary' : 'text-greish'" class="px-4 text-xs font-semibold hover:text-primary">ER</button></li>
+                    <li><button x-on:click="currentTab = 'finance'"  :class="currentTab == 'finance' ? 'text-primary' : 'text-greish'" class="px-4 text-xs font-semibold hover:text-primary">Finance</button></li>
+                    <li><button x-on:click="currentTab = 'hr'"  :class="currentTab == 'hr' ? 'text-primary' : 'text-greish'" class="px-4 text-xs font-semibold hover:text-primary">HR</button></li>
+                    <li><button x-on:click="currentTab = 'marketing'"  :class="currentTab == 'marketing' ? 'text-primary' : 'text-greish'" class="px-4 text-xs font-semibold hover:text-primary">Marketing</button></li>
                 </ul>
             </div>
             <!-- Department Details -->
-            <article x-data="{ readMore : false }" x-show="currentTab == 'event'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
-                <div class="mt-10 px-6 pt-6">
-                    <h1 class="mt-6 text-3xl font-semibold text-primary">Event Management</h1>
-                    <p class="text-base text-gray-500">Manages club's events</p>
+            <article x-data="{ readMore : false }" x-show="currentTab == 'event'" x-cloak class="mt-10 w-full px-8 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
+                <div class="mt-10 px-2 pt-6">
+                    <h1 class="mt-6 text-2xl sm:text-4xl font-semibold text-primary">Event Management</h1>
+                    <p class="text-sm sm:text-xl text-gray-500">Manages club's events</p>
                 </div>
-                <div class="px-6 py-6 flex space-x-6 justify-between">
-                    <p class="text-greish font-dm-sans text-lg sm:w-2/4 tracking-normal leading-7 line-clamp-10 md:line-clamp-none" :class="readMore ? 'line-clamp-none' : ''">
+                <div class="px-2 py-6 flex space-x-6 justify-between">
+                    <p class="text-greish font-dm-sans text-sm sm:text-xl sm:w-2/4 tracking-normal leading-7 line-clamp-10 md:line-clamp-none" :class="readMore ? 'line-clamp-none' : ''">
                         Prime IT Club's Event Management Department is in charge of an event's overall coordination, planning, design, promotion, and profitability.
                         It takes the initiative and proposes event ideas and manages the entire event, assigns tasks, speaker and organises the technological requirements.
                         <br/>
@@ -91,7 +88,7 @@
                 </div>
             </article>
 
-            <article  x-data="{ readMore : false }" x-show="currentTab == 'er'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
+            <article  x-data="{ readMore : false }" x-show="currentTab == 'er'" x-cloak class="mt-10 w-full px-8 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
                 <div class="mt-10 px-6 pt-6">
                     <h1 class="mt-6 text-3xl font-semibold text-primary">External Relationship</h1>
                     <p class="text-base text-gray-500">Manages club's public relationship</p>
@@ -116,7 +113,7 @@
                 </div>
             </article>
 
-            <article  x-data="{ readMore : false }" x-show="currentTab == 'finance'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
+            <article  x-data="{ readMore : false }" x-show="currentTab == 'finance'" x-cloak class="mt-10 w-full px-8 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
                 <div class="mt-10 px-6 pt-6">
                     <h1 class="mt-6 text-3xl font-semibold text-primary">Finance</h1>
                     <p class="text-base text-gray-500">Manages club's finances</p>
@@ -142,7 +139,7 @@
                 </div>
             </article>
 
-            <article  x-data="{ readMore : false }" x-show="currentTab == 'hr'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
+            <article  x-data="{ readMore : false }" x-show="currentTab == 'hr'" x-cloak class="mt-10 w-full px-8 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
                 <div class="mt-10 px-6 pt-6">
                     <h1 class="mt-6 text-3xl font-semibold text-primary">Human Resources</h1>
                     <p class="text-base text-gray-500">Manages human resources</p>
@@ -167,7 +164,7 @@
                 </div>
             </article>
 
-            <article  x-data="{ readMore : false }" x-show="currentTab == 'marketing'" x-cloak class="mt-10 w-full px-4 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
+            <article  x-data="{ readMore : false }" x-show="currentTab == 'marketing'" x-cloak class="mt-10 w-full px-8 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
                 <div class="mt-10 px-6 pt-6">
                     <h1 class="mt-6 text-3xl font-semibold text-primary">Marketing</h1>
                     <p class="text-base text-gray-500">Manages club's marketing campaigns</p>
@@ -195,15 +192,15 @@
     </section>
 
     <!-- Why join us Section -->
-    <section class="mt-24 mb-10 sm:mb-24 max-w-7xl mx-auto px-4 sm:px-6">
-        <h1 class="text-center text-4xl text-primary font-bold">Why join us ?</h1>
-        <p class="text-center text-xl text-greish">How this will benefit you</p>
+    <section class="mt-12 md:mt-24 max-w-7xl mx-auto px-8 sm:px-6 ">
+        <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Why join us ?</h1>
+        <p class="text-center text-sm sm:text-xl text-greish">How this will benefit you</p>
         <div class="flex flex-col items-center lg:mt-16 lg:mb-24 lg:flex-row lg:divide-x-2 lg:divide-solid lg:divide-gray-200">
             <div class="lg:w-1/2">
                 <h1 class="hidden text-left lg:block text-3xl font-semibold mr-8">The moment you take responsibility is the moment you gain the power to change.</h1>
             </div>
             <div>
-                <p class="my-8 max-w-lg font-normal text-greish leading-6 sm:text-base lg:mt-0 lg:ml-20 lg:text-base">
+                <p class="my-8 max-w-lg text-greish text-sm sm:text-base leading-6 font-normal lg:mt-0 lg:ml-20">
                     Working in a club, organization, company, or in a project is all about teamwork and coordination.
                     Being a part of Prime IT Club comes with a number of perks and you’ll be exposed to many opportunities.
                     Your participation in the club activities obliquely helps you widen your network with the club’s alumni and experts from different domains. In addition to that, the club also provides you with opportunities to learn and share different skills with the club members. skills with the club members.
@@ -218,14 +215,14 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="mt-10 sm:mt-24 mb-10 sm:mb-20 max-w-7xl mx-auto px-4 sm:px-6 ">
-        <h1 class="text-center text-4xl text-primary font-bold">FAQ</h1>
-        <p class="text-center text-xl text-greish">Frequently asked questions</p>
-        <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
+    <section class="mt-12 md:mt-24 mb-10 sm:mb-20 max-w-7xl mx-auto px-8 sm:px-6 ">
+        <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">FAQ</h1>
+        <p class="text-center text-sm sm:text-xl text-greish">Frequently asked questions</p>
+        <dl class="mt-8 space-y-6 divide-y divide-gray-900/10">
             <div x-data="{isOpen:false}" class="pt-6">
                 <dt>
                     <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                        <span class="text-base font-semibold leading-7">What does Prime IT club do? </span>
+                        <span class="text-sm sm:text-xl leading-7">What does Prime IT club do? </span>
                         <span class="ml-6 flex h-7 items-center">
                             <svg x-on:click="isOpen = true" x-show="!isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
@@ -237,7 +234,7 @@
                     </button>
                 </dt>
                 <dd x-show="isOpen" class="mt-2 pr-12" id="faq-0">
-                    <p class="text-base leading-7 text-greish">
+                    <p class="text-xs sm:text-base leading-7 text-greish">
                         Prime IT Club is a student-run club working towards the goal of bridging the gap between academia and industry. Provide students with a thorough knowledge of the prospect of IT jobs in Nepal
                     </p>
                 </dd>
@@ -246,7 +243,7 @@
             <div x-data="{isOpen:false}" class="pt-6">
             <dt>
                 <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                    <span class="text-base font-semibold leading-7">How can I join the Prime It club? </span>
+                    <span class="text-sm sm:text-xl leading-7">How can I join the Prime It club? </span>
                     <span class="ml-6 flex h-7 items-center">
                         <svg x-on:click="isOpen = true" x-show="!isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
@@ -258,7 +255,7 @@
                 </button>
             </dt>
             <dd x-show="isOpen" class="mt-2 pr-12" id="faq-0">
-                <p class="text-base leading-7 text-greish">
+                <p class="text-xs sm:text-base leading-7 text-greish">
                     New general members will be recruited annually, once the club orientation has been officially organized. All the candidates for general membership should be interviewed and distributed among the internal departments after the selection.
                 </p>
             </dd>
@@ -267,7 +264,7 @@
             <div x-data="{isOpen:false}" class="pt-6">
                 <dt>
                     <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                        <span class="text-base font-semibold leading-7">How can I become an Executive member? </span>
+                        <span class="text-sm sm:text-xl leading-7">How can I become an Executive member? </span>
                         <span class="ml-6 flex h-7 items-center">
                             <svg x-on:click="isOpen = true" x-show="!isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
@@ -279,7 +276,7 @@
                     </button>
                 </dt>
                 <dd x-show="isOpen" class="mt-2 pr-12" id="faq-0">
-                    <p class="text-base leading-7 text-greish">
+                    <p class="text-xs sm:text-base leading-7 text-greish">
                         All of the general members who have more than 1 year of experience in the club are eligible to apply for executive membership.
                     </p>
                 </dd>
@@ -288,7 +285,7 @@
             <div x-data="{isOpen:false}" class="pt-6">
                 <dt>
                     <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                        <span class="text-base font-semibold leading-7">How many departments are there in the clubs? </span>
+                        <span class="text-sm sm:text-xl leading-7">How many departments are there in the clubs? </span>
                         <span class="ml-6 flex h-7 items-center">
                             <svg x-on:click="isOpen = true" x-show="!isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
@@ -300,36 +297,8 @@
                     </button>
                 </dt>
                 <dd x-show="isOpen" class="mt-2 pr-12" id="faq-0">
-                    <p class="text-base leading-7 text-greish">
+                    <p class="text-xs sm:text-base leading-7 text-greish">
                         There are 5 departments in the clubs. Marketing, Human Resources, Event Management, Finance and Account, and Public Relation.
-                    </p>
-                </dd>
-            </div>
-
-            <div x-data="{isOpen:false}" class="pt-6">
-                <dt>
-                    <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                        <span class="text-base font-semibold leading-7">Why join us? </span>
-                        <span class="ml-6 flex h-7 items-center">
-                            <svg x-on:click="isOpen = true" x-show="!isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                            </svg>
-                            <svg x-on:click="isOpen = false" x-show="isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                            </svg>
-                        </span>
-                    </button>
-                </dt>
-                <dd x-show="isOpen" class="mt-2 pr-12" id="faq-0">
-                    <p class="text-base leading-7 text-greish">
-                        Working in a club, organization, company, or project is about teamwork and coordination. 
-                        Joining the Prime IT Club has several benefits.
-                        By participating in club activities, you can indirectly expand your network with club alumni and professionals in various fields.
-                        Additionally, the club provides opportunities to learn and exchange skills.
-                        Besides improving your teamwork and networking skills, this club also helps to boost your confidence.
-                        Prime it Club offers active learning opportunities providing members with a platform for personal and professional growth.
-                        It develops leadership qualities in students bridging the gap between academia and industry.
-                        It also provides students with in-depth knowledge of IT job prospects in Nepal.
                     </p>
                 </dd>
             </div>
