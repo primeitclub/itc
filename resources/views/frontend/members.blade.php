@@ -8,8 +8,8 @@
 
     <!-- Executive Members Section -->
     <section class="mt-24 mb-24 max-w-7xl text-center mx-auto px-8 sm:px-6 ">
-        <h1 class="text-center text-4xl text-primary font-bold">Executive Members</h1>
-        <p class="text-center text-xl text-greish">The backbone of the club</p>
+        <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Executive Members</h1>
+        <p class="text-center text-sm sm:text-xl text-greish">The backbone of the club</p>
 
         <!-- Select Year Dropdown -->
         <!-- <div x-data="{ show : false }" class="mt-4 flex items-center justify-center lg:justify-end"> -->
@@ -31,16 +31,16 @@
         @foreach($executiveMembers->where('designation', 'President') as $president)
         <article class="w-full mx-auto px-8 py-6">
             <div class="mt-6 w-fit mx-auto">
-                <img src="{{ $president->imageUrl() }}" class="rounded-full w-36 h-36 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary" />
+                <img src="{{ $president->imageUrl() }}" class="mx-auto rounded-full w-24 h-24 lg:h-32 lg:w-32 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary" />
             </div>
 
-            <div class="mt-8 font-dm-sans">
+            <div class="mt-4 font-dm-sans text-center font-medium">
                 <h2 class="text-primary font-semibold text-2xl text-center">{{ $president->name }}</h2>
-                <p class="text-gray-600 text-lg font-medium text-center">{{ $president->designation }}</p>
+                <p class="text-greish text-lg text-center">{{ $president->designation }}</p>
             </div>
 
             <footer class="mt-4">
-                <div class="flex w-36 mx-auto justify-center space-x-4 items-center">
+                <div class="hidden sm:flex w-36 mx-auto justify-center space-x-4 items-center">
                     <a href="{{ $president->facebook }}">
                         <svg class="fill-primary hover:fill-primary-light ease-in-out duration-300 h-7 w-7" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M26.8333 13.5827C26.8333 6.17121 20.8608 0.166748 13.5 0.166748C6.13416 0.166748 0.166656 6.17121 0.166656 13.5827C0.166656 20.2772 5.04082 25.8281 11.4167 26.8334V17.4616H8.03082V13.5835H11.4167V10.6261C11.4167 7.26461 13.4042 5.40818 16.4508 5.40818C17.91 5.40818 19.4375 5.66979 19.4375 5.66979V8.97095H17.7533C16.1 8.97095 15.5833 10.0065 15.5833 11.0672V13.5827H19.2808L18.6867 17.4607H15.5833V26.8326C21.9542 25.8272 26.8333 20.2764 26.8333 13.5818V13.5827Z"/>
@@ -63,19 +63,17 @@
         </article>
         @endforeach
 
-        <div class="grid place-items-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+        <div class="mt-10 mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 lg:gap-x-8 lg:gap-y-12 px-8 sm:px-6">
             @foreach($executiveMembers->where('designation', '!=', 'President') as $executiveMember)
-            <article class="w-full mx-auto px-8 py-6">
-                <div class="mt-6 w-fit mx-auto">
-                    <img src="{{ $executiveMember->imageUrl() }}" class="rounded-full w-28 h-28 lg:h-36 lg:w-36 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary" />
-                </div>
-
-                <div class="mt-8 font-dm-sans">
-                    <h2 class="text-primary font-semibold text-2xl text-center">{{ $executiveMember->name }}</h2>
-                    <p class="text-gray-600 text-lg font-medium text-center">{{ $executiveMember->designation }}</p>
-                </div>
-
-                <footer class="mt-4">
+            <div>
+                <div class="space-y-4">
+                    <img class="mx-auto h-20 w-20 rounded-full lg:h-28 lg:w-28 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary" src="{{ $executiveMember->imageUrl() }}" alt="">
+                    <div class="space-y-2">
+                        <div class="text-center font-dm-sans">
+                            <h3 class="text-primary font-semibold text-xl">{{ $executiveMember->name }}</h3>
+                            <p class="text-greish text-sm sm:text-lg text-center">{{ $executiveMember->designation }}</p>
+                        </div>
+                    </div>
                     <div class="hidden sm:flex w-36 mx-auto justify-center space-x-4 items-center">
                         <a href="{{ $executiveMember->facebook }}">
                             <svg class="fill-primary hover:fill-primary-light ease-in-out duration-300 h-7 w-7" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -95,30 +93,27 @@
                             </svg>
                         </a>
                     </div>
-                </footer>
-            </article>
+                </div>
+            </div>
             @endforeach
         </div>
     </section>
 
     <!-- General Members Section -->
     <section class="mt-24 mb-24 max-w-7xl mx-auto px-8 sm:px-6 ">
-        <h1 class="text-center text-4xl text-primary font-bold">General Members</h1>
-        <p class="text-center text-xl text-greish">The workforce of the club</p>
+        <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">General Members</h1>
+        <p class="text-center text-sm sm:text-xl text-greish">The workforce of the club</p>
 
-        <div class="grid place-items-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+        <div class="mt-10 mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:gap-x-8 lg:gap-y-12 xl:grid-cols-6 px-8 sm:px-6">
             @foreach($generalMembers as $generalMember)
-            <article class="w-full mx-auto px-8 py-6">
-                <div class="mt-6 w-fit mx-auto">
-                    <img src="{{ $generalMember->imageUrl() }}" class="rounded-full w-28 h-28 lg:h-36 lg:w-36 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary" />
-                </div>
-
-                <div class="mt-8 font-dm-sans">
-                    <h2 class="text-primary font-semibold text-2xl text-center">{{ $generalMember->name }}</h2>
-                    <p class="text-gray-600 text-lg font-medium text-center">{{ $executiveMember->designation }}</p>
-                </div>
-
-                <footer class="mt-4">
+            <div>
+                <div class="space-y-4">
+                    <img class="mx-auto h-20 w-20 rounded-full lg:h-24 lg:w-24 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary" src="{{ $generalMember->imageUrl() }}" alt="">
+                    <div class="space-y-2">
+                        <div class="text-xs text-center font-medium lg:text-sm">
+                            <h3 class="text-primary font-semibold lg:text-xl">{{ $generalMember->name }}</h3>
+                        </div>
+                    </div>
                     <div class="hidden sm:flex w-36 mx-auto justify-center space-x-4 items-center">
                         <a href="{{ $generalMember->facebook }}">
                             <svg class="fill-primary hover:fill-primary-light ease-in-out duration-300 h-7 w-7" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,8 +133,8 @@
                             </svg>
                         </a>
                     </div>
-                </footer>
-            </article>
+                </div>
+            </div>
             @endforeach
         </div>
     </section>
