@@ -18,11 +18,11 @@
                 </div>
                 <div class="hidden space-x-8 md:flex md:ml-10">
                     <a href="{{ route('home') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Home</a>
+                    <a href="{{ route('about') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">About Us</a>
                     <a href="{{ route('blogs.index') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Blogs</a>
                     <a href="{{ route('events.index') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Events</a>
                     <a href="{{ route('members') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Members</a>
                     <a href="{{ route('gallery.index') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Gallery</a>
-                    <a href="{{ route('about') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">About Us</a>
                     <a href="{{ route('merchandise.index') }}" class="text-base leading-6 font-medium" :class="isScrolled ? 'text-gray-700 hover:text-gray-900' : 'text-gray-100 hover:text-white'">Merch</a>
                 </div>
             </nav>
