@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 class MembersPageController extends Controller
 {
     public function index() {
-        $executiveMembers = Member::ExecutiveMember()->get();
-        $generalMembers = Member::GeneralMember()->get();
+        $executiveMembers = Member::ExecutiveMember()->whereYear('batch',date('Y'))->get();
+        $generalMembers = Member::GeneralMember()->whereYear('batch',date('Y'))->get();
         return view('frontend.members', compact('executiveMembers', 'generalMembers'));
     }
 }

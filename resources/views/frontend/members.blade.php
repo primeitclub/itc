@@ -110,8 +110,8 @@
                 <div class="space-y-4">
                     <img class="mx-auto h-20 w-20 rounded-full lg:h-24 lg:w-24 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary" src="{{ $generalMember->imageUrl() }}" alt="">
                     <div class="space-y-2">
-                        <div class="text-xs text-center font-medium lg:text-sm">
-                            <h3 class="text-primary font-semibold lg:text-xl">{{ $generalMember->name }}</h3>
+                        <div class="text-center font-medium lg:text-sm">
+                            <h3 class="text-primary font-semibold text-xl">{{ $generalMember->name }}</h3>
                         </div>
                     </div>
                     <div class="hidden sm:flex w-36 mx-auto justify-center space-x-4 items-center">
