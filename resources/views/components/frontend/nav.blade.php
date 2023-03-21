@@ -58,11 +58,11 @@
             <div class="pt-6 pb-6">
                 <div class="px-2 text-base font-medium text-gray-700">
                     <a href="{{ route('home') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Home</a>
+                    <a href="{{ route('about') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">About Us</a>
                     <a href="{{ route('blogs.index') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Blogs</a>
                     <a href="{{ route('events.index') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Events</a>
                     <a href="{{ route('members') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Members</a>
                     <a href="{{ route('gallery.index') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Gallery</a>
-                    <a href="{{ route('about') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">About Us</a>
                     <a href="{{ route('merchandise.index') }}" class="tracking-wide text-center block px-3 py-4 hover:text-gray-900">Merch</a>
                 </div>
             </div>
