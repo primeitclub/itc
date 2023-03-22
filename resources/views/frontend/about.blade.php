@@ -40,6 +40,13 @@
         </div>
     </section>
 
+    <article class="mt-12 md:mt-24 mx-auto max-w-7xl px-8 sm:px-6">
+        <div class="relative mt-10 font-dm-sans py-4 sm:py-8 rounded-3xl bg-white border-b-8 border-b-primary hover:shadow-lg">
+            <img src="{{ asset('assets/quote-icon.png') }}" class="ml-8 absolute mt-2 w-12 h-8 lg:w-28 lg:h-20">
+            <h1 class="mt-10 ml-8 text-xl lg:text-4xl font-medium text-left lg:text-center text-greish">We bridge the gap <br/> between Academia & Industry</h1>
+        </div>
+    </article>
+
     <!-- Department Details Section -->
     <section class="mt-12 md:mt-24 max-w-7xl mx-auto px-8 sm:px-6">
         <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Departments</h1>
