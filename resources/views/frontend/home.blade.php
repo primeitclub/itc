@@ -54,8 +54,7 @@
 
                 <div class="flex-1 flex flex-col justify-between max-w-lg">
                     <header class="mt-8 lg:mt-0">
-                        <span class="px-3 py-1 border border-blue-300 rounded-full text-blue-300 text-xs uppercase font-semibold">Session</span>
-
+                        <span class="px-3 py-1 bg-primary rounded-full text-white text-xs uppercase font-semibold">Session</span>
                         <div class="mt-4">
                             <h1 class="text-3xl font-semibold text-primary">
                                 Basics to Blockchain : How it works
@@ -109,13 +108,13 @@
 
                     </div>
 
-                    <footer class="mt-4 flex justify-between">
-                        <button class="button mt-7 py-3 px-8 rounded-3xl">
+                    <footer class="mt-4 flex flex-col sm:flex-row sm:justify-between">
+                        <button class="button mt-7 py-3 px-10 rounded-3xl">
                             <a href="#" class="" >Register Now</a >
                         </button>
 
                         <button class="outlined-button">
-                            <a href="" class="" >Read More</a >
+                            <a href="" class="px-10" >Read More</a >
                         </button>
                     </footer>
                 </div>
@@ -174,7 +173,7 @@
 
                     <footer class="mt-8 mb-8 flex items-center justify-between">
                         <button class="outlined-button">
-                            <a href="" class="">Read More</a>
+                            <a href="" class="px-10">Read More</a>
                         </button>
                     </footer>
                 </div>
@@ -185,7 +184,7 @@
     <!-- view more -->
     <div class="mx-auto max-w-xs mt-10">
         <div class="flex items-center justify-center cursor-pointer">
-            <a class="flex space-x-4 text-greish items-center font-medium hover:text-gray-800" href="{{ route('blogs.index') }}">view more
+            <a class="flex space-x-4 text-greish items-center font-medium hover:text-gray-800" href="{{ route('blogs.index') }}">View more
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2 text-center">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>

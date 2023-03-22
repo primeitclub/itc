@@ -10,5 +10,5 @@
 }
 
 .outlined-button {
-    @apply mt-7 rounded-3xl border border-primary-light py-3 px-8 font-dm-sans font-medium leading-6 transition-colors duration-300 hover:bg-primary-light hover:text-white;
+    @apply mt-7 rounded-3xl border border-primary-light py-3 font-dm-sans font-medium leading-6 transition-colors duration-300 hover:bg-primary-light hover:text-white;
 }
