@@ -210,7 +210,7 @@
         <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Meet Our Team</h1>
         <p class="text-center text-base sm:text-xl text-greish">Get to know our team members</p>
         <div class="swiper teamSwiper">
-            <div class="swiper-wrapper mt-10 flex space-x-4" >
+            <div class="swiper-wrapper mt-10 flex">
 
                 <article class="swiper-slide w-64 mx-auto bg-white border-b-8 border-b-primary rounded-3xl px-8 py-6 shadow-sm hover:shadow-md">
                     <div class="mt-6 w-fit mx-auto">
@@ -501,7 +501,7 @@
          <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Testimonial</h1>
         <p class="text-center text-base sm:text-xl text-greish">Hear what our members have to say</p>
         <div class="swiper testimonialSwiper">
-            <div class="swiper-wrapper flex space-x-6 ">
+            <div class="swiper-wrapper flex">
 
                 <article class="swiper-slide relative mt-10 lg:w-[50%] mx-auto bg-white border-b-8 border-b-primary rounded-3xl px-8 py-6 shadow-sm hover:shadow-md -z-10">
                     <div class="mt-6 w-fit mx-auto">
@@ -684,7 +684,6 @@
     <script src="{{asset('js/swiper-bundle.min.js')}}"></script>
     <script>
     const teamSwiper = new Swiper(".teamSwiper", {
-        spaceBetween:25,
         grabCursor: true,
         centerSlide: true,
         pagination: {
@@ -738,7 +737,7 @@
             },
             1024: {
                 slidesPerView: 2,
-                spaceBetween: 30,
+                spaceBetween: 50,
             },
         },
     });
