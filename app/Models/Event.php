@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Event extends Model
 {
@@ -58,5 +59,20 @@ class Event extends Model
         }
 
         return  '<span class="px-2 py-1 text-xs font-semibold leading-tight text-green-700 uppercase bg-green-100 rounded-full ">Completed</span>';
+    }
+
+    public function scopeCompleted($query) {
+        return $query->where('event_date', '<=', Carbon::now());
+    }
+
+    public function scopeUpcoming($query) {
+        return $query->where('event_date', '>=', Carbon::now());
+    }
+
+    public function thumbnailUrl() {
+        return $this->thumbnail ? 
+            Storage::disk('thumbnails')->url($this->thumbnail)
+            : 
+            "";
     }
 }

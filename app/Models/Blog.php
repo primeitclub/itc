@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Storage;
 
 class Blog extends Model
 {
@@ -34,6 +36,10 @@ class Blog extends Model
         return $this->created_at->format('d-m-Y');
     }
 
+    public function readablePublishedDate(){
+        return Carbon::parse($this->published_at)->diffForHumans();
+    }
+
     public function publicationStatus()
     {
         if (!$this->published_at) {
@@ -43,5 +49,16 @@ class Blog extends Model
         } else {
             return  '<span class="px-2 py-1 font-semibold leading-tight text-green-700 bg-green-100 rounded-full ">Published</span>';
         }
+    }
+
+    public function scopePublished($query) {
+        return $query->where('published_at', '<=', Carbon::now());
+    }
+
+    public function thumbnailUrl() {
+        return $this->thumbnail ? 
+            Storage::disk('thumbnails')->url($this->thumbnail)
+            : 
+            "";
     }
 }
