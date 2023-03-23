@@ -18,13 +18,13 @@
 
                 </center>
 
-                <div class=" p-4">
-                    <div class="events gid-cols-1 events grid gap-12 md:grid-cols-3">
+                <div class="p-4">
+                    <div class="events gid-cols-1 p-4 grid gap-8 md:grid-cols-3">
                         @foreach ($blogs as $blog)
                             <div class="mt-8 rounded-xl bg-white w-full  sm:w-auto drop-shadow-xl">
-                                <div class="img">
+                                <div class="p-2 img">
                                     <figure>
-                                        <img class="w-[100%] h-80 rounded-t-xl"
+                                        <img class="w-[100%] h-96 rounded-t-xl"
                                             src="{{ asset('/thumbnails/'.$blog->thumbnail) }}" alt="" />
                                     </figure>
                                 </div>

@@ -1,7 +1,7 @@
 <x-frontend.app title="Events">
     <x-frontend.wave>
         <div class="mt-4">
-            <h1 class="font-bold text-white text-5xl lg:text-8xl">Events</h1>
+            <h1 class="font-bold text-white text-5xl lg:text-8xl">Blogs</h1>
         </div>
     </x-frontend.wave>
 
@@ -9,29 +9,28 @@
         <div class="container mx-auto">
             <div class="sm:mx-12 lg:mx-24">
                 <center>
-                    <h2 class="text-primary text-5xl font-semibold">
+                    <h2 class="poppins text-primary text-5xl font-semibold">
                         Featured Events
                     </h2>
-                    <p class="text-xl pt-4">
+                    <p class="home_text text-xl">
                         Check out some of our workshops and sessions
                     </p>
                 </center>
-
-                <div class="p-4 mt-8">
+                <div class="pt-24 mb-44">
                     <div class="events gid-cols-1 p-4 grid gap-8 md:grid-cols-3">
                         @foreach ($events as $event)
-                            <div class="rounded-xl w-[100%] bg-white  drop-shadow-xl">
-                                <div class="img">
+                        <div class="rounded-xl w-[100%] bg-white  drop-shadow-xl">
+                                <div class="p-2 img">
                                     <figure>
-                                        <img class="w-full h-80 rounded-t-xl"
-                                            src="{{ asset('/thumbnails/'.$event->thumbnail) }}" alt="{{ asset('thumbnails/'.$event->thumbnail) }}" />
+                                        <img class="w-[100%] h-96 rounded-t-xl"
+                                        src="{{ asset('/thumbnails/'.$event->thumbnail) }}" alt="" />
                                     </figure>
                                 </div>
-                                <div class="p-6">
+
+                                <div class="p-7">
                                     <h3 class="text-primary poppins text-2xl font-semibold">
-                                        {{$event->title}}
+                                        {{ $event->title }}
                                     </h3>
-                                    <p class="pt-4 text-greish">Speaker : Pranab Raj Kc </p>
                                     <div class="flex flex-col space-y-2 mt-4">
                                         <div class="flex space-x-4 ">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -95,6 +94,7 @@
                                 </div>
                             </div>
                         @endforeach
+                    </div>
                 </div>
                 <center>
                     <h2 class="text-primary text-5xl font-semibold mt-24">

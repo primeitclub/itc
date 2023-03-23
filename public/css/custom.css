@@ -81,7 +81,7 @@
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1040px) {
     .events {
         grid-template-columns: repeat(1, 1fr);
     }
