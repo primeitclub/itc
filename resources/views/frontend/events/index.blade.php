@@ -5,24 +5,29 @@
         </div>
     </x-frontend.wave>
 
-    <section class="pt-24 sm:py-20">
+    <section class=" pt-24 sm:py-20">
         <div class="container mx-auto">
             <div class="sm:mx-12 lg:mx-24">
-                <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Featured Events</h1>
-                <p class="text-center text-base sm:text-xl text-greish">Check out some of our workshops and sessions</p>
-
-                <div class="pt-24 mb-44">
-                    <div class="events gid-cols-1 p-4 grid gap-8 md:grid-cols-3">
+                <center>
+                    <h2 class="poppins text-primary text-5xl font-semibold">
+                        Featured Events
+                    </h2>
+                    <p class="home_text text-xl">
+                        Check out some of our workshops and sessions
+                    </p>
+                </center>
+                <div class="p-14 pt-24 mb-44">
+                    <div class="events gid-cols-1 grid gap-8 md:grid-cols-3">
                         @foreach ($events as $event)
                         <div class="rounded-xl w-[100%] bg-white  drop-shadow-xl">
-                                <div class="p-2 img">
+                                <div class="img">
                                     <figure>
-                                        <img class="w-[100%] h-96 rounded-t-xl"
-                                        src="{{ asset('/thumbnails/'.$event->thumbnail) }}" alt="" />
+                                        <img class="w-[100%] h-90 rounded-t-xl"
+                                        src="{{ asset('/thumbnails/'.$event->thumbnailUrl()) }}" alt="" />
                                     </figure>
                                 </div>
 
-                                <div class="p-7">
+                                <div class="p-10">
                                     <h3 class="text-primary poppins text-2xl font-semibold">
                                         {{ $event->title }}
                                     </h3>

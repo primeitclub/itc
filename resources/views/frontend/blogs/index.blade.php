@@ -11,13 +11,13 @@
                 <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">All Articles</h1>
                 <p class="text-center text-base sm:text-xl text-greish">Browse our collection</p>
 
-                <div class="p-4">
-                    <div class="events gid-cols-1 p-4 grid gap-8 md:grid-cols-3">
+                <div class="p-14">
+                    <div class="events gid-cols-1  grid gap-8 md:grid-cols-3">
                         @foreach ($blogs as $blog)
                             <div class="mt-8 rounded-xl bg-white w-full  sm:w-auto drop-shadow-xl">
-                                <div class="p-2 img">
+                                <div class=" img">
                                     <figure>
-                                        <img class="w-[100%] h-96 rounded-t-xl"
+                                        <img class="w-[100%] h-90 rounded-t-xl"
                                             src="{{ asset('/thumbnails/'.$blog->thumbnail) }}" alt="" />
                                     </figure>
                                 </div>

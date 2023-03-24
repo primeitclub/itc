@@ -6,7 +6,7 @@
         </div>
     </x-frontend.wave>
     <!-- articles page starts -->
-    <section class="container mx-auto font-poppins">
+    <section class="max-w-7xl p-6 container mx-auto font-poppins">
         <div class="mt-40 mb-40">
             <div class="col-span-2">
                 <div class="flex flex-col  w-full mx-auto sm:block hidden pb-10">
@@ -54,7 +54,7 @@
                     </div>
                     <h1 class="text-primary text-3xl pt-6">Speaker details: </h1>
                     <div
-                        class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 lg:w-[65%] w-full h-60 bg-white  rounded-lg  shadow-xl mt-6 border-b-8 border-b-primary  mb-4">
+                        class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 lg:w-[75%] w-full h-60 bg-white  rounded-lg  shadow-xl mt-6 border-b-8 border-b-primary  mb-4">
                         <div class="flex justify-center items-center mt-10 ml-4 hidden lg:block md:block">
                             <img src="{{ asset('blog-images/venom_1671793074.jpg') }}" class="w-full h-40 rounded-lg" />
                         </div>
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                     <h1 class="text-primary text-3xl pt-6">Summary: </h1>
-                    <div class="lg:w-[65%] w-full sm:text-xl text-md p-8 leading-6 text-greish tracking-wide font-light">
+                    <div class="lg:w-[75%] w-full sm:text-xl text-md p-8 leading-6 text-greish tracking-wide font-light">
 
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam natus aliquam ea tempora ut
                         dignissimos, nobis provident ab libero, veniam molestias neque unde amet. Porro voluptatibus
@@ -86,7 +86,7 @@
                         nostrum!
                     </div>
                     <h1 class="text-primary text-3xl pt-6">Conclusion: </h1>
-                    <div class="lg:w-[65%] w-full sm:text-xl text-md  p-8 leading-6 text-greish tracking-wider font-light">
+                    <div class="lg:w-[75%] w-full sm:text-xl text-md  p-8 leading-6 text-greish tracking-wider font-light">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam natus aliquam ea tempora ut
                         dignissimos, nobis provident ab libero, veniam molestias neque unde amet. Porro voluptatibus
                         sequi

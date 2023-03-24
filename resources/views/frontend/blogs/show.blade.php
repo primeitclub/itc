@@ -6,10 +6,10 @@
         </div>
     </x-frontend.wave>
     <!-- articles page starts -->
-    <section class="container mx-auto font-poppins">
+    <section class="max-w-7xl p-2 container mx-auto font-poppins">
         <div class="mt-40 mb-40 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10">
-            <div class="col-span-2">
-                <div class="flex flex-col h-auto w-full mx-auto sm:block hidden pb-10">
+            <div class="col-span-2 p-4">
+                <div class="flex flex-col h-auto w-full sm:block hidden pb-10">
                     <img src="{{ asset('blog-images/groot_1671793404.png') }}" alt="Blog Thumbnail"
                         class="rounded-lg  w-full " />
                 </div>

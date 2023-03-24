@@ -5,13 +5,12 @@
         </div>
     </x-frontend.wave>
     <!-- merch content starts -->
-    <section class="pt-24 sm:py-20">
-        <div class="container mx-auto">
-            <div class="sm:mx-12 lg:mx-24 mb-4">
+    <section class=" pt-24 sm:py-20">
+        <div class="p-14 container mx-auto">
+            <div class=" sm:mx-12 lg:mx-24 mb-4">
                 <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Featured Items</h1>
                 <p class="text-center text-sm sm:text-xl text-greish">Browse our collection of different merchandise</p>
-
-                <div class="p-4 ">
+                <div class=" ">
                     @foreach($merchandises as $merchandise)
                     <div class="mt-8 rounded-xl bg-white w-full sm:w-auto drop-shadow-xl">
                         <div class="grid grid-cols-1 md:grid-cols-2 p-8 ">
