@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Merchandise;
 use Illuminate\Http\Request;
 
 class MerchandisePageController extends Controller
 {
     public function index() {
-        return view('frontend.merchandise.index');
-    }
-    public function show() {
-        return view('frontend.merchandise.show');
+        $merchandises = Merchandise::latest()->get();
+        return view('frontend.merchandise.index', compact('merchandises'));
     }
 }

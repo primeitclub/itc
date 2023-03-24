@@ -14,9 +14,9 @@ class EventPageController extends Controller
         $events = Event::all();
         return view('frontend.events.index',compact('events'));
     }
-    public function show($slug)
+
+    public function show(Event $event)
     {   
-        $report = Event::where('slug', $slug)->firstOrFail();
-        return view('frontend.events.show',compact('report'));
+        return view('frontend.events.show',compact('event'));
     }
 }

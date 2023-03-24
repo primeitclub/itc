@@ -1007,6 +1007,9 @@ select {
 .w-\[65\%\] {
   width: 65%;
 }
+.w-96 {
+  width: 24rem;
+}
 .max-w-sm {
   max-width: 24rem;
 }

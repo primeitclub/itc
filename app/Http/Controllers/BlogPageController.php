@@ -13,9 +13,8 @@ class BlogPageController extends Controller
         return view('frontend.blogs.index', compact('blogs','featuredBlog'));
     }
 
-    public function show($slug)
+    public function show(Blog $blog)
     {   
-        $blog = Blog::where('slug', $slug)->firstOrFail();
         return view('frontend.blogs.show', compact('blog'));
     }
 

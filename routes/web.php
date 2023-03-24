@@ -75,5 +75,4 @@ Route::get('/events/{slug}', [EventPageController::class, 'show'])->name('events
 Route::get('/gallery', [GalleryPageController::class, 'index'])->name('gallery.index');
 Route::get('/gallery/{slug}', [GalleryPageController::class, 'show'])->name('gallery.show');
 Route::get('/merch', [MerchandisePageController::class, 'index'])->name('merchandise.index');
-Route::get('/merch/{slug}', [MerchandisePageController::class, 'show'])->name('merchandise.show');
 
