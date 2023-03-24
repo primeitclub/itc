@@ -6,16 +6,8 @@
     </x-frontend.wave>
     <section class="pt-24 sm:py-20">
         <div class="container mx-auto">
-            <div class="sm:mx-12 lg:mx-24">
-                <center>
-                    <h2 class="text-primary text-5xl font-semibold">
-                        Albums
-                    </h2>
-                    <p class="home_text text-xl">
-                        Check out some of our photo albums
-                    </p>
-                </center>
-            </div>
+            <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Albums</h1>
+            <p class="text-center text-sm sm:text-xl text-greish">Check out some of our photo albums</p>
             <div class="grid grid-cols-1 mt-24 gap-8 md:grid-cols-3 lg:grid-cols-3 p-2">
                 <div class="group relative cursor-pointer items-center overflow-hidden transition-shadow ">
                     <div class="h-96">

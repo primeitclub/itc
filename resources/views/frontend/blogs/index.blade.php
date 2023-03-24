@@ -8,15 +8,8 @@
     <section class="pt-24 sm:py-20">
         <div class="container mx-auto">
             <div class="sm:mx-12 lg:mx-24">
-                <center>
-                    <h2 class=" text-primary text-5xl font-semibold">
-                        All Articles
-                    </h2>
-                    <p class=" text-xl pt-4">
-                        Browse our collection
-                    </p>
-
-                </center>
+                <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">All Articles</h1>
+                <p class="text-center text-base sm:text-xl text-greish">Browse our collection</p>
 
                 <div class="p-4">
                     <div class="events gid-cols-1 p-4 grid gap-8 md:grid-cols-3">

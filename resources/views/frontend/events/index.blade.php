@@ -1,21 +1,16 @@
 <x-frontend.app title="Events">
     <x-frontend.wave>
         <div class="mt-4">
-            <h1 class="font-bold text-white text-5xl lg:text-8xl">Blogs</h1>
+            <h1 class="font-bold text-white text-5xl lg:text-8xl">Events</h1>
         </div>
     </x-frontend.wave>
 
     <section class="pt-24 sm:py-20">
         <div class="container mx-auto">
             <div class="sm:mx-12 lg:mx-24">
-                <center>
-                    <h2 class="poppins text-primary text-5xl font-semibold">
-                        Featured Events
-                    </h2>
-                    <p class="home_text text-xl">
-                        Check out some of our workshops and sessions
-                    </p>
-                </center>
+                <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Featured Events</h1>
+                <p class="text-center text-base sm:text-xl text-greish">Check out some of our workshops and sessions</p>
+
                 <div class="pt-24 mb-44">
                     <div class="events gid-cols-1 p-4 grid gap-8 md:grid-cols-3">
                         @foreach ($events as $event)
@@ -96,14 +91,10 @@
                         @endforeach
                     </div>
                 </div>
-                <center>
-                    <h2 class="text-primary text-5xl font-semibold mt-24">
-                        Past Events
-                    </h2>
-                    <p class="home_text text-xl">
-                        Check out some of our workshops and sessions
-                    </p>
-                </center>
+
+                <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Past Events</h1>
+                <p class="text-center text-base sm:text-xl text-greish">Our past workshops and sessions</p>
+
                 <div class="container mx-auto w-full p-8 ">
                     <div class="flex p-12 items-center justify-center gap-4 ">
                         <h1 class="text-primary text-sm lg:text-3xl  font-bold">Year:</h1>
