@@ -47,13 +47,13 @@
         <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Featured Events</h1>
         <p class="text-center text-base sm:text-xl text-greish">Check out our workshops and sessions</p>
         <article class="mt-8" >
-            <div class="py-6 lg:flex lg:flex-row-reverse">
-                <div class="flex-1 md:ml-4 lg:p-10">
+            <div class="lg:flex justify-between lg:flex-row-reverse">
+                <div class="md:ml-4 md:mt-6">
                     <img src="{{ $featuredEvent->thumbnailUrl() }}" alt="Event thumbnail" class="rounded-sm" />
                 </div>
 
-                <div class="flex-1 flex flex-col max-w-lg">
-                    <header class="mt-8 lg:mt-2">
+                <div class="flex flex-col max-w-lg">
+                    <header class="mt-4 lg:mt-2">
                         <div class="mt-4">
                             <h1 class="text-xl sm:text-3xl font-semibold text-primary hover:text-primary-light">
                                 <a href="{{ route('events.show', $featuredEvent->slug) }}">
@@ -61,12 +61,14 @@
                                 </a>
                             </h1>
 
+                            @if($featuredEvent->speakers)
                             @foreach($featuredEvent->speakers as $speaker)
-                            <span class="mt-4 block text-greish text-xl font-semibold">
+                            <span class="mt-2 mb-4 block text-greish text-sm lg:text-xl font-semibold">
                                 Facilitator : {{ $speaker->name }}
                             </span>
                             @endforeach
-                            <span class="mt-2 px-3 py-1 bg-primary rounded-full text-white text-xs font-semibold">{{ $featuredEvent->eventCategory->title }}</span>
+                            @endif
+                            <span class="px-4 py-2 bg-primary rounded-full text-white text-xs font-semibold">{{ $featuredEvent->eventCategory->title }}</span>
                         </div>
                     </header>
 
@@ -103,12 +105,12 @@
                     </div>
 
                     <footer class="mt-4 flex flex-col sm:flex-row sm:justify-between">
-                        <button class="button mt-7 py-3 px-16 rounded-3xl">
+                        <button class="button mt-7 py-3 px-20 rounded-3xl">
                             <a href="{{ $featuredEvent->registration_link }}" class="" >Register Now</a >
                         </button>
 
                         <button class="outlined-button">
-                            <a href="{{ route('events.show', $featuredEvent->slug) }}" class="px-16" >Read More</a >
+                            <a href="{{ route('events.show', $featuredEvent->slug) }}" class="px-20" >Read More</a >
                         </button>
                     </footer>
                 </div>
@@ -152,12 +154,10 @@
                             </a>
                         </h1>
 
-                        <div class="flex space-x-4">
-                            <span class="block text-sm text-gray-400 mt-2">
-                                Published <time>{{ $featuredBlog->readablePublishedDate() }}</time>
-                            </span>
-                            <span class="mt-2 px-3 py-1 bg-primary rounded-full text-white text-xs font-semibold">{{ $featuredBlog->blogCategory->title }}</span>
-                        </div>
+                        <span class="block mb-4 text-sm text-greish mt-2">
+                            Published <time>{{ $featuredBlog->readablePublishedDate() }}</time>
+                        </span>
+                        <span class="px-4 py-2 bg-primary rounded-full text-white text-xs font-semibold">{{ $featuredBlog->blogCategory->title }}</span>
                     </header>
 
                     <div class="mt-4 text-base text-greish line-clamp-4">
@@ -175,7 +175,7 @@
     </section>
 
     <!-- view more -->
-    <div class="mx-auto max-w-xs mt-2 sm:mt-24">
+    <div class="mx-auto max-w-xs mt-2 sm:mt-10">
         <div class="flex items-center justify-center cursor-pointer">
             <a class="flex space-x-4 text-greish items-center font-medium hover:text-gray-800" href="{{ route('blogs.index') }}">View more
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 ml-2 text-center">
@@ -218,24 +218,30 @@
                         </div>
                     </header>
 
-                    <div class="mt-4 font-dm-sans text-base text-center line-clamp-2">
+                    <div class="mt-8 font-dm-sans text-base text-center">
                         {!! $executiveMember->testimonial !!}
                     </div>
 
                     <footer class="mt-4">
                         <!-- social links -->
                         <div class="flex w-32 mx-auto justify-around items-center">
+                            @if($executiveMember->facebook)
                             <a href="{{ $executiveMember->facebook }}">
                                 <x-logo.facebook class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
                             </a>
+                            @endif
 
+                            @if($executiveMember->instagram)
                             <a href="{{ $executiveMember->instagram }}">
                                 <x-logo.instagram class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
                             </a>
+                            @endif
 
+                            @if($executiveMember->linkedin)
                             <a href="{{ $executiveMember->linkedin }}">
                                 <x-logo.linkedin class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
                             </a>
+                            @endif
                         </div>
                     </footer>
                 </article>
@@ -255,16 +261,20 @@
                 @foreach($testimonials as $attestant)
                 <article class="swiper-slide relative mt-10 lg:w-[50%] mx-auto bg-white border-b-8 border-b-primary rounded-3xl px-8 py-6 shadow-sm hover:shadow-md -z-10">
                     <div class="mt-6 w-fit mx-auto">
-                        <img src="{{ $attestant->imageUrl() }}" class="rounded-full w-36 h-36 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary">
+                        <img src="{{ $attestant->imageUrl() }}" class="rounded-full w-28 h-28 sm:w-36 sm:h-36 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary">
                     </div>
 
-                    <div class="mt-6 font-dm-sans text-base">
+                    <div x-data="{ readMore : false }" class="mt-6 font-dm-sans text-base">
                         <img src="{{ asset('assets/quote-icon.png') }}" class="absolute w-11 h-8 top-36 lg:top-40 lg:w-28 lg:h-20">
-                        <p class="text-left">{!! $attestant->testimonial !!}</p>
+                        <div x-cloak class="text-left text-greish lg:mt-12" :class="readMore ? '' : 'line-clamp-6'">
+                            {!! $attestant->testimonial !!}
+                        </div>
+                        <p x-on:click="readMore = true" x-show="!readMore" class="cursor-pointer">Read More...</p>
+                        <p x-on:click="readMore = false" x-show="readMore" class="cursor-pointer">Read Less</p>
                     </div>
 
                     <header class="font-dm-sans">
-                        <div class="mt-8">
+                        <div class="mt-6">
                             <h2 class="text-primary font-semibold text-2xl text-center">{{ $attestant->name }}</h2>
                             <p class="text-gray-600 text-base text-center">{{ $attestant->designation }}</p>
                         </div>
@@ -273,17 +283,23 @@
                     <footer class="mt-4">
                         <!-- social links -->
                         <div class="flex w-32 mx-auto justify-around items-center">
+                            @if($attestant->facebook)
                             <a href="{{ $attestant->facebook }}">
                                 <x-logo.facebook class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
                             </a>
+                            @endif
 
+                            @if($attestant->instagram)
                             <a href="{{ $attestant->instagram }}">
                                 <x-logo.instagram class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
                             </a>
+                            @endif
 
+                            @if($attestant->linkedin)
                             <a href="{{ $attestant->linkedin }}">
                                 <x-logo.linkedin class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
                             </a>
+                            @endif
                         </div>
 
                     </footer>
