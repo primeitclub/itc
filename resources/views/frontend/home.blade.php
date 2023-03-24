@@ -321,6 +321,9 @@
     const teamSwiper = new Swiper(".teamSwiper", {
         grabCursor: true,
         centerSlide: true,
+        autoplay: {
+            delay: 3000,
+        },
         pagination: {
             el: ".teams-swiper-pagination",
             clickable: true,
@@ -352,6 +355,9 @@
         spaceBetween: 25,
         grabCursor: true,
         centeredSlides: true,
+        autoplay: {
+            delay: 3000,
+        },
         pagination: {
             el: ".testimonial-swiper-pagination",
             clickable: true,
