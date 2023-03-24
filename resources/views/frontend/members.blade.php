@@ -41,17 +41,23 @@
 
             <footer class="mt-4">
                 <div class="hidden sm:flex w-36 mx-auto justify-center space-x-4 items-center">
+                    @if($president->facebook)
                     <a href="{{ $president->facebook }}">
-                        <x-logo.facebook class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                        <x-logo.facebook />
                     </a>
+                    @endif
 
+                    @if($president->instagram)
                     <a href="{{ $president->instagram }}">
-                        <x-logo.instagram class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                        <x-logo.instagram />
                     </a>
+                    @endif
 
+                    @if($president->linkedin)
                     <a href="{{ $president->linkedin }}">
-                        <x-logo.linkedin class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                        <x-logo.linkedin />
                     </a>
+                    @endif
                 </div>
             </footer>
         </article>
@@ -69,17 +75,23 @@
                         </div>
                     </div>
                     <div class="hidden sm:flex w-36 mx-auto justify-center space-x-4 items-center">
+                        @if($executiveMember->facebook)
                         <a href="{{ $executiveMember->facebook }}">
-                            <x-logo.facebook class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                            <x-logo.facebook />
                         </a>
+                        @endif
 
+                        @if($executiveMember->instagram)
                         <a href="{{ $executiveMember->instagram }}">
-                            <x-logo.instagram class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                            <x-logo.instagram />
                         </a>
+                        @endif
 
+                        @if($executiveMember->linkedin)
                         <a href="{{ $executiveMember->linkedin }}">
-                            <x-logo.linkedin class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                            <x-logo.linkedin />
                         </a>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -103,17 +115,23 @@
                         </div>
                     </div>
                     <div class="hidden sm:flex w-36 mx-auto justify-center space-x-4 items-center">
+                        @if($generalMember->facebook)
                         <a href="{{ $generalMember->facebook }}">
-                            <x-logo.facebook class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                            <x-logo.facebook />
                         </a>
+                        @endif
 
+                        @if($generalMember->instagram)
                         <a href="{{ $generalMember->instagram }}">
-                            <x-logo.instagram class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                            <x-logo.instagram />
                         </a>
+                        @endif
 
+                        @if($generalMember->linkedin)
                         <a href="{{ $generalMember->linkedin }}">
-                            <x-logo.linkedin class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                            <x-logo.linkedin />
                         </a>
+                        @endif
                     </div>
                 </div>
             </div>

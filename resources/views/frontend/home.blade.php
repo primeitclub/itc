@@ -227,19 +227,19 @@
                         <div class="flex w-32 mx-auto justify-around items-center">
                             @if($executiveMember->facebook)
                             <a href="{{ $executiveMember->facebook }}">
-                                <x-logo.facebook class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                                <x-logo.facebook />
                             </a>
                             @endif
 
                             @if($executiveMember->instagram)
                             <a href="{{ $executiveMember->instagram }}">
-                                <x-logo.instagram class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                                <x-logo.instagram />
                             </a>
                             @endif
 
                             @if($executiveMember->linkedin)
                             <a href="{{ $executiveMember->linkedin }}">
-                                <x-logo.linkedin class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                                <x-logo.linkedin />
                             </a>
                             @endif
                         </div>
@@ -285,19 +285,19 @@
                         <div class="flex w-32 mx-auto justify-around items-center">
                             @if($attestant->facebook)
                             <a href="{{ $attestant->facebook }}">
-                                <x-logo.facebook class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                                <x-logo.facebook />
                             </a>
                             @endif
 
                             @if($attestant->instagram)
                             <a href="{{ $attestant->instagram }}">
-                                <x-logo.instagram class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                                <x-logo.instagram />
                             </a>
                             @endif
 
                             @if($attestant->linkedin)
                             <a href="{{ $attestant->linkedin }}">
-                                <x-logo.linkedin class="w-8 h-8 fill-primary hover:-translate-y-2 ease-in-out duration-150 hover:fill-primary-light"/>
+                                <x-logo.linkedin />
                             </a>
                             @endif
                         </div>
