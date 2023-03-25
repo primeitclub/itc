@@ -5,73 +5,68 @@
             <h1 class="font-bold text-white text-5xl lg:text-8xl">Article</h1>
         </div>
     </x-frontend.wave>
-    <!-- articles page starts -->
-    <section class="max-w-7xl p-2 container mx-auto font-poppins">
-        <div class="mt-40 mb-40 grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10">
-            <div class="col-span-2 p-4">
-                <div class="flex flex-col h-auto w-full sm:block hidden pb-10">
-                    <img src="{{ asset('blog-images/groot_1671793404.png') }}" alt="Blog Thumbnail"
-                        class="rounded-lg  w-full " />
-                </div>
-                <div class="text-4xl m-4 font-semibold">
-                    <h1 class="text-primary font-poppins">{{ $blog->title }}</h1>
-                </div>
-                <div class="sm:text-xl text-md font-poppins p-8 leading-6 text-greish tracking-wider font-light">
-                    {!! $blog->body !!}
-                </div>
-                <hr style="border-top: 1px solid black">
-                <div class="mt-24">
-                    <p class="font-poppins text-primary font-semibold m-4 bold text-2xl">Published By : </p>
-                    <div class="m-4 text-sm font-medium">
-                        <p class="text-xl">{{ $blog->author }}</p>
-                        <div class="flex pt-4 gap-4 items-center">
-                            @if($blog->author_facebook)
-                            <a href="{{ $blog->author_facebook }}">
-                                <x-logo.facebook />
-                            </a>
-                            @endif
 
-                            @if($blog->author_linkedin)
-                            <a href="{{ $blog->author_linkedin }}">
-                                <x-logo.linkedin />
-                            </a>
-                            @endif
+    <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-8 sm:px-6">
+        <div class="flex justify-between gap-x-10">
+            <div>
+                <div class="mb-4 md:mb-0 w-full max-w-screen-md mx-auto relative" style="height: 24em;">
+                    <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" class="absolute left-0 top-0 w-full h-full z-0 object-cover" />
+                </div>
+                <div class="w-full max-w-screen-md">
+                    <h2 class="mt-4 mb-2 text-4xl font-semibold text-primary leading-tight">
+                        Pellentesque a consectetur velit, ac molestie ipsum. Donec sodales, massa et auctor.
+                    </h2>
+                    <span class="px-4 py-2 bg-primary rounded-full text-white text-xs font-semibold">Uncategorized</span>
+                </div>
+
+                <div class="px-4 lg:px-0 mt-10 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
+                    <p class="pb-6">Breakfast agreeable incommode departure it an. By ignorant at on wondered relation. Enough at
+                        tastes really
+                        so cousin am of. Extensive therefore supported by extremity of contented. Is pursuit compact demesne invited
+                        elderly be. View him she roof tell her case has sigh. Moreover is possible he admitted sociable concerns. By
+                        in cold no less been sent hard hill.</p>
+
+                    <p class="pb-6">Detract yet delight written farther his general. If in so bred at dare rose lose good. Feel and
+                        make two real
+                        miss use easy. Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient
+                        to unpleasant in in insensible favourable. Latter remark hunted enough vulgar say man. Sitting hearted on it
+                        without me.</p>
+                </div>
+                <div class="flex mt-3 border-t-2">
+                    <div class="mt-10 mb-10 flex space-x-2 items-center">
+                        <img src="https://randomuser.me/api/portraits/men/97.jpg" class="h-28 w-28 rounded-full mr-2 object-cover" />
+                        <div>
+                            <p class="font-normal text-primary text-2xl"> Mike Sullivan </p>
+                            <div class="flex mt-2 space-x-2">
+                                <a href="">
+                                    <x-logo.facebook />
+                                </a>
+                                <a href="">
+                                    <x-logo.linkedin />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="p-4">
-                <div class="flex pb-6">
-                    <h1 class="text-4xl font-poppins ">Recent Post </h1>
+
+            <div class="hidden py-2 md:hidden lg:block">
+                <div class="mb-8 border-b-2 border-opacity-10">
+                    <h2 class="pb-5 text-3xl font-normal text-greish">Recent Posts</h2>
                 </div>
-                <hr style="border-top: 1px solid black">
-                <div class="p-4 flex">
-                    <img src="{{ asset('blog-images/groot_1671793404.png') }}" class="h-24 w-34">
-                    <div class="pl-4">
-                        <h1 class="font-semibold text-primary font-poppins ">{{ $blog->title }}</h1>
-                        <p class=" text-xs">{{ $blog->published_at }}</p>
-                    </div>
-                </div>
-                <div class="p-4 flex">
-                    <img src="{{ asset('blog-images/groot_1671793404.png') }}" class="h-24 w-34">
-                    <div class="pl-4">
-                        <h1 class="font-semibold  text-primary font-poppins ">{{ $blog->title }}</h1>
-                        <p class=" text-xs">{{ $blog->published_at }}</p>
-                    </div>
-                </div>
-                <div class="p-4 flex">
-                    <img src="{{ asset('blog-images/groot_1671793404.png') }}" class="h-24 w-34">
-                    <div class="pl-4">
-                        <h1 class="font-semibold text-primary font-poppins ">{{ $blog->title }}</h1>
-                        <p class=" text-xs">{{ $blog->published_at }}</p>
+                <div class="flex flex-col divide-y divide-gray-700">
+                    <div class="flex px-1 py-4">
+                        <img alt="" class="flex-shrink-0 object-cover w-20 h-20 mr-4" src="https://source.unsplash.com/random/244x324">
+                        <div class="flex flex-col flex-grow">
+                            <a rel="noopener noreferrer" href="#" class="font-serif hover:underline">Aenean ac tristique lorem, ut mollis dui.</a>
+                            <p class="mt-auto text-xs">5 minutes ago
+                                <span class="block lg:ml-2 cursor-pointer lg:inline hover:underline">Politics</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-
-        </div>
-
     </section>
 
 </x-frontend.app>

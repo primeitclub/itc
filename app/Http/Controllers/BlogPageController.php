@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class BlogPageController extends Controller
 {   
     public function index(){
-        $blogs = Blog::with(['blogCategory'])->published()->get();
+        $blogs = Blog::with(['blogCategory'])->latest()->published()->get();
         return view('frontend.blogs.index', compact('blogs'));
     }
 
