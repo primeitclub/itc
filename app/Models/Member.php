@@ -34,11 +34,6 @@ class Member extends Model
         ];
     }
 
-    public function memberBatch()
-    {
-        return Carbon::parse($this->batch)->format('Y');
-    }
-
     public function imageUrl(){
         return $this->image ?
             Storage::disk("members")->url($this->image)

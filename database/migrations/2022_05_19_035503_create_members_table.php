@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('image')->nullable();
-            $table->date('batch');
+            $table->integer('batch');
             $table->string('type');
             $table->string('designation')->nullable();
             $table->string('email');

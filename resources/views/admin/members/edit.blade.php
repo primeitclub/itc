@@ -23,7 +23,12 @@
 
                         <div class="flex justify-between">
                             <x-form.group label="Batch" for="batch">
-                                <x-form.input type="date" id="batch" name="batch" value="{{ $member->batch }}" />
+                                <select name="batch" id="batch" class="@error('batch') border-red-600 @enderror w-64 p-2 border border-gray-300 rounded form-input">
+                                    <option value="" selected disabled>2004</option>
+                                    @foreach(range(2004, date('Y')) as $batch)
+                                    <option value="{{ $batch }}" class="rounded-md" {{ $member->batch == $batch ? 'selected' : '' }} >{{ $batch }}</option>
+                                    @endforeach
+                                </select>
                                 <x-form.error name="batch" />
                             </x-form.group>
 
