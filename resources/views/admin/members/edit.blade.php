@@ -60,16 +60,16 @@
                         </x-form.group>
 
                         <x-form.group label="Github" for="github">
-                            <x-form.input-link type="text" id="github" name="github" value="{{ $member->linkedin }}" placeholder="www.github.com/in/username" />
+                            <x-form.input-link type="text" id="github" name="github" value="{{ $member->linkedin }}" placeholder="www.github.com/username" />
                             <x-form.error name="github" />
                         </x-form.group>
 
                         <x-form.group label="Instagram" for="instagram">
-                            <x-form.input-link type="text" id="instagram" name="instagram" value="{{ $member->linkedin }}" placeholder="www.instagram.com/in/username" />
+                            <x-form.input-link type="text" id="instagram" name="instagram" value="{{ $member->linkedin }}" placeholder="www.instagram.com/username" />
                             <x-form.error name="instagram" />
                         </x-form.group>
 
-                        <x-form.group label="Testimonial" for="testimonial">
+                        <x-form.group label="Short Introduction" for="testimonial">
                             <x-form.ckeditor name="testimonial">{{ $member->testimonial }}</x-form.ckeditor>
                             <x-form.error name="testimonial" />
                         </x-form.group>
