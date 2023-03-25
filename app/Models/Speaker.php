@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Speaker extends Model
 {
@@ -22,5 +23,13 @@ class Speaker extends Model
     public function event()
     {
         return $this->belongsTo(Event::class);
+    }
+
+
+    public function imageUrl() {
+        return $this->thumbnail ? 
+            Storage::disk('speakers')->url($this->thumbnail)
+            : 
+            "";
     }
 }
