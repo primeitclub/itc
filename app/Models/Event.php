@@ -75,4 +75,12 @@ class Event extends Model
             : 
             "";
     }
+
+    public function eventDay() {
+        return Carbon::parse($this->event_date)->format('d');
+    }
+
+    public function eventMonth() {
+        return Carbon::parse($this->event_date)->format('M');
+    }
 }

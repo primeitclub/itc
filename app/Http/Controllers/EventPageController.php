@@ -11,8 +11,10 @@ use Illuminate\Http\Request;
 class EventPageController extends Controller
 {
     public function index() {
-        $events = Event::all();
-        return view('frontend.events.index',compact('events'));
+        $upcomingEvents = Event::upcoming()->with(['eventCategory','speakers'])->latest()->get();
+        $completedEvents = Event::completed()->with(['eventCategory','speakers'])->latest()->get();
+
+        return view('frontend.events.index',compact('completedEvents','upcomingEvents'));
     }
 
     public function show(Event $event)
