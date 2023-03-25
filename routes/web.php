@@ -73,6 +73,6 @@ Route::get('/blogs/{blog:slug}', [BlogPageController::class, 'show'])->name('blo
 Route::get('/events', [EventPageController::class, 'index'])->name('events.index');
 Route::get('/events/{event:slug}', [EventPageController::class, 'show'])->name('events.show');
 Route::get('/gallery', [GalleryPageController::class, 'index'])->name('gallery.index');
-Route::get('/gallery/{slug}', [GalleryPageController::class, 'show'])->name('gallery.show');
+Route::get('/gallery/{album:slug}', [GalleryPageController::class, 'show'])->name('gallery.show');
 Route::get('/merch', [MerchandisePageController::class, 'index'])->name('merchandise.index');
 
