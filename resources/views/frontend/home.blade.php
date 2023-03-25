@@ -134,7 +134,11 @@
         <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Blogs</h1>
         <p class="text-center text-base sm:text-xl text-greish">Keep updated with latest reads</p>
         <article class="" >
-            <div class="grid sm:grid-cols-2 gap-8">
+            <div class="grid sm:grid-cols-2 lg:gap-8">
+                <div class="sm:hidden md:ml-4 md:mt-6 mt-6">
+                    <img src="{{ $featuredBlog->thumbnailUrl() }}" alt="Event thumbnail" class="rounded-sm" />
+                </div>
+
                 <div>
                     <div class="hidden lg:block pt-10">
                         <div class="relative py-6 px-5">
@@ -146,7 +150,8 @@
                         </div>
                     </div>                        
                 </div>
-                <div class="mx-auto md:mt-10">
+
+                <div class="mx-auto mt-6 md:mt-10">
                     <header class="lg:mt-20">
                         <h1 class="text-xl sm:text-3xl font-semibold text-primary hover:text-primary-light">
                             <a href="{{ route('blogs.show', $featuredBlog->slug) }}">
@@ -266,7 +271,7 @@
 
                     <div x-data="{ readMore : false }" class="mt-6 font-dm-sans text-base">
                         <img src="{{ asset('assets/quote-icon.png') }}" class="absolute w-11 h-8 top-36 lg:top-40 lg:w-28 lg:h-20">
-                        <div x-cloak class="text-left text-greish lg:mt-12" :class="readMore ? '' : 'line-clamp-6'">
+                        <div x-cloak class="text-left text-greish lg:mt-12" :class="readMore ? '' : 'line-clamp-3'">
                             {!! $attestant->testimonial !!}
                         </div>
                         <p x-on:click="readMore = true" x-show="!readMore" class="cursor-pointer">Read More...</p>
@@ -355,9 +360,6 @@
         spaceBetween: 25,
         grabCursor: true,
         centeredSlides: true,
-        autoplay: {
-            delay: 3000,
-        },
         pagination: {
             el: ".testimonial-swiper-pagination",
             clickable: true,
