@@ -14,7 +14,8 @@ class BlogPageController extends Controller
 
     public function show(Blog $blog)
     {   
-        return view('frontend.blogs.show', compact('blog'));
+        $recentBlogs = Blog::with(['blogCategory'])->latest()->published()->get();
+        return view('frontend.blogs.show', compact('blog','recentBlogs'));
     }
 
 }

@@ -743,20 +743,11 @@ select {
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
 .m-4 {
   margin: 1rem;
 }
-.m-6 {
-  margin: 1.5rem;
-}
 .m-8 {
   margin: 2rem;
-}
-.m-10 {
-  margin: 2.5rem;
 }
 .mx-6 {
   margin-left: 1.5rem;
@@ -864,6 +855,9 @@ select {
 .ml-auto {
   margin-left: auto;
 }
+.mt-16 {
+  margin-top: 4rem;
+}
 .block {
   display: block;
 }
@@ -948,17 +942,8 @@ select {
 .h-40 {
   height: 10rem;
 }
-.h-52 {
-  height: 13rem;
-}
-.h-64 {
-  height: 16rem;
-}
-.h-56 {
-  height: 14rem;
-}
-.h-36 {
-  height: 9rem;
+.h-16 {
+  height: 4rem;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -1031,35 +1016,14 @@ select {
 .w-\[65\%\] {
   width: 65%;
 }
-.w-\[75\%\] {
-  width: 75%;
-}
-.w-\[70\%\] {
-  width: 70%;
-}
-.w-\[85\%\] {
-  width: 85%;
-}
-.w-\[80\%\] {
-  width: 80%;
-}
-.w-\[64\%\] {
-  width: 64%;
-}
-.w-\[66\%\] {
-  width: 66%;
+.w-\[67\%\] {
+  width: 67%;
 }
 .w-\[90\%\] {
   width: 90%;
 }
-.w-\[68\%\] {
-  width: 68%;
-}
-.w-\[69\%\] {
-  width: 69%;
-}
-.w-\[67\%\] {
-  width: 67%;
+.w-16 {
+  width: 4rem;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -1133,9 +1097,6 @@ select {
 }
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -1500,10 +1461,6 @@ select {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
 .p-3 {
   padding: 0.75rem;
 }
@@ -1673,9 +1630,6 @@ select {
 }
 .pb-10 {
   padding-bottom: 2.5rem;
-}
-.pr-6 {
-  padding-right: 1.5rem;
 }
 .pl-6 {
   padding-left: 1.5rem;
@@ -2707,6 +2661,10 @@ select {
     margin-left: 0.5rem;
   }
 
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2785,6 +2743,10 @@ select {
 
   .lg\:w-\[75\%\] {
     width: 75%;
+  }
+
+  .lg\:w-20 {
+    width: 5rem;
   }
 
   .lg\:max-w-lg {
@@ -2906,6 +2868,11 @@ select {
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:font-semibold {
