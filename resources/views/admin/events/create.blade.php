@@ -34,6 +34,11 @@
                                 <x-form.error name="description" />
                             </x-form.group>
 
+                            <x-form.group label="Event Fee" for="event_fee">
+                                <x-form.input type="number" id="event_fee" name="event_fee" value="{{ old('event_fee') }}" />
+                                <x-form.error name="event_fee" />
+                            </x-form.group>
+
                             <x-form.group label="Registration link" for="registration_link">
                                 <x-form.input-link type="text" id="registration_link" name="registration_link" value="{{ old('registration_link') }}" placeholder="docs.google.com/forms/googleformlink" />
                                 <x-form.error name="registration_link" />

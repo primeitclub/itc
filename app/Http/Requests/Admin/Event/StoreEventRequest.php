@@ -31,6 +31,7 @@ class StoreEventRequest extends FormRequest
             'description' => ['required'],
             'venue' => ['required'],
             'venue_address' => ['required'],
+            'event_fee' => ['sometimes'],
             'registration_link' => ['nullable', 'url'],
             'event_date' => ['required'],
             'event_time' => ['required']

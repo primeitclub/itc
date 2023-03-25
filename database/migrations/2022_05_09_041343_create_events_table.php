@@ -22,6 +22,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('venue');
             $table->string('venue_address');
+            $table->integer('event_fee')->nullable();
             $table->text('registration_link')->nullable();
             $table->date('event_date');
             $table->time('event_time');

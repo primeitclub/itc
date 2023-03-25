@@ -20,6 +20,7 @@ class Event extends Model
         'description',
         'venue',
         'venue_address',
+        'event_fee',
         'registration_link',
         'event_date',
         'event_time',
