@@ -8,6 +8,10 @@
     <section class=" pt-24 sm:py-20">
         <div class="p-14 container mx-auto">
             <div class=" sm:mx-12 lg:mx-24 mb-4">
+                @if(!$merchandises->count())
+                <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Oops! No content to show!</h1>
+                <p class="text-center text-sm sm:text-xl text-greish">We will launch our merchandise soon...</p>
+                @else
                 <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Featured Items</h1>
                 <p class="text-center text-sm sm:text-xl text-greish">Browse our collection of different merchandise</p>
                 <div class=" ">
@@ -51,6 +55,8 @@
                     </div>
                     @endforeach
                 </div>
+
+                @endif
             </div>
         </div>
     </section>
