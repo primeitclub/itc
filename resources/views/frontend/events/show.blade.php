@@ -6,17 +6,18 @@
         </div>
     </x-frontend.wave>
     <!-- articles page starts -->
-    <section class="max-w-7xl p-6 container mx-auto font-poppins">
-        <div class="mt-40 mb-40">
-            <div class="col-span-2">
-                <div class="flex flex-col  w-full mx-auto sm:block hidden pb-10">
-                    <img src="{{ asset('blog-images/groot_1671793404.png') }}" alt="Blog Thumbnail"
-                        class="rounded-lg h-1/2 w-full " />
+    <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-8 sm:px-6 mb-8">
+        <div class="flex justify-between gap-x-10">
+            <div>
+                <div class="mb-6 lg:w-[75%] relative" style="height: 24em;">
+                    <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" class="absolute left-0 top-0 w-full h-full z-0 object-cover" />
                 </div>
-                <div class=" m-4 font-semibold">
-                    <h1 class="text-4xl text-primary font-poppins">
-                        {{$event->title}}
-                    </h1>
+                <div class="w-full max-w-screen-md">
+                    <h2 class="mt-4 mb-2 text-4xl font-semibold text-primary leading-tight">
+                        Pellentesque a consectetur velit, ac molestie ipsum. Donec sodales, massa et auctor.
+                    </h2>
+                    <span class="px-4 py-2 bg-primary rounded-full text-white text-xs font-semibold">Uncategorized</span>
+                </div>
                     <div class="flex flex-col space-y-2 mt-4 text-xl p-4 gap-6">
                         <div class="flex space-x-4  ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"

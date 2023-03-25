@@ -12,11 +12,11 @@
                 <p class="text-center text-sm sm:text-xl text-greish">Browse our collection of different merchandise</p>
                 <div class=" ">
                     @foreach($merchandises as $merchandise)
-                    <div class="mt-8 rounded-xl bg-white w-full sm:w-auto drop-shadow-xl">
+                    <div class="mt-8 rounded-xl bg-white w-full sm:w-auto drop-shadow-xl hover:drop-shadow-2xl">
                         <div class="grid grid-cols-1 md:grid-cols-2 p-8 ">
             
                                 <figure class="pb-4">
-                                    <img class="h-full" src="{{ $merchandise->imageUrl() }}" alt="" />
+                                    <img class="h-full" src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" alt="" />
                                 </figure>
                             
                             <div class="pl-8 ">
