@@ -31,6 +31,7 @@ class UpdateBlogRequest extends FormRequest
             'excerpt' => ['required'],
             'body' => ['required'],
             'thumbnail' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],
+            'author_image' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],
             'author' => ['required'],
             'author_facebook' => ['nullable','url'],
             'author_linkedin' => ['nullable','url'],

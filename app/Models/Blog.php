@@ -19,6 +19,7 @@ class Blog extends Model
         'body',
         'thumbnail',
         'author',
+        'author_image',
         'author_facebook',
         'author_linkedin',
         'published_at'
@@ -58,6 +59,13 @@ class Blog extends Model
     public function thumbnailUrl() {
         return $this->thumbnail ? 
             Storage::disk('thumbnails')->url($this->thumbnail)
+            : 
+            "";
+    }
+
+    public function authorImageUrl() {
+        return $this->author_image ? 
+            Storage::disk('authors')->url($this->author_image)
             : 
             "";
     }

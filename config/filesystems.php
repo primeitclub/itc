@@ -50,6 +50,13 @@ return [
             'visibility' => 'public',
         ],
 
+        'authors' => [
+            'driver' => 'local',
+            'root' => storage_path('app/authors'),
+            'url' => env('APP_URL') . '/authors',
+            'visibility' => 'public',
+        ],
+
         'members' => [
             'driver' => 'local',
             'root' => storage_path('app/members'),
@@ -121,6 +128,7 @@ return [
     'links' => [
         public_path('thumbnails') => storage_path('app/thumbnails'),
         public_path('speakers') => storage_path('app/speakers'),
+        public_path('authors') => storage_path('app/authors'),
         public_path('members') => storage_path('app/members'),
         public_path('albums') => storage_path('app/albums'),
         public_path('images') => storage_path('app/images'),

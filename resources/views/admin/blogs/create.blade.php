@@ -34,6 +34,11 @@
                                 <x-form.error name="author" />
                             </x-form.group>
 
+                            <x-form.group label="Author's Image" for="author_image">
+                                <input type="file" id="author_image" name="author_image" accept="image/*"  class="@error('author_image') border-red-600 @enderror">
+                                <x-form.error name="author_image" />
+                            </x-form.group>
+
                             <x-form.group label="Author's Facebook" for="author_facebook">
                                 <x-form.input-link type="text" id="author_facebook" name="author_facebook" value="{{ old('author_facebook') }}" placeholder="www.facebook.com/username" />
                                 <x-form.error name="author_facebook" />

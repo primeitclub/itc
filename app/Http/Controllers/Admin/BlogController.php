@@ -31,6 +31,7 @@ class BlogController extends Controller
         $blog = Blog::create($request->validated());
 
         $this->storeThumbnail($request, $blog);
+        $this->storeAuthorImage($request, $blog);
 
         return redirect()->route('admin.blogs.index')->with('success', 'Blog created successfully!');
     }
@@ -45,13 +46,20 @@ class BlogController extends Controller
     public function update(UpdateBlogRequest $request, Blog $blog)
     {
         $oldThumbail = $blog->thumbnail;
+        $oldAuthorImage = $blog->author_image;
 
         $blog->update($request->validated());
 
         $this->storeThumbnail($request, $blog);
 
+        $this->storeAuthorImage($request, $blog);
+
         if (!is_null($oldThumbail) && $oldThumbail !== $blog->thumbnail) {
             $this->deleteThumbnail($oldThumbail);
+        }
+
+        if (!is_null($oldAuthorImage) && $oldAuthorImage !== $blog->author_image) {
+            $this->deleteAuthorImage($oldAuthorImage);
         }
 
         return redirect()->route('admin.blogs.index')->with('success', 'Blog updated successfully!');
@@ -80,12 +88,12 @@ class BlogController extends Controller
         $blog->delete();
 
         $this->deleteThumbnail($blog->thumbnail);
+        $this->deleteAuthorImage($blog->author_image);
 
         return redirect()->back()->with('success', 'Blog deleted successfully!');
     }
 
-    private function storeThumbnail($request, $blog)
-    {
+    private function storeThumbnail($request, $blog) {
         if ($request->has('thumbnail')) {
             $blog->update([
                 'thumbnail' => $request->thumbnail->store('/', 'thumbnails')
@@ -93,11 +101,26 @@ class BlogController extends Controller
         }
     }
 
-    public function deleteThumbnail($thumbnail)
-    {
+    public function deleteThumbnail($thumbnail) {
         if (!is_null($thumbnail)) {
             if (Storage::disk('thumbnails')->exists($thumbnail)) {
                 Storage::disk('thumbnails')->delete($thumbnail);
+            }
+        }
+    }
+
+    private function storeAuthorImage($request, $blog) {
+        if ($request->has('author_image')) {
+            $blog->update([
+                'author_image' => $request->author_image->store('/', 'authors')
+            ]);
+        }
+    }
+
+    public function deleteAuthorImage($authorImage) {
+        if (!is_null($authorImage)) {
+            if (Storage::disk('authors')->exists($authorImage)) {
+                Storage::disk('authors')->delete($authorImage);
             }
         }
     }

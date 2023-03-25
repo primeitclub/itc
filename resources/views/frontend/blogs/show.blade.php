@@ -24,7 +24,7 @@
                 </div>
                 <div class="flex mt-4 lg:mt-16 border-t-2">
                     <div class="mt-4 lg:mt-10 mb-10 flex space-x-2 items-center">
-                        <img src="https://randomuser.me/api/portraits/men/97.jpg" class="h-20 w-20 lg:h-28 lg:w-28 rounded-full mr-2 object-cover" />
+                        <img src="{{ $blog->authorImageUrl() }}" class="h-20 w-20 lg:h-28 lg:w-28 rounded-full mr-2 object-cover" />
                         <div>
                             <p class="font-semibold text-primary text-xl lg:text-2xl">{{ $blog->author }}</p>
                             <p class="font-semibold text-gray-400 text-xs">{{ $blog->readablePublishedDate() }}</p>
