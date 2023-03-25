@@ -9,7 +9,9 @@
         <div class="w-full overflow-hidden rounded-lg shadow-xs">
             <div class="w-full overflow-x-auto space-y-4">
                 @if(!$users->count())
-                <div class="w-full bg-red-500 p-4 text-white">No records found!</div>
+                <span class="w-full rounded-lg text-red-500 bg-red-500/5 text-base px-4 py-4 inline-flex gap-2 items-center justify-center">
+                    No records found!
+                </span>
                 @else
 
                 <table class="w-full whitespace-no-wrap">
