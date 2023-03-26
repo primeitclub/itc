@@ -11,7 +11,7 @@
         <div class="flex justify-between gap-x-10">
             <div>
                 <div class="mb-6 lg:w-[75%] relative" style="height: 24em;">
-                    <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" class="absolute left-0 top-0 w-full h-full z-0 object-cover" />
+                    <img src="{{ $event->imageUrl() }}" class="absolute left-0 top-0 w-full h-full z-0 object-cover" />
                 </div>
                 <div class="w-full max-w-screen-md">
                     <h2 class="mt-4 mb-2 text-4xl font-semibold text-primary leading-tight">
@@ -57,9 +57,9 @@
                     </div>
 
                 </div>
+                @if($event->speakers->count())
                 <h1 class="text-primary text-3xl pt-6">Speaker details: </h1>
                 <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 lg:w-[75%] w-full h-60 bg-white  rounded-lg  shadow-xl mt-6 border-b-8 border-b-primary  mb-4">
-                    @if($event->speakers)
                     @foreach($event->speakers as $speaker)
                     <div class="flex justify-center items-center mt-10 ml-4 hidden lg:block md:block">
                         <img src="{{ $speaker->imageUrl() }}" class="w-full h-40 rounded-lg" />
@@ -86,8 +86,8 @@
                         </div>
                     </div>
                     @endforeach
-                    @endif
                 </div>
+                @endif
 
                 <h1 class="text-primary text-3xl pt-6">Event Details: </h1>
 

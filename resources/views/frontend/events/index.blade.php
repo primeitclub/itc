@@ -10,8 +10,10 @@
     @else
 
     <section class="mt-10 sm:mt-24 mb-10 sm:mb-24 max-w-7xl mx-auto px-8 sm:px-6">
+        @if($upcomingEvents->count())
         <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Featured Events</h1>
         <p class="text-center text-base sm:text-xl text-greish">Check out some of our upcoming events</p>
+        @endif
 
         <div class="mx-auto mt-12 grid max-w-lg gap-8 lg:max-w-none lg:grid-cols-3">
             @foreach ($upcomingEvents as $upcomingEvent)

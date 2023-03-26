@@ -31,7 +31,7 @@
         @foreach($executiveMembers->where('designation', 'President') as $president)
         <article class="w-full mx-auto px-8 py-6">
             <div class="mt-6 w-fit mx-auto">
-                <img src="{{ $president->imageUrl() }}" class="mx-auto rounded-full w-24 h-24 lg:h-32 lg:w-32 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary" />
+                <img src="{{ $president->imageUrl() }}" class="mx-auto rounded-full w-24 h-24 lg:h-32 lg:w-32 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary object-cover" />
             </div>
 
             <div class="mt-4 font-dm-sans text-center font-medium">
@@ -67,7 +67,7 @@
             @foreach($executiveMembers->where('designation', '!=', 'President') as $executiveMember)
             <div>
                 <div class="space-y-4">
-                    <img class="mx-auto h-20 w-20 rounded-full lg:h-28 lg:w-28 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary" src="{{ $executiveMember->imageUrl() }}" alt="">
+                    <img class="mx-auto h-20 w-20 rounded-full lg:h-28 lg:w-28 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary object-cover" src="{{ $executiveMember->imageUrl() }}" alt="">
                     <div class="space-y-2">
                         <div class="text-center font-dm-sans">
                             <h3 class="text-primary font-semibold text-xl">{{ $executiveMember->name }}</h3>
@@ -108,9 +108,9 @@
             @foreach($generalMembers as $generalMember)
             <div>
                 <div class="space-y-4">
-                    <img class="mx-auto h-20 w-20 rounded-full lg:h-24 lg:w-24 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary" src="{{ $generalMember->imageUrl() }}" alt="">
+                    <img class="mx-auto h-20 w-20 rounded-full lg:h-24 lg:w-24 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary object-cover" src="{{ $generalMember->imageUrl() }}" alt="">
                     <div class="space-y-2">
-                        <div class="text-center font-medium lg:text-sm">
+                        <div class="text-center font-medium lg:text-sm font-dm-sans">
                             <h3 class="text-primary font-semibold text-xl">{{ $generalMember->name }}</h3>
                         </div>
                     </div>

@@ -375,7 +375,7 @@
                         class="swiper-slide relative mt-10 lg:w-[50%] mx-auto bg-white border-b-8 border-b-primary rounded-3xl px-8 py-6 shadow-sm hover:shadow-md -z-10">
                         <div class="mt-6 w-fit mx-auto">
                             <img src="{{ $attestant->imageUrl() }}"
-                                class="rounded-full w-28 h-28 sm:w-36 sm:h-36 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary">
+                                class="rounded-full w-28 h-28 sm:w-36 sm:h-36 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary object-cover">
                         </div>
 
                         <div x-data="{ readMore: false }" class="mt-6 font-dm-sans text-base">
