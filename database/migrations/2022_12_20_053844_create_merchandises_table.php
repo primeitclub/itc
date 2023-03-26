@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string("title");
             $table->string("image")->nullable();
+            $table->string("sizes");
+            $table->string("colors");
             $table->string("price");
             $table->text("description");
             $table->text("form_link");

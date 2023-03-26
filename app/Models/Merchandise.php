@@ -15,7 +15,9 @@ class Merchandise extends Model
         "image",
         "price",
         "description",
-        "form_link"
+        "form_link",
+        "sizes",
+        "colors"
     ];
 
     public function imageUrl(){

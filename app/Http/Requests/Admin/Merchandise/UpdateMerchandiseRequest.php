@@ -26,6 +26,8 @@ class UpdateMerchandiseRequest extends FormRequest
         return [
             "title" => ["required"],
             "image" => ["sometimes", "image", "mimes:jpg,jpeg,png"],
+            "sizes" => ["required"],
+            "colors" => ["required"],
             "price" => ["required"],
             "description" => ["required"],
             "form_link" => ["required", "url"],

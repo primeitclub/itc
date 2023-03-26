@@ -28,15 +28,15 @@
                         </h3>
                         <div class="list-none">
                             <ol>
-                                <li class="pt-6 flex flex-col sm:flex-row">
+                                <li class="pt-6 flex items-center justify-center">
                                     <p class="text-greish text-3xl leading-3 font-semibold tracking-wide">Rs. {{ $merchandise->price }}</p>
                                     <span class="text-green-700 bg-green-200 text-sm ml-auto rounded-full px-2 py-0.5"> Available</span>
                                 </li>
                             </ol>
                         </div>
                         <div class="pt-6">
-                            <p class="text-xl "> <span class="text-greish">Sizes:</span> XL/XXL </p>
-                            <p class="text-xl "> <span class="text-greish">Color: </span> Black </p>
+                            <p class="text-xl "> <span class="text-greish">Sizes :</span><span class="ml-2 font-semibold"> {{ $merchandise->sizes }}  </span></p>
+                            <p class="text-xl "> <span class="text-greish">Colors : </span><span class="ml-2 font-semibold"> {{ $merchandise->colors }} </span></p>
                         </div>
                         <div class="pt-6 text-greish mb-6">
                             <p class="py-2 text-base font-light leading-6 ">

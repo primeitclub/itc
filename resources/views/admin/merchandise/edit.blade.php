@@ -21,6 +21,16 @@
                             <x-form.error name="image" />
                         </x-form.group>
 
+                        <x-form.group label="Sizes" for="sizes">
+                            <x-form.input type="text" id="sizes" name="sizes" value="{{ $merchandise->sizes }}" placeholder="small, medium, lg"/>
+                            <x-form.error name="sizes" />
+                        </x-form.group>
+
+                        <x-form.group label="Colors" for="colors">
+                            <x-form.input type="text" id="colors" name="colors" value="{{ $merchandise->colors }}" placeholder="Black"/>
+                            <x-form.error name="colors" />
+                        </x-form.group>
+
                         <x-form.group label="Price" for="price">
                             <x-form.input type="text" id="price" name="price" value="{{ $merchandise->price }}" placeholder="Price"/>
                             <x-form.error name="price" />
