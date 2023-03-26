@@ -319,52 +319,42 @@
         <p class="text-center text-base sm:text-xl text-greish">Get to know our team members</p>
         <div class="swiper teamSwiper">
             <div class="swiper-wrapper mt-10 flex">
-                <div class="group  relative cursor:pointer overflow-hidden [perspective:1000px] ">
+                 @foreach($executiveMembers as $executiveMember)
+                <article class="swiper-slide w-64 mx-auto bg-white border-b-8 border-b-primary rounded-3xl px-8 py-6 shadow-sm hover:shadow-md">
+                    <div class="mt-6 w-fit mx-auto">
+                        <img src="{{ $executiveMember->imageUrl() }}" class="rounded-full w-28 h-28 lg:w-36 lg:h-36 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary object-cover">
+                    </div>
 
-                @foreach($executiveMembers as $executiveMember)
-                    <article
-                        class="relative swiper-slide w-64 mx-auto bg-white border-b-8 border-b-primary rounded-3xl px-8 py-6 shadow-sm hover:shadow-md transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                        <div class="mt-6 w-fit mx-auto">
-                            <img src="{{$executiveMember->imageUrl() }}"
-                                class="rounded-full w-28 h-28 lg:w-36 lg:h-36 border-4 border-primary outline outline-4 outline-offset-4 outline-secondary">
+                    <header class="font-dm-sans">
+                        <div class="mt-8">
+                            <h2 class="text-primary font-semibold text-2xl text-center">{{ $executiveMember->name }}</h2>
+                            <p class="text-gray-600 text-base text-center">{{ $executiveMember->designation }}</p>
                         </div>
+                    </header>
 
-                        <header class="font-dm-sans">
-                            <div class="mt-8">
-                                <h2 class="text-primary font-semibold text-2xl text-center">Pranab Raj KC</h2>
-                                <p class="text-gray-600 text-base text-center">Finance</p>
-                            </div>
-                        </header>
+                    <footer class="mt-4">
+                        <!-- social links -->
+                        <div class="flex w-32 mx-auto justify-around items-center">
+                            @if($executiveMember->facebook)
+                            <a href="{{ $executiveMember->facebook }}">
+                                <x-logo.facebook />
+                            </a>
+                            @endif
 
-                        <footer class="mt-4">
-                            <!-- social links -->
-                            <div class="flex w-32 mx-auto justify-around items-center">
-                                @if($executiveMember->facebook)
-                                <a href="">
-                                    <x-logo.facebook />
-                                </a>
-                                @endif
+                            @if($executiveMember->instagram)
+                            <a href="{{ $executiveMember->instagram }}">
+                                <x-logo.instagram />
+                            </a>
+                            @endif
 
-                                @if($executiveMember->instagram)
-                                <a href="">
-                                    <x-logo.instagram />
-                                </a>    
-                                @endif
-
-
-                                @if($executiveMember->linkedin)
-                                <a href="">
-                                    <x-logo.linkedin />
-                                </a>
-                                @endif
-                            </div>
-                        </footer>
-                        <div class="absolute inset-0 flex jusitfy-center items-center rounded-2xl shadow-sm hover:shadow-md font-dm-sans text-base text-center border-b-8 border-b-primary bg-white px-12 text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                            Pranab Raj Kc is a famous person
+                            @if($executiveMember->linkedin)
+                            <a href="{{ $executiveMember->linkedin }}">
+                                <x-logo.linkedin />
+                            </a>
+                            @endif
                         </div>
-                    </article>
-                   
-                </div>
+                    </footer>
+                </article>
                 @endforeach
             </div>
             <div class="teams-swiper-pagination mt-10 items-center flex justify-center"></div>
