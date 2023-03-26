@@ -7,6 +7,10 @@
 
     <section class="max-w-7xl flex flex-col-reverse md:flex-row items-center mx-auto px-8 sm:px-6">
         <div class="mx-auto">
+            @if(!$album->images->count())
+            <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Oops! No content to show!</h1>
+            <p class="text-center mb-10 text-sm sm:text-xl text-greish">We will add our interesting clicks soon...</p>
+            @else
             <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Clicks</h1>
             <p class="text-center text-sm sm:text-xl text-greish">Check out some of our photos</p>
 
@@ -27,5 +31,6 @@
 
             </div>
         </div>
+        @endif
     </section>
 </x-frontend.app>

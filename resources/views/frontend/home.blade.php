@@ -135,7 +135,7 @@
                 </div>
             </div>
         </article>
-        @else
+        @elseif($completedFeaturedEvent)
         <article class="mt-8">
             <div class="lg:flex justify-between lg:flex-row-reverse">
                 <div class="md:ml-4 md:mt-6">
@@ -236,6 +236,7 @@
     <section class="mt-10 sm:mt-24 max-w-7xl mx-auto px-8 sm:px-6">
         <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Blogs</h1>
         <p class="text-center text-base sm:text-xl text-greish">Keep updated with latest reads</p>
+        @if($featuredBlog)
         <article class="">
             <div class="grid sm:grid-cols-2 lg:gap-8">
                 <div class="sm:hidden md:ml-4 md:mt-6 mt-6">
@@ -282,6 +283,7 @@
                 </div>
             </div>
         </article>
+        @endif
     </section>
 
     <!-- view more -->

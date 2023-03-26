@@ -4,6 +4,10 @@
             <h1 class="font-bold text-white text-5xl lg:text-8xl">Events</h1>
         </div>
     </x-frontend.wave>
+    @if(!$upcomingEvents->count() && !$completedEvents->count())
+    <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Oops! No content to show!</h1>
+    <p class="text-center mb-10 text-sm sm:text-xl text-greish">We will add our events soon...</p>
+    @else
 
     <section class="mt-10 sm:mt-24 mb-10 sm:mb-24 max-w-7xl mx-auto px-8 sm:px-6">
         <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Featured Events</h1>
@@ -189,5 +193,6 @@
         </div>
         @endforeach
     </section>
+    @endif
 
 </x-frontend.app>

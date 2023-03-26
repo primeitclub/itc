@@ -6,6 +6,10 @@
     </x-frontend.wave>
 
     <section class="mt-10 sm:mt-24 mb-10 sm:mb-24 max-w-7xl mx-auto px-8 sm:px-6">
+        @if(!$blogs->count())
+        <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Oops! No content to show!</h1>
+        <p class="text-center text-sm sm:text-xl text-greish">We will post some interesting blogs soon...</p>
+        @else
         <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">All Articles</h1>
         <p class="text-center text-base sm:text-xl text-greish">Browse our recent publications</p>
 
@@ -43,6 +47,7 @@
             </div>
             @endforeach
 
+            @endif
         </div>
     </section>
 
