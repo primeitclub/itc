@@ -75,6 +75,25 @@
     border-color: #123abc !important;
 }
 
+.flip-card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease-in-out;
+}
+
+.flip-card:hover {
+    transform: rotateY(180deg);
+    
+}
+
+.flip-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
 @media (max-width: 1400px) {
     .events {
         grid-template-columns: repeat(2, minmax(0, 1fr));
