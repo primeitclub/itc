@@ -11,9 +11,10 @@ class HomePageController extends Controller
 {
     public function index() {
         $featuredEvent = Event::with(['eventCategory','speakers'])->upcoming()->latest()->first();
+        $completedFeaturedEvent = Event::with(['eventCategory','speakers'])->completed()->latest()->first();
         $featuredBlog = Blog::with(['blogCategory'])->published()->latest()->first();
         $executiveMembers = Member::ExecutiveMember()->where('batch', date('Y'))->get();
         $testimonials = AlumniTestimonial::latest()->get();
-        return view('frontend.home', compact('featuredEvent', 'featuredBlog', 'executiveMembers', 'testimonials'));
+        return view('frontend.home', compact('featuredEvent', 'completedFeaturedEvent', 'featuredBlog', 'executiveMembers', 'testimonials'));
     }
 }
