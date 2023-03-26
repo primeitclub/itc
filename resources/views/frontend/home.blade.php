@@ -123,7 +123,7 @@
 
                     </div>
 
-                    <footer class="mt-4 flex flex-col sm:flex-row sm:justify-between">
+                    <footer class="mt-4 flex flex-col space-x-2 sm:flex-row sm:justify-between">
                         <button class="button mt-7 py-3 px-20 rounded-3xl">
                             <a href="{{ $featuredEvent->registration_link }}" class="">Register Now</a>
                         </button>
