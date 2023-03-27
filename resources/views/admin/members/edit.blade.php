@@ -65,12 +65,12 @@
                         </x-form.group>
 
                         <x-form.group label="Github" for="github">
-                            <x-form.input-link type="text" id="github" name="github" value="{{ $member->linkedin }}" placeholder="www.github.com/username" />
+                            <x-form.input-link type="text" id="github" name="github" value="{{ $member->github }}" placeholder="www.github.com/username" />
                             <x-form.error name="github" />
                         </x-form.group>
 
                         <x-form.group label="Instagram" for="instagram">
-                            <x-form.input-link type="text" id="instagram" name="instagram" value="{{ $member->linkedin }}" placeholder="www.instagram.com/username" />
+                            <x-form.input-link type="text" id="instagram" name="instagram" value="{{ $member->instagram }}" placeholder="www.instagram.com/username" />
                             <x-form.error name="instagram" />
                         </x-form.group>
 
