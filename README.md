@@ -84,3 +84,19 @@ Now you can visit:
 -   http://localhost:8000/admin (admin)
 
 on your web-broswer to access the website.
+
+### Special thanks to
+
+-   [Prajesh Man Pradhan](https://github.com/prajeshpradhan)
+-   [Pramila Shrestha](https://www.linkedin.com/in/pramila-shrestha-91b67a198/)
+-   [Susit Ratna Tuladhar](https://github.com/SusitTuladhar)
+-   [Umang Shakya](https://www.linkedin.com/in/umang-shakya-0a52411b3/)
+-   [Rajila Sthapit](https://www.linkedin.com/in/rajila-sthapit-9a8b24237/)
+-   [Rikesh Sherpa](https://github.com/derikesh)
+-   [Sanish Maharjan](https://www.linkedin.com/in/sanis-maharjan-8579031a5/)
+-   [Subarna Sapkota](https://github.com/subarna0077)
+-   [Bihochan Poudel](#)
+-   [Riddima Sthapit](#)
+-   [Shreebisha Shrestha](#)
+-   [Pranab Raj Kc Pandey](https://github.com/PranabZz)
+-   [Basanta Rai](https://github.com/iambasanta)
