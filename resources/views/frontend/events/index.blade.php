@@ -97,32 +97,28 @@
         <div class="flex p-12 items-center justify-center gap-4 ">
             <h1 class="text-primary text-sm lg:text-3xl  font-bold">Year:</h1>
             <div class="dropdown-menu">
-                <select>
-                    <option value=""><button>2022</button></option>
-                    <br />
-                    <option value=""><button>2021</button></option>
-                    <br />
-                    <option value=""><button>2020</button></option>
-                    <br />
-                    <option value=""><button>2019</button></option>
-                    <br />
-                    <option value=""><button>2018</button></option>
-                    <br />
+                <select name="batch" id="batch" class="">
+                    <option value="" selected disabled>2023</option>
+                    @foreach(range(2023, date('Y')) as $year)
+                    <option value="{{ $year }}" class="rounded-md">{{ $year }}</option>
+                    @endforeach
                 </select>
             </div>
             <h1 class="text-primary text-sm lg:text-3xl  font-bold">Month:</h1>
             <div class="dropdown-menu">
-                <select>
-                    <option value=""><button>2022</button></option>
-                    <br />
-                    <option value=""><button>2021</button></option>
-                    <br />
-                    <option value=""><button>2020</button></option>
-                    <br />
-                    <option value=""><button>2019</button></option>
-                    <br />
-                    <option value=""><button>2018</button></option>
-                    <br />
+                <select name="month" id="month">
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
                 </select>
             </div>
         </div>
