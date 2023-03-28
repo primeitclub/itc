@@ -138,14 +138,14 @@
         @elseif($completedFeaturedEvent)
         <article class="mt-8">
             <div class="lg:flex justify-between lg:flex-row-reverse">
-                <div class="md:ml-4 md:mt-6">
-                    <img src="{{ $completedFeaturedEvent->thumbnailUrl() }}" alt="Event thumbnail" class="rounded-sm" />
+                <div class="md:ml-4 md:mt-6 flex justify-center lg:justify-end">
+                    <img src="{{ $completedFeaturedEvent->thumbnailUrl() }}" alt="Event thumbnail" class="rounded-sm w-[60%]" />
                 </div>
 
                 <div class="flex flex-col max-w-lg">
                     <header class="mt-4 lg:mt-2">
                         <div class="mt-4">
-                            <h1 class="text-xl sm:text-3xl font-semibold text-primary hover:text-primary-light">
+                            <h1 class="mb-4 text-xl sm:text-3xl font-semibold text-primary hover:text-primary-light">
                                 <a href="{{ route('events.show', $completedFeaturedEvent->slug) }}">
                                     {{ $completedFeaturedEvent->title }}
                                 </a>
@@ -289,7 +289,7 @@
     <!-- view more -->
     <div class="mx-auto max-w-xs mt-2 sm:mt-10">
         <div class="flex items-center justify-center cursor-pointer">
-            <a class="flex space-x-4 text-greish items-center font-medium hover:text-gray-800"
+            <a class="lg:mt-8 flex space-x-4 text-greish items-center font-medium hover:text-gray-800"
                 href="{{ route('blogs.index') }}">View more
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-5 h-5 ml-2 text-center">
