@@ -30,12 +30,12 @@
                             <p class="font-semibold text-gray-400 text-xs">{{ $blog->readablePublishedDate() }}</p>
                             <div class="flex mt-2 space-x-2">
                                 @if($blog->author_facebook)
-                                <a href="{{ $blog->author_facebook }}">
+                                <a href="{{ $blog->author_facebook }}" target="_blank" rel="noopener noreferrer">
                                     <x-logo.facebook />
                                 </a>
                                 @endif
                                 @if($blog->author_linkedin)
-                                <a href="{{ $blog->author_linkedin }}">
+                                <a href="{{ $blog->author_linkedin }}" target="_blank" rel="noopener noreferrer">
                                     <x-logo.linkedin />
                                 </a>
                                 @endif

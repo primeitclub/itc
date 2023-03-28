@@ -42,19 +42,19 @@
             <footer class="mt-4">
                 <div class="hidden sm:flex w-36 mx-auto justify-center space-x-4 items-center">
                     @if($president->facebook)
-                    <a href="{{ $president->facebook }}">
+                    <a href="{{ $president->facebook }}" target="_blank" rel="noopener noreferrer">
                         <x-logo.facebook />
                     </a>
                     @endif
 
                     @if($president->instagram)
-                    <a href="{{ $president->instagram }}">
+                    <a href="{{ $president->instagram }}" target="_blank" rel="noopener noreferrer">
                         <x-logo.instagram />
                     </a>
                     @endif
 
                     @if($president->linkedin)
-                    <a href="{{ $president->linkedin }}">
+                    <a href="{{ $president->linkedin }}" target="_blank" rel="noopener noreferrer">
                         <x-logo.linkedin />
                     </a>
                     @endif
@@ -76,19 +76,19 @@
                     </div>
                     <div class="hidden sm:flex w-36 mx-auto justify-center space-x-4 items-center">
                         @if($executiveMember->facebook)
-                        <a href="{{ $executiveMember->facebook }}">
+                        <a href="{{ $executiveMember->facebook }}" target="_blank" rel="noopener noreferrer">
                             <x-logo.facebook />
                         </a>
                         @endif
 
                         @if($executiveMember->instagram)
-                        <a href="{{ $executiveMember->instagram }}">
+                        <a href="{{ $executiveMember->instagram }}" target="_blank" rel="noopener noreferrer">
                             <x-logo.instagram />
                         </a>
                         @endif
 
                         @if($executiveMember->linkedin)
-                        <a href="{{ $executiveMember->linkedin }}">
+                        <a href="{{ $executiveMember->linkedin }}" target="_blank" rel="noopener noreferrer">
                             <x-logo.linkedin />
                         </a>
                         @endif
@@ -116,19 +116,19 @@
                     </div>
                     <div class="hidden sm:flex w-36 mx-auto justify-center space-x-4 items-center">
                         @if($generalMember->facebook)
-                        <a href="{{ $generalMember->facebook }}">
+                        <a href="{{ $generalMember->facebook }}" target="_blank" rel="noopener noreferrer">
                             <x-logo.facebook />
                         </a>
                         @endif
 
                         @if($generalMember->instagram)
-                        <a href="{{ $generalMember->instagram }}">
+                        <a href="{{ $generalMember->instagram }}" target="_blank" rel="noopener noreferrer">
                             <x-logo.instagram />
                         </a>
                         @endif
 
                         @if($generalMember->linkedin)
-                        <a href="{{ $generalMember->linkedin }}">
+                        <a href="{{ $generalMember->linkedin }}" target="_blank" rel="noopener noreferrer">
                             <x-logo.linkedin />
                         </a>
                         @endif

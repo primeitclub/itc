@@ -73,13 +73,13 @@
                     <div class="mt-6 mb-4 hidden lg:block">
                         <div class="flex w-32 mx-auto space-x-2 justify-end">
                             @if($speaker->facebook)
-                            <a href="{{ $speaker->facebook }}">
+                            <a href="{{ $speaker->facebook }}" target="_blank" rel="noopener noreferrer">
                                 <x-logo.facebook />
                             </a>
                             @endif
 
                             @if($speaker->facebook)
-                            <a href="{{ $speaker->linkedin }}">
+                            <a href="{{ $speaker->linkedin }}" target="_blank" rel="noopener noreferrer">
                                 <x-logo.linkedin />
                             </a>
                             @endif

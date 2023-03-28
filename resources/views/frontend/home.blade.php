@@ -338,19 +338,19 @@
                         <!-- social links -->
                         <div class="flex w-32 mx-auto justify-around items-center">
                             @if($executiveMember->facebook)
-                            <a href="{{ $executiveMember->facebook }}">
+                            <a href="{{ $executiveMember->facebook }}" target="_blank" rel="noopener noreferrer">
                                 <x-logo.facebook />
                             </a>
                             @endif
 
                             @if($executiveMember->instagram)
-                            <a href="{{ $executiveMember->instagram }}">
+                            <a href="{{ $executiveMember->instagram }}" target="_blank" rel="noopener noreferrer">
                                 <x-logo.instagram />
                             </a>
                             @endif
 
                             @if($executiveMember->linkedin)
-                            <a href="{{ $executiveMember->linkedin }}">
+                            <a href="{{ $executiveMember->linkedin }}" target="_blank" rel="noopener noreferrer">
                                 <x-logo.linkedin />
                             </a>
                             @endif
@@ -402,19 +402,19 @@
                             <!-- social links -->
                             <div class="flex w-32 mx-auto justify-around items-center">
                                 @if ($attestant->facebook)
-                                    <a href="{{ $attestant->facebook }}">
+                                    <a href="{{ $attestant->facebook }}" target="_blank" rel="noopener noreferrer">
                                         <x-logo.facebook />
                                     </a>
                                 @endif
 
                                 @if ($attestant->instagram)
-                                    <a href="{{ $attestant->instagram }}">
+                                    <a href="{{ $attestant->instagram }}" target="_blank" rel="noopener noreferrer">
                                         <x-logo.instagram />
                                     </a>
                                 @endif
 
                                 @if ($attestant->linkedin)
-                                    <a href="{{ $attestant->linkedin }}">
+                                    <a href="{{ $attestant->linkedin }}" target="_blank" rel="noopener noreferrer">
                                         <x-logo.linkedin />
                                     </a>
                                 @endif
