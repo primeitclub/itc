@@ -1,4 +1,11 @@
 <x-frontend.app title="Blog">
+    <x-slot name="meta">
+        <x-frontend.og-meta-tags
+            :title="$blog->title"
+            :description="$blog->excerpt"
+            :image="$blog->thumbnailUrl()"
+        />
+    </x-slot>
     <!-- Wave Section -->
     <x-frontend.wave>
         <div class="mt-4">
