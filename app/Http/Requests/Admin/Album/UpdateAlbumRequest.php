@@ -27,7 +27,7 @@ class UpdateAlbumRequest extends FormRequest
             'title' => ['required'],
             'slug' => ['required'],
             'description' => ['sometimes'],
-            'thumbnail' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],
+            'thumbnail' => ['required', 'image', 'mimes:jpg,jpeg,png', 'max:2048'],
         ];
     }
 }
