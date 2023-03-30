@@ -31,7 +31,7 @@
                         <tr class="text-gray-700 ">
                             <td class="px-4 py-3">
                                 <div scope="row" class="flex items-center space-x-4 text-gray-900 whitespace-nowrap">
-                                    <img class="w-12 h-12 rounded-full" src="{{ $member->imageUrl() }}" alt="member image">
+                                    <img class="w-12 h-12 rounded-full object-cover" src="{{ $member->imageUrl() }}" alt="member image">
                                     <p class="font-semibold text-base">{{ $member->name }}</p>
                                 </div>
                             </td>
