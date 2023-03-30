@@ -27,7 +27,7 @@ class StoreAlbumRequest extends FormRequest
             'title' => ['required'],
             'slug' => ['required'],
             'description' => ['sometimes'],
-            'thumbnail' => ['required', 'image', 'mimes:jpg,jpeg,png', 'max:2048'],
+            'thumbnail' => ['required', 'image', 'mimes:jpg,jpeg,png', 'max:400'],
         ];
     }
 }

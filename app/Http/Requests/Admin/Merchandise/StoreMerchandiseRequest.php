@@ -25,7 +25,7 @@ class StoreMerchandiseRequest extends FormRequest
     {
         return [
             "title" => ["required"],
-            "image" => ["sometimes", "image", "mimes:jpg,jpeg,png"],
+            "image" => ["sometimes", "image", "mimes:jpg,jpeg,png","max:400"],
             "sizes" => ["required"],
             "colors" => ["required"],
             "price" => ["required"],

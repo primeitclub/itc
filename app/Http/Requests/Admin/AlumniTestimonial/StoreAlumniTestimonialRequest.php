@@ -25,7 +25,7 @@ class StoreAlumniTestimonialRequest extends FormRequest
     {
         return [
             'name' => ['required'],
-            'image' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],
+            'image' => ['sometimes', 'image', 'mimes:jpg,jpeg,png','max:200'],
             'designation' => ['sometimes'],
             'facebook' => ['required', 'url'],
             'linkedin' => ['nullable', 'url'],

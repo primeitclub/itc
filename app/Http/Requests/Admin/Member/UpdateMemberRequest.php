@@ -25,7 +25,7 @@ class UpdateMemberRequest extends FormRequest
     {
         return [
             'name' => ['required'],
-            'image' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],
+            'image' => ['sometimes', 'image', 'mimes:jpg,jpeg,png','max:200'],
             'batch' => ['required'],
             'type' => ['required'],
             'designation' => ['sometimes'],

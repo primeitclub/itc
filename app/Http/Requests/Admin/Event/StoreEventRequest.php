@@ -27,7 +27,7 @@ class StoreEventRequest extends FormRequest
             'title' => ['required'],
             'slug' => ['required', 'unique:events'],
             'event_category_id' => ['required'],
-            'thumbnail' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],
+            'thumbnail' => ['sometimes', 'image', 'mimes:jpg,jpeg,png','max:400'],
             'description' => ['required'],
             'venue' => ['required'],
             'venue_address' => ['required'],

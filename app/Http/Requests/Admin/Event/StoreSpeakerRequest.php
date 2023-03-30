@@ -26,7 +26,7 @@ class StoreSpeakerRequest extends FormRequest
         return [
             'name' => ['required'],
             'event_id' => ['required'],
-            'image' => ['sometimes', 'image', 'mimes:jpg,jpeg,png'],
+            'image' => ['sometimes', 'image', 'mimes:jpg,jpeg,png','max:200'],
             'description' => ['required'],
             'facebook' => ['nullable', 'url'],
             'twitter' => ['nullable', 'url'],
