@@ -26,8 +26,6 @@ Please check the official Laravel installation guide for server requirements bef
 
 -   [Official Documentation](https://laravel.com/docs/9.x)
 
--   [laravel sail](https://laravel.com/docs/9.x/sail#main-content).
-
 Fork the repository and clone it (or download the zip file and extract it)
 
 Example : (replace `username` with your github username)
@@ -77,6 +75,10 @@ Seeds `User`,`Blog Category` and `Event Category`
 Start the local development server
 
     php artisan serve
+
+Or use [Laravel sail](https://laravel.com/docs/10.x/sail)
+
+    ./vendor/bin/sail up
 
 Now you can visit:
 
