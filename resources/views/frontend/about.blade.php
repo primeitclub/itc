@@ -75,7 +75,7 @@
             <!-- Department Details -->
             <article x-data="{ readMore : false }" x-show="currentTab == 'event'" x-cloak class="mt-10 w-full px-8 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
                 <div class="mt-10 px-2 pt-6">
-                    <h1 class="mt-6 text-2xl sm:text-4xl font-semibold text-primary">Event Management</h1>
+                    <h1 class="mt-6 text-3xl font-semibold text-primary">Event Management</h1>
                     <p class="text-sm sm:text-xl text-gray-500">Manages club's events</p>
                 </div>
                 <div class="px-2 py-6 flex space-x-6 justify-between">

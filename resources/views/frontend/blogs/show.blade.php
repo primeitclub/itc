@@ -26,7 +26,7 @@
                     <span class="px-4 py-2 bg-primary rounded-full text-white text-xs font-semibold">{{ $blog->blogCategory->title }}</span>
                 </div>
 
-                <div class="px-4 lg:px-0 mt-10 text-gray-700 max-w-screen-md mx-auto text-lg leading-relaxed">
+                <div class="px-4 lg:px-0 mt-10 text-gray-700 max-w-screen-md mx-auto text-lg font-dm-sans leading-relaxed">
                     {!! $blog->body !!}
                 </div>
                 <div class="flex mt-4 lg:mt-16 border-t-2">
