@@ -29,7 +29,7 @@
             <h1 class="font-semibold text-2xl sm:text-4xl mt-2 text-center md:text-left">
                 Our <span class="text-primary">Objective</span>
             </h1>
-            <p class="font-dm-sans mt-6 text-base leading-8 sm:text-xl text-greish">
+            <p class="font-dm-sans mt-6 text-base sm:text-xl text-greish">
                 The main objective of our club is to develop the IT skills amongst the students demanded in the current market.
                 For this, we organize different workshops, seminars, and training programs.
                 Some of our recent events/sessions include IT fundamentals, Cisco Networking, Cryptocurrency, Graphics designing, Programming, and Web designing.
@@ -74,11 +74,11 @@
             </div>
             <!-- Department Details -->
             <article x-data="{ readMore : false }" x-show="currentTab == 'event'" x-cloak class="mt-10 w-full px-8 sm:px-6 rounded-3xl bg-white border-b-8 border-b-primary">
-                <div class="mt-10 px-2 pt-6">
+                <div class="mt-10 px-6 pt-6">
                     <h1 class="mt-6 text-3xl font-semibold text-primary">Event Management</h1>
-                    <p class="text-sm sm:text-xl text-gray-500">Manages club's events</p>
+                    <p class="text-base text-gray-500">Manages club's events</p>
                 </div>
-                <div class="px-2 py-6 flex space-x-6 justify-between">
+                <div class="px-6 py-6 flex space-x-6 justify-between">
                     <p class="text-greish font-dm-sans text-sm sm:text-xl sm:w-2/4 tracking-normal leading-7 line-clamp-10 md:line-clamp-none" :class="readMore ? 'line-clamp-none' : ''">
                         Prime IT Club's Event Management Department is in charge of an event's overall coordination, planning, design, promotion, and profitability.
                         It takes the initiative and proposes event ideas and manages the entire event, assigns tasks, speaker and organises the technological requirements.
