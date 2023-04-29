@@ -54,7 +54,7 @@
         <article class="mt-8">
             <div class="lg:flex justify-between lg:flex-row-reverse">
                 <div class="md:ml-4 md:mt-6">
-                    <img src="{{ $featuredEvent->thumbnailUrl() }}" alt="Event thumbnail" class="rounded-sm" />
+                    <img src="{{ $featuredEvent->thumbnailUrl() }}" alt="Event thumbnail" class="rounded-sm w-[60%]" />
                 </div>
 
                 <div class="flex flex-col max-w-lg">
@@ -124,12 +124,12 @@
                     </div>
 
                     <footer class="mt-4 flex flex-col space-x-2 sm:flex-row sm:justify-between">
-                        <button class="button mt-7 py-3 px-20 rounded-3xl">
+                        <button class="button mt-7 py-3 px-12 rounded-3xl">
                             <a href="{{ $featuredEvent->registration_link }}" class="">Register Now</a>
                         </button>
 
                         <button class="outlined-button">
-                            <a href="{{ route('events.show', $featuredEvent->slug) }}" class="px-20">Read More</a>
+                            <a href="{{ route('events.show', $featuredEvent->slug) }}" class="px-12">Read More</a>
                         </button>
                     </footer>
                 </div>
