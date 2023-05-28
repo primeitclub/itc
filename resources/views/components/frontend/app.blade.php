@@ -9,5 +9,7 @@
         {{ $slot }}
     </main>
 
+    <x-subscribed />
+
     <x-frontend.footer/>
 </x-frontend.layout>

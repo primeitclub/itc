@@ -8,9 +8,10 @@
                     </div>
                     <div>
                         <div>
-                            <form id="newsletter-form" method="" action="">
+                            <form id="newsletter-form" method="POST" action="{{ route('subscribe') }}">
+                                @csrf
                                 <div class="mx-auto mb-6 flex max-w-sm flex-col justify-center md:flex-row lg:mx-0 lg:mb-0 lg:max-w-full">
-                                    <input class="mb-4 rounded-full px-4 py-4 border-none text-center text-base text-black placeholder-grey-800 md:mr-3 md:mb-0 md:w-1/2 md:py-3 md:text-left md:text-sm" type="email" name="email" placeholder="Enter your email address" autocomplete="off" required="">
+                                    <input  type="email" name="email"class="mb-4 rounded-full px-4 py-4 border-none text-center text-base text-black placeholder-grey-800 md:mr-3 md:mb-0 md:w-1/2 md:py-3 md:text-left md:text-sm" placeholder="Enter your email address" autocomplete="off" required="">
                                     <button class="flex-center bg-primary hover:bg-primary-light transition ease-out duration-300 rounded-full text-xs font-semibold text-white uppercase py-5 md:w-32 md:py-4" type="submit">
                                         <span class="text-wrap inline-block flex-shrink-0">Subscribe</span>
                                     </button>
