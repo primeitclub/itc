@@ -11,6 +11,6 @@ class SubscriberController extends Controller
     public function store(StoreSubscriberRequest $request) {
         Subscriber::create($request->validated());
 
-        return redirect()->back()->with('success','Your subscription added successfully!');
+        return redirect()->back()->with('success','Your subscription has been added successfully!');
     }
 }
