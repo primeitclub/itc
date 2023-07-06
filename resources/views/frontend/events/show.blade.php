@@ -1,3 +1,4 @@
+<meta property="og:image" content="{{ $event->thumbnailUrl() }}" />
 <x-frontend.app title="Event">
     <!-- Wave Section -->
     <x-frontend.wave>
