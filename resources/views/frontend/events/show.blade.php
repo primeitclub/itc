@@ -12,7 +12,7 @@
         <div class="flex justify-between gap-x-10">
             <div>
                 <div class="mb-6 lg:w-[75%] relative" style="height: 24em;">
-                    <img src="{{ $event->imageUrl() }}" class="absolute left-0 top-0 w-full h-full z-0 object-cover" />
+                    <img src="{{ $event->thumbnailUrl() }}" class="absolute left-0 top-0 w-full h-full z-0 object-cover" />
                 </div>
                 <div class="w-full max-w-screen-md">
                     <h2 class="mt-4 mb-2 text-4xl font-semibold text-primary leading-tight">

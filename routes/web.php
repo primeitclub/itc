@@ -22,6 +22,8 @@ use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\MembersPageController;
 use App\Http\Controllers\MerchandisePageController;
 use App\Http\Controllers\SubscriberController;
+use App\Http\Livewire\EventFilter;
+use App\Http\Livewire\ShowEvent;
 use Illuminate\Support\Facades\Route;
 
 
