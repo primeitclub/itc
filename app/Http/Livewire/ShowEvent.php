@@ -27,7 +27,7 @@ class ShowEvent extends Component
 
 
     public function reloadPosts($year, $month)
-    {
+    {       
         $eventsQuery = Event::completed()->with(['eventCategory', 'speakers']);
 
         if ($year) {
@@ -40,7 +40,7 @@ class ShowEvent extends Component
 
         $this->completedEvents = $eventsQuery->latest()->get();
         if ($this->completedEvents->isEmpty()) {
-            $this->completedEvents = Event::completed()->with(['eventCategory', 'speakers'])->latest()->get();
+            $this->completedEvents = Event::completed()->with(['eventCategory', 'speakers'])->get();
         }
     }
 }

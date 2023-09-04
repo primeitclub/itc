@@ -8,7 +8,6 @@
     <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Oops! No content to show!</h1>
     <p class="text-center mb-10 text-sm sm:text-xl text-greish">We will add our events soon...</p>
     @else
-
     <section class="mt-10 sm:mt-24 mb-10 sm:mb-24 max-w-7xl mx-auto px-8 sm:px-6">
         @if($upcomingEvents->count())
         <h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">Featured Events</h1>
@@ -95,11 +94,10 @@
         <p class="text-center text-base sm:text-xl text-greish">Check our past activities</p>
 
         @livewire('filter-event')
-        @livewire('show-event') 
-       
-        
+        @livewire('show-event')
+
     </section>
-   
+
     <script src="{{ asset('vendor/livewire/livewire.js') }}"></script>
     @livewireScripts
 

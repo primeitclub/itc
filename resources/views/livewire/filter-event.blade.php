@@ -1,16 +1,17 @@
 <div class="flex p-12 items-center justify-center gap-4">
     <h1 class="text-primary text-sm lg:text-3xl font-bold">Year:</h1>
     <div class="dropdown-menu">
-        <select wire:model="year" wire:ignore name="year" id="year" class="">
-            <option value="" selected disabled>2023</option>
-            @foreach(range(2023, date('Y')) as $yearOption)
-                <option value="{{ $yearOption }}" class="rounded-md">{{ $yearOption }}</option>
+        <select wire:model="year" name="year" id="year" class="rounded-md">
+            <option value="" selected disabled>Select a year</option>
+            @foreach (range(2023, date('Y')) as $yearOption)
+                <option value="{{ $yearOption }}">{{ $yearOption }}</option>
             @endforeach
         </select>
     </div>
     <h1 class="text-primary text-sm lg:text-3xl font-bold">Month:</h1>
     <div class="dropdown-menu">
-        <select wire:model="month" wire:ignore name="month" id="month">
+        <select wire:model="month" name="month" id="month" class="rounded-md">
+            <option value="" selected disabled>Select a month</option>
             <option value="01">January</option>
             <option value="02">February</option>
             <option value="03">March</option>

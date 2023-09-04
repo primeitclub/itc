@@ -1,6 +1,8 @@
+@if(!$completedEvents->count())
+<h1 class="text-center text-2xl sm:text-4xl text-primary font-bold">No events found</h1>
+<p class="text-center text-base sm:text-xl text-greish">Sorry, no events record found on that date</p>
 
-    {{-- <p class="text-center mb-10 text-sm sm:text-xl text-greish">{{$message}}</p> --}}
-
+@else 
 @foreach ($completedEvents as $completedEvent)
 <div class="hidden lg:flex justify-center items-center ">
     <div class="w-[67%] h-48 bg-white shadow-xl rounded-2xl mb-8 md:mb-24 grid grid-cols-4">
@@ -68,3 +70,4 @@
     </div>
 </div>
 @endforeach
+@endif
