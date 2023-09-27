@@ -23,8 +23,8 @@ class MembersOption extends Component
 
     public function show()
     {
-        $this->emitTo('members-show', 'reloadPosts', $this->year);
+        $this->emitTo('general-member','reloadPosts', $this->year);
+        $this->emitTo('president-show', 'reloadPosts', $this->year);
         $this->emitTo('executives-member', 'reloadPosts', $this->year);
-        $this->emitTo('general-member', 'reload', $this->year);
     }
 }

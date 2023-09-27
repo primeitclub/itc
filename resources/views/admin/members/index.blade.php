@@ -21,7 +21,8 @@
                             <th class="px-4 py-3">Email</th>
                             <th class="px-4 py-3">Type</th>
                             <th class="px-4 py-3">Designation</th>
-                            <th class="px-4 py-3">Batch</th>
+                            <th class="px-4 py-3">Starting Year</th>
+                            <th class="px-4 py-3">Ending Year</th>
                             <th class="px-4 py-3">Actions</th>
                         </tr>
                     </thead>
@@ -53,7 +54,10 @@
                             </td>
 
                             <td class="px-4 py-3 text-sm font-bold">
-                                {{ $member->batch }}
+                                {{ $member->starting_year }}
+                            </td>
+                            <td class="px-4 py-3 text-sm font-bold">
+                                {{ $member->ending_year }}
                             </td>
 
                             <td class="px-4 py-3">

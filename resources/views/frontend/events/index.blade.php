@@ -94,6 +94,7 @@
         <p class="text-center text-base sm:text-xl text-greish">Check our past activities</p>
 
         @livewire('filter-event')
+        
         @livewire('show-event')
 
     </section>

@@ -1,4 +1,4 @@
-@foreach ($executiveMembers->where('designation','=', 'President') as $president)
+@foreach ($presidents as $president)
     <article class="w-full mx-auto px-8 py-6">
         <div class="mt-6 w-fit mx-auto">
             <img src="{{ $president->imageUrl() }}" loading="lazy"
@@ -32,7 +32,7 @@
             </div>
         </footer>
     </article>
-@endforeach 
+@endforeach
 
 
 

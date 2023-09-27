@@ -15,7 +15,8 @@ class Member extends Model
     protected $fillable = [
         'name',
         'image',
-        'batch',
+        'starting_year',
+        'ending_year',
         'type',
         'designation',
         'email',
@@ -34,41 +35,45 @@ class Member extends Model
         ];
     }
 
-    public function imageUrl(){
+    public function imageUrl()
+    {
         return $this->image ?
             Storage::disk("members")->url($this->image)
-            : 
+            :
             "";
     }
 
-    protected function Designation(): Attribute {
+    protected function Designation(): Attribute
+    {
         return Attribute::make(
             get: fn (string $value) => ucfirst($value),
         );
     }
 
-    public function scopeExecutiveMember($query) {
+    public function scopeExecutiveMember($query)
+    {
         return $query->where('type', 'Executive');
     }
 
-    public function scopeGeneralMember($query) {
+    public function scopeGeneralMember($query)
+    {
         return $query->where('type', 'General');
     }
 
-    public function scopeOrderByDesignation($query) {
-    return $query->orderByRaw("
+    public function scopeOrderByDesignation($query)
+    {
+        return $query->orderByRaw('
         CASE
-        WHEN Designation = 'President' THEN 1
-        WHEN Designation = 'Vice President' THEN 2
-        WHEN Designation = 'Secretary' THEN 3
-        WHEN Designation = 'Event Management Director' THEN 4
-        WHEN Designation = 'External Relationship Director' THEN 5
-        WHEN Designation = 'Finance Director' THEN 6
-        WHEN Designation = 'Human Resource Director' THEN 7
-        WHEN Designation = 'Marketing Director' THEN 8
+        WHEN "designation" = \'President\' THEN 1
+        WHEN "designation" = \'Vice President\' THEN 2
+        WHEN "designation" = \'Secretary\' THEN 3
+        WHEN "designation" = \'Event Management Director\' THEN 4
+        WHEN "designation" = \'External Relationship Director\' THEN 5
+        WHEN "designation" = \'Finance Director\' THEN 6
+        WHEN "designation" = \'Human Resource Director\' THEN 7
+        WHEN "designation" = \'Marketing Director\' THEN 8
         ELSE 9 -- Use a value that comes after the specified designations
         END
-    ");
-}
-
+    ');
+    }
 }

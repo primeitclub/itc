@@ -4,18 +4,20 @@ namespace App\Http\Livewire;
 
 use App\Models\Event;
 use Livewire\Component;
-use Illuminate\Queue\Listener;
-use Illuminate\Support\Facades\Date;
 
 class ShowEvent extends Component
 {
     public $completedEvents;
+    public $selectedYear;
+    public $selectedMonth;
 
     protected $listeners = ['reloadPosts'];
 
     public function mount()
     {
-        $this->completedEvents = Event::completed()->with(['eventCategory', 'speakers'])->whereMonth('event_date', date('m'))->latest()->get();
+        $this->selectedYear = date('Y');
+        $this->selectedMonth = date('m');
+        $this->loadCompletedEvents();
     }
 
     public function render()
@@ -25,22 +27,28 @@ class ShowEvent extends Component
         ]);
     }
 
-
     public function reloadPosts($year, $month)
-    {       
-        $eventsQuery = Event::completed()->with(['eventCategory', 'speakers']);
+    {
+        $this->selectedYear = $year;
+        $this->selectedMonth = $month;
+        $this->loadCompletedEvents();
+    }
 
-        if ($year) {
-            $eventsQuery = $eventsQuery->whereYear('event_date', $year);
-        }
+    private function loadCompletedEvents()
+    {
+ 
+        $this->completedEvents = Event::completed()
+            ->with(['eventCategory', 'speakers'])
+            ->whereYear('event_date', $this->selectedYear)
+            ->whereMonth('event_date', $this->selectedMonth)
+            ->latest()
+            ->get();
 
-        if ($month) {
-            $eventsQuery = $eventsQuery->whereMonth('event_date', $month);
-        }
-
-        $this->completedEvents = $eventsQuery->latest()->get();
         if ($this->completedEvents->isEmpty()) {
-            $this->completedEvents = Event::completed()->with(['eventCategory', 'speakers'])->get();
+            $this->completedEvents = Event::completed()
+                ->with(['eventCategory', 'speakers'])
+                ->latest()
+                ->get();
         }
     }
 }

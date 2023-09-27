@@ -3,8 +3,8 @@
     <div class="dropdown-menu">
         <select wire:model="year" name="year" id="year" class="rounded-md">           
             <option value="" selected disabled>Select a year</option>
-            @foreach (range(2022, date('Y')) as $yearOption)
-                <option value="{{ $yearOption }}">{{ $yearOption }}</option>
+            @foreach (range(date('Y'), 2022) as $yearOption)
+                <option value="{{ $yearOption }}">{{ $yearOption  }}-{{ $yearOption + 1 }}</option>
             @endforeach
         </select>
     </div>

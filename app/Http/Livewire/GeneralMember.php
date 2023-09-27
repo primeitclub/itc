@@ -8,20 +8,21 @@ use Livewire\Component;
 class GeneralMember extends Component
 {
     public $generalMembers;
-    protected $listeners = ['reload'];
+    public $year;
+    protected $listeners = ['reloadPosts'];
 
     public function mount()
     {
-        $this->generalMembers = Member::GeneralMember()->where('batch',date('Y'))->orderBy('name')->get();
+        $this->generalMembers = Member::GeneralMember()->where('starting_year',date('Y'))->orderBy('name')->get();
     }
 
     public function render()
     {
-        return view('livewire.general-member', ['generalMembers' => $this->generalMembers]);
+        return view('livewire.general-member')->with(['generalMembers' => $this->generalMembers]);
     }
 
-    public function reload($year)
+    public function reloadPosts($year)
     {
-        $this->generalMembers =  Member::GeneralMember()->where('batch', $year)->orderBy('name')->get();
+        $this->generalMembers =  Member::GeneralMember()->where('starting_year', $year)->orderBy('name')->get();
     }
 }

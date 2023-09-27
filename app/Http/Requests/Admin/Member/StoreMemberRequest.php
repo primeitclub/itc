@@ -26,7 +26,8 @@ class StoreMemberRequest extends FormRequest
         return [
             'name' => ['required'],
             'image' => ['sometimes', 'image', 'mimes:jpg,jpeg,png','max:200'],
-            'batch' => ['required'],
+            'starting_year' => ['required'],
+            'ending_year' => ['required'],
             'type' => ['required'],
             'designation' => ['sometimes'],
             'email' => ['required', 'email'],

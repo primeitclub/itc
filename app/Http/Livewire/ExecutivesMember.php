@@ -1,8 +1,10 @@
 <?php
+
 namespace App\Http\Livewire;
 
 use App\Models\Member;
 use Livewire\Component;
+
 
 class ExecutivesMember extends Component
 {
@@ -11,7 +13,7 @@ class ExecutivesMember extends Component
 
     public function mount()
     {
-        $this->executiveMembers = Member::ExecutiveMember()->OrderByDesignation()->where('batch', date('Y'))->where('designation' ,'!=' , 'President')->get(); 
+        $this->executiveMembers = Member::ExecutiveMember()->OrderByDesignation()->where('starting_year', date('Y'))->where('designation', '!=', 'President')->get();
     }
 
     public function render()
@@ -21,7 +23,6 @@ class ExecutivesMember extends Component
 
     public function reloadPosts($year)
     {
-        $this->executiveMembers = Member::ExecutiveMember()->OrderByDesignation()->where('batch', $year)->where('designation' ,'!=' , 'President')->get(); 
+        $this->executiveMembers = Member::ExecutiveMember()->OrderByDesignation()->where('starting_year', $year)->where('designation', '!=', 'President')->get();
     }
-
 }

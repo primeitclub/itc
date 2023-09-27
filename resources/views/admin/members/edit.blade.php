@@ -22,14 +22,28 @@
                         </x-form.group>
 
                         <div class="flex justify-between">
-                            <x-form.group label="Batch" for="batch">
-                                <select name="batch" id="batch" class="@error('batch') border-red-600 @enderror w-64 p-2 border border-gray-300 rounded form-input">
-                                    <option value="" selected disabled>2004</option>
-                                    @foreach(range(2004, date('Y')) as $batch)
-                                    <option value="{{ $batch }}" class="rounded-md" {{ $member->batch == $batch ? 'selected' : '' }} >{{ $batch }}</option>
+                            <x-form.group label="Starting year" for="starting_year">
+                                <select name="starting_year" id="starting_year"
+                                    class="@error('starting_year') border-red-600 @enderror w-64 p-2 border border-gray-300 rounded form-input">
+                                    <option value="" selected disabled>2020</option>
+                                    @foreach (range(2020, date('Y') + 1) as $batch)
+                                        <option value="{{ $batch }}" class="rounded-md">{{ $batch }}
+                                        </option>
                                     @endforeach
                                 </select>
-                                <x-form.error name="batch" />
+                                <x-form.error name="starting_year" />
+                            </x-form.group>
+
+                            <x-form.group label="Ending year" for="ending_year">
+                                <select name="ending_year" id="ending_year"
+                                    class="@error('ending_year') border-red-600 @enderror w-64 p-2 border border-gray-300 rounded form-input">
+                                    <option value="" selected disabled>2020</option>
+                                    @foreach (range(2020, date('Y') + 1) as $batch)
+                                        <option value="{{ $batch }}" class="rounded-md">{{ $batch }}
+                                        </option>
+                                    @endforeach
+                                </select>
+                                <x-form.error name="ending_year" />
                             </x-form.group>
 
                             <x-form.group label="Member Type" for="type">
