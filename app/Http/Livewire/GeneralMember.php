@@ -13,7 +13,7 @@ class GeneralMember extends Component
 
     public function mount()
     {
-        $this->generalMembers = Member::GeneralMember()->where('starting_year',date('Y'))->orderBy('name')->get();
+        $this->generalMembers = Member::GeneralMember()->where('starting_year',date('2022'))->orderBy('name')->get();
     }
 
     public function render()

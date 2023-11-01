@@ -62,18 +62,18 @@ class Member extends Model
 
     public function scopeOrderByDesignation($query)
     {
-        return $query->orderByRaw('
-        CASE
-        WHEN "designation" = \'President\' THEN 1
-        WHEN "designation" = \'Vice President\' THEN 2
-        WHEN "designation" = \'Secretary\' THEN 3
-        WHEN "designation" = \'Event Management Director\' THEN 4
-        WHEN "designation" = \'External Relationship Director\' THEN 5
-        WHEN "designation" = \'Finance Director\' THEN 6
-        WHEN "designation" = \'Human Resource Director\' THEN 7
-        WHEN "designation" = \'Marketing Director\' THEN 8
-        ELSE 9 -- Use a value that comes after the specified designations
-        END
-    ');
+        return $query->orderByRaw("
+            CASE
+            WHEN Designation = 'President' THEN 1
+            WHEN Designation = 'Vice President' THEN 2
+            WHEN Designation = 'Secretary' THEN 3
+            WHEN Designation = 'Event Management Director' THEN 4
+            WHEN Designation = 'External Relationship Director' THEN 5
+            WHEN Designation = 'Finance Director' THEN 6
+            WHEN Designation = 'Human Resource Director' THEN 7
+            WHEN Designation = 'Marketing Director' THEN 8
+            ELSE Designation
+            END
+            ");
     }
 }

@@ -11,8 +11,7 @@ class PresidentShow extends Component
 
     public function mount()
     {
-        $this->president = Member::ExecutiveMember()->OrderByDesignation()->where('starting_year', date('Y'))->where('designation' ,'=', 'President' )->get(); 
-
+        $this->president = Member::ExecutiveMember()->OrderByDesignation()->where('starting_year', date('2022'))->where('designation' ,'=', 'President' )->get(); 
     }
 
     public function render()
@@ -22,7 +21,7 @@ class PresidentShow extends Component
 
     public function reloadPosts($year)
     {
-        $this->president = Member::ExecutiveMember()->OrderByDesignation()->where('starting_year', $year)->get(); 
+        $this->president = Member::ExecutiveMember()->OrderByDesignation()->where('starting_year', $year)->where('designation' ,'=', 'President' )->get(); 
     }
 
 }

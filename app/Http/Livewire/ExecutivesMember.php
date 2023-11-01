@@ -13,7 +13,7 @@ class ExecutivesMember extends Component
 
     public function mount()
     {
-        $this->executiveMembers = Member::ExecutiveMember()->OrderByDesignation()->where('starting_year', date('Y'))->where('designation', '!=', 'President')->get();
+        $this->executiveMembers = Member::ExecutiveMember()->OrderByDesignation()->where('starting_year', date('2022'))->where('designation', '!=', 'President')->get();
     }
 
     public function render()

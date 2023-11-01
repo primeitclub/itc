@@ -36,19 +36,10 @@ class ShowEvent extends Component
 
     private function loadCompletedEvents()
     {
- 
-        $this->completedEvents = Event::completed()
-            ->with(['eventCategory', 'speakers'])
-            ->whereYear('event_date', $this->selectedYear)
-            ->whereMonth('event_date', $this->selectedMonth)
-            ->latest()
-            ->get();
 
+        $this->completedEvents = Event::completed()->with(['eventCategory', 'speakers'])->whereYear('event_date', $this->selectedYear)->whereMonth('event_date', $this->selectedMonth)->latest()->get();
         if ($this->completedEvents->isEmpty()) {
-            $this->completedEvents = Event::completed()
-                ->with(['eventCategory', 'speakers'])
-                ->latest()
-                ->get();
+            $this->completedEvents = Event::completed()->with(['eventCategory', 'speakers'])->latest()->take(1)->get();
         }
-    }
+  }
 }
