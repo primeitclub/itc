@@ -294,7 +294,7 @@
             <div x-data="{isOpen:false}" class="pt-6">
                 <dt>
                     <button type="button" class="flex w-full items-start justify-between text-left text-gray-900" aria-controls="faq-0" aria-expanded="false">
-                        <span class="text-sm sm:text-xl leading-7">How many departments are there in the clubs? </span>
+                        <span class="text-sm sm:text-xl leading-7">How many departments are there in the club? </span>
                         <span class="ml-6 flex h-7 items-center">
                             <svg x-on:click="isOpen = true" x-show="!isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
