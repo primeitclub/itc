@@ -1,15 +1,12 @@
 <div class="md:flex md:flex-shrink-0">
-    <div class="flex flex-col w-64 bg-blue-900 border-r border-blue-200">
-        <div class="flex flex-col flex-1 h-0 pt-5 pb-4 overflow-y-auto">
-            <div class="flex items-center flex-shrink-0 px-4">
+    <div class="flex flex-col w-64 bg-primary border-r border-primary">
+        <div class="flex flex-col flex-1 h-0 pb-4 overflow-y-auto">
+            <div class="flex items-center flex-shrink-0 p-4  border-b border-primary-light">
                 <a href="{{ route('admin.home') }}">
-                    <img class="w-auto h-7" src="{{ asset('logo/logo-light.svg') }}" alt="Surge Logo">
+                    <img class="w-auto h-7" src="{{ asset('logo/logo-light.svg') }}" alt="PITC Logo">
                 </a>
             </div>
-            <div class="pt-4">
-                <hr class="border-gray-200" />
-            </div>
-            <nav class="flex-1 px-2 mt-2 bg-blue-900 space-y-2">
+            <nav class="flex-1 px-2 mt-2 bg-primary space-y-2">
                 <div class="px-6 pt-4">
                     <ul class="flex flex-col space-y-2">
                         <li class="relative text-gray-200 hover:text-white focus-within:text-white">
@@ -21,7 +18,7 @@
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 8.25H19"></path>
                                 </svg>
                             </div>
-                            <a href="{{ route('admin.home') }}" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Dashboard</a>
+                            <a href="{{ route('admin.home') }}" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-primary-light focus:outline-none focus:ring-1 focus:ring-primary-light focus:bg-primary-light">Dashboard</a>
                         </li>
 
                         @can("super-admin")
@@ -32,7 +29,7 @@
                                     <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <a href="{{ route('admin.users.index') }}" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Admin
+                            <a href="{{ route('admin.users.index') }}" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-primary-light focus:outline-none focus:ring-1 focus:ring-primary-light focus:bg-primary-light">Admin
                                 Users</a>
                         </li>
                         @endcan
@@ -47,7 +44,7 @@
                                         </svg>
                                     </div>
 
-                                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Testimonials</a>
+                                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-primary-light focus:outline-none focus:ring-1 focus:ring-primary-light focus:bg-primary-light">Testimonials</a>
                                 </div>
 
                                 <button class="absolute right-0 flex items-center p-1" tabindex="-1">
@@ -60,12 +57,12 @@
                             <div class="pt-2 pl-4">
                                 <ul class="flex flex-col pl-2 text-gray-200 border-l border-gray-300 space-y-2" x-show="open" x-cloak @click.outside="open = false">
                                     <li>
-                                        <a href="{{ route('admin.alumni-testimonials.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">All
+                                        <a href="{{ route('admin.alumni-testimonials.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-primary-light hover:text-white focus:outline-none focus:ring-1 focus:ring-primary-light focus:text-white">All
                                             Testimonials</a>
                                     </li>
 
                                     <li>
-                                        <a href="{{ route('admin.alumni-testimonials.create') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">Add
+                                        <a href="{{ route('admin.alumni-testimonials.create') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-primary-light hover:text-white focus:outline-none focus:ring-1 focus:ring-primary-light focus:text-white">Add
                                             Testimonial</a>
                                     </li>
                                 </ul>
@@ -82,7 +79,7 @@
                                         </svg>
                                     </div>
 
-                                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Blogs</a>
+                                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-primary-light focus:outline-none focus:ring-1 focus:ring-primary-light focus:bg-primary-light">Blogs</a>
                                 </div>
 
                                 <button class="absolute right-0 flex items-center p-1" tabindex="-1">
@@ -95,16 +92,16 @@
                             <div class="pt-2 pl-4">
                                 <ul class="flex flex-col pl-2 text-gray-200 border-l border-gray-300 space-y-2" x-show="open" x-cloak @click.outside="open = false">
                                     <li>
-                                        <a href="{{ route('admin.blog-categories.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">Categories</a>
+                                        <a href="{{ route('admin.blog-categories.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-primary-light hover:text-white focus:outline-none focus:ring-1 focus:ring-primary-light focus:text-white">Categories</a>
                                     </li>
 
                                     <li>
-                                        <a href="{{ route('admin.blogs.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">All
+                                        <a href="{{ route('admin.blogs.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-primary-light hover:text-white focus:outline-none focus:ring-1 focus:ring-primary-light focus:text-white">All
                                             Blogs</a>
                                     </li>
 
                                     <li>
-                                        <a href="{{ route('admin.blogs.create') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">Add
+                                        <a href="{{ route('admin.blogs.create') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-primary-light hover:text-white focus:outline-none focus:ring-1 focus:ring-primary-light focus:text-white">Add
                                             Blog</a>
                                     </li>
                                 </ul>
@@ -120,7 +117,7 @@
                                             <path d="M8 7V3M16 7V3M7 11H17M5 21H19C20.1046 21 21 20.1046 21 19V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V19C3 20.1046 3.89543 21 5 21Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                     </div>
-                                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Events</a>
+                                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-primary-light focus:outline-none focus:ring-1 focus:ring-primary-light focus:bg-primary-light">Events</a>
                                 </div>
                                 <button class="absolute right-0 flex items-center p-1" tabindex="-1">
                                     <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24">
@@ -131,19 +128,19 @@
                             <div class="pt-2 pl-4">
                                 <ul class="flex flex-col pl-2 text-gray-200 border-l border-gray-300 space-y-2" x-show="open" x-cloak @click.outside="open = false">
                                     <li>
-                                        <a href="{{ route('admin.event-categories.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">Category
+                                        <a href="{{ route('admin.event-categories.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-primary-light hover:text-white focus:outline-none focus:ring-1 focus:ring-primary-light focus:text-white">Category
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('admin.events.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">All
+                                        <a href="{{ route('admin.events.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-primary-light hover:text-white focus:outline-none focus:ring-1 focus:ring-primary-light focus:text-white">All
                                             Events</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('admin.events.create') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">Add
+                                        <a href="{{ route('admin.events.create') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-primary-light hover:text-white focus:outline-none focus:ring-1 focus:ring-primary-light focus:text-white">Add
                                             Event</a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('admin.speakers.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">Speakers
+                                        <a href="{{ route('admin.speakers.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-primary-light hover:text-white focus:outline-none focus:ring-1 focus:ring-primary-light focus:text-white">Speakers
                                         </a>
                                     </li>
                                 </ul>
@@ -159,7 +156,7 @@
                                             <path d="M12 4.35418C12.7329 3.52375 13.8053 3 15 3C17.2091 3 19 4.79086 19 7C19 9.20914 17.2091 11 15 11C13.8053 11 12.7329 10.4762 12 9.64582M15 21H3V20C3 16.6863 5.68629 14 9 14C12.3137 14 15 16.6863 15 20V21ZM15 21H21V20C21 16.6863 18.3137 14 15 14C13.9071 14 12.8825 14.2922 12 14.8027M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                     </div>
-                                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Members</a>
+                                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-primary-light focus:outline-none focus:ring-1 focus:ring-primary-light focus:bg-primary-light">Members</a>
                                 </div>
                                 <button class="absolute right-0 flex items-center p-1" tabindex="-1">
                                     <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24">
@@ -170,12 +167,12 @@
                             <div class="pt-2 pl-4">
                                 <ul class="flex flex-col pl-2 text-gray-200 border-l border-gray-300 space-y-2" x-show="open" x-cloak @click.outside="open = false">
                                     <li>
-                                        <a href="{{ route('admin.members.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">All
+                                        <a href="{{ route('admin.members.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-primary-light hover:text-white focus:outline-none focus:ring-1 focus:ring-primary-light focus:text-white">All
                                             Members
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('admin.members.create') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">Add
+                                        <a href="{{ route('admin.members.create') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-primary-light hover:text-white focus:outline-none focus:ring-1 focus:ring-primary-light focus:text-white">Add
                                             Member
                                         </a>
                                     </li>
@@ -192,7 +189,7 @@
                                           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
                                         </svg>
                                     </div>
-                                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Merchandise</a>
+                                    <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-primary-light focus:outline-none focus:ring-1 focus:ring-primary-light focus:bg-primary-light">Merchandise</a>
                                 </div>
                                 <button class="absolute right-0 flex items-center p-1" tabindex="-1">
                                     <svg class="w-5 h-5 stroke-current" fill="none" viewBox="0 0 24 24">
@@ -203,12 +200,12 @@
                             <div class="pt-2 pl-4">
                                 <ul class="flex flex-col pl-2 text-gray-200 border-l border-gray-300 space-y-2" x-show="open" x-cloak @click.outside="open = false">
                                     <li>
-                                        <a href="{{ route('admin.merchandise.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">All
+                                        <a href="{{ route('admin.merchandise.index') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-primary-light hover:text-white focus:outline-none focus:ring-1 focus:ring-primary-light focus:text-white">All
                                             Merchandise
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{ route('admin.merchandise.create') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-blue-800 hover:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 focus:text-white">Add
+                                        <a href="{{ route('admin.merchandise.create') }}" class="inline-block w-full px-4 py-2 text-sm rounded hover:bg-primary-light hover:text-white focus:outline-none focus:ring-1 focus:ring-primary-light focus:text-white">Add
                                             Merchandise
                                         </a>
                                     </li>
@@ -223,7 +220,7 @@
                                     <path d="M4 16L8.58579 11.4142C9.36683 10.6332 10.6332 10.6332 11.4142 11.4142L16 16M14 14L15.5858 12.4142C16.3668 11.6332 17.6332 11.6332 18.4142 12.4142L20 14M14 8H14.01M6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <a href="{{ route('admin.albums.index') }}" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Gallery</a>
+                            <a href="{{ route('admin.albums.index') }}" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-primary-light focus:outline-none focus:ring-1 focus:ring-primary-light focus:bg-primary-light">Gallery</a>
                         </li>
                     </ul>
                 </div>
@@ -238,7 +235,7 @@
                                     <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <a href="{{ route('admin.profile') }}" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800">Profile</a>
+                            <a href="{{ route('admin.profile') }}" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-primary-light focus:outline-none focus:ring-1 focus:ring-primary-light focus:bg-primary-light">Profile</a>
                         </li>
                         <li class="relative text-gray-200 hover:text-white focus-within:text-white">
                             <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
@@ -246,7 +243,7 @@
                                     <path d="M17 16L21 12M21 12L17 8M21 12L7 12M13 16V17C13 18.6569 11.6569 20 10 20H6C4.34315 20 3 18.6569 3 17V7C3 5.34315 4.34315 4 6 4H10C11.6569 4 13 5.34315 13 7V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-blue-800 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:bg-blue-800" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
+                            <a href="#" class="inline-block w-full py-2 pl-8 pr-4 text-sm rounded hover:bg-primary-light focus:outline-none focus:ring-1 focus:ring-primary-light focus:bg-primary-light" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
                             <form method="POST" id="logout-form" action="{{ route('admin.logout') }}" class="hidden">
                                 @csrf
                             </form>
